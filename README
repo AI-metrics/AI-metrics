@@ -1,0 +1,11 @@
+**Description:**
+
+A project to explore the progression of AI through the amalgamation and display of datasets relating to the progress of AI, such as image recognition scores over time, or Hutter Prize compression. Both qualitative and quantitative information, with a bias towards quantitative. Initial version will consist of a basic text document on GitHub, which multiple organizations will collaborate on. This will likely eventually yield an OpenAI-specific project as well. 
+
+**Purposes:**
+
+Improve the public discourse around AI by equipping journalists, politicians, and the public, with a single web page containing lots of data. 
+
+Help our fellow researchers by giving them a useful resource to scan when looking for relevant scores/results in their own knowledge domain.
+
+Create a self-reinforceing system to get researchers to proactively share great new results in a shared, public knowledge base. 
