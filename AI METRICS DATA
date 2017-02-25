@@ -1,0 +1,380 @@
+AI METRICS DATA 
+
+
+**_Game score on a selected index of Atari 2600 games [Month, Year:  Games, Scores]. Compiled by Miles Brundage & Jack Clark._**
+
+**_Why we care: _**Reflects the improvement in reinforcement learning algorithms in mastering dynamic environments.
+
+**2013:**
+
+**Dec, 2013:**
+
+Breakout - 225
+Enduro - 661
+Pong - 21
+Q*Bert - 4500 
+Seaquest - 1740 
+S. Invaders - 1075
+
+Paper: Playing Atari with Deep Reinforcement Learning
+Url: https://arxiv.org/pdf/1312.5602.pdf
+
+**2015:**
+
+**February, 2015:**
+
+Breakout - 401
+Enduro - 301
+Pong - 18.9
+Q*Bert - 10596
+Seaquest - 5286
+S. Invaders - 1976
+
+Paper: Human Level Control Through Deep Reinforcement Learning
+Url: https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508
+
+**September, 2015: **
+
+Breakout - 375
+Enduro - 319
+Pong - 21
+Q*Bert - 14875
+Seaquest - 7995
+S. Invaders - 3154
+
+Paper: Deep reinforcement learning with double q-learning 
+Url: https://pdfs.semanticscholar.org/3b97/32bb07dc99bde5e1f9f75251c6ea5039373e.pdf?_ga=1.165640319.1334652001.1475539859
+
+**November, 2015:**
+
+Breakout - 345
+Enduro - 2258
+Pong - 21
+Q*Bert - 19220
+Seaquest - 50254
+S. Invaders - 6427
+
+Paper:  dueling network architectures for deep reinforcement learning 
+Url: https://pdfs.semanticscholar.org/13b5/8f3108709dbbed5588759bc0496f82a261c4.pdf?_ga=1.123524811.1334652001.1475539859
+
+**2016:**
+
+**June, 2016:**
+
+Breakout - 766.8
+Enduro - -82.5
+Pong - 10.7
+Q*Bert - 21307
+Seaquest - 1326.1
+S. Invaders - 23846.0
+
+Paper: Asynchronous methods for deep reinforcement learning 
+Url: https://arxiv.org/pdf/1602.01783.pdf
+
+* * *
+**_Word error rate on Switchboard (specify details): [Month, Year: Score [SWB]: Team].  Compiled by Jack Clark._**
+
+A note about measurement: We're measuring Switchboard (SWB) and Call Home (CH) performance from the Hub5'00 dataset, with main scores assesses in terms of word error rate on SWB. We also create 
+
+Why do we care: Reflects the improvement of audio processing systems on speech over time.
+
+**2011 16.1%: Microsoft**
+16.1% SWB
+Who: Microsoft
+Technique: Microsoft: CD-DNN (Context Dependent Deep Neural Network)
+
+Paper: Conversational Speech Transcription Using Context-Dependent Neural Networks 
+Url: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/CD-DNN-HMM-SWB-Interspeech2011-Pub.pdf
+
+**2012:**
+
+**April, 2012: 18.5%: University of Toronto, Google, IBM< Microsoft**
+Who: University of Toronto, Google, IBM, Microsoft
+
+Paper: Deep Neural Networks for Acoustic Modeling in Speech Recognition
+Url: https://pdfs.semanticscholar.org/ce25/00257fda92338ec0a117bea1dbc0381d7c73.pdf?_ga=1.195375081.452266805.1483390947
+
+**2013:**
+
+**2013: 12.9%: Consortium of Universities**
+12.9% SWB, 24.5% CH, 18.7% 
+Who: Brno University of Tech / University of Edinburgh / Johns Hopkins
+Technique: DNN BMMI  (deep neural network boosted minimum mutual information) 
+
+Paper: Sequence discriniative training of deep neural networks 
+Url: http://www.danielpovey.com/files/2013_interspeech_dnn.pdf
+
+
+**2014:**
+
+**June, 2014: 16.0%: Stanford**
+16.0% SWB, 23.7% CH, 19.9% EV
+Who: Stanford
+
+Paper: Increasing Deep Neural Network Acoustic Model Size For Large Vocabulary Continuous Speech Recognition
+
+Url: https://arxiv.org/abs/1406.7806v1
+
+**December, 2014: 12.6%: Baidu**
+Deep Speech SWB: 20.0% SWB, 31.8% CH, 25.9% blended.
+Deep Speech SWB + FSH: 12.6% SWB, 19.3% CH, 16.0% blended.
+
+Who: Baidu
+
+Paper: Deep Speech: Scaling up end-to-end speech recognition
+Url: https://arxiv.org/abs/1412.5567
+
+**2015:**
+
+**May, 2015: 8%: IBM**
+8.0% SWB, 14.1% CH, 11.0% blended.
+Who: IBM
+
+Paper: The IBM 2015 English Conversational Telephone Speech Recognition System
+Url: https://arxiv.org/abs/1505.05899
+
+**2016: **
+
+**June, 2016: 6.9%: IBM**
+n-gram + model M + NNLM: 6.9% SWB, 12.5% CH, 9.7% blended.
+
+Who: IBM
+Paper: The IBM 2016 English Conversational Telephone Speech Recognition System
+
+Url: https://arxiv.org/abs/1604.08242v1
+
+**September, 2016: 6.2%: Microsoft**
+Single model (ResNet): 6.9% SWB, 13.2% CH, 10.05% blended.
+Combination: 6.2% SWB, 12.0% CH, 9.1% blended 
+
+Who: Microsoft
+Paper: The Microsoft 2016 Conversational Speech Recognition System
+Url: https://arxiv.org/abs/1609.03528
+
+**October 2016: 5.9%: Microsoft**
+Single model (ResNet): 6.6% SWB, 12.5% CH, 9.55% blended. 
+Combination: 5.9% SWB, 11.1% CH, 8.5% blended.
+
+Who: Microsoft
+Paper: Achieving human parity in conversational speech recognition
+Url: https://arxiv.org/abs/1610.05256
+* * *
+**_Image Classification on ImageNet_ [Year, Classification Error, Team]. Compiled by Jack Clark.**
+
+**Why we care: **This dataset provides a good measure of image classification accuracy over time, letting us understand the accuracy with which computers - given sufficient data - can see the world.
+
+** 2010: 0.28191**
+**NEC UIUC**
+http://image-net.org/challenges/LSVRC/2010/results
+
+** 2011: 0.25770
+ XRCE**
+
+** 2012: 0.16422**
+** Supervision**
+http://image-net.org/challenges/LSVRC/2012/results.html
+
+** 2013: 0.11743 **
+**Clarifai**
+http://www.image-net.org/challenges/LSVRC/2013/results.php
+
+** 2014: 0.07405**
+**VGG**
+http://image-net.org/challenges/LSVRC/2014/index
+ 
+
+**2015: 0.03567**
+**MSRA**
+http://image-net.org/challenges/LSVRC/2015/results
+
+** 2016: 0.02991**
+**Trimps-Soushen**
+http://image-net.org/challenges/LSVRC/2016/results
+* * *
+**_Generative models of CIFAR-10 Natural Images _****[Year: bits-per-subpixel, method]. Compiled by Durk Kingma.**
+
+**Why we care:**
+(1) The compression=prediction=understanding=intelligence view (see Hutter prize, etc.). (Note that perplexity, log-likelihood, and #bits are all equivalent measurements.)
+(2) Learning a generative model is a prominent auxiliary task towards semi-supervised learning. Current SOTA semi-supervised classification results utilize generative models.
+3) You're finding patterns in the data that let you compress it more efficiently. Ultimate pattern recognition benchmark because you're trying to find the patterns in all the data. 
+
+**2014: 4.48**
+Method: NICE
+
+Paper: NICE: Non-linear independent components estimation. 
+arXiv preprint arXiv:1410.8516, 2014.
+
+**2015: 4.13**
+Method: DRAW
+
+Paper: Draw: A recurrent neural network for image generation.
+ In International Confer- ence on Machine Learing (ICML), 2015.
+
+**2016: 3.49**
+Method: Real NVP
+
+Paper: Density estimation using real NVP. 
+arXiv:1605.08803, 2016.
+
+**2016: 3.11**
+Method: VAE with IAF
+
+Paper: Improving variational inference with inverse autoregressive flow. 
+Conference on Neural Information Processing Systems (NIPS), 2016.
+
+**2016: 3**
+Method: PixelRNN
+
+Paper: Density estimation using real NVP. 
+arXiv:1605.08803, 2016. arXiv preprint arXiv:1605.08803, 2016.
+
+**2016: 2.92**
+Method: PixelCNN++
+
+Paper: PixelCNN++: A PixelCNN implementation with discretized logistic mixture likelihood and other modifications. 
+URL: https://openreview.net/forum?id=BJrFC6ceg, 2016.
+* * *
+**_Perplixity on Penn Treebank [Year, perplexity score]. Compiled by Jack._**
+
+**Why do we care: **perplexity gives us a sense of how well the computer has been able to model language. Lower perplexity indicates less confusion on the part of the model about what language to use to complete a sentence. 
+
+
+ 2012: 124.7
+mikolov & zweig
+https://pdfs.semanticscholar.org/04e0/fefb859f4b02b017818915a2645427bfbdb2.pdf
+
+ 2013: 107.5
+pascanu test
+how to construct deep RNNs, https://arxiv.org/abs/1312.6026
+
+ 2014: 78.4, validation: 82.2
+zaremba et all.
+https://arxiv.org/abs/1409.2329
+
+ 2015: test: 73.4
+ variational LSTM (large, untied, MC)
+https://arxiv.org/pdf/1512.05287v5.pdf
+
+ 2016: test: 70.9
+pointer sentinel-lstm
+https://arxiv.org/pdf/1609.07843v1.pdf
+
+ 2016: test: 66
+ recurrent highway networks
+https://arxiv.org/pdf/1607.03474v3.pd (https://arxiv.org/pdf/1607.03474v3.pdf)
+* * *
+**_Bits-per-character on enwik8 dataset to measure Hutter Prize compression progression_**
+[Year, bits-per-character]. Compiled by Jack
+
+Why we care about this: relationship between compression and intelligence?
+
+2011: 1.60
+Paper: Generating text with recurrent neural networks
+Url: 
+https://www.google.com/search?q=Generating+text+with+recurrent+neural+networks&oq=Generating+text+with+recurrent+neural+networks&aqs=chrome..69i57.196j0j4&sourceid=chrome&ie=UTF-8
+
+**2013:**
+
+2013: 1.67
+Paper: Generating sequences with recurrent neural networks
+Url: https://arxiv.org/abs/1308.0850
+
+**2015:**
+
+February, 2015: 1.58 
+Paper: Gated Feedback Recurrent Neural Networks
+Url: https://arxiv.org/abs/1502.02367
+
+July, 2015: 1.47 
+Paper:  Grid Long Short-Term Memory
+Url: https://arxiv.org/abs/1507.01526
+
+**2016:**
+
+July, 2016: 1.32
+Recurrent highway networks
+https://arxiv.org/abs/1607.03474
+
+September, 2016:  1.32
+Paper: Hierarchical Multiscale Recurrent Neural Networks
+Url: https://arxiv.org/abs/1609.01704
+
+September, 2016: 1.39
+hypernetworks / hyperlstm
+https://arxiv.org/abs/1609.09106
+
+October, 2016: 1.37
+Paper: surprisal-driven feedback in recurrent neural networks, 
+Url: https://arxiv.org/pdf/1608.06027.pdf
+
+2016 - surprisal driven zoneout, test: 1.313
+https://pdfs.semanticscholar.org/e9bc/83f9ff502bec9cffb750468f76fdfcf5dd05.pdf?_ga=1.27297145.452266805.1483390947
+
+**Human/Algo best performance:**
+
+**cmix v11, test 1.245 BPC**
+CMIX (SOTA) uses neural nets. Both LSTM and fully connected. Uses 1,746 independent models, majority of which come from other OSS compression progs eg paq8l, paq8pxd, paq8hp12
+ http://www.byronknoll.com/cmix.html
+
+* * *
+**_Task completion and average error score for Facebook's BAbI dataset to measure limited question answering. Compiled by Jack._**
+[Year, failed tasks#, mean error%, paper]
+ 
+[note: a task is defined as failed if error is higher than 5%. Mean error is error across all tasks ]
+
+**Why we care about this:** helps us understand how well AI can be trained to deduce facts from a large dataset corpus. 
+(Measurement note - the pathfinding and positional reasoning Qs are much harder for AI than other qs, so watching this perf improve is significant)
+
+February, 2015:
+Failed tasks: 4
+Mean error: 8%
+Paper: Towards ai-complete question answering: a set of prerequisite toy tasks 
+Url: https://arxiv.org/abs/1502.05698
+
+March, 2015: 
+Failed tasks: 4
+Mean error: 7.2%
+(MemNN WSH) 39.2 / 17 < find out what WSH means 
+(Strongly supervised MemNN) 3.2 / 2 
+Paper: End-to-end memory networks 
+Url: https://arxiv.org/abs/1503.08895
+
+June, 2015:
+Failed tasks: 2
+Mean error: 6.4%
+Paper: Ask me anything dynamic memory networks for natural language processing (v1)
+Url: https://arxiv.org/abs/1506.07285
+
+January, 2016: 
+Failed tasks: 2
+Mean error: 4.3%
+Paper:  Hybrid computing using a neural network with dynamic external memory
+Url: http://www.nature.com/nature/journal/v538/n7626/full/nature20101.html#tables
+
+June, 2016 
+Failed tasks: 1
+Mean error: 2.81%
+Paper: Dynamic Neural Turing Machine with Soft and Hard Addressing Schemes
+Url: https://arxiv.org/pdf/1607.00036.pdf
+
+2016, October - scaling memory-augmented neural networks with sparse read and writes 
+https://arxiv.org/pdf/1610.09027v1.pdf
+
+November, 2016:
+Failed tasks: 2
+Mean error: 3.7%
+Paper: gated end-to-end memory networks
+Url: https://arxiv.org/pdf/1610.04211.pdf
+
+December, 2016: 
+Failed tasks: 0 
+Mean error: 0.5%
+Paper:  tracking the world state with recurrent entity networks
+Url: https://arxiv.org/abs/1612.03969
+
+Feb, 2017:
+Failed tasks: 0
+Mean error: 0.3%
+Paper:  Query-Reduction Networks for Question Answering v5 
+Url: https://arxiv.org/abs/1606.04582
+
