@@ -74,7 +74,7 @@ Url: https://arxiv.org/pdf/1602.01783.pdf
 * * *
 **_Word error rate on Switchboard (specify details): [Month, Year: Score [SWB]: Team].  Compiled by Jack Clark._**
 
-A note about measurement: We're measuring Switchboard (SWB) and Call Home (CH) performance from the Hub5'00 dataset, with main scores assesses in terms of word error rate on SWB. We also create 
+A note about measurement: We're measuring Switchboard (SWB) and Call Home (CH) performance from the Hub5'00 dataset, with main scores assesses in terms of word error rate on SWB. 
 
 Why do we care: Reflects the improvement of audio processing systems on speech over time.
 
