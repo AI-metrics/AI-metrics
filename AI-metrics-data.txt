@@ -174,38 +174,52 @@ Url: https://arxiv.org/abs/1703.02136
 
 #########
 
-**_Image Classification on ImageNet_ [Year, Classification Error, Team]. Compiled by Jack Clark.**
+Image Classification on ImageNet [Year, Classification Error, Team]. Compiled by Jack Clark.
 
-**Why we care: **This dataset provides a good measure of image classification accuracy over time, letting us understand the accuracy with which computers - given sufficient data - can see the world.
+Why we care: This dataset provides a good measure of image classification accuracy over time, letting us understand the accuracy with which computers - given sufficient data - can see the world.
 
-** 2010: 0.28191**
-**NEC UIUC**
+2010: 
+0.28191
+NEC UIUC
+
 http://image-net.org/challenges/LSVRC/2010/results
 
-** 2011: 0.25770
- XRCE**
+2011: 
+0.25770
+XRCE
 
-** 2012: 0.16422**
-** Supervision**
+2012: 
+0.16422
+Supervision
+
 http://image-net.org/challenges/LSVRC/2012/results.html
 
-** 2013: 0.11743 **
-**Clarifai**
+2013: 
+0.11743
+Clarifai
+
 http://www.image-net.org/challenges/LSVRC/2013/results.php
 
-** 2014: 0.07405**
-**VGG**
+2014: 
+0.07405
+VGG
+
 http://image-net.org/challenges/LSVRC/2014/index
  
+2015: 
+0.03567
+MSRA
 
-**2015: 0.03567**
-**MSRA**
 http://image-net.org/challenges/LSVRC/2015/results
 
-** 2016: 0.02991**
-**Trimps-Soushen**
+2016: 
+0.02991
+Trimps-Soushen
+
 http://image-net.org/challenges/LSVRC/2016/results
-* * *
+
+#########
+
 **_Generative models of CIFAR-10 Natural Images _****[Year: bits-per-subpixel, method]. Compiled by Durk Kingma.**
 
 **Why we care:**
