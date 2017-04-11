@@ -164,6 +164,14 @@ Who: Microsoft
 Paper: Achieving human parity in conversational speech recognition
 Url: https://arxiv.org/abs/1610.05256
 
+March, 2017:
+5.5% SWB
+5.5% SWB, 10.3% CH
+Who: IBM
+
+Paper: English Conversational Telephone Speech Recognition by Humans and Machines
+Url: https://arxiv.org/abs/1703.02136
+
 #########
 
 **_Image Classification on ImageNet_ [Year, Classification Error, Team]. Compiled by Jack Clark.**
