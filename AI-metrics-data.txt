@@ -114,50 +114,58 @@ Who: Stanford
 Paper: Increasing Deep Neural Network Acoustic Model Size For Large Vocabulary Continuous Speech Recognition
 Url: https://arxiv.org/abs/1406.7806v1
 
-**December, 2014: 12.6%: Baidu**
+December, 2014:
+20.0% SWB 
+12.6% SWB + FSH
 Deep Speech SWB: 20.0% SWB, 31.8% CH, 25.9% blended.
 Deep Speech SWB + FSH: 12.6% SWB, 19.3% CH, 16.0% blended.
-
 Who: Baidu
 
 Paper: Deep Speech: Scaling up end-to-end speech recognition
 Url: https://arxiv.org/abs/1412.5567
 
-**2015:**
+2015:
 
-**May, 2015: 8%: IBM**
+May, 2015: 
+8%: SWB
 8.0% SWB, 14.1% CH, 11.0% blended.
 Who: IBM
 
 Paper: The IBM 2015 English Conversational Telephone Speech Recognition System
 Url: https://arxiv.org/abs/1505.05899
 
-**2016: **
+2016: 
 
-**June, 2016: 6.9%: IBM**
+June, 2016: 
+6.9% SWB
 n-gram + model M + NNLM: 6.9% SWB, 12.5% CH, 9.7% blended.
-
 Who: IBM
-Paper: The IBM 2016 English Conversational Telephone Speech Recognition System
 
+Paper: The IBM 2016 English Conversational Telephone Speech Recognition System
 Url: https://arxiv.org/abs/1604.08242v1
 
-**September, 2016: 6.2%: Microsoft**
+September, 2016: 
+
+6.2% SWB
 Single model (ResNet): 6.9% SWB, 13.2% CH, 10.05% blended.
 Combination: 6.2% SWB, 12.0% CH, 9.1% blended 
-
 Who: Microsoft
+
 Paper: The Microsoft 2016 Conversational Speech Recognition System
 Url: https://arxiv.org/abs/1609.03528
 
-**October 2016: 5.9%: Microsoft**
+October, 2016: 
+
+5.9% SWB
 Single model (ResNet): 6.6% SWB, 12.5% CH, 9.55% blended. 
 Combination: 5.9% SWB, 11.1% CH, 8.5% blended.
-
 Who: Microsoft
+
 Paper: Achieving human parity in conversational speech recognition
 Url: https://arxiv.org/abs/1610.05256
-* * *
+
+#########
+
 **_Image Classification on ImageNet_ [Year, Classification Error, Team]. Compiled by Jack Clark.**
 
 **Why we care: **This dataset provides a good measure of image classification accuracy over time, letting us understand the accuracy with which computers - given sufficient data - can see the world.
