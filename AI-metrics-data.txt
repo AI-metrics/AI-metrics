@@ -220,77 +220,91 @@ http://image-net.org/challenges/LSVRC/2016/results
 
 #########
 
-**_Generative models of CIFAR-10 Natural Images _****[Year: bits-per-subpixel, method]. Compiled by Durk Kingma.**
+Generative models of CIFAR-10 Natural Images [Year: bits-per-subpixel, method]. Compiled by Durk Kingma.
 
-**Why we care:**
+Why we care:
 (1) The compression=prediction=understanding=intelligence view (see Hutter prize, etc.). (Note that perplexity, log-likelihood, and #bits are all equivalent measurements.)
 (2) Learning a generative model is a prominent auxiliary task towards semi-supervised learning. Current SOTA semi-supervised classification results utilize generative models.
 3) You're finding patterns in the data that let you compress it more efficiently. Ultimate pattern recognition benchmark because you're trying to find the patterns in all the data. 
 
-**2014: 4.48**
+2014: 
+4.48
 Method: NICE
 
 Paper: NICE: Non-linear independent components estimation. 
-arXiv preprint arXiv:1410.8516, 2014.
+https://arxiv.org/abs/1410.8516
 
-**2015: 4.13**
+2015:
+4.13
 Method: DRAW
 
 Paper: Draw: A recurrent neural network for image generation.
- In International Confer- ence on Machine Learing (ICML), 2015.
+https://arxiv.org/abs/1502.04623
 
-**2016: 3.49**
+2016: 
+3.49
 Method: Real NVP
 
 Paper: Density estimation using real NVP. 
-arXiv:1605.08803, 2016.
+https://arxiv.org/abs/1605.08803
 
-**2016: 3.11**
+2016: 
+3.11
 Method: VAE with IAF
 
 Paper: Improving variational inference with inverse autoregressive flow. 
-Conference on Neural Information Processing Systems (NIPS), 2016.
+https://arxiv.org/abs/1606.04934
 
-**2016: 3**
+2016: 
+3
 Method: PixelRNN
 
 Paper: Density estimation using real NVP. 
-arXiv:1605.08803, 2016. arXiv preprint arXiv:1605.08803, 2016.
+https://arxiv.org/abs/1605.08803v2
 
-**2016: 2.92**
-Method: PixelCNN++
+2016: 
+2.92
+Method: PixelCNN
 
 Paper: PixelCNN++: A PixelCNN implementation with discretized logistic mixture likelihood and other modifications. 
-URL: https://openreview.net/forum?id=BJrFC6ceg, 2016.
-* * *
-**_Perplixity on Penn Treebank [Year, perplexity score]. Compiled by Jack._**
+URL: https://arxiv.org/abs/1701.05517
 
-**Why do we care: **perplexity gives us a sense of how well the computer has been able to model language. Lower perplexity indicates less confusion on the part of the model about what language to use to complete a sentence. 
+#########
 
+Perplixity on Penn Treebank [Year, perplexity score, people involved]. Compiled by Jack.
 
- 2012: 124.7
+Why do we care: Perplexity gives us a sense of how well the computer has been able to model language. Lower perplexity indicates less confusion on the part of the model about what language to use to complete a sentence. 
+
+2012: 
+124.7
 mikolov & zweig
 https://pdfs.semanticscholar.org/04e0/fefb859f4b02b017818915a2645427bfbdb2.pdf
 
- 2013: 107.5
+2013: 
+107.5
 pascanu test
 how to construct deep RNNs, https://arxiv.org/abs/1312.6026
 
- 2014: 78.4, validation: 82.2
+2014: 
+78.4
 zaremba et all.
 https://arxiv.org/abs/1409.2329
 
- 2015: test: 73.4
- variational LSTM (large, untied, MC)
+2015: 
+73.4
+variational LSTM (large, untied, MC)
 https://arxiv.org/pdf/1512.05287v5.pdf
 
- 2016: test: 70.9
+2016: 
+70.9
 pointer sentinel-lstm
 https://arxiv.org/pdf/1609.07843v1.pdf
 
- 2016: test: 66
- recurrent highway networks
+2016: 
+66
+recurrent highway networks
 https://arxiv.org/pdf/1607.03474v3.pd (https://arxiv.org/pdf/1607.03474v3.pdf)
+
 * * *
 **_Bits-per-character on enwik8 dataset to measure Hutter Prize compression progression_**
 [Year, bits-per-character]. Compiled by Jack
