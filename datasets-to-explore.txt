@@ -1,0 +1,8 @@
+POTENTIAL DATASETS/IDEAS TO EXPLORE 
+
+SUPER-RESOLUTION - http://vllab1.ucmerced.edu/~wlai24/LapSRN/
+PSNR mean squared reconstruction error after denoting 
+SSIM (structural similarity) - predicts quality 
+IFC (information fidelity criterion) 
+
+BABI DATA EFFICIENCY - 
