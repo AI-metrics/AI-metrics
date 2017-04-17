@@ -305,7 +305,8 @@ https://arxiv.org/pdf/1609.07843v1.pdf
 recurrent highway networks
 https://arxiv.org/pdf/1607.03474v3.pd (https://arxiv.org/pdf/1607.03474v3.pdf)
 
-* * *
+#########
+
 **_Bits-per-character on enwik8 dataset to measure Hutter Prize compression progression_**
 [Year, bits-per-character]. Compiled by Jack
 
