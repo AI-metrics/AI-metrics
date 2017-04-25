@@ -315,7 +315,7 @@ Why we care about this: relationship between compression and intelligence?
 2011: 1.60
 Paper: Generating text with recurrent neural networks
 Url: 
-https://www.google.com/search?q=Generating+text+with+recurrent+neural+networks&oq=Generating+text+with+recurrent+neural+networks&aqs=chrome..69i57.196j0j4&sourceid=chrome&ie=UTF-8
+http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf
 
 **2013:**
 
