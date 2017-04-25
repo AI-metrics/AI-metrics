@@ -1,0 +1,40 @@
+POTENTIAL DATASETS/IDEAS TO EXPLORE 
+
+SUPER-RESOLUTION - http://vllab1.ucmerced.edu/~wlai24/LapSRN/
+Results: Table 4, page 7 
+PSNR mean squared reconstruction error after denoising 
+SSIM (structural similarity) - predicts quality 
+IFC (information fidelity criterion) 
+
+Datasets used: SET5, SET14, BSDS100, URBAN100, MANGA109
+
+PUBLISHED ON ARXIV: April 13th 2017 
+
+RESULTS:
+
+SCALE: 2
+Method: LapSRN (ours2x)
+SOTA
+SET5: SSIM: 0.959
+SET5: IFC: 9.010
+
+SET14: PSNR: 33.08 
+SET14: IFC: 8.505 
+
+BSDS100: IFC: 7.715 
+
+URBAN100: IFC: 8.907
+
+MANGA109: SSIM: 0.974
+
+SCALE: 4
+
+Method: LapSRN (ours 4x)
+SOTA
+
+/
+
+
+
+
+BABI DATA EFFICIENCY - 
