@@ -1,4 +1,5 @@
 {
+    "http://arxiv.org/abs/1603.08884": "A Parallel-Hierarchical Model for Machine Comprehension on Sparse Data", 
     "http://image-net.org/challenges/LSVRC/2010/results": "ImageNet Large Scale Visual Recognition Competition 2010 (ILSVRC2010)", 
     "http://image-net.org/challenges/LSVRC/2011/results": "ImageNet Large Scale Visual Recognition Competition 2011 (ILSVRC2011)", 
     "http://image-net.org/challenges/LSVRC/2012/results.html": "ImageNet Large Scale Visual Recognition Competition 2012 (ILSVRC2012)", 
@@ -54,9 +55,12 @@
     "https://pdfs.semanticscholar.org/3b97/32bb07dc99bde5e1f9f75251c6ea5039373e.pdf?_ga=1.165640319.1334652001.1475539859": null, 
     "https://pdfs.semanticscholar.org/ce25/00257fda92338ec0a117bea1dbc0381d7c73.pdf?_ga=1.195375081.452266805.1483390947": null, 
     "https://pdfs.semanticscholar.org/e9bc/83f9ff502bec9cffb750468f76fdfcf5dd05.pdf": null, 
+    "https://pdfs.semanticscholar.org/f26e/088bc4659a9b7fce28b6604d26de779bcf93.pdf": null, 
+    "https://people.csail.mit.edu/regina/my_papers/MCDR15.pdf": null, 
     "https://web.archive.org/web/20170227044521/http://www.computerchess.org.uk/ccrl/4040/": "CCRL 40/40 - Index", 
     "https://www.gwern.net/docs/2016-graves.pdf": null, 
     "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/CD-DNN-HMM-SWB-Interspeech2011-Pub.pdf": null, 
+    "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/MCTest_EMNLP2013.pdf": null, 
     "https://www.quora.com/What-was-Deep-Blues-Elo-rating": "What was Deep Blue's Elo rating? - Quora", 
     "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508": "Human-level control through deep reinforcement learning - Semantic Scholar"
 }
