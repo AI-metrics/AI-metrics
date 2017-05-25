@@ -1,6 +1,8 @@
 {
     "http://arxiv.org/abs/1603.08884": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-03-29"
+        }, 
         "name": "A Parallel-Hierarchical Model for Machine Comprehension on Sparse Data"
     }, 
     "http://image-net.org/challenges/LSVRC/2010/results": {
@@ -40,7 +42,13 @@
         "name": "ImageNet Large Scale Visual Recognition Competition 2013 (ILSVRC2013)"
     }, 
     "https://arxiv.org/abs/1308.0850": {
-        "dates": {}, 
+        "dates": {
+            "1": "2013-08-04", 
+            "2": "2013-08-11", 
+            "3": "2014-02-21", 
+            "4": "2014-04-02", 
+            "5": "2014-06-05"
+        }, 
         "name": "Generating Sequences With Recurrent Neural Networks"
     }, 
     "https://arxiv.org/abs/1312.5602": {
@@ -50,39 +58,84 @@
         "name": "Playing Atari with Deep Reinforcement Learning"
     }, 
     "https://arxiv.org/abs/1312.6026": {
-        "dates": {}, 
+        "dates": {
+            "1": "2013-12-20", 
+            "2": "2014-01-05", 
+            "3": "2014-01-29", 
+            "4": "2014-02-14", 
+            "5": "2014-04-24"
+        }, 
         "name": "How to Construct Deep Recurrent Neural Networks"
     }, 
     "https://arxiv.org/abs/1406.7806v1": {
-        "dates": {}, 
+        "dates": {
+            "1": "2014-06-30"
+        }, 
         "name": "Increasing Deep Neural Network Acoustic Model Size for Large Vocabulary"
     }, 
     "https://arxiv.org/abs/1409.0473": {
-        "dates": {}, 
+        "dates": {
+            "1": "2014-09-01", 
+            "2": "2014-09-04", 
+            "3": "2014-10-07", 
+            "4": "2014-12-19", 
+            "5": "2015-03-22", 
+            "6": "2015-04-24", 
+            "7": "2016-05-19"
+        }, 
         "name": "Neural Machine Translation by Jointly Learning to Align and Translate"
     }, 
     "https://arxiv.org/abs/1409.2329": {
-        "dates": {}, 
+        "dates": {
+            "1": "2014-09-08", 
+            "2": "2014-09-11", 
+            "3": "2014-11-03", 
+            "4": "2014-12-21", 
+            "5": "2015-02-19"
+        }, 
         "name": "Recurrent Neural Network Regularization"
     }, 
     "https://arxiv.org/abs/1410.8206": {
-        "dates": {}, 
+        "dates": {
+            "1": "2014-10-30", 
+            "2": "2014-10-31", 
+            "3": "2014-12-09", 
+            "4": "2015-05-30"
+        }, 
         "name": "Addressing the Rare Word Problem in Neural Machine Translation"
     }, 
     "https://arxiv.org/abs/1410.8516": {
-        "dates": {}, 
+        "dates": {
+            "1": "2014-10-30", 
+            "2": "2014-12-19", 
+            "3": "2015-01-06", 
+            "4": "2015-03-09", 
+            "5": "2015-03-12", 
+            "6": "2015-04-10"
+        }, 
         "name": "NICE: Non-linear Independent Components Estimation"
     }, 
     "https://arxiv.org/abs/1412.5567": {
-        "dates": {}, 
+        "dates": {
+            "1": "2014-12-17", 
+            "2": "2014-12-19"
+        }, 
         "name": "Deep Speech: Scaling up end-to-end speech recognition"
     }, 
     "https://arxiv.org/abs/1502.02367": {
-        "dates": {}, 
+        "dates": {
+            "1": "2015-02-09", 
+            "2": "2015-02-12", 
+            "3": "2015-02-18", 
+            "4": "2015-06-17"
+        }, 
         "name": "Gated Feedback Recurrent Neural Networks"
     }, 
     "https://arxiv.org/abs/1502.04623": {
-        "dates": {}, 
+        "dates": {
+            "1": "2015-02-16", 
+            "2": "2015-05-20"
+        }, 
         "name": "DRAW: A Recurrent Neural Network For Image Generation"
     }, 
     "https://arxiv.org/abs/1502.05698": {
@@ -107,23 +160,45 @@
         "name": "Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks"
     }, 
     "https://arxiv.org/abs/1503.08895": {
-        "dates": {}, 
+        "dates": {
+            "1": "2015-03-31", 
+            "2": "2015-04-03", 
+            "3": "2015-04-12", 
+            "4": "2015-06-08", 
+            "5": "2015-11-24"
+        }, 
         "name": "End-To-End Memory Networks"
     }, 
     "https://arxiv.org/abs/1505.05899": {
-        "dates": {}, 
+        "dates": {
+            "1": "2015-05-21"
+        }, 
         "name": "The IBM 2015 English Conversational Telephone Speech Recognition System"
     }, 
     "https://arxiv.org/abs/1506.03340": {
-        "dates": {}, 
+        "dates": {
+            "1": "2015-06-10", 
+            "2": "2015-10-01", 
+            "3": "2015-11-19"
+        }, 
         "name": "Teaching Machines to Read and Comprehend"
     }, 
     "https://arxiv.org/abs/1506.07285": {
-        "dates": {}, 
+        "dates": {
+            "1": "2015-06-24", 
+            "2": "2015-07-24", 
+            "3": "2015-09-29", 
+            "4": "2016-02-09", 
+            "5": "2016-03-05"
+        }, 
         "name": "Ask Me Anything: Dynamic Memory Networks for Natural Language Processing"
     }, 
     "https://arxiv.org/abs/1507.01526": {
-        "dates": {}, 
+        "dates": {
+            "1": "2015-07-06", 
+            "2": "2015-11-20", 
+            "3": "2016-01-07"
+        }, 
         "name": "Grid Long Short-Term Memory"
     }, 
     "https://arxiv.org/abs/1512.02167": {
@@ -134,107 +209,199 @@
         "name": "Simple Baseline for Visual Question Answering"
     }, 
     "https://arxiv.org/abs/1512.05287v5": {
-        "dates": {}, 
+        "dates": {
+            "5": "2016-10-05"
+        }, 
         "name": "A Theoretically Grounded Application of Dropout in Recurrent Neural"
     }, 
     "https://arxiv.org/abs/1602.01783": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-02-04", 
+            "2": "2016-06-16"
+        }, 
         "name": "Asynchronous Methods for Deep Reinforcement Learning"
     }, 
+    "https://arxiv.org/abs/1603.08884": {
+        "dates": {
+            "1": "2016-03-29"
+        }, 
+        "name": "A Parallel-Hierarchical Model for Machine Comprehension on Sparse Data"
+    }, 
     "https://arxiv.org/abs/1604.08242v1": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-04-27"
+        }, 
         "name": "The IBM 2016 English Conversational Telephone Speech Recognition System"
     }, 
     "https://arxiv.org/abs/1605.08803": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-05-27", 
+            "2": "2016-11-14", 
+            "3": "2017-02-27"
+        }, 
         "name": "Density estimation using Real NVP"
     }, 
     "https://arxiv.org/abs/1606.01549": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-06-05", 
+            "2": "2016-12-01", 
+            "3": "2017-04-21"
+        }, 
         "name": "Gated-Attention Readers for Text Comprehension"
     }, 
     "https://arxiv.org/abs/1606.01549v1": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-06-05"
+        }, 
         "name": "Gated-Attention Readers for Text Comprehension"
     }, 
     "https://arxiv.org/abs/1606.02245v1": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-06-07"
+        }, 
         "name": "Iterative Alternating Neural Attention for Machine Reading"
     }, 
     "https://arxiv.org/abs/1606.02245v4": {
-        "dates": {}, 
+        "dates": {
+            "4": "2016-11-09"
+        }, 
         "name": "Iterative Alternating Neural Attention for Machine Reading"
     }, 
     "https://arxiv.org/abs/1606.02270": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-06-07", 
+            "2": "2016-06-10"
+        }, 
         "name": "Natural Language Comprehension with the EpiReader"
     }, 
     "https://arxiv.org/abs/1606.02858": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-06-09", 
+            "2": "2016-08-08"
+        }, 
         "name": "A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task"
     }, 
     "https://arxiv.org/abs/1606.04199": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-06-14", 
+            "2": "2016-06-15", 
+            "3": "2016-07-23"
+        }, 
         "name": "Deep Recurrent Models with Fast-Forward Connections for Neural Machine"
     }, 
     "https://arxiv.org/abs/1606.04582v4": {
-        "dates": {}, 
+        "dates": {
+            "4": "2016-12-09"
+        }, 
         "name": "Query-Reduction Networks for Question Answering"
     }, 
     "https://arxiv.org/abs/1607.00036": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-06-30", 
+            "2": "2017-03-17"
+        }, 
         "name": "Dynamic Neural Turing Machine with Soft and Hard Addressing Schemes"
     }, 
     "https://arxiv.org/abs/1607.03474": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-07-12", 
+            "2": "2016-08-11", 
+            "3": "2016-10-27", 
+            "4": "2017-03-03"
+        }, 
         "name": "Recurrent Highway Networks"
     }, 
     "https://arxiv.org/abs/1607.03474v3": {
-        "dates": {}, 
+        "dates": {
+            "3": "2016-10-27"
+        }, 
         "name": "Recurrent Highway Networks"
     }, 
     "https://arxiv.org/abs/1607.04315": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-07-14", 
+            "2": "2016-07-20", 
+            "3": "2017-01-05"
+        }, 
         "name": "Neural Semantic Encoders"
     }, 
     "https://arxiv.org/abs/1607.04423": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-07-15", 
+            "2": "2016-07-18", 
+            "3": "2016-08-04"
+        }, 
         "name": "Attention-over-Attention Neural Networks for Reading Comprehension"
     }, 
     "https://arxiv.org/abs/1608.06027": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-08-22", 
+            "2": "2016-09-02", 
+            "3": "2016-09-05", 
+            "4": "2016-10-19"
+        }, 
         "name": "Surprisal-Driven Feedback in Recurrent Networks"
     }, 
     "https://arxiv.org/abs/1608.07905v2": {
-        "dates": {}, 
+        "dates": {
+            "2": "2016-11-07"
+        }, 
         "name": "Machine Comprehension Using Match-LSTM and Answer Pointer"
     }, 
     "https://arxiv.org/abs/1609.01704": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-09-06", 
+            "2": "2016-09-07", 
+            "3": "2016-10-31", 
+            "4": "2016-11-16", 
+            "5": "2016-12-14", 
+            "6": "2017-03-08", 
+            "7": "2017-03-09"
+        }, 
         "name": "Hierarchical Multiscale Recurrent Neural Networks"
     }, 
     "https://arxiv.org/abs/1609.03528": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-09-12", 
+            "2": "2017-01-25"
+        }, 
         "name": "The Microsoft 2016 Conversational Speech Recognition System"
     }, 
     "https://arxiv.org/abs/1609.07843v1": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-09-26"
+        }, 
         "name": "Pointer Sentinel Mixture Models"
     }, 
     "https://arxiv.org/abs/1609.08144": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-09-26", 
+            "2": "2016-10-08"
+        }, 
         "name": "Google's Neural Machine Translation System: Bridging the Gap between"
     }, 
     "https://arxiv.org/abs/1609.09106": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-09-27", 
+            "2": "2016-10-27", 
+            "3": "2016-10-28", 
+            "4": "2016-12-01"
+        }, 
         "name": "HyperNetworks"
     }, 
     "https://arxiv.org/abs/1610.05256": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-10-17", 
+            "2": "2017-02-17"
+        }, 
         "name": "Achieving Human Parity in Conversational Speech Recognition"
     }, 
     "https://arxiv.org/abs/1612.03969": {
-        "dates": {}, 
+        "dates": {
+            "1": "2016-12-12", 
+            "2": "2017-03-25", 
+            "3": "2017-05-10"
+        }, 
         "name": "Tracking the World State with Recurrent Entity Networks"
     }, 
     "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": {
@@ -271,7 +438,7 @@
         "name": "CCRL 40/40 - Complete list"
     }, 
     "https://web.archive.org/web/20100923131123/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html": {
-        "name": "CCRL 40/40 - Complete list"
+        "name": null
     }, 
     "https://web.archive.org/web/20130415000000*/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html": {
         "name": "Wayback Machine"
