@@ -1,81 +1,297 @@
 {
-    "http://arxiv.org/abs/1603.08884": "A Parallel-Hierarchical Model for Machine Comprehension on Sparse Data", 
-    "http://image-net.org/challenges/LSVRC/2010/results": "ImageNet Large Scale Visual Recognition Competition 2010 (ILSVRC2010)", 
-    "http://image-net.org/challenges/LSVRC/2011/results": "ImageNet Large Scale Visual Recognition Competition 2011 (ILSVRC2011)", 
-    "http://image-net.org/challenges/LSVRC/2012/results.html": "ImageNet Large Scale Visual Recognition Competition 2012 (ILSVRC2012)", 
-    "http://image-net.org/challenges/LSVRC/2014/index": "ImageNet Large Scale Visual Recognition Competition 2014 (ILSVRC2014)", 
-    "http://image-net.org/challenges/LSVRC/2015/results": "ILSVRC2015 Results", 
-    "http://image-net.org/challenges/LSVRC/2016/results": "ILSVRC2016", 
-    "http://www.aisb.org.uk/events/loebner-prize#Results15": "AISB - The Society for the Study of Artificial Intelligence and Simulation of Behaviour - Loebner Prize", 
-    "http://www.aisb.org.uk/events/loebner-prize#Results16": "AISB - The Society for the Study of Artificial Intelligence and Simulation of Behaviour - Loebner Prize", 
-    "http://www.aisb.org.uk/events/loebner-prize#contest2014": "AISB - The Society for the Study of Artificial Intelligence and Simulation of Behaviour - Loebner Prize", 
-    "http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf": null, 
-    "http://www.danielpovey.com/files/2013_interspeech_dnn.pdf": null, 
-    "http://www.image-net.org/challenges/LSVRC/2013/results.php": "ImageNet Large Scale Visual Recognition Competition 2013 (ILSVRC2013)", 
-    "https://arxiv.org/abs/1308.0850": "Generating Sequences With Recurrent Neural Networks", 
-    "https://arxiv.org/abs/1312.5602": "Playing Atari with Deep Reinforcement Learning", 
-    "https://arxiv.org/abs/1312.6026": "How to Construct Deep Recurrent Neural Networks", 
-    "https://arxiv.org/abs/1406.7806v1": "Increasing Deep Neural Network Acoustic Model Size for Large Vocabulary", 
-    "https://arxiv.org/abs/1409.0473": "Neural Machine Translation by Jointly Learning to Align and Translate", 
-    "https://arxiv.org/abs/1409.2329": "Recurrent Neural Network Regularization", 
-    "https://arxiv.org/abs/1410.8206": "Addressing the Rare Word Problem in Neural Machine Translation", 
-    "https://arxiv.org/abs/1410.8516": "NICE: Non-linear Independent Components Estimation", 
-    "https://arxiv.org/abs/1412.5567": "Deep Speech: Scaling up end-to-end speech recognition", 
-    "https://arxiv.org/abs/1502.02367": "Gated Feedback Recurrent Neural Networks", 
-    "https://arxiv.org/abs/1502.04623": "DRAW: A Recurrent Neural Network For Image Generation", 
-    "https://arxiv.org/abs/1502.05698": "Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks", 
-    "https://arxiv.org/abs/1503.08895": "End-To-End Memory Networks", 
-    "https://arxiv.org/abs/1505.05899": "The IBM 2015 English Conversational Telephone Speech Recognition System", 
-    "https://arxiv.org/abs/1506.03340": "Teaching Machines to Read and Comprehend", 
-    "https://arxiv.org/abs/1506.07285": "Ask Me Anything: Dynamic Memory Networks for Natural Language Processing", 
-    "https://arxiv.org/abs/1507.01526": "Grid Long Short-Term Memory", 
-    "https://arxiv.org/abs/1512.02167": "Simple Baseline for Visual Question Answering", 
-    "https://arxiv.org/abs/1512.05287v5": "A Theoretically Grounded Application of Dropout in Recurrent Neural", 
-    "https://arxiv.org/abs/1602.01783": "Asynchronous Methods for Deep Reinforcement Learning", 
-    "https://arxiv.org/abs/1604.08242v1": "The IBM 2016 English Conversational Telephone Speech Recognition System", 
-    "https://arxiv.org/abs/1605.08803": "Density estimation using Real NVP", 
-    "https://arxiv.org/abs/1606.01549": "Gated-Attention Readers for Text Comprehension", 
-    "https://arxiv.org/abs/1606.01549v1": "Gated-Attention Readers for Text Comprehension", 
-    "https://arxiv.org/abs/1606.02245v1": "Iterative Alternating Neural Attention for Machine Reading", 
-    "https://arxiv.org/abs/1606.02245v4": "Iterative Alternating Neural Attention for Machine Reading", 
-    "https://arxiv.org/abs/1606.02270": "Natural Language Comprehension with the EpiReader", 
-    "https://arxiv.org/abs/1606.02858": "A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task", 
-    "https://arxiv.org/abs/1606.04199": "Deep Recurrent Models with Fast-Forward Connections for Neural Machine", 
-    "https://arxiv.org/abs/1606.04582v4": "Query-Reduction Networks for Question Answering", 
-    "https://arxiv.org/abs/1607.00036": "Dynamic Neural Turing Machine with Soft and Hard Addressing Schemes", 
-    "https://arxiv.org/abs/1607.03474": "Recurrent Highway Networks", 
-    "https://arxiv.org/abs/1607.03474v3": "Recurrent Highway Networks", 
-    "https://arxiv.org/abs/1607.04315": "Neural Semantic Encoders", 
-    "https://arxiv.org/abs/1607.04423": "Attention-over-Attention Neural Networks for Reading Comprehension", 
-    "https://arxiv.org/abs/1608.06027": "Surprisal-Driven Feedback in Recurrent Networks", 
-    "https://arxiv.org/abs/1609.01704": "Hierarchical Multiscale Recurrent Neural Networks", 
-    "https://arxiv.org/abs/1609.03528": "The Microsoft 2016 Conversational Speech Recognition System", 
-    "https://arxiv.org/abs/1609.07843v1": "Pointer Sentinel Mixture Models", 
-    "https://arxiv.org/abs/1609.08144": "Google's Neural Machine Translation System: Bridging the Gap between", 
-    "https://arxiv.org/abs/1609.09106": "HyperNetworks", 
-    "https://arxiv.org/abs/1610.05256": "Achieving Human Parity in Conversational Speech Recognition", 
-    "https://arxiv.org/abs/1612.03969": "Tracking the World State with Recurrent Entity Networks", 
-    "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": "Swedish Chess Computer Association - Wikipedia", 
-    "https://openreview.net/forum?id=BJrFC6ceg": "Forum | OpenReview", 
-    "https://papers.nips.cc/paper/6581-improved-variational-inference-with-inverse-autoregressive-flow": "Improved Variational Inference with Inverse Autoregressive Flow", 
-    "https://pdfs.semanticscholar.org/04e0/fefb859f4b02b017818915a2645427bfbdb2.pdf": null, 
-    "https://pdfs.semanticscholar.org/13b5/8f3108709dbbed5588759bc0496f82a261c4.pdf": null, 
-    "https://pdfs.semanticscholar.org/13b5/8f3108709dbbed5588759bc0496f82a261c4.pdf?_ga=1.123524811.1334652001.1475539859": null, 
-    "https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf": null, 
-    "https://pdfs.semanticscholar.org/3b97/32bb07dc99bde5e1f9f75251c6ea5039373e.pdf": null, 
-    "https://pdfs.semanticscholar.org/3b97/32bb07dc99bde5e1f9f75251c6ea5039373e.pdf?_ga=1.165640319.1334652001.1475539859": null, 
-    "https://pdfs.semanticscholar.org/ce25/00257fda92338ec0a117bea1dbc0381d7c73.pdf?_ga=1.195375081.452266805.1483390947": null, 
-    "https://pdfs.semanticscholar.org/e9bc/83f9ff502bec9cffb750468f76fdfcf5dd05.pdf": null, 
-    "https://pdfs.semanticscholar.org/f26e/088bc4659a9b7fce28b6604d26de779bcf93.pdf": null, 
-    "https://people.csail.mit.edu/regina/my_papers/MCDR15.pdf": null, 
-    "https://web.archive.org/web/20060531091049/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html": "CCRL 40/40 - Complete list", 
-    "https://web.archive.org/web/20100923131123/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html": "CCRL 40/40 - Complete list", 
-    "https://web.archive.org/web/20130415000000*/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html": "Wayback Machine", 
-    "https://web.archive.org/web/20150708104805/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html": "CCRL 40/40 - Complete list", 
-    "https://web.archive.org/web/20170227044521/http://www.computerchess.org.uk/ccrl/4040/": "CCRL 40/40 - Index", 
-    "https://www.gwern.net/docs/2016-graves.pdf": null, 
-    "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/CD-DNN-HMM-SWB-Interspeech2011-Pub.pdf": null, 
-    "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/MCTest_EMNLP2013.pdf": null, 
-    "https://www.quora.com/What-was-Deep-Blues-Elo-rating": "What was Deep Blue's Elo rating? - Quora", 
-    "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508": "Human-level control through deep reinforcement learning - Semantic Scholar"
+    "http://arxiv.org/abs/1603.08884": {
+        "dates": {}, 
+        "name": "A Parallel-Hierarchical Model for Machine Comprehension on Sparse Data"
+    }, 
+    "http://image-net.org/challenges/LSVRC/2010/results": {
+        "name": "ImageNet Large Scale Visual Recognition Competition 2010 (ILSVRC2010)"
+    }, 
+    "http://image-net.org/challenges/LSVRC/2011/results": {
+        "name": "ImageNet Large Scale Visual Recognition Competition 2011 (ILSVRC2011)"
+    }, 
+    "http://image-net.org/challenges/LSVRC/2012/results.html": {
+        "name": "ImageNet Large Scale Visual Recognition Competition 2012 (ILSVRC2012)"
+    }, 
+    "http://image-net.org/challenges/LSVRC/2014/index": {
+        "name": "ImageNet Large Scale Visual Recognition Competition 2014 (ILSVRC2014)"
+    }, 
+    "http://image-net.org/challenges/LSVRC/2015/results": {
+        "name": "ILSVRC2015 Results"
+    }, 
+    "http://image-net.org/challenges/LSVRC/2016/results": {
+        "name": "ILSVRC2016"
+    }, 
+    "http://www.aisb.org.uk/events/loebner-prize#Results15": {
+        "name": "AISB - The Society for the Study of Artificial Intelligence and Simulation of Behaviour - Loebner Prize"
+    }, 
+    "http://www.aisb.org.uk/events/loebner-prize#Results16": {
+        "name": "AISB - The Society for the Study of Artificial Intelligence and Simulation of Behaviour - Loebner Prize"
+    }, 
+    "http://www.aisb.org.uk/events/loebner-prize#contest2014": {
+        "name": "AISB - The Society for the Study of Artificial Intelligence and Simulation of Behaviour - Loebner Prize"
+    }, 
+    "http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf": {
+        "name": null
+    }, 
+    "http://www.danielpovey.com/files/2013_interspeech_dnn.pdf": {
+        "name": null
+    }, 
+    "http://www.image-net.org/challenges/LSVRC/2013/results.php": {
+        "name": "ImageNet Large Scale Visual Recognition Competition 2013 (ILSVRC2013)"
+    }, 
+    "https://arxiv.org/abs/1308.0850": {
+        "dates": {}, 
+        "name": "Generating Sequences With Recurrent Neural Networks"
+    }, 
+    "https://arxiv.org/abs/1312.5602": {
+        "dates": {
+            "1": "2013-12-19"
+        }, 
+        "name": "Playing Atari with Deep Reinforcement Learning"
+    }, 
+    "https://arxiv.org/abs/1312.6026": {
+        "dates": {}, 
+        "name": "How to Construct Deep Recurrent Neural Networks"
+    }, 
+    "https://arxiv.org/abs/1406.7806v1": {
+        "dates": {}, 
+        "name": "Increasing Deep Neural Network Acoustic Model Size for Large Vocabulary"
+    }, 
+    "https://arxiv.org/abs/1409.0473": {
+        "dates": {}, 
+        "name": "Neural Machine Translation by Jointly Learning to Align and Translate"
+    }, 
+    "https://arxiv.org/abs/1409.2329": {
+        "dates": {}, 
+        "name": "Recurrent Neural Network Regularization"
+    }, 
+    "https://arxiv.org/abs/1410.8206": {
+        "dates": {}, 
+        "name": "Addressing the Rare Word Problem in Neural Machine Translation"
+    }, 
+    "https://arxiv.org/abs/1410.8516": {
+        "dates": {}, 
+        "name": "NICE: Non-linear Independent Components Estimation"
+    }, 
+    "https://arxiv.org/abs/1412.5567": {
+        "dates": {}, 
+        "name": "Deep Speech: Scaling up end-to-end speech recognition"
+    }, 
+    "https://arxiv.org/abs/1502.02367": {
+        "dates": {}, 
+        "name": "Gated Feedback Recurrent Neural Networks"
+    }, 
+    "https://arxiv.org/abs/1502.04623": {
+        "dates": {}, 
+        "name": "DRAW: A Recurrent Neural Network For Image Generation"
+    }, 
+    "https://arxiv.org/abs/1502.05698": {
+        "dates": {
+            "1": "2015-02-19", 
+            "10": "2015-12-31", 
+            "2": "2015-02-24", 
+            "3": "2015-02-25", 
+            "4": "2015-03-14", 
+            "5": "2015-04-10", 
+            "6": "2015-06-02", 
+            "7": "2015-10-07", 
+            "8": "2015-11-21", 
+            "9": "2015-11-29"
+        }, 
+        "name": "Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks"
+    }, 
+    "https://arxiv.org/abs/1502.05698v3": {
+        "dates": {
+            "3": "2015-02-25"
+        }, 
+        "name": "Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks"
+    }, 
+    "https://arxiv.org/abs/1503.08895": {
+        "dates": {}, 
+        "name": "End-To-End Memory Networks"
+    }, 
+    "https://arxiv.org/abs/1505.05899": {
+        "dates": {}, 
+        "name": "The IBM 2015 English Conversational Telephone Speech Recognition System"
+    }, 
+    "https://arxiv.org/abs/1506.03340": {
+        "dates": {}, 
+        "name": "Teaching Machines to Read and Comprehend"
+    }, 
+    "https://arxiv.org/abs/1506.07285": {
+        "dates": {}, 
+        "name": "Ask Me Anything: Dynamic Memory Networks for Natural Language Processing"
+    }, 
+    "https://arxiv.org/abs/1507.01526": {
+        "dates": {}, 
+        "name": "Grid Long Short-Term Memory"
+    }, 
+    "https://arxiv.org/abs/1512.02167": {
+        "dates": {
+            "1": "2015-12-07", 
+            "2": "2015-12-15"
+        }, 
+        "name": "Simple Baseline for Visual Question Answering"
+    }, 
+    "https://arxiv.org/abs/1512.05287v5": {
+        "dates": {}, 
+        "name": "A Theoretically Grounded Application of Dropout in Recurrent Neural"
+    }, 
+    "https://arxiv.org/abs/1602.01783": {
+        "dates": {}, 
+        "name": "Asynchronous Methods for Deep Reinforcement Learning"
+    }, 
+    "https://arxiv.org/abs/1604.08242v1": {
+        "dates": {}, 
+        "name": "The IBM 2016 English Conversational Telephone Speech Recognition System"
+    }, 
+    "https://arxiv.org/abs/1605.08803": {
+        "dates": {}, 
+        "name": "Density estimation using Real NVP"
+    }, 
+    "https://arxiv.org/abs/1606.01549": {
+        "dates": {}, 
+        "name": "Gated-Attention Readers for Text Comprehension"
+    }, 
+    "https://arxiv.org/abs/1606.01549v1": {
+        "dates": {}, 
+        "name": "Gated-Attention Readers for Text Comprehension"
+    }, 
+    "https://arxiv.org/abs/1606.02245v1": {
+        "dates": {}, 
+        "name": "Iterative Alternating Neural Attention for Machine Reading"
+    }, 
+    "https://arxiv.org/abs/1606.02245v4": {
+        "dates": {}, 
+        "name": "Iterative Alternating Neural Attention for Machine Reading"
+    }, 
+    "https://arxiv.org/abs/1606.02270": {
+        "dates": {}, 
+        "name": "Natural Language Comprehension with the EpiReader"
+    }, 
+    "https://arxiv.org/abs/1606.02858": {
+        "dates": {}, 
+        "name": "A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task"
+    }, 
+    "https://arxiv.org/abs/1606.04199": {
+        "dates": {}, 
+        "name": "Deep Recurrent Models with Fast-Forward Connections for Neural Machine"
+    }, 
+    "https://arxiv.org/abs/1606.04582v4": {
+        "dates": {}, 
+        "name": "Query-Reduction Networks for Question Answering"
+    }, 
+    "https://arxiv.org/abs/1607.00036": {
+        "dates": {}, 
+        "name": "Dynamic Neural Turing Machine with Soft and Hard Addressing Schemes"
+    }, 
+    "https://arxiv.org/abs/1607.03474": {
+        "dates": {}, 
+        "name": "Recurrent Highway Networks"
+    }, 
+    "https://arxiv.org/abs/1607.03474v3": {
+        "dates": {}, 
+        "name": "Recurrent Highway Networks"
+    }, 
+    "https://arxiv.org/abs/1607.04315": {
+        "dates": {}, 
+        "name": "Neural Semantic Encoders"
+    }, 
+    "https://arxiv.org/abs/1607.04423": {
+        "dates": {}, 
+        "name": "Attention-over-Attention Neural Networks for Reading Comprehension"
+    }, 
+    "https://arxiv.org/abs/1608.06027": {
+        "dates": {}, 
+        "name": "Surprisal-Driven Feedback in Recurrent Networks"
+    }, 
+    "https://arxiv.org/abs/1608.07905v2": {
+        "dates": {}, 
+        "name": "Machine Comprehension Using Match-LSTM and Answer Pointer"
+    }, 
+    "https://arxiv.org/abs/1609.01704": {
+        "dates": {}, 
+        "name": "Hierarchical Multiscale Recurrent Neural Networks"
+    }, 
+    "https://arxiv.org/abs/1609.03528": {
+        "dates": {}, 
+        "name": "The Microsoft 2016 Conversational Speech Recognition System"
+    }, 
+    "https://arxiv.org/abs/1609.07843v1": {
+        "dates": {}, 
+        "name": "Pointer Sentinel Mixture Models"
+    }, 
+    "https://arxiv.org/abs/1609.08144": {
+        "dates": {}, 
+        "name": "Google's Neural Machine Translation System: Bridging the Gap between"
+    }, 
+    "https://arxiv.org/abs/1609.09106": {
+        "dates": {}, 
+        "name": "HyperNetworks"
+    }, 
+    "https://arxiv.org/abs/1610.05256": {
+        "dates": {}, 
+        "name": "Achieving Human Parity in Conversational Speech Recognition"
+    }, 
+    "https://arxiv.org/abs/1612.03969": {
+        "dates": {}, 
+        "name": "Tracking the World State with Recurrent Entity Networks"
+    }, 
+    "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": {
+        "name": "Swedish Chess Computer Association - Wikipedia"
+    }, 
+    "https://openreview.net/forum?id=BJrFC6ceg": {
+        "name": "Forum | OpenReview"
+    }, 
+    "https://papers.nips.cc/paper/6581-improved-variational-inference-with-inverse-autoregressive-flow": {
+        "name": "Improved Variational Inference with Inverse Autoregressive Flow"
+    }, 
+    "https://pdfs.semanticscholar.org/04e0/fefb859f4b02b017818915a2645427bfbdb2.pdf": {
+        "name": null
+    }, 
+    "https://pdfs.semanticscholar.org/13b5/8f3108709dbbed5588759bc0496f82a261c4.pdf": {
+        "name": null
+    }, 
+    "https://pdfs.semanticscholar.org/13b5/8f3108709dbbed5588759bc0496f82a261c4.pdf?_ga=1.123524811.1334652001.1475539859": {
+        "name": null
+    }, 
+    "https://pdfs.semanticscholar.org/3b97/32bb07dc99bde5e1f9f75251c6ea5039373e.pdf": {
+        "name": null
+    }, 
+    "https://pdfs.semanticscholar.org/3b97/32bb07dc99bde5e1f9f75251c6ea5039373e.pdf?_ga=1.165640319.1334652001.1475539859": {
+        "name": null
+    }, 
+    "https://pdfs.semanticscholar.org/ce25/00257fda92338ec0a117bea1dbc0381d7c73.pdf?_ga=1.195375081.452266805.1483390947": {
+        "name": null
+    }, 
+    "https://pdfs.semanticscholar.org/e9bc/83f9ff502bec9cffb750468f76fdfcf5dd05.pdf": {
+        "name": null
+    }, 
+    "https://web.archive.org/web/20060531091049/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html": {
+        "name": "CCRL 40/40 - Complete list"
+    }, 
+    "https://web.archive.org/web/20100923131123/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html": {
+        "name": "CCRL 40/40 - Complete list"
+    }, 
+    "https://web.archive.org/web/20130415000000*/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html": {
+        "name": "Wayback Machine"
+    }, 
+    "https://web.archive.org/web/20150708104805/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html": {
+        "name": "CCRL 40/40 - Complete list"
+    }, 
+    "https://web.archive.org/web/20170227044521/http://www.computerchess.org.uk/ccrl/4040/": {
+        "name": "CCRL 40/40 - Index"
+    }, 
+    "https://www.gwern.net/docs/2016-graves.pdf": {
+        "name": null
+    }, 
+    "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/CD-DNN-HMM-SWB-Interspeech2011-Pub.pdf": {
+        "name": null
+    }, 
+    "https://www.quora.com/What-was-Deep-Blues-Elo-rating": {
+        "name": "What was Deep Blue's Elo rating? - Quora"
+    }, 
+    "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508": {
+        "name": "Human-level control through deep reinforcement learning - Semantic Scholar"
+    }
 }
