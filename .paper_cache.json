@@ -404,6 +404,12 @@
         }, 
         "name": "Tracking the World State with Recurrent Entity Networks"
     }, 
+    "https://arxiv.org/abs/1701.06538": {
+        "dates": {
+            "1": "2017-01-23"
+        }, 
+        "name": "Outrageously Large Neural Networks: The Sparsely-Gated"
+    }, 
     "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": {
         "name": "Swedish Chess Computer Association - Wikipedia"
     }, 
