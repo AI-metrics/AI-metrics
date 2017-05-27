@@ -2,6 +2,9 @@
     "http://aad.informatik.uni-freiburg.de/papers/15-IJCAI-Extrapolation_of_Learning_Curves.pdf": {
         "name": null
     }, 
+    "http://ai.stanford.edu/~quocle/LeNgiCoaLahProNg11.pdf": {
+        "name": null
+    }, 
     "http://arxiv.org/abs/1603.08884": {
         "dates": {
             "1": "2016-03-29"
@@ -11,8 +14,26 @@
     "http://arxiv.org/pdf/1412.6806.pdf": {
         "name": null
     }, 
+    "http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=B2AAC2BC3824F19757CAC66986D5F3FF?doi=10.1.1.18.8852&rep=rep1&type=pdf": {
+        "name": null
+    }, 
+    "http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=D1C7D701BD39935473808DA5A93426C5?doi=10.1.1.160.8494&rep=rep1&type=pdf": {
+        "name": null
+    }, 
+    "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.133.6559&rep=rep1&type=pdf": {
+        "name": null
+    }, 
+    "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.206.339&rep=rep1&type=pdf": {
+        "name": null
+    }, 
+    "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.88.9924&rep=rep1&type=pdf": {
+        "name": null
+    }, 
     "http://cs.nyu.edu/~wanli/dropc/": {
         "name": "DropConnect Neural Network"
+    }, 
+    "http://hal.inria.fr/docs/00/05/75/61/PDF/LauerSuenBlochPR.pdf": {
+        "name": null
     }, 
     "http://icml.cc/2012/papers/659.pdf": {
         "name": null
@@ -38,6 +59,9 @@
     "http://image-net.org/challenges/LSVRC/2016/results": {
         "name": "ILSVRC2016"
     }, 
+    "http://jmlr.org/papers/v14/thom13a.html": {
+        "name": null
+    }, 
     "http://jmlr.org/proceedings/papers/v28/goodfellow13.pdf": {
         "name": null
     }, 
@@ -55,6 +79,9 @@
     }, 
     "http://openreview.net/document/9b05a3bb-3a5e-49cb-91f7-0f482af65aea#9b05a3bb-3a5e-49cb-91f7-0f482af65aea": {
         "name": "Forum | OpenReview"
+    }, 
+    "http://papers.nips.cc/paper/3112-efficient-learning-of-sparse-representations-with-an-energy-based-model": {
+        "name": "Efficient Learning of Sparse Representations with an Energy-Based Model"
     }, 
     "http://papers.nips.cc/paper/4516-discriminative-learning-of-sum-product-networks": {
         "name": "Discriminative Learning of Sum-Product Networks"
@@ -83,6 +110,9 @@
     "http://people.idsia.ch/~rupesh/very_deep_learning/": {
         "name": "Very Deep Learning with Highway Networks"
     }, 
+    "http://personal.ie.cuhk.edu.hk/~ccloy/files/aaai_2015_target_coding.pdf": {
+        "name": null
+    }, 
     "http://research.cs.washington.edu/istc/lfb/paper/cvpr11.pdf": {
         "name": null
     }, 
@@ -104,10 +134,19 @@
     "http://www.aisb.org.uk/events/loebner-prize#contest2014": {
         "name": "AISB - The Society for the Study of Artificial Intelligence and Simulation of Behaviour - Loebner Prize"
     }, 
+    "http://www.alglib.net/articles/tr-20140813-strongnet.pdf": {
+        "name": null
+    }, 
+    "http://www.cs.toronto.edu/~nitish/treebasedpriors.pdf": {
+        "name": null
+    }, 
     "http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf": {
         "name": null
     }, 
     "http://www.cv-foundation.org/openaccess/content_cvpr_2015/app/2B_004.pdf": {
+        "name": null
+    }, 
+    "http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Yang_Deep_Fried_Convnets_ICCV_2015_paper.pdf": {
         "name": null
     }, 
     "http://www.d2.mpi-inf.mpg.de/content/learning-smooth-pooling-regions-visual-recognition": {
@@ -116,20 +155,50 @@
     "http://www.danielpovey.com/files/2013_interspeech_dnn.pdf": {
         "name": null
     }, 
+    "http://www.eecs.berkeley.edu/~jiayq/assets/pdf/cvpr12_pooling.pdf": {
+        "name": null
+    }, 
+    "http://www.icsi.berkeley.edu/pubs/vision/beyondspatial12.pdf": {
+        "name": null
+    }, 
     "http://www.idsia.ch/~ciresan/data/cvpr2012.pdf": {
         "name": null
     }, 
     "http://www.image-net.org/challenges/LSVRC/2013/results.php": {
         "name": "ImageNet Large Scale Visual Recognition Competition 2013 (ILSVRC2013)"
     }, 
+    "http://www.inb.uni-luebeck.de/publikationen/pdfs/LaBaMa08c.pdf": {
+        "name": null
+    }, 
     "http://www.isip.uni-luebeck.de/fileadmin/uploads/tx_wapublications/hertel_ijcnn_2015.pdf": {
+        "name": null
+    }, 
+    "http://www.keysers.net/daniel/files/Keysers--Deformation-Models--TPAMI2007.pdf": {
+        "name": null
+    }, 
+    "http://www.rug.nl/research/portal/files/2390194/2013IEEETPAMIAzzopardi.pdf": {
         "name": null
     }, 
     "http://www.stanford.edu/~acoates/papers/coatesleeng_aistats_2011.pdf": {
         "name": "Object not found! : Stanford University"
     }, 
+    "http://www.utstat.toronto.edu/~rsalakhu/papers/dbm.pdf": {
+        "name": null
+    }, 
+    "http://yann.lecun.com/exdb/publis/pdf/jarrett-iccv-09.pdf": {
+        "name": null
+    }, 
+    "http://yann.lecun.com/exdb/publis/pdf/ranzato-cvpr-07.pdf": {
+        "name": null
+    }, 
     "http://yann.lecun.com/exdb/publis/pdf/sermanet-icpr-12.pdf": {
         "name": null
+    }, 
+    "https://arxiv.org/abs/1003.0358": {
+        "dates": {
+            "1": "2010-03-01"
+        }, 
+        "name": "Deep Big Simple Neural Nets Excel on Handwritten Digit Recognition"
     }, 
     "https://arxiv.org/abs/1207.0580": {
         "dates": {
@@ -253,6 +322,14 @@
         }, 
         "name": "Fractional Max-Pooling"
     }, 
+    "https://arxiv.org/abs/1412.6572": {
+        "dates": {
+            "1": "2014-12-20", 
+            "2": "2015-02-25", 
+            "3": "2015-03-20"
+        }, 
+        "name": "Explaining and Harnessing Adversarial Examples"
+    }, 
     "https://arxiv.org/abs/1412.6597": {
         "dates": {
             "1": "2014-12-20", 
@@ -277,6 +354,21 @@
             "3": "2015-04-21"
         }, 
         "name": "Learning Activation Functions to Improve Deep Neural Networks"
+    }, 
+    "https://arxiv.org/abs/1412.7259": {
+        "dates": {
+            "1": "2014-12-23", 
+            "2": "2015-01-12", 
+            "3": "2015-05-29"
+        }, 
+        "name": "Unsupervised Feature Learning with C-SVDDNet"
+    }, 
+    "https://arxiv.org/abs/1502.00702": {
+        "dates": {
+            "1": "2015-02-03", 
+            "2": "2015-06-06"
+        }, 
+        "name": "Hybrid Orthogonal Projection and Estimation (HOPE): A New Framework to"
     }, 
     "https://arxiv.org/abs/1502.02367": {
         "dates": {
@@ -443,6 +535,13 @@
             "1": "2015-11-18"
         }, 
         "name": "Competitive Multi-scale Convolution"
+    }, 
+    "https://arxiv.org/abs/1511.06241": {
+        "dates": {
+            "1": "2015-11-19", 
+            "2": "2016-02-16"
+        }, 
+        "name": "Convolutional Clustering for Unsupervised Learning"
     }, 
     "https://arxiv.org/abs/1511.06422": {
         "dates": {
@@ -728,6 +827,9 @@
     }, 
     "https://people.csail.mit.edu/regina/my_papers/MCDR15.pdf": {
         "name": null
+    }, 
+    "https://sites.google.com/site/homepagezhichengyan/home/hdcnn": {
+        "name": "HD-CNN - Homepage of Zhicheng Yan"
     }, 
     "https://web.archive.org/web/20060531091049/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html": {
         "name": "CCRL 40/40 - Complete list"
