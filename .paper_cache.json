@@ -255,6 +255,12 @@
         }, 
         "name": "Gated-Attention Readers for Text Comprehension"
     }, 
+    "https://arxiv.org/abs/1606.01549v2": {
+        "dates": {
+            "2": "2016-12-01"
+        }, 
+        "name": "Gated-Attention Readers for Text Comprehension"
+    }, 
     "https://arxiv.org/abs/1606.02245v1": {
         "dates": {
             "1": "2016-06-07"
@@ -322,6 +328,12 @@
             "1": "2016-07-14", 
             "2": "2016-07-20", 
             "3": "2017-01-05"
+        }, 
+        "name": "Neural Semantic Encoders"
+    }, 
+    "https://arxiv.org/abs/1607.04315v1": {
+        "dates": {
+            "1": "2016-07-14"
         }, 
         "name": "Neural Semantic Encoders"
     }, 
