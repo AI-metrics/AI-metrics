@@ -1,9 +1,24 @@
 {
+    "http://aad.informatik.uni-freiburg.de/papers/15-IJCAI-Extrapolation_of_Learning_Curves.pdf": {
+        "name": null
+    }, 
     "http://arxiv.org/abs/1603.08884": {
         "dates": {
             "1": "2016-03-29"
         }, 
         "name": "A Parallel-Hierarchical Model for Machine Comprehension on Sparse Data"
+    }, 
+    "http://arxiv.org/pdf/1412.6806.pdf": {
+        "name": null
+    }, 
+    "http://cs.nyu.edu/~wanli/dropc/": {
+        "name": "DropConnect Neural Network"
+    }, 
+    "http://icml.cc/2012/papers/659.pdf": {
+        "name": null
+    }, 
+    "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7258343": {
+        "name": "Multi-loss Regularized Deep Neural Network - IEEE Xplore Document"
     }, 
     "http://image-net.org/challenges/LSVRC/2010/results": {
         "name": "ImageNet Large Scale Visual Recognition Competition 2010 (ILSVRC2010)"
@@ -23,6 +38,63 @@
     "http://image-net.org/challenges/LSVRC/2016/results": {
         "name": "ILSVRC2016"
     }, 
+    "http://jmlr.org/proceedings/papers/v28/goodfellow13.pdf": {
+        "name": null
+    }, 
+    "http://jmlr.org/proceedings/papers/v32/line14.pdf": {
+        "name": null
+    }, 
+    "http://karpathy.github.io/2011/04/27/manually-classifying-cifar10/": {
+        "name": "Lessons learned from manually classifying CIFAR-10"
+    }, 
+    "http://openreview.net/document/0c571b22-f4b6-4d58-87e4-99d7de42a893#0c571b22-f4b6-4d58-87e4-99d7de42a893": {
+        "name": "Forum | OpenReview"
+    }, 
+    "http://openreview.net/document/28d9c3ab-fe88-4836-b898-403d207a037c#28d9c3ab-fe88-4836-b898-403d207a037c": {
+        "name": "Forum | OpenReview"
+    }, 
+    "http://openreview.net/document/9b05a3bb-3a5e-49cb-91f7-0f482af65aea#9b05a3bb-3a5e-49cb-91f7-0f482af65aea": {
+        "name": "Forum | OpenReview"
+    }, 
+    "http://papers.nips.cc/paper/4516-discriminative-learning-of-sum-product-networks": {
+        "name": "Discriminative Learning of Sum-Product Networks"
+    }, 
+    "http://papers.nips.cc/paper/4522-practical-bayesian-optimization-of-machine-learning-algorithms.pdf": {
+        "name": null
+    }, 
+    "http://papers.nips.cc/paper/4747-learning-with-recursive-perceptual-representations": {
+        "name": "Learning with Recursive Perceptual Representations"
+    }, 
+    "http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks": {
+        "name": "ImageNet Classification with Deep Convolutional Neural Networks"
+    }, 
+    "http://papers.nips.cc/paper/5276-deep-networks-with-internal-selective-attention-through-feedback-connections.pdf": {
+        "name": null
+    }, 
+    "http://papers.nips.cc/paper/5548-discriminative-unsupervised-feature-learning-with-convolutional-neural-networks.pdf": {
+        "name": null
+    }, 
+    "http://papers.nips.cc/paper/5647-binaryconnect-training-deep-neural-networks-with-binary-weights-during-propagations.pdf": {
+        "name": null
+    }, 
+    "http://papers.nips.cc/paper/5649-spectral-representations-for-convolutional-neural-networks.pdf": {
+        "name": null
+    }, 
+    "http://people.idsia.ch/~rupesh/very_deep_learning/": {
+        "name": "Very Deep Learning with Highway Networks"
+    }, 
+    "http://research.cs.washington.edu/istc/lfb/paper/cvpr11.pdf": {
+        "name": null
+    }, 
+    "http://torch.ch/blog/2015/07/30/cifar.html": {
+        "name": "Torch | 92.45% on CIFAR-10 in Torch"
+    }, 
+    "http://ufldl.stanford.edu/housenumbers/nips2011_housenumbers.pdf": {
+        "name": null
+    }, 
+    "http://vcl.ucsd.edu/~sxie/2014/09/12/dsn-project/": {
+        "name": "Deeply Supervised Nets - "
+    }, 
     "http://www.aisb.org.uk/events/loebner-prize#Results15": {
         "name": "AISB - The Society for the Study of Artificial Intelligence and Simulation of Behaviour - Loebner Prize"
     }, 
@@ -35,11 +107,41 @@
     "http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf": {
         "name": null
     }, 
+    "http://www.cv-foundation.org/openaccess/content_cvpr_2015/app/2B_004.pdf": {
+        "name": null
+    }, 
+    "http://www.d2.mpi-inf.mpg.de/content/learning-smooth-pooling-regions-visual-recognition": {
+        "name": "Learning Smooth Pooling Regions for Visual Recognition | D2"
+    }, 
     "http://www.danielpovey.com/files/2013_interspeech_dnn.pdf": {
+        "name": null
+    }, 
+    "http://www.idsia.ch/~ciresan/data/cvpr2012.pdf": {
         "name": null
     }, 
     "http://www.image-net.org/challenges/LSVRC/2013/results.php": {
         "name": "ImageNet Large Scale Visual Recognition Competition 2013 (ILSVRC2013)"
+    }, 
+    "http://www.isip.uni-luebeck.de/fileadmin/uploads/tx_wapublications/hertel_ijcnn_2015.pdf": {
+        "name": null
+    }, 
+    "http://www.stanford.edu/~acoates/papers/coatesleeng_aistats_2011.pdf": {
+        "name": "Object not found! : Stanford University"
+    }, 
+    "http://yann.lecun.com/exdb/publis/pdf/sermanet-icpr-12.pdf": {
+        "name": null
+    }, 
+    "https://arxiv.org/abs/1207.0580": {
+        "dates": {
+            "1": "2012-07-03"
+        }, 
+        "name": "Improving neural networks by preventing co-adaptation of feature"
+    }, 
+    "https://arxiv.org/abs/1301.3557": {
+        "dates": {
+            "1": "2013-01-16"
+        }, 
+        "name": "Stochastic Pooling for Regularization of Deep Convolutional Neural"
     }, 
     "https://arxiv.org/abs/1308.0850": {
         "dates": {
@@ -66,6 +168,20 @@
             "5": "2014-04-24"
         }, 
         "name": "How to Construct Deep Recurrent Neural Networks"
+    }, 
+    "https://arxiv.org/abs/1404.3606": {
+        "dates": {
+            "1": "2014-04-14", 
+            "2": "2014-08-28"
+        }, 
+        "name": "PCANet: A Simple Deep Learning Baseline for Image Classification?"
+    }, 
+    "https://arxiv.org/abs/1406.3332": {
+        "dates": {
+            "1": "2014-06-12", 
+            "2": "2014-11-14"
+        }, 
+        "name": "Convolutional Kernel Networks"
     }, 
     "https://arxiv.org/abs/1406.7806v1": {
         "dates": {
@@ -95,6 +211,12 @@
         }, 
         "name": "Recurrent Neural Network Regularization"
     }, 
+    "https://arxiv.org/abs/1409.6070": {
+        "dates": {
+            "1": "2014-09-22"
+        }, 
+        "name": "Spatially-sparse convolutional neural networks"
+    }, 
     "https://arxiv.org/abs/1410.8206": {
         "dates": {
             "1": "2014-10-30", 
@@ -121,6 +243,40 @@
             "2": "2014-12-19"
         }, 
         "name": "Deep Speech: Scaling up end-to-end speech recognition"
+    }, 
+    "https://arxiv.org/abs/1412.6071": {
+        "dates": {
+            "1": "2014-12-18", 
+            "2": "2014-12-22", 
+            "3": "2015-03-02", 
+            "4": "2015-05-12"
+        }, 
+        "name": "Fractional Max-Pooling"
+    }, 
+    "https://arxiv.org/abs/1412.6597": {
+        "dates": {
+            "1": "2014-12-20", 
+            "2": "2015-01-27", 
+            "3": "2015-03-02", 
+            "4": "2015-04-10"
+        }, 
+        "name": "An Analysis of Unsupervised Pre-training in Light of Recent Advances"
+    }, 
+    "https://arxiv.org/abs/1412.6806": {
+        "dates": {
+            "1": "2014-12-21", 
+            "2": "2015-03-02", 
+            "3": "2015-04-13"
+        }, 
+        "name": "Striving for Simplicity: The All Convolutional Net"
+    }, 
+    "https://arxiv.org/abs/1412.6830": {
+        "dates": {
+            "1": "2014-12-21", 
+            "2": "2015-02-27", 
+            "3": "2015-04-21"
+        }, 
+        "name": "Learning Activation Functions to Improve Deep Neural Networks"
     }, 
     "https://arxiv.org/abs/1502.02367": {
         "dates": {
@@ -159,6 +315,21 @@
         }, 
         "name": "Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks"
     }, 
+    "https://arxiv.org/abs/1502.05700": {
+        "dates": {
+            "1": "2015-02-19", 
+            "2": "2015-07-13"
+        }, 
+        "name": "Scalable Bayesian Optimization Using Deep Neural Networks"
+    }, 
+    "https://arxiv.org/abs/1503.04596": {
+        "dates": {
+            "1": "2015-03-16", 
+            "2": "2015-06-10", 
+            "3": "2015-08-15"
+        }, 
+        "name": "Enhanced Image Classification With a Fast-Learning Shallow Convolutional"
+    }, 
     "https://arxiv.org/abs/1503.08895": {
         "dates": {
             "1": "2015-03-31", 
@@ -169,11 +340,45 @@
         }, 
         "name": "End-To-End Memory Networks"
     }, 
+    "https://arxiv.org/abs/1505.00393": {
+        "dates": {
+            "1": "2015-05-03", 
+            "2": "2015-07-03", 
+            "3": "2015-07-23"
+        }, 
+        "name": "ReNet: A Recurrent Neural Network Based Alternative to Convolutional"
+    }, 
+    "https://arxiv.org/abs/1505.00853": {
+        "dates": {
+            "1": "2015-05-05", 
+            "2": "2015-11-27"
+        }, 
+        "name": "Empirical Evaluation of Rectified Activations in Convolutional Network"
+    }, 
+    "https://arxiv.org/abs/1505.03229": {
+        "dates": {
+            "1": "2015-05-13"
+        }, 
+        "name": "APAC: Augmented PAttern Classification with Neural Networks"
+    }, 
     "https://arxiv.org/abs/1505.05899": {
         "dates": {
             "1": "2015-05-21"
         }, 
         "name": "The IBM 2015 English Conversational Telephone Speech Recognition System"
+    }, 
+    "https://arxiv.org/abs/1506.02351": {
+        "dates": {
+            "1": "2015-06-08", 
+            "2": "2015-06-12", 
+            "3": "2015-06-23", 
+            "4": "2015-07-04", 
+            "5": "2015-11-11", 
+            "6": "2015-11-15", 
+            "7": "2015-11-17", 
+            "8": "2016-02-14"
+        }, 
+        "name": "Stacked What-Where Auto-encoders"
     }, 
     "https://arxiv.org/abs/1506.03340": {
         "dates": {
@@ -201,12 +406,78 @@
         }, 
         "name": "Grid Long Short-Term Memory"
     }, 
+    "https://arxiv.org/abs/1508.00330": {
+        "dates": {
+            "1": "2015-08-03", 
+            "2": "2015-11-01"
+        }, 
+        "name": "On the Importance of Normalisation Layers in Deep Learning with"
+    }, 
+    "https://arxiv.org/abs/1509.08985": {
+        "dates": {
+            "1": "2015-09-30", 
+            "2": "2015-10-10"
+        }, 
+        "name": "Generalizing Pooling Functions in Convolutional Neural Networks: Mixed,"
+    }, 
+    "https://arxiv.org/abs/1511.02583": {
+        "dates": {
+            "1": "2015-11-09"
+        }, 
+        "name": "Batch-normalized Maxout Network in Network"
+    }, 
+    "https://arxiv.org/abs/1511.03719": {
+        "dates": {
+            "1": "2015-11-11", 
+            "2": "2015-11-18", 
+            "3": "2015-11-22", 
+            "4": "2016-01-21", 
+            "5": "2016-02-15", 
+            "6": "2016-04-25", 
+            "7": "2016-11-18"
+        }, 
+        "name": "Universum Prescription: Regularization using Unlabeled Data"
+    }, 
+    "https://arxiv.org/abs/1511.05635": {
+        "dates": {
+            "1": "2015-11-18"
+        }, 
+        "name": "Competitive Multi-scale Convolution"
+    }, 
+    "https://arxiv.org/abs/1511.06422": {
+        "dates": {
+            "1": "2015-11-19", 
+            "2": "2015-12-09", 
+            "3": "2016-01-11", 
+            "4": "2016-01-13", 
+            "5": "2016-01-18", 
+            "6": "2016-01-27", 
+            "7": "2016-02-19"
+        }, 
+        "name": "All you need is a good init"
+    }, 
+    "https://arxiv.org/abs/1511.07289": {
+        "dates": {
+            "1": "2015-11-23", 
+            "2": "2015-12-03", 
+            "3": "2016-01-11", 
+            "4": "2016-02-15", 
+            "5": "2016-02-22"
+        }, 
+        "name": "Fast and Accurate Deep Network Learning by Exponential Linear Units"
+    }, 
     "https://arxiv.org/abs/1512.02167": {
         "dates": {
             "1": "2015-12-07", 
             "2": "2015-12-15"
         }, 
         "name": "Simple Baseline for Visual Question Answering"
+    }, 
+    "https://arxiv.org/abs/1512.03385": {
+        "dates": {
+            "1": "2015-12-10"
+        }, 
+        "name": "Deep Residual Learning for Image Recognition"
     }, 
     "https://arxiv.org/abs/1512.05287v5": {
         "dates": {
