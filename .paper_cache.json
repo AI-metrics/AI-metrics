@@ -5,6 +5,9 @@
     "http://ai.stanford.edu/~quocle/LeNgiCoaLahProNg11.pdf": {
         "name": null
     }, 
+    "http://ai.stanford.edu/~wzou/nips_ZouZhuNgYu12.pdf": {
+        "name": null
+    }, 
     "http://arxiv.org/abs/1603.08884": {
         "dates": {
             "1": "2016-03-29"
@@ -32,8 +35,20 @@
     "http://cs.nyu.edu/~wanli/dropc/": {
         "name": "DropConnect Neural Network"
     }, 
+    "http://graphics.stanford.edu/projects/densecrf/densecrf.pdf": {
+        "name": null
+    }, 
     "http://hal.inria.fr/docs/00/05/75/61/PDF/LauerSuenBlochPR.pdf": {
         "name": null
+    }, 
+    "http://hips.seas.harvard.edu/files/swersky-multi-nips-2013.pdf": {
+        "name": null
+    }, 
+    "http://homes.cs.washington.edu/~lfb/paper/iser12.pdf": {
+        "name": null
+    }, 
+    "http://homes.cs.washington.edu/~rcg/papers/dspn.pdf": {
+        "name": "404 Not Found"
     }, 
     "http://icml.cc/2012/papers/659.pdf": {
         "name": null
@@ -59,6 +74,12 @@
     "http://image-net.org/challenges/LSVRC/2016/results": {
         "name": "ILSVRC2016"
     }, 
+    "http://infoscience.epfl.ch/record/169178/files/lucchi_ICCV11.pdf": {
+        "name": null
+    }, 
+    "http://infoscience.epfl.ch/record/180190": {
+        "name": "Record #180190"
+    }, 
     "http://jmlr.org/papers/v14/thom13a.html": {
         "name": null
     }, 
@@ -71,6 +92,15 @@
     "http://karpathy.github.io/2011/04/27/manually-classifying-cifar10/": {
         "name": "Lessons learned from manually classifying CIFAR-10"
     }, 
+    "http://link.springer.com/article/10.1007%2Fs11263-011-0449-8": {
+        "name": "Harmony Potentials | SpringerLink"
+    }, 
+    "http://mediatum.ub.tum.de/doc/1175516/1175516.pdf": {
+        "name": "\n            "
+    }, 
+    "http://mi.eng.cam.ac.uk/~cipolla/publications/inproceedings/2008-CVPR-semantic-texton-forests.pdf": {
+        "name": null
+    }, 
     "http://openreview.net/document/0c571b22-f4b6-4d58-87e4-99d7de42a893#0c571b22-f4b6-4d58-87e4-99d7de42a893": {
         "name": "Forum | OpenReview"
     }, 
@@ -80,6 +110,9 @@
     "http://openreview.net/document/9b05a3bb-3a5e-49cb-91f7-0f482af65aea#9b05a3bb-3a5e-49cb-91f7-0f482af65aea": {
         "name": "Forum | OpenReview"
     }, 
+    "http://pages.ucsd.edu/~ztu/publication/pami_autocontext.pdf": {
+        "name": null
+    }, 
     "http://papers.nips.cc/paper/3112-efficient-learning-of-sparse-representations-with-an-energy-based-model": {
         "name": "Efficient Learning of Sparse Representations with an Energy-Based Model"
     }, 
@@ -88,6 +121,9 @@
     }, 
     "http://papers.nips.cc/paper/4522-practical-bayesian-optimization-of-machine-learning-algorithms.pdf": {
         "name": null
+    }, 
+    "http://papers.nips.cc/paper/4730-deep-learning-of-invariant-features-via-simulated-fixations-in-video": {
+        "name": "Deep Learning of Invariant Features via Simulated Fixations in Video"
     }, 
     "http://papers.nips.cc/paper/4747-learning-with-recursive-perceptual-representations": {
         "name": "Learning with Recursive Perceptual Representations"
@@ -116,14 +152,29 @@
     "http://research.cs.washington.edu/istc/lfb/paper/cvpr11.pdf": {
         "name": null
     }, 
+    "http://research.microsoft.com/en-us/um/people/pkohli/papers/lrkt_eccv2010.pdf": {
+        "name": "Graph Cut based Inference with Co-occurrence Statistics - Microsoft Research"
+    }, 
+    "http://research.microsoft.com/pubs/117885/ijcv07a.pdf": {
+        "name": "TextonBoost for Image Understanding: Multi-Class Object Recognition and Segmentation by Jointly Modeling Texture, Layout, and Context - Microsoft Research"
+    }, 
     "http://torch.ch/blog/2015/07/30/cifar.html": {
         "name": "Torch | 92.45% on CIFAR-10 in Torch"
+    }, 
+    "http://ttic.uchicago.edu/~rurtasun/publications/yao_et_al_cvpr12.pdf": {
+        "name": null
     }, 
     "http://ufldl.stanford.edu/housenumbers/nips2011_housenumbers.pdf": {
         "name": null
     }, 
+    "http://users.cecs.anu.edu.au/~sgould/papers/eccv12-patchGraph.pdf": {
+        "name": null
+    }, 
     "http://vcl.ucsd.edu/~sxie/2014/09/12/dsn-project/": {
         "name": "Deeply Supervised Nets - "
+    }, 
+    "http://web.eecs.umich.edu/~honglak/icml12-invariantFeatureLearning.pdf": {
+        "name": null
     }, 
     "http://www.aisb.org.uk/events/loebner-prize#Results15": {
         "name": "AISB - The Society for the Study of Artificial Intelligence and Simulation of Behaviour - Loebner Prize"
@@ -148,6 +199,9 @@
     }, 
     "http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Yang_Deep_Fried_Convnets_ICCV_2015_paper.pdf": {
         "name": null
+    }, 
+    "http://www.cvc.uab.es/~jalvarez/research_cosegment.php": {
+        "name": "Jose M. Alvarez"
     }, 
     "http://www.d2.mpi-inf.mpg.de/content/learning-smooth-pooling-regions-visual-recognition": {
         "name": "Learning Smooth Pooling Regions for Visual Recognition | D2"
@@ -182,6 +236,9 @@
     "http://www.stanford.edu/~acoates/papers/coatesleeng_aistats_2011.pdf": {
         "name": "Object not found! : Stanford University"
     }, 
+    "http://www.stanford.edu/~acoates/papers/coatesng_nips_2011.pdf": {
+        "name": "Object not found! : Stanford University"
+    }, 
     "http://www.utstat.toronto.edu/~rsalakhu/papers/dbm.pdf": {
         "name": null
     }, 
@@ -212,6 +269,12 @@
         }, 
         "name": "Stochastic Pooling for Regularization of Deep Convolutional Neural"
     }, 
+    "https://arxiv.org/abs/1302.5056v1": {
+        "dates": {
+            "1": "2013-01-15"
+        }, 
+        "name": "Pooling-Invariant Image Feature Learning"
+    }, 
     "https://arxiv.org/abs/1308.0850": {
         "dates": {
             "1": "2013-08-04", 
@@ -238,6 +301,12 @@
         }, 
         "name": "How to Construct Deep Recurrent Neural Networks"
     }, 
+    "https://arxiv.org/abs/1402.5766": {
+        "dates": {
+            "1": "2014-02-24"
+        }, 
+        "name": "No more meta-parameter tuning in unsupervised sparse feature learning"
+    }, 
     "https://arxiv.org/abs/1404.3606": {
         "dates": {
             "1": "2014-04-14", 
@@ -251,6 +320,12 @@
             "2": "2014-11-14"
         }, 
         "name": "Convolutional Kernel Networks"
+    }, 
+    "https://arxiv.org/abs/1406.5947": {
+        "dates": {
+            "1": "2014-06-23"
+        }, 
+        "name": "Committees of deep feedforward networks trained with few data"
     }, 
     "https://arxiv.org/abs/1406.7806v1": {
         "dates": {
