@@ -856,6 +856,31 @@
         }, 
         "name": "Achieving Human Parity in Conversational Speech Recognition"
     }, 
+    "https://arxiv.org/abs/1611.01436": {
+        "dates": {
+            "1": "2016-11-04", 
+            "2": "2017-03-17"
+        }, 
+        "name": "Learning Recurrent Span Representations for Extractive Question"
+    }, 
+    "https://arxiv.org/abs/1611.01603": {
+        "dates": {
+            "1": "2016-11-05", 
+            "2": "2016-11-21", 
+            "3": "2016-11-29", 
+            "4": "2017-02-07", 
+            "5": "2017-02-24"
+        }, 
+        "name": "Bidirectional Attention Flow for Machine Comprehension"
+    }, 
+    "https://arxiv.org/abs/1611.01604": {
+        "dates": {
+            "1": "2016-11-05", 
+            "2": "2016-11-17", 
+            "3": "2017-02-13"
+        }, 
+        "name": "Dynamic Coattention Networks For Question Answering"
+    }, 
     "https://arxiv.org/abs/1612.03969": {
         "dates": {
             "1": "2016-12-12", 
@@ -864,11 +889,57 @@
         }, 
         "name": "Tracking the World State with Recurrent Entity Networks"
     }, 
+    "https://arxiv.org/abs/1612.04211": {
+        "dates": {
+            "1": "2016-12-13"
+        }, 
+        "name": "Multi-Perspective Context Matching for Machine Comprehension"
+    }, 
     "https://arxiv.org/abs/1701.06538": {
         "dates": {
             "1": "2017-01-23"
         }, 
         "name": "Outrageously Large Neural Networks: The Sparsely-Gated"
+    }, 
+    "https://arxiv.org/abs/1703.00572": {
+        "dates": {
+            "1": "2017-03-02", 
+            "2": "2017-04-20"
+        }, 
+        "name": "Structural Embedding of Syntactic Trees for Machine Comprehension"
+    }, 
+    "https://arxiv.org/abs/1703.04617": {
+        "dates": {
+            "1": "2017-03-14", 
+            "2": "2017-03-25"
+        }, 
+        "name": "Exploring Question Understanding and Adaptation in Neural-Network-Based"
+    }, 
+    "https://arxiv.org/abs/1703.04816": {
+        "dates": {
+            "1": "2017-03-14", 
+            "2": "2017-04-07"
+        }, 
+        "name": "Making Neural QA as Simple as Possible but not Simpler"
+    }, 
+    "https://arxiv.org/abs/1704.00051": {
+        "dates": {
+            "1": "2017-03-31", 
+            "2": "2017-04-28"
+        }, 
+        "name": "Reading Wikipedia to Answer Open-Domain Questions"
+    }, 
+    "https://arxiv.org/abs/1704.07415": {
+        "dates": {
+            "1": "2017-04-24"
+        }, 
+        "name": "Ruminating Reader: Reasoning with Gated Multi-Hop Attention"
+    }, 
+    "https://arxiv.org/abs/1705.02798": {
+        "dates": {
+            "1": "2017-05-08"
+        }, 
+        "name": "Mnemonic Reader for Machine Comprehension"
     }, 
     "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": {
         "name": "Swedish Chess Computer Association - Wikipedia"
@@ -931,6 +1002,9 @@
         "name": null
     }, 
     "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/MCTest_EMNLP2013.pdf": {
+        "name": null
+    }, 
+    "https://www.microsoft.com/en-us/research/wp-content/uploads/2017/05/r-net.pdf": {
         "name": null
     }, 
     "https://www.quora.com/What-was-Deep-Blues-Elo-rating": {
