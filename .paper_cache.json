@@ -669,6 +669,19 @@
         }, 
         "name": "Asynchronous Methods for Deep Reinforcement Learning"
     }, 
+    "https://arxiv.org/abs/1603.01547": {
+        "dates": {
+            "1": "2016-03-04", 
+            "2": "2016-06-24"
+        }, 
+        "name": "Text Understanding with the Attention Sum Reader Network"
+    }, 
+    "https://arxiv.org/abs/1603.01547v1": {
+        "dates": {
+            "1": "2016-03-04"
+        }, 
+        "name": "Text Understanding with the Attention Sum Reader Network"
+    }, 
     "https://arxiv.org/abs/1603.08884": {
         "dates": {
             "1": "2016-03-29"
@@ -856,6 +869,12 @@
         }, 
         "name": "Achieving Human Parity in Conversational Speech Recognition"
     }, 
+    "https://arxiv.org/abs/1610.08431v3": {
+        "dates": {
+            "3": "2017-02-16"
+        }, 
+        "name": "Broad Context Language Modeling as Reading Comprehension"
+    }, 
     "https://arxiv.org/abs/1611.01436": {
         "dates": {
             "1": "2016-11-04", 
@@ -907,6 +926,12 @@
             "2": "2017-04-20"
         }, 
         "name": "Structural Embedding of Syntactic Trees for Machine Comprehension"
+    }, 
+    "https://arxiv.org/abs/1703.02620v1": {
+        "dates": {
+            "1": "2017-03-07"
+        }, 
+        "name": "Linguistic Knowledge as Memory for Recurrent Neural Networks"
     }, 
     "https://arxiv.org/abs/1703.04617": {
         "dates": {
