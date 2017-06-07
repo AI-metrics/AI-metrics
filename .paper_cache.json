@@ -524,6 +524,12 @@
         }, 
         "name": "ReNet: A Recurrent Neural Network Based Alternative to Convolutional"
     }, 
+    "https://arxiv.org/abs/1505.00468v1": {
+        "dates": {
+            "1": "2015-05-03"
+        }, 
+        "name": "VQA: Visual Question Answering"
+    }, 
     "https://arxiv.org/abs/1505.00853": {
         "dates": {
             "1": "2015-05-05", 
@@ -596,6 +602,18 @@
         }, 
         "name": "Generalizing Pooling Functions in Convolutional Neural Networks: Mixed,"
     }, 
+    "https://arxiv.org/abs/1511.02274v1": {
+        "dates": {
+            "1": "2015-11-07"
+        }, 
+        "name": "Stacked Attention Networks for Image Question Answering"
+    }, 
+    "https://arxiv.org/abs/1511.02274v2": {
+        "dates": {
+            "2": "2016-01-26"
+        }, 
+        "name": "Stacked Attention Networks for Image Question Answering"
+    }, 
     "https://arxiv.org/abs/1511.02583": {
         "dates": {
             "1": "2015-11-09"
@@ -613,6 +631,12 @@
             "7": "2016-11-18"
         }, 
         "name": "Universum Prescription: Regularization using Unlabeled Data"
+    }, 
+    "https://arxiv.org/abs/1511.05234v2": {
+        "dates": {
+            "2": "2016-03-19"
+        }, 
+        "name": "Ask, Attend and Answer: Exploring Question-Guided Spatial Attention for"
     }, 
     "https://arxiv.org/abs/1511.05635": {
         "dates": {
@@ -681,6 +705,12 @@
         }, 
         "name": "Asynchronous Methods for Deep Reinforcement Learning"
     }, 
+    "https://arxiv.org/abs/1603.01417v1": {
+        "dates": {
+            "1": "2016-03-04"
+        }, 
+        "name": "Dynamic Memory Networks for Visual and Textual Question Answering"
+    }, 
     "https://arxiv.org/abs/1603.01547": {
         "dates": {
             "1": "2016-03-04", 
@@ -714,6 +744,12 @@
         }, 
         "name": "A Parallel-Hierarchical Model for Machine Comprehension on Sparse Data"
     }, 
+    "https://arxiv.org/abs/1604.01485v1": {
+        "dates": {
+            "1": "2016-04-06"
+        }, 
+        "name": "A Focused Dynamic Attention Model for Visual Question Answering"
+    }, 
     "https://arxiv.org/abs/1604.08242v1": {
         "dates": {
             "1": "2016-04-27"
@@ -727,6 +763,12 @@
             "3": "2017-02-27"
         }, 
         "name": "Density estimation using Real NVP"
+    }, 
+    "https://arxiv.org/abs/1606.00061v1": {
+        "dates": {
+            "1": "2016-05-31"
+        }, 
+        "name": "Hierarchical Co-Attention for Visual Question Answering"
     }, 
     "https://arxiv.org/abs/1606.01549": {
         "dates": {
