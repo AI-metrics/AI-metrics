@@ -447,6 +447,23 @@
         }, 
         "name": "Unsupervised Feature Learning with C-SVDDNet"
     }, 
+    "https://arxiv.org/abs/1501.02876": {
+        "dates": {
+            "1": "2015-01-13", 
+            "2": "2015-02-06", 
+            "3": "2015-05-11", 
+            "4": "2015-06-01", 
+            "5": "2015-07-06"
+        }, 
+        "name": "Deep Image: Scaling up Image Recognition", 
+        "withdrawn": true
+    }, 
+    "https://arxiv.org/abs/1501.02876v1": {
+        "dates": {
+            "1": "2015-01-13"
+        }, 
+        "name": "Deep Image: Scaling up Image Recognition"
+    }, 
     "https://arxiv.org/abs/1502.00702": {
         "dates": {
             "1": "2015-02-03", 
@@ -724,6 +741,19 @@
         }, 
         "name": "Text Understanding with the Attention Sum Reader Network"
     }, 
+    "https://arxiv.org/abs/1603.02814": {
+        "dates": {
+            "1": "2016-03-09", 
+            "2": "2016-12-16"
+        }, 
+        "name": "Image Captioning and Visual Question Answering Based on Attributes and"
+    }, 
+    "https://arxiv.org/abs/1603.02814v1": {
+        "dates": {
+            "1": "2016-03-09"
+        }, 
+        "name": "Image Captioning and Visual Question Answering Based on Attributes and"
+    }, 
     "https://arxiv.org/abs/1603.05027": {
         "dates": {
             "1": "2016-03-16", 
@@ -790,6 +820,20 @@
         }, 
         "name": "Gated-Attention Readers for Text Comprehension"
     }, 
+    "https://arxiv.org/abs/1606.01847": {
+        "dates": {
+            "1": "2016-06-06", 
+            "2": "2016-06-23", 
+            "3": "2016-09-24"
+        }, 
+        "name": "Multimodal Compact Bilinear Pooling for Visual Question Answering and"
+    }, 
+    "https://arxiv.org/abs/1606.01847v1": {
+        "dates": {
+            "1": "2016-06-06"
+        }, 
+        "name": "Multimodal Compact Bilinear Pooling for Visual Question Answering and"
+    }, 
     "https://arxiv.org/abs/1606.02245v1": {
         "dates": {
             "1": "2016-06-07"
@@ -815,6 +859,13 @@
             "2": "2016-08-08"
         }, 
         "name": "A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task"
+    }, 
+    "https://arxiv.org/abs/1606.03647": {
+        "dates": {
+            "1": "2016-06-12", 
+            "2": "2016-09-30"
+        }, 
+        "name": "Training Recurrent Answering Units with Joint Loss Minimization for VQA"
     }, 
     "https://arxiv.org/abs/1606.04199": {
         "dates": {
