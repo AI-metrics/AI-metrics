@@ -8,15 +8,6 @@
     "http://ai.stanford.edu/~wzou/nips_ZouZhuNgYu12.pdf": {
         "name": null
     }, 
-    "http://arxiv.org/abs/1603.08884": {
-        "dates": {
-            "1": "2016-03-29"
-        }, 
-        "name": "A Parallel-Hierarchical Model for Machine Comprehension on Sparse Data"
-    }, 
-    "http://arxiv.org/pdf/1412.6806.pdf": {
-        "name": null
-    }, 
     "http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=B2AAC2BC3824F19757CAC66986D5F3FF?doi=10.1.1.18.8852&rep=rep1&type=pdf": {
         "name": null
     }, 
@@ -458,12 +449,6 @@
         "name": "Deep Image: Scaling up Image Recognition", 
         "withdrawn": true
     }, 
-    "https://arxiv.org/abs/1501.02876v1": {
-        "dates": {
-            "1": "2015-01-13"
-        }, 
-        "name": "Deep Image: Scaling up Image Recognition"
-    }, 
     "https://arxiv.org/abs/1502.00702": {
         "dates": {
             "1": "2015-02-03", 
@@ -499,12 +484,6 @@
             "7": "2015-10-07", 
             "8": "2015-11-21", 
             "9": "2015-11-29"
-        }, 
-        "name": "Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks"
-    }, 
-    "https://arxiv.org/abs/1502.05698v3": {
-        "dates": {
-            "3": "2015-02-25"
         }, 
         "name": "Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks"
     }, 
@@ -619,12 +598,6 @@
         }, 
         "name": "Generalizing Pooling Functions in Convolutional Neural Networks: Mixed,"
     }, 
-    "https://arxiv.org/abs/1511.02274v1": {
-        "dates": {
-            "1": "2015-11-07"
-        }, 
-        "name": "Stacked Attention Networks for Image Question Answering"
-    }, 
     "https://arxiv.org/abs/1511.02274v2": {
         "dates": {
             "2": "2016-01-26"
@@ -722,12 +695,6 @@
         }, 
         "name": "Asynchronous Methods for Deep Reinforcement Learning"
     }, 
-    "https://arxiv.org/abs/1603.01417v1": {
-        "dates": {
-            "1": "2016-03-04"
-        }, 
-        "name": "Dynamic Memory Networks for Visual and Textual Question Answering"
-    }, 
     "https://arxiv.org/abs/1603.01547": {
         "dates": {
             "1": "2016-03-04", 
@@ -740,13 +707,6 @@
             "1": "2016-03-04"
         }, 
         "name": "Text Understanding with the Attention Sum Reader Network"
-    }, 
-    "https://arxiv.org/abs/1603.02814": {
-        "dates": {
-            "1": "2016-03-09", 
-            "2": "2016-12-16"
-        }, 
-        "name": "Image Captioning and Visual Question Answering Based on Attributes and"
     }, 
     "https://arxiv.org/abs/1603.02814v1": {
         "dates": {
@@ -800,14 +760,6 @@
         }, 
         "name": "Hierarchical Co-Attention for Visual Question Answering"
     }, 
-    "https://arxiv.org/abs/1606.01549": {
-        "dates": {
-            "1": "2016-06-05", 
-            "2": "2016-12-01", 
-            "3": "2017-04-21"
-        }, 
-        "name": "Gated-Attention Readers for Text Comprehension"
-    }, 
     "https://arxiv.org/abs/1606.01549v1": {
         "dates": {
             "1": "2016-06-05"
@@ -819,14 +771,6 @@
             "2": "2016-12-01"
         }, 
         "name": "Gated-Attention Readers for Text Comprehension"
-    }, 
-    "https://arxiv.org/abs/1606.01847": {
-        "dates": {
-            "1": "2016-06-06", 
-            "2": "2016-06-23", 
-            "3": "2016-09-24"
-        }, 
-        "name": "Multimodal Compact Bilinear Pooling for Visual Question Answering and"
     }, 
     "https://arxiv.org/abs/1606.01847v1": {
         "dates": {
@@ -903,14 +847,6 @@
         }, 
         "name": "Recurrent Highway Networks"
     }, 
-    "https://arxiv.org/abs/1607.04315": {
-        "dates": {
-            "1": "2016-07-14", 
-            "2": "2016-07-20", 
-            "3": "2017-01-05"
-        }, 
-        "name": "Neural Semantic Encoders"
-    }, 
     "https://arxiv.org/abs/1607.04315v1": {
         "dates": {
             "1": "2016-07-14"
@@ -921,7 +857,8 @@
         "dates": {
             "1": "2016-07-15", 
             "2": "2016-07-18", 
-            "3": "2016-08-04"
+            "3": "2016-08-04", 
+            "4": "2017-06-06"
         }, 
         "name": "Attention-over-Attention Neural Networks for Reading Comprehension"
     }, 
@@ -1062,7 +999,8 @@
     "https://arxiv.org/abs/1703.04816": {
         "dates": {
             "1": "2017-03-14", 
-            "2": "2017-04-07"
+            "2": "2017-04-07", 
+            "3": "2017-06-08"
         }, 
         "name": "Making Neural QA as Simple as Possible but not Simpler"
     }, 
