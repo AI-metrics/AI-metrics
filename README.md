@@ -1,6 +1,6 @@
 # Description
 
-A text document to contain data to explore the progression of AI through the amalgamation and display of datasets relating
+A document to contain data to explore the progression of AI through the amalgamation and display of datasets relating
 to the progress of AI, such as image recognition scores over time, or Hutter Prize compression. Both qualitative and
 quantitative information, with a bias towards quantitative. Initial version will consist of a basic text document on GitHub,
 which multiple organizations will collaborate on. This will likely eventually yield an OpenAI-specific project as well. 
