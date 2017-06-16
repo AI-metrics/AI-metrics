@@ -419,6 +419,158 @@
                 {
                     "graphed": true, 
                     "scale": "Percentage correct", 
+                    "target_label": "Excellent performance", 
+                    "name": "bAbi 20 QA", 
+                    "parent": "Problem(Language comprehension and question-answering)", 
+                    "url": "http://fb.ai/babi", 
+                    "notes": "\nA synthetic environment inspired by text adventures and SHRDLU, which enables generation\nof ground truths, describing sentences, and inferential questions. Includes:\nsupporting facts, relations, yes/no questions, counting, lists/sets, negation, indefiniteness,\nconference, conjunction, time, basic deduction and induction, reasoning about position, size,\npath finding and motivation.\n\nTable 3 of https://arxiv.org/abs/1502.05698 actually breaks this down into 20 submeasures\nbut initially we're lumping all of this together.\n\nOriginally \"solving\" bABI was defined as 95% accuracy (or perhaps) 95% accuracy on all submeasures,\nbut clearly humans and now algorithms are better than that.\n\nTODO: bAbi really needs to be decomposed into semi-supervised and unsupervised variants, and \nby amount of training data provided\n", 
+                    "measures": [
+                        {
+                            "maxval": 93.3, 
+                            "name": "MemNN-AM+NG+NL", 
+                            "minval": 93.3, 
+                            "url": "https://arxiv.org/abs/1502.05698", 
+                            "papername": "Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks", 
+                            "value": 93.3, 
+                            "min_date": "2015-02-19", 
+                            "algorithms": [], 
+                            "max_date": "2015-12-31", 
+                            "replicated_url": "", 
+                            "date": "2015-02-19", 
+                            "aglorithm_src_url": null, 
+                            "withdrawn": false, 
+                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
+                            "opensource": false
+                        }, 
+                        {
+                            "maxval": 93.4, 
+                            "name": "MemN2N-PE+LS+RN", 
+                            "minval": 93.4, 
+                            "url": "https://arxiv.org/abs/1503.08895", 
+                            "papername": "End-To-End Memory Networks", 
+                            "value": 93.4, 
+                            "min_date": "2015-03-31", 
+                            "algorithms": [], 
+                            "max_date": "2015-11-24", 
+                            "replicated_url": "", 
+                            "date": "2015-03-31", 
+                            "aglorithm_src_url": null, 
+                            "withdrawn": false, 
+                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
+                            "opensource": false
+                        }, 
+                        {
+                            "maxval": 93.6, 
+                            "name": "DMN", 
+                            "minval": 93.6, 
+                            "url": "https://arxiv.org/abs/1506.07285", 
+                            "papername": "Ask Me Anything: Dynamic Memory Networks for Natural Language Processing", 
+                            "value": 93.6, 
+                            "min_date": "2015-06-24", 
+                            "algorithms": [], 
+                            "max_date": "2016-03-05", 
+                            "replicated_url": "", 
+                            "date": "2015-06-24", 
+                            "aglorithm_src_url": null, 
+                            "withdrawn": false, 
+                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
+                            "opensource": false
+                        }, 
+                        {
+                            "maxval": 96.2, 
+                            "name": "DNC", 
+                            "minval": 96.2, 
+                            "url": "https://www.gwern.net/docs/2016-graves.pdf", 
+                            "papername": null, 
+                            "value": 96.2, 
+                            "min_date": null, 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "replicated_url": "", 
+                            "date": "2016-01-05", 
+                            "aglorithm_src_url": null, 
+                            "withdrawn": false, 
+                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
+                            "opensource": false
+                        }, 
+                        {
+                            "maxval": 97.2, 
+                            "name": "DMN+", 
+                            "minval": 97.2, 
+                            "url": "https://arxiv.org/abs/1607.00036", 
+                            "papername": "Dynamic Neural Turing Machine with Soft and Hard Addressing Schemes", 
+                            "value": 97.2, 
+                            "min_date": "2016-06-30", 
+                            "algorithms": [], 
+                            "max_date": "2017-03-17", 
+                            "replicated_url": "", 
+                            "date": "2016-06-30", 
+                            "aglorithm_src_url": null, 
+                            "withdrawn": false, 
+                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
+                            "opensource": false
+                        }, 
+                        {
+                            "maxval": 97.1, 
+                            "name": "SDNC", 
+                            "minval": 97.1, 
+                            "url": "https://arxiv.org/abs/1606.04582v4", 
+                            "papername": "Query-Reduction Networks for Question Answering", 
+                            "value": 97.1, 
+                            "min_date": null, 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "replicated_url": "", 
+                            "date": "2016-09-27", 
+                            "aglorithm_src_url": null, 
+                            "withdrawn": false, 
+                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
+                            "opensource": false
+                        }, 
+                        {
+                            "maxval": 99.7, 
+                            "name": "QRN", 
+                            "minval": 99.7, 
+                            "url": "https://arxiv.org/abs/1606.04582v4", 
+                            "papername": "Query-Reduction Networks for Question Answering", 
+                            "value": 99.7, 
+                            "min_date": null, 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "replicated_url": "", 
+                            "date": "2016-12-09", 
+                            "aglorithm_src_url": null, 
+                            "withdrawn": false, 
+                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
+                            "opensource": false
+                        }, 
+                        {
+                            "maxval": 99.5, 
+                            "name": "EntNet", 
+                            "minval": 99.5, 
+                            "url": "https://arxiv.org/abs/1612.03969", 
+                            "papername": "Tracking the World State with Recurrent Entity Networks", 
+                            "value": 99.5, 
+                            "min_date": "2016-12-12", 
+                            "algorithms": [], 
+                            "max_date": "2017-05-10", 
+                            "replicated_url": "", 
+                            "date": "2016-12-12", 
+                            "aglorithm_src_url": null, 
+                            "withdrawn": false, 
+                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
+                            "opensource": false
+                        }
+                    ], 
+                    "solved": true, 
+                    "target_source": null, 
+                    "changeable": false, 
+                    "axis_label": "Percentage correct", 
+                    "target": 99
+                }, 
+                {
+                    "graphed": true, 
+                    "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Reading comprehension MCTest-160-all", 
                     "parent": "Problem(Language comprehension and question-answering)", 
@@ -1920,161 +2072,9 @@
                     "changeable": false, 
                     "axis_label": "Score", 
                     "target": null
-                }, 
-                {
-                    "graphed": true, 
-                    "scale": "Percentage correct", 
-                    "target_label": "Excellent performance", 
-                    "name": "bAbi 20 QA", 
-                    "parent": "Problem(Language comprehension and question-answering)", 
-                    "url": "http://fb.ai/babi", 
-                    "notes": "\nA synthetic environment inspired by text adventures and SHRDLU, which enables generation\nof ground truths, describing sentences, and inferential questions. Includes:\nsupporting facts, relations, yes/no questions, counting, lists/sets, negation, indefiniteness,\nconference, conjunction, time, basic deduction and induction, reasoning about position, size,\npath finding and motivation.\n\nTable 3 of https://arxiv.org/abs/1502.05698 actually breaks this down into 20 submeasures\nbut initially we're lumping all of this together.\n\nOriginally \"solving\" bABI was defined as 95% accuracy (or perhaps) 95% accuracy on all submeasures,\nbut clearly humans and now algorithms are better than that.\n\nTODO: bAbi really needs to be decomposed into semi-supervised and unsupervised variants, and \nby amount of training data provided\n", 
-                    "measures": [
-                        {
-                            "maxval": 93.3, 
-                            "name": "MemNN-AM+NG+NL", 
-                            "minval": 93.3, 
-                            "url": "https://arxiv.org/abs/1502.05698", 
-                            "papername": "Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks", 
-                            "value": 93.3, 
-                            "min_date": "2015-02-19", 
-                            "algorithms": [], 
-                            "max_date": "2015-12-31", 
-                            "replicated_url": "", 
-                            "date": "2015-02-19", 
-                            "aglorithm_src_url": null, 
-                            "withdrawn": false, 
-                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
-                            "opensource": false
-                        }, 
-                        {
-                            "maxval": 93.4, 
-                            "name": "MemN2N-PE+LS+RN", 
-                            "minval": 93.4, 
-                            "url": "https://arxiv.org/abs/1503.08895", 
-                            "papername": "End-To-End Memory Networks", 
-                            "value": 93.4, 
-                            "min_date": "2015-03-31", 
-                            "algorithms": [], 
-                            "max_date": "2015-11-24", 
-                            "replicated_url": "", 
-                            "date": "2015-03-31", 
-                            "aglorithm_src_url": null, 
-                            "withdrawn": false, 
-                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
-                            "opensource": false
-                        }, 
-                        {
-                            "maxval": 93.6, 
-                            "name": "DMN", 
-                            "minval": 93.6, 
-                            "url": "https://arxiv.org/abs/1506.07285", 
-                            "papername": "Ask Me Anything: Dynamic Memory Networks for Natural Language Processing", 
-                            "value": 93.6, 
-                            "min_date": "2015-06-24", 
-                            "algorithms": [], 
-                            "max_date": "2016-03-05", 
-                            "replicated_url": "", 
-                            "date": "2015-06-24", 
-                            "aglorithm_src_url": null, 
-                            "withdrawn": false, 
-                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
-                            "opensource": false
-                        }, 
-                        {
-                            "maxval": 96.2, 
-                            "name": "DNC", 
-                            "minval": 96.2, 
-                            "url": "https://www.gwern.net/docs/2016-graves.pdf", 
-                            "papername": null, 
-                            "value": 96.2, 
-                            "min_date": null, 
-                            "algorithms": [], 
-                            "max_date": null, 
-                            "replicated_url": "", 
-                            "date": "2016-01-05", 
-                            "aglorithm_src_url": null, 
-                            "withdrawn": false, 
-                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
-                            "opensource": false
-                        }, 
-                        {
-                            "maxval": 97.2, 
-                            "name": "DMN+", 
-                            "minval": 97.2, 
-                            "url": "https://arxiv.org/abs/1607.00036", 
-                            "papername": "Dynamic Neural Turing Machine with Soft and Hard Addressing Schemes", 
-                            "value": 97.2, 
-                            "min_date": "2016-06-30", 
-                            "algorithms": [], 
-                            "max_date": "2017-03-17", 
-                            "replicated_url": "", 
-                            "date": "2016-06-30", 
-                            "aglorithm_src_url": null, 
-                            "withdrawn": false, 
-                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
-                            "opensource": false
-                        }, 
-                        {
-                            "maxval": 97.1, 
-                            "name": "SDNC", 
-                            "minval": 97.1, 
-                            "url": "https://arxiv.org/abs/1606.04582v4", 
-                            "papername": "Query-Reduction Networks for Question Answering", 
-                            "value": 97.1, 
-                            "min_date": null, 
-                            "algorithms": [], 
-                            "max_date": null, 
-                            "replicated_url": "", 
-                            "date": "2016-09-27", 
-                            "aglorithm_src_url": null, 
-                            "withdrawn": false, 
-                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
-                            "opensource": false
-                        }, 
-                        {
-                            "maxval": 99.7, 
-                            "name": "QRN", 
-                            "minval": 99.7, 
-                            "url": "https://arxiv.org/abs/1606.04582v4", 
-                            "papername": "Query-Reduction Networks for Question Answering", 
-                            "value": 99.7, 
-                            "min_date": null, 
-                            "algorithms": [], 
-                            "max_date": null, 
-                            "replicated_url": "", 
-                            "date": "2016-12-09", 
-                            "aglorithm_src_url": null, 
-                            "withdrawn": false, 
-                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
-                            "opensource": false
-                        }, 
-                        {
-                            "maxval": 99.5, 
-                            "name": "EntNet", 
-                            "minval": 99.5, 
-                            "url": "https://arxiv.org/abs/1612.03969", 
-                            "papername": "Tracking the World State with Recurrent Entity Networks", 
-                            "value": 99.5, 
-                            "min_date": "2016-12-12", 
-                            "algorithms": [], 
-                            "max_date": "2017-05-10", 
-                            "replicated_url": "", 
-                            "date": "2016-12-12", 
-                            "aglorithm_src_url": null, 
-                            "withdrawn": false, 
-                            "metric": "Metric(bAbi 20 QA)                                          SOLVED", 
-                            "opensource": false
-                        }
-                    ], 
-                    "solved": true, 
-                    "target_source": null, 
-                    "changeable": false, 
-                    "axis_label": "Percentage correct", 
-                    "target": 99
                 }
             ], 
-            "solved": false, 
+            "solved": true, 
             "attributes": [
                 "language", 
                 "world-modelling", 
@@ -2110,6 +2110,49 @@
                 "agi", 
                 "math"
             ]
+        }, 
+        {
+            "superproblems": [
+                "Games that require both understanding and speaking a language"
+            ], 
+            "name": "Games that require language comprehension", 
+            "url": null, 
+            "subproblems": [], 
+            "metrics": [], 
+            "solved": false, 
+            "attributes": [
+                "agi", 
+                "languge"
+            ]
+        }, 
+        {
+            "superproblems": [
+                "Games that require inventing novel language, forms of speech, or communication"
+            ], 
+            "name": "Games that require both understanding and speaking a language", 
+            "url": null, 
+            "subproblems": [
+                "Games that require language comprehension"
+            ], 
+            "metrics": [
+                {
+                    "graphed": false, 
+                    "scale": "Score", 
+                    "target_label": null, 
+                    "name": "Starcraft", 
+                    "parent": "Problem(Games that require both understanding and speaking a language)", 
+                    "url": null, 
+                    "notes": "", 
+                    "measures": [], 
+                    "solved": false, 
+                    "target_source": null, 
+                    "changeable": false, 
+                    "axis_label": "Score", 
+                    "target": null
+                }
+            ], 
+            "solved": false, 
+            "attributes": []
         }, 
         {
             "superproblems": [], 
@@ -3123,25 +3166,10 @@
             "name": "Play real-time computer & video games", 
             "url": null, 
             "subproblems": [
+                "Games that require inventing novel language, forms of speech, or communication", 
                 "Simple video games"
             ], 
-            "metrics": [
-                {
-                    "graphed": false, 
-                    "scale": "Score", 
-                    "target_label": null, 
-                    "name": "Starcraft", 
-                    "parent": "Problem(Play real-time computer & video games)", 
-                    "url": null, 
-                    "notes": "", 
-                    "measures": [], 
-                    "solved": false, 
-                    "target_source": null, 
-                    "changeable": false, 
-                    "axis_label": "Score", 
-                    "target": null
-                }
-            ], 
+            "metrics": [], 
             "solved": false, 
             "attributes": [
                 "world-modelling", 
@@ -11390,6 +11418,19 @@
                 "language", 
                 "agi"
             ]
+        }, 
+        {
+            "superproblems": [
+                "Play real-time computer & video games"
+            ], 
+            "name": "Games that require inventing novel language, forms of speech, or communication", 
+            "url": null, 
+            "subproblems": [
+                "Games that require both understanding and speaking a language"
+            ], 
+            "metrics": [], 
+            "solved": false, 
+            "attributes": []
         }, 
         {
             "superproblems": [

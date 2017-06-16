@@ -38,14 +38,20 @@ If you've already worked a lot with `git` and IPython/Jupyter Notebooks, here's 
 1. Install [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
     * On an Ubuntu or Debian system, you can do: <br><pre>sudo apt-get install git
       sudo apt-get install ipython-notebook || sudo apt-get install jupyter-notebook || sudo apt-get install python-notebook</pre>
+    * Make sure you have IPython Notebook version 3 or higher. If your OS
+      doesn't provide it, you might need to enable backports, or use `pip` to
+      install it.
 2. Install this notebook's Python dependencies:<br>
     * On Ubuntu or Debian, do: <br><pre>    sudo apt-get install python-{cssselect,lxml,matplotlib{,-venn},numpy,requests,seaborn}</pre>
     * On other systems, use your native OS packages, or use `pip`: <br><pre>    pip install cssselect lxml matplotlib{,-venn} numpy requests seaborn</pre>
-3. Fork our repo on github `<LINK>`
+3. Fork our repo on
+   github: https://github.com/AI-metrics/AI-metrics#fork-destination-box
+4. [Clone](https://help.github.com/articles/cloning-a-repository/) the repo on your machine, and `cd` into the directory it's using
 4. Configure your copy of git to use [IPython Notebook merge filters](http://pascalbugnion.net/blog/ipython-notebooks-and-git.html) to prevent conflicts when multiple people edit the Notebook simultaneously. You can do that with these two commands in the cloned repo:
-    <pre>git config --file .gitconfig filter.clean_ipynb.clean ipynb_drop_output</pre>
+    <pre>git config --file .gitconfig filter.clean_ipynb.clean $PWD/ipynb_drop_output</pre>
     <pre>git config --file .gitconfig filter.clean_ipynb.smudge cat</pre>
 5. Run Jupyter Notebok in the project directory (the command may be `ipython notebook`, `jupyter notebook`, `jupyter-notebook`, or `python notebook` depending on your system), then go to [localhost:8888](http://localhost:8888) and edit the Notebook to your heart's content
+
 6. Save and commit your work (`git commit -a -m "DESCRIPTION OF WHAT YOU CHANGED"`)
 7. Push it to your remote repo
 8. Send us a pull request!
@@ -53,7 +59,7 @@ If you've already worked a lot with `git` and IPython/Jupyter Notebooks, here's 
 
 ### 2. If you want something very simple
 
-Microsoft Azure has an IPython / Jupyter service that will let you run and modify notebooks from their servers. You can clone this Notebook and work with it via their service: https://notebooks.azure.com/anon-uotycg/libraries/ai-progress. Unfortunately there are a few issues with running the notebook on Azure:
+Microsoft Azure has an IPython / Jupyter service that will let you run and modify notebooks from their servers. You can clone this Notebook and work with it via their service: https://notebooks.azure.com/EFForg/libraries/ai-progress. Unfortunately there are a few issues with running the notebook on Azure:
 
 * arXiv seems to block requests from Azure's IP addresses, so it's impossible to automatically extract information about paper when running the Notebook there
 * The Azure Notebooks service seems to transform Unicode characters in strange ways, creating extra work merging changes from that source
@@ -76,4 +82,3 @@ Microsoft Azure has an IPython / Jupyter service that will let you run and modif
 * If you know of important problems that humans can solve, and machine learning systems may or may not yet be able to, and they're missing from our taxonomy, you can propose them
 * Look at our [Github issue list](https://github.com/AI-metrics/master_text) perhaps starting with those tagged as [good volunteer tasks](https://github.com/AI-metrics/master_text/issues?q=is%3Aissue+is%3Aopen+label%3A%22Good+volunteer+task%22).
 * You can also add missing conferences / journals to to the venue-to-date mapping table (unhide the source code and search for `conference_dates`):
->>>>>>> v4-origin
