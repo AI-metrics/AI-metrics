@@ -20,7 +20,7 @@ With contributions from: [Gennie Gebhart](https://www.eff.org/about/staff/gennie
 Inspired by and merging data from:
 
 * Rodrigo Benenson's ["Who is the Best at X / Are we there yet?"](https://rodrigob.github.io/are_we_there_yet/build/#about) collating machine vision datasets & progress
-* Jack Clark and Miles Brundage's [collection of AI progress measurements](https://raw.githubusercontent.com/AI-metrics/master_text/master/AI-metrics-data.txt)
+* Jack Clark and Miles Brundage's [collection of AI progress measurements](https://raw.githubusercontent.com/AI-metrics/master_text/master/archive/AI-metrics-data.txt)
 * Sarah Constantin's [Performance Trends in AI](https://srconstantin.wordpress.com/2017/01/28/performance-trends-in-ai/)
 * Katja Grace's [Algorithmic Progress in Six Domains](https://intelligence.org/files/AlgorithmicProgress.pdf)
 * The Swedish Computer Chess Association's [History of Computer Chess performance](https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders)
@@ -82,3 +82,38 @@ Microsoft Azure has an IPython / Jupyter service that will let you run and modif
 * If you know of important problems that humans can solve, and machine learning systems may or may not yet be able to, and they're missing from our taxonomy, you can propose them
 * Look at our [Github issue list](https://github.com/AI-metrics/master_text) perhaps starting with those tagged as [good volunteer tasks](https://github.com/AI-metrics/master_text/issues?q=is%3Aissue+is%3Aopen+label%3A%22Good+volunteer+task%22).
 * You can also add missing conferences / journals to to the venue-to-date mapping table (unhide the source code and search for `conference_dates`):
+
+
+ 
+# FAQ
+ 
+**Q: What's the point of this project? How does it tie in with the EFF's mission?**
+ 
+Given that machine learning tools and AI techniques are increasingly part of our everyday lives, it is critical that journalists, policy makers, and technology users understand the state of the field. When improperly designed or deployed, machine learning methods can violate privacy, threaten safety, and perpetuate inequality and injustice. Stakeholders must be able to anticipate such risks and policy questions before they arise, rather than playing catch-up with the technology. To this end, it’s part of the responsibility of researchers, engineers, and developers in the field to help make information about their life-changing research widely available and understandable
+ 
+ 
+**Q: Why haven't you included dataset X?**
+ 
+There are a tiny number of us and this is a large task! If you'd like to add more data, please [send us a pull request](https://www.eff.org/ai/metrics#How-to-contribute-to-this-notebook)
+ 
+ 
+**Q: Do you track other things besides how well-solved particular tasks are? For instance, the speed and efficiency of training?**
+ 
+No, but we'd love to. If you are motivated to help organize that data, please [dive in and improve the notebook](https://www.eff.org/ai/metrics#How-to-contribute-to-this-notebook)!
+ 
+ 
+**Q: Have you thought about how to visualise this data and make it more accessible?**
+ 
+We've considered a variety of things, but decided that the iPython notebook was ultimately the most accessible for now. We're very open to suggestions about visualizations and accessibility, so feel free to [reach out](https://www.eff.org/ai/metrics#How-to-contribute-to-this-notebook) if you have any ideas!
+ 
+Also, if you'd like to build visualizations on top of this project, all the data we use is available in the easily digestible JSON format in [`progress.json`](progress.json). If you do so, let us know and we'll try to link to it.
+ 
+ 
+**Q: Is this an EFF project?**
+ 
+Yes, but we'd like it to grow to be a self-sustaining community effort. The project was originally started through a collaboration between [Jack Clark](https://jack-clark.net/) of OpenAI and EFF.
+ 
+ 
+**Q: When will artificial general intelligence happen?**
+ 
+We don't know--and this project is not meant to answer this question. Instead, we’re interested in compiling data to guide evidence-based conversations about the state of the art in various corners of AI and machine learning research.
