@@ -83,6 +83,31 @@
             "attributes": []
         }, 
         {
+            "superproblems": [], 
+            "name": "Train machine learning systems on private user data, without transferring sensitive facts into the model", 
+            "url": null, 
+            "subproblems": [], 
+            "metrics": [
+                {
+                    "graphed": false, 
+                    "scale": "Score", 
+                    "target_label": null, 
+                    "name": "Federated Learning (distributed training with thresholded updates to models)", 
+                    "parent": "Problem(Train machine learning systems on private user data, without transferring sensitive facts into the model)", 
+                    "url": "https://arxiv.org/abs/1602.05629", 
+                    "notes": "", 
+                    "measures": [], 
+                    "solved": true, 
+                    "target_source": null, 
+                    "changeable": false, 
+                    "axis_label": "Score", 
+                    "target": null
+                }
+            ], 
+            "solved": false, 
+            "attributes": []
+        }, 
+        {
             "superproblems": [
                 "Vision"
             ], 
@@ -2156,6 +2181,47 @@
         }, 
         {
             "superproblems": [], 
+            "name": "Train ML classifiers in a manner that corrects for the impact of omitted-variable bias on certain groups", 
+            "url": null, 
+            "subproblems": [], 
+            "notes": "\nSeveral standards are available for avoiding classification biases.\n\nThey include holding false-positive / false adverse prediction rates constant across protected categories (which roughly maps \nto \"equal opportunity\"), holding both false-positive and false-negative rates equal (\"demographic parity\"), and ensuring\nthat the fraction of each protected group that receives a given prediction is constant across all groups \n(roughly equivalent to \"affirmative action\").", 
+            "metrics": [
+                {
+                    "graphed": false, 
+                    "scale": "Score", 
+                    "target_label": null, 
+                    "name": "Adjust prediction models to have constant false-positive rates", 
+                    "parent": "Problem(Train ML classifiers in a manner that corrects for the impact of omitted-variable bias on certain groups)", 
+                    "url": "https://arxiv.org/abs/1610.02413", 
+                    "notes": "", 
+                    "measures": [], 
+                    "solved": true, 
+                    "target_source": null, 
+                    "changeable": false, 
+                    "axis_label": "Score", 
+                    "target": null
+                }, 
+                {
+                    "graphed": false, 
+                    "scale": "Score", 
+                    "target_label": null, 
+                    "name": "Adjust prediction models tos have constant false-positive and -negative rates", 
+                    "parent": "Problem(Train ML classifiers in a manner that corrects for the impact of omitted-variable bias on certain groups)", 
+                    "url": "http://www.jmlr.org/proceedings/papers/v28/zemel13.pdf", 
+                    "notes": "", 
+                    "measures": [], 
+                    "solved": true, 
+                    "target_source": null, 
+                    "changeable": false, 
+                    "axis_label": "Score", 
+                    "target": null
+                }
+            ], 
+            "solved": true, 
+            "attributes": []
+        }, 
+        {
+            "superproblems": [], 
             "name": "Given an arbitrary technical problem, solve it as well as a typical professional in that field", 
             "url": null, 
             "subproblems": [
@@ -2428,6 +2494,16 @@
                 "agi", 
                 "language"
             ]
+        }, 
+        {
+            "superproblems": [], 
+            "name": "Fairness in machine learning towards people with a preference for privacy", 
+            "url": null, 
+            "subproblems": [], 
+            "notes": "\nPeople who care strongly about their own privacy take many measures to obfuscate their tracks through\ntechnological society, including using fictitious names, email addresses, etc in their routine dealings with\ncorporations, installing software to block or send inacurate data to online trackers. Like many other groups,\nthese people may be subject to unfairly adverse algorithmic decisionmaking. Treating them as a protected\ngroup will be more difficult, because they are in many respects harder to identify.\n", 
+            "metrics": [], 
+            "solved": false, 
+            "attributes": []
         }, 
         {
             "superproblems": [
@@ -3241,6 +3317,18 @@
                 "safety", 
                 "agi"
             ]
+        }, 
+        {
+            "superproblems": [
+                "Modify arbitrary ML systems in order to be able to provide comprehensible human explanations of their decisions"
+            ], 
+            "name": "Provide mathematical or technical explanations of decisions from classifiers", 
+            "url": null, 
+            "subproblems": [], 
+            "notes": "\nProviding explanations with techniques such as monte carlo analysis may in general\nbe easier than providing robust ones in natural language (since those may or may not\nexist in all cases)\n", 
+            "metrics": [], 
+            "solved": false, 
+            "attributes": []
         }, 
         {
             "superproblems": [
@@ -6833,7 +6921,9 @@
             "superproblems": [], 
             "name": "Modify arbitrary ML systems in order to be able to provide comprehensible human explanations of their decisions", 
             "url": null, 
-            "subproblems": [], 
+            "subproblems": [
+                "Provide mathematical or technical explanations of decisions from classifiers"
+            ], 
             "metrics": [], 
             "solved": false, 
             "attributes": []
@@ -6892,12 +6982,25 @@
                 "Scalable supervision of a learning system", 
                 "Safe exploration", 
                 "Avoiding reward hacking", 
+                "Avoiding undesirable side effects", 
                 "Function correctly in novel environments (robustness to distributional change)", 
                 "Know how to prevent an autonomous AI agent from reproducing itself an unbounded number of times"
             ], 
             "metrics": [], 
             "solved": false, 
             "attributes": []
+        }, 
+        {
+            "superproblems": [], 
+            "name": "Build systems which can recognise and avoid biases decision making", 
+            "url": null, 
+            "subproblems": [], 
+            "notes": "\nLegally institutionalised protected categories represent only the most extreme and socially recognised\nforms of biased decisionmaking. Attentive human decision makers are sometime capable of recognising\nand avoiding many more subtle biases. This problem tracks AI systems' ability to do likewise.\n", 
+            "metrics": [], 
+            "solved": false, 
+            "attributes": [
+                "safety"
+            ]
         }, 
         {
             "superproblems": [
@@ -11935,6 +12038,20 @@
             "metrics": [], 
             "solved": false, 
             "attributes": []
+        }, 
+        {
+            "superproblems": [
+                "Know how to build general AI agents that will behave as expected"
+            ], 
+            "name": "Avoiding undesirable side effects", 
+            "url": "https://arxiv.org/abs/1606.06565", 
+            "subproblems": [], 
+            "metrics": [], 
+            "solved": false, 
+            "attributes": [
+                "safety"
+            ], 
+            "nodes": "\nMany important constraints on good behaviour will not be explicitly\nencoded in goal specification, either because they are too hard to capture\nor simply because there are so many of them and they are hard to enumerate\n"
         }
     ]
 }
