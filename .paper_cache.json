@@ -71,6 +71,9 @@
     "http://infoscience.epfl.ch/record/180190": {
         "name": "Record #180190"
     }, 
+    "http://iwi.eldoc.ub.rug.nl/FILES/root/2013/IEEETPAMIAzzopardi/2013IEEETPAMIAzzopardi.pdf": {
+        "name": null
+    }, 
     "http://jmlr.org/papers/v14/thom13a.html": {
         "name": null
     }, 
@@ -352,6 +355,12 @@
             "3": "2014-11-03", 
             "4": "2014-12-21", 
             "5": "2015-02-19"
+        }, 
+        "name": "Recurrent Neural Network Regularization"
+    }, 
+    "https://arxiv.org/abs/1409.2329v1": {
+        "dates": {
+            "1": "2014-09-08"
         }, 
         "name": "Recurrent Neural Network Regularization"
     }, 
@@ -1090,6 +1099,9 @@
         "name": "CCRL 40/40 - Index"
     }, 
     "https://www.gwern.net/docs/2016-graves.pdf": {
+        "name": null
+    }, 
+    "https://www.microsoft.com/en-us/research/wp-content/uploads/2012/07/rnn_ctxt_TR.sav_.pdf": {
         "name": null
     }, 
     "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/CD-DNN-HMM-SWB-Interspeech2011-Pub.pdf": {
