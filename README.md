@@ -106,7 +106,7 @@ No, but we'd love to. If you are motivated to help organize that data, please [d
  
 We've considered a variety of things, but decided that the iPython notebook was ultimately the most accessible for now. We're very open to suggestions about visualizations and accessibility, so feel free to [reach out](https://www.eff.org/ai/metrics#How-to-contribute-to-this-notebook) if you have any ideas!
  
-Also, if you'd like to build visualizations on top of this project, all the data we use is available in the easily digestible JSON format in [`progress.json`](progress.json). If you do so, let us know and we'll try to link to it.
+Also, if you'd like to build visualizations on top of this project, all the data we use is available in the easily digestible JSON format in [`progress.json`](export-api/v01/progress.json). If you do so, let us know and we'll try to link to it.
  
  
 **Q: Is this an EFF project?**

@@ -956,6 +956,12 @@
         }, 
         "name": "Dynamic Coattention Networks For Question Answering"
     }, 
+    "https://arxiv.org/abs/1611.09978v1": {
+        "dates": {
+            "1": "2016-11-30"
+        }, 
+        "name": "Modeling Relationships in Referential Expressions with Compositional"
+    }, 
     "https://arxiv.org/abs/1612.03969": {
         "dates": {
             "1": "2016-12-12", 
