@@ -1,6 +1,6 @@
 # Copyright and Licensing Information for EFF's AI Progress Measurement project
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; float:left" src="images/cc-by-sa.png" /></a><br><br>Much of this Notebook is uncopyrightable data. The copyrightable portions of this Notebook that are written by EFF and other Github contributors are licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Illustrations from datasets and text written by other parties remain copyrighted by their respective owners and may be subject to different licenses.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; float:left" src="images/cc-by-sa.png" /></a><br><br>Much of this Notebook is uncopyrightable data. The copyrightable portions of this Notebook that are written by EFF and other Github contributors are licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Illustrations from datasets and text written by other parties remain copyrighted by their respective owners, if any, and may be subject to different licenses.
 
 The source code is also dual-licensed under the [GNU General Public License, version 2 or greater](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
 
