@@ -182,6 +182,9 @@
     "http://www.anthology.aclweb.org/W/W14/W14-33.pdf": {
         "name": null
     }, 
+    "http://www.bioinf.jku.at/publications/older/2604.pdf": {
+        "name": null
+    }, 
     "http://www.cs.toronto.edu/~nitish/treebasedpriors.pdf": {
         "name": null
     }, 
@@ -354,6 +357,20 @@
             "5": "2015-02-19"
         }, 
         "name": "Recurrent Neural Network Regularization"
+    }, 
+    "https://arxiv.org/abs/1409.3215": {
+        "dates": {
+            "1": "2014-09-10", 
+            "2": "2014-10-29", 
+            "3": "2014-12-14"
+        }, 
+        "name": "Sequence to Sequence Learning with Neural Networks"
+    }, 
+    "https://arxiv.org/abs/1409.3215v1": {
+        "dates": {
+            "1": "2014-09-10"
+        }, 
+        "name": "Sequence to Sequence Learning with Neural Networks"
     }, 
     "https://arxiv.org/abs/1409.6070": {
         "dates": {
