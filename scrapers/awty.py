@@ -1,6 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env ipython
 
 import re
+import os
 
 import lxml
 from lxml.cssselect import CSSSelector
@@ -8,6 +9,9 @@ import requests
 
 from taxonomy import offline
 from data.vision import *
+
+# So we can pipe the output of this code somewhere
+os.environ["PYTHONIOENCODING"] = "utf-8"
 
 # Rodriguo Benenson's "Are We There Yet?" data!
 reimport_awty = True
@@ -60,7 +64,9 @@ def parse_awty_dataset(name, link, verbose=False):
         result, paperlink, journal, details = CSSSelector("td")(r)
         result, papername, journal = [e.text_content() for e in (result, paperlink, journal)]
         notes = CSSSelector("div")(details)
-        notes = notes[0].text_content().strip() if notes else None
+        notes = notes[0].text_content().strip() if notes else ""
+        notes = re.sub("\s+", " ", notes, flags=re.UNICODE)
+        assert isinstance(notes, str) or isinstance(notes, unicode), "Expecting stringy notes %s " % type(notes)
         if "%" not in result:
             print "# Skipping", result, papername, journal
             continue
@@ -78,7 +84,7 @@ def ingest_awty_dataset(name, metric, label, regex=percent_re):
         #print "Offline, not ingesting", name
         return None
     done[name] = True
-    for result, papername, paper_url, journal, notes in parse_awty_dataset(name, awty_datasets[name]):
+    for n, (result, papername, paper_url, journal, notes) in enumerate(parse_awty_dataset(name, awty_datasets[name])):
         try:
             match = regex.match(result)
             value = float(match.group(1))
@@ -91,7 +97,9 @@ def ingest_awty_dataset(name, metric, label, regex=percent_re):
         except IndexError:
             uncertainty = 0.0
 
-        print "%s.measure(%s, %s, '%s', url=%r, papername='%s', uncertainty=%s, venue='%s', notes='''%s''')" % (
+        #if "Graph Cut based inference" in papername or "Spatial and Global Constraints Really" in papername or (paper_url and'http://research.microsoft.com/en-us/um/people/pkohli/papers/lrkt_eccv2010.pdf' in paper_url):
+
+        print "%s.measure(%s, %r, %r, url=%r, papername=%r, uncertainty=%r, venue=%r, notes=%r)" % (
                label, None, value, papername, paper_url,  papername, uncertainty, journal, notes)
         try:
             metric.measure(None, value, papername, url=paper_url, papername=papername, 

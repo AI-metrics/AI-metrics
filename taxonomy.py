@@ -228,7 +228,7 @@ except requests.ConnectionError:
 class Measurement:
     def __init__(self, d, value, name, url, algorithms=[], uncertainty=0, minval=None, maxval=None, opensource=False, replicated="",
                  papername=None, venue=None, min_date=None, max_date=None, algorithm_src_url=None, withdrawn=False, 
-                 not_directly_comparable=False, long_label=False, notes=None):
+                 not_directly_comparable=False, long_label=False, notes=""):
         self.date = d
         self.value = value
         assert isinstance(value, float) or isinstance(value, int), "Measurements on metrics need to be numbers"
