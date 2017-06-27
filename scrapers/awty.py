@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 
 import re
-import requests
+
 import lxml
 from lxml.cssselect import CSSSelector
-from taxonomy import offline
+import requests
 
+from taxonomy import offline
 from data.vision import *
 
 # Rodriguo Benenson's "Are We There Yet?" data!
@@ -56,16 +57,18 @@ def parse_awty_dataset(name, link, verbose=False):
     rows = CSSSelector("tr")(results_section)
     results = []
     for r in rows[1:]:
-        result, paperlink, journal, _ = CSSSelector("td")(r)
+        result, paperlink, journal, details = CSSSelector("td")(r)
         result, papername, journal = [e.text_content() for e in (result, paperlink, journal)]
+        notes = CSSSelector("div")(details)
+        notes = notes[0].text_content().strip() if notes else None
         if "%" not in result:
             print "# Skipping", result, papername, journal
             continue
         if verbose: 
-            print "%6s" % result, "%90s" % papername, "%10s" %journal
+            print "%6s" % result, "%90s" % papername, "%10s" %journal, notes
         e = CSSSelector("a")(paperlink)
         paper_url = e[0].attrib["href"] if e else None
-        results.append((result, papername, paper_url, journal))
+        results.append((result, papername, paper_url, journal, notes))
     return results
 
 percent_re = re.compile(r'([0-9.]+) *% *(\(?±([0-9\.]+))?')
@@ -75,7 +78,7 @@ def ingest_awty_dataset(name, metric, label, regex=percent_re):
         #print "Offline, not ingesting", name
         return None
     done[name] = True
-    for result, papername, paper_url, journal in parse_awty_dataset(name, awty_datasets[name]):
+    for result, papername, paper_url, journal, notes in parse_awty_dataset(name, awty_datasets[name]):
         try:
             match = regex.match(result)
             value = float(match.group(1))
@@ -88,10 +91,11 @@ def ingest_awty_dataset(name, metric, label, regex=percent_re):
         except IndexError:
             uncertainty = 0.0
 
-        print "%s.measure(%s, %s, '%s', url=%r, papername='%s', uncertainty=%s, venue='%s')" % (
-               label, None, value, papername, paper_url,  papername, uncertainty, journal)
+        print "%s.measure(%s, %s, '%s', url=%r, papername='%s', uncertainty=%s, venue='%s', notes='''%s''')" % (
+               label, None, value, papername, paper_url,  papername, uncertainty, journal, notes)
         try:
-            metric.measure(None, value, papername, url=paper_url, papername=papername, uncertainty=uncertainty, venue=journal)
+            metric.measure(None, value, papername, url=paper_url, papername=papername, 
+                           uncertainty=uncertainty, venue=journal, notes=notes)
         except requests.ConnectionError, e:
             print "Network error on {0} ({1}), skipping:".format(paper_url, papername)
             print e
