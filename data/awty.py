@@ -176,7 +176,9 @@ mnist.measure(None, 1.19, 'Convolutional Neural Networks', url=None, papername='
 mnist.measure(None, 1.2, 'Reducing the dimensionality of data with neural networks', url=None, papername='Reducing the dimensionality of data with neural networks', uncertainty=0.0, venue=' 2006', notes='')
 mnist.measure(None, 1.4, 'Convolutional Clustering for Unsupervised Learning', url='http://arxiv.org/abs/1511.06241', papername='Convolutional Clustering for Unsupervised Learning', uncertainty=0.0, venue='arXiv 2015', notes='2 layers + multi dict.')
 mnist.measure(None, 1.5, 'Deep learning via semi-supervised embedding', url=None, papername='Deep learning via semi-supervised embedding', uncertainty=0.0, venue=' 2008', notes='')
-mnist.measure(None, 14.53, 'Deep Representation Learning with Target Coding', url='http://personal.ie.cuhk.edu.hk/~ccloy/files/aaai_2015_target_coding.pdf', papername='Deep Representation Learning with Target Coding', uncertainty=0.0, venue='AAAI 2015', notes='')
+# This paper has reasonable results on other things, but one so bad on MNIST that it messes up the graph. So we exclude it:
+# mnist.measure(None, 14.53, 'Deep Representation Learning with Target Coding', url='http://personal.ie.cuhk.edu.hk/~ccloy/files/aaai_2015_target_coding.pdf', papername='Deep Representation Learning with Target Coding', uncertainty=0.0, venue='AAAI 2015', notes='')
+
 # Handling 'MSRC-21' semantic_labeling_datasets_results.html#4d5352432d3231
 msrc21_pc.measure(None, 80.9, 'Large-Scale Semantic Co-Labeling of Image Sets', url='http://www.cvc.uab.es/~jalvarez/research_cosegment.php', papername='Large-Scale Semantic Co-Labeling of Image Sets', uncertainty=0.0, venue='WACV 2014', notes='')
 msrc21_pc.measure(None, 80.0, 'Harmony Potentials - Fusing Local and Global Scale for Semantic Image Segmentation', url='http://link.springer.com/article/10.1007%2Fs11263-011-0449-8', papername='Harmony Potentials - Fusing Local and Global Scale for Semantic Image Segmentation', uncertainty=0.0, venue='IJCV 2012', notes='per-class % / per-pixel %')
@@ -428,6 +430,7 @@ msrc21_pp.measure(None, 79.0, 'PatchMatchGraph: Building a Graph of Dense Patch 
 msrc21_pp.measure(None, 78.0, 'Auto-Context and Its Application to High-Level Vision Tasks and 3D Brain Image Segmentation', url='http://pages.ucsd.edu/~ztu/publication/pami_autocontext.pdf', papername='Auto-Context and Its Application to High-Level Vision Tasks and 3D Brain Image Segmentation', uncertainty=0.0, venue='PAMI 2010', notes='')
 msrc21_pp.measure(None, 72.0, 'Semantic Texton Forests for Image Categorization and Segmentation', url='http://mi.eng.cam.ac.uk/~cipolla/publications/inproceedings/2008-CVPR-semantic-texton-forests.pdf', papername='Semantic Texton Forests for Image Categorization and Segmentation', uncertainty=0.0, venue='CVPR 2008', notes='')
 msrc21_pp.measure(None, 72.0, 'TextonBoost for Image Understanding', url='http://research.microsoft.com/pubs/117885/ijcv07a.pdf', papername='TextonBoost for Image Understanding', uncertainty=0.0, venue='IJCV 2009', notes='?? / 69.6 % (per-class / per-pixel) the unaries alone (no CRF on top)')
+
 # Handling 'Pascal VOC 2011 comp3' detection_datasets_results.html#50617363616c20564f43203230313120636f6d7033
 # Skipping 40.6 mAP Fisher and VLAD with FLAIR CVPR 2014
 # Handling 'Leeds Sport Poses' pose_estimation_datasets_results.html#4c656564732053706f727420506f736573
