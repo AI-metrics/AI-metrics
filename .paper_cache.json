@@ -1018,6 +1018,12 @@
         }, 
         "name": "Linguistic Knowledge as Memory for Recurrent Neural Networks"
     }, 
+    "https://arxiv.org/abs/1703.03864v1": {
+        "dates": {
+            "1": "2017-03-10"
+        }, 
+        "name": "Evolution Strategies as a Scalable Alternative to Reinforcement Learning"
+    }, 
     "https://arxiv.org/abs/1703.04617": {
         "dates": {
             "1": "2017-03-14", 
@@ -1057,6 +1063,9 @@
             "1": "2017-05-08"
         }, 
         "name": "Mnemonic Reader for Machine Comprehension"
+    }, 
+    "https://arxiv.org/pdf/1602.01783.pdf": {
+        "name": null
     }, 
     "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": {
         "name": "Swedish Chess Computer Association - Wikipedia"
