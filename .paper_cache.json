@@ -209,6 +209,9 @@
     "http://www.eecs.berkeley.edu/~jiayq/assets/pdf/cvpr12_pooling.pdf": {
         "name": null
     }, 
+    "http://www.fit.vutbr.cz/~imikolov/rnnlm/google.pdf": {
+        "name": null
+    }, 
     "http://www.icsi.berkeley.edu/pubs/vision/beyondspatial12.pdf": {
         "name": null
     }, 
@@ -358,6 +361,12 @@
             "3": "2014-11-03", 
             "4": "2014-12-21", 
             "5": "2015-02-19"
+        }, 
+        "name": "Recurrent Neural Network Regularization"
+    }, 
+    "https://arxiv.org/abs/1409.2329v1": {
+        "dates": {
+            "1": "2014-09-08"
         }, 
         "name": "Recurrent Neural Network Regularization"
     }, 
@@ -1137,6 +1146,9 @@
         "name": "CCRL 40/40 - Index"
     }, 
     "https://www.gwern.net/docs/2016-graves.pdf": {
+        "name": null
+    }, 
+    "https://www.microsoft.com/en-us/research/wp-content/uploads/2012/07/rnn_ctxt_TR.sav_.pdf": {
         "name": null
     }, 
     "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/CD-DNN-HMM-SWB-Interspeech2011-Pub.pdf": {
