@@ -126,7 +126,7 @@ class Metric:
         github_link = "<a href="">Edit/add data on GitHub</a>" #TODO: put in a link, format github issue template
         table_html = ["<table>"]
         
-        table_html.append("<tr><th>Name</th><th>{0}</th><th>Date</th></tr>".format(self.scale))
+        table_html.append("<tr><th>Name</th><th>{0}</th><th>Date</th></tr>".format(self.scale.axis_label))
         for n, m in enumerate(self.measures):
             table_html.append("<tr>")
             table_html.append("<td>{0}</td>".format(m.name))    
