@@ -13,6 +13,7 @@ loebner = easy_turing_test.metric("The Loebner Prize scored selection answers", 
 # XXX humans probably don't get 100% on the Loebner Prize selection questions; we should ask the organizers to score
 # some humans
 
+
 loebner.notes = """
 The Loebner Prize is an actual enactment of the Turing Test. Importantly, judges are instructed to engage in casual, natural
 conversation rather than deliberately probing to determine if participants are "intelligent" (Brian Christian, The Most Human Human).
