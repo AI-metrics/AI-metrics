@@ -77,7 +77,7 @@ mpl.rcParams["ytick.labelsize"] = u"x-small"
 
 class Metric:
     def __init__(self, name, url=None, solved=False, notes="", scale=linear, target=None, target_source=None,
-                 parent=None, changeable=False, axis_label=None, target_label=None):
+                 parent=None, changeable=False, axis_label=None, target_label=None, data_url=None):
         self.name = name
         self.measures = []
         self.solved = solved
@@ -95,7 +95,8 @@ class Metric:
         self.axis_label = (     axis_label            if axis_label 
                            else self.scale.axis_label if hasattr(self.scale, "axis_label") 
                            else self.name)
-
+        # primarily used by the table() method
+        self.data_url = data_url if data_url is not None else "https://github.com/AI-metrics/AI-metrics"
         
     def __str__(self):
         solved = "SOLVED" if self.solved else "?" if not self.target else "not solved"
@@ -121,22 +122,24 @@ class Metric:
 
     def table(self):
         if len(self.measures) < 2:
-            return
+            return ""
 
-        github_link = "<a href="">Edit/add data on GitHub</a>" #TODO: put in a link, format github issue template
+        # TODO: why won't this align right??
+        github_link = ['<p align="right"><a href="{0}">Edit/add data on GitHub</a></p>'.format(self.data_url)]
         table_html = ["<table>"]
+        table_html.append("<caption>{0}</caption>".format(self.name))
         
-        table_html.append("<tr><th>Name</th><th>{0}</th><th>Date</th></tr>".format(self.scale.axis_label))
+        table_html.append("<tr><th>Date</th><th>Algorithm</th><th>Result</th><th>Paper</th></tr>".format(self.scale.axis_label))
         for n, m in enumerate(self.measures):
             table_html.append("<tr>")
-            table_html.append("<td>{0}</td>".format(m.name))    
-            table_html.append("<td>{0}</td>".format(m.value))    
-            table_html.append("<td>{0}</td>".format(m.date))    
+            table_html.append('<td align="center">{0}</td>'.format(m.date))
+            table_html.append('<td align="center">{0}</td>'.format(m.name))
+            table_html.append('<td align="center">{0}</td>'.format(m.value))
+            table_html.append('<td align="center"><a href=\"{0}\">{1}</a></td>'.format(m.url, m.papername))
             table_html.append("</tr>")
         table_html.append("</table>")
-        html = "".join(table_html)
-        print html
-        return html #TODO: add github_link, and some styling
+        html = "".join(table_html + github_link)
+        return html
 
     def graph(self, size=(7,5), scale=1.0):
         if len(self.measures) < 2:
