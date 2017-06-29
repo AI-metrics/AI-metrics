@@ -71,9 +71,6 @@
     "http://infoscience.epfl.ch/record/180190": {
         "name": "Record #180190"
     }, 
-    "http://iwi.eldoc.ub.rug.nl/FILES/root/2013/IEEETPAMIAzzopardi/2013IEEETPAMIAzzopardi.pdf": {
-        "name": null
-    }, 
     "http://jmlr.org/papers/v14/thom13a.html": {
         "name": null
     }, 
@@ -185,6 +182,9 @@
     "http://www.anthology.aclweb.org/W/W14/W14-33.pdf": {
         "name": null
     }, 
+    "http://www.bioinf.jku.at/publications/older/2604.pdf": {
+        "name": null
+    }, 
     "http://www.cs.toronto.edu/~nitish/treebasedpriors.pdf": {
         "name": null
     }, 
@@ -235,6 +235,9 @@
     }, 
     "http://www.stanford.edu/~acoates/papers/coatesng_nips_2011.pdf": {
         "name": "Object not found! : Stanford University"
+    }, 
+    "http://www.statmt.org/wmt16/pdf/W16-2320.pdf": {
+        "name": null
     }, 
     "http://www.utstat.toronto.edu/~rsalakhu/papers/dbm.pdf": {
         "name": null
@@ -363,6 +366,20 @@
             "1": "2014-09-08"
         }, 
         "name": "Recurrent Neural Network Regularization"
+    }, 
+    "https://arxiv.org/abs/1409.3215": {
+        "dates": {
+            "1": "2014-09-10", 
+            "2": "2014-10-29", 
+            "3": "2014-12-14"
+        }, 
+        "name": "Sequence to Sequence Learning with Neural Networks"
+    }, 
+    "https://arxiv.org/abs/1409.3215v1": {
+        "dates": {
+            "1": "2014-09-10"
+        }, 
+        "name": "Sequence to Sequence Learning with Neural Networks"
     }, 
     "https://arxiv.org/abs/1409.6070": {
         "dates": {
@@ -493,6 +510,12 @@
             "7": "2015-10-07", 
             "8": "2015-11-21", 
             "9": "2015-11-29"
+        }, 
+        "name": "Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks"
+    }, 
+    "https://arxiv.org/abs/1502.05698v1": {
+        "dates": {
+            "1": "2015-02-19"
         }, 
         "name": "Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks"
     }, 
@@ -1004,6 +1027,12 @@
         }, 
         "name": "Linguistic Knowledge as Memory for Recurrent Neural Networks"
     }, 
+    "https://arxiv.org/abs/1703.03864v1": {
+        "dates": {
+            "1": "2017-03-10"
+        }, 
+        "name": "Evolution Strategies as a Scalable Alternative to Reinforcement Learning"
+    }, 
     "https://arxiv.org/abs/1703.04617": {
         "dates": {
             "1": "2017-03-14", 
@@ -1043,6 +1072,21 @@
             "1": "2017-05-08"
         }, 
         "name": "Mnemonic Reader for Machine Comprehension"
+    }, 
+    "https://arxiv.org/abs/1705.03122v2": {
+        "dates": {
+            "2": "2017-05-12"
+        }, 
+        "name": "Convolutional Sequence to Sequence Learning"
+    }, 
+    "https://arxiv.org/abs/1706.02003": {
+        "dates": {
+            "1": "2017-06-06"
+        }, 
+        "name": "Deep Convolutional Decision Jungle for Image Classification"
+    }, 
+    "https://arxiv.org/pdf/1602.01783.pdf": {
+        "name": null
     }, 
     "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": {
         "name": "Swedish Chess Computer Association - Wikipedia"
