@@ -217,7 +217,6 @@ dqn = data[53:104]
 a3cs = data[105:156]
 ess = data[157:]
 
-print ess
 for name, a3c, es in zip(names, a3cs, ess):
     metric_name = name.lower().replace(" ", "_") + "_metric"
     a3c_score = float(a3c)

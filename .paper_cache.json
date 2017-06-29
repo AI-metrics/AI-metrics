@@ -236,6 +236,9 @@
     "http://www.stanford.edu/~acoates/papers/coatesng_nips_2011.pdf": {
         "name": "Object not found! : Stanford University"
     }, 
+    "http://www.statmt.org/wmt16/pdf/W16-2320.pdf": {
+        "name": null
+    }, 
     "http://www.utstat.toronto.edu/~rsalakhu/papers/dbm.pdf": {
         "name": null
     }, 
@@ -1063,6 +1066,18 @@
             "1": "2017-05-08"
         }, 
         "name": "Mnemonic Reader for Machine Comprehension"
+    }, 
+    "https://arxiv.org/abs/1705.03122v2": {
+        "dates": {
+            "2": "2017-05-12"
+        }, 
+        "name": "Convolutional Sequence to Sequence Learning"
+    }, 
+    "https://arxiv.org/abs/1706.02003": {
+        "dates": {
+            "1": "2017-06-06"
+        }, 
+        "name": "Deep Convolutional Decision Jungle for Image Classification"
     }, 
     "https://arxiv.org/pdf/1602.01783.pdf": {
         "name": null
