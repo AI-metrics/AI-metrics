@@ -118,7 +118,26 @@ class Metric:
                 self.parent.check_solved()
         self.measures.append(m)
         return m
-    
+
+    def table(self):
+        if len(self.measures) < 2:
+            return
+
+        github_link = "<a href="">Edit/add data on GitHub</a>" #TODO: put in a link, format github issue template
+        table_html = ["<table>"]
+        
+        table_html.append("<tr><th>Name</th><th>{0}</th><th>Date</th></tr>".format(self.scale))
+        for n, m in enumerate(self.measures):
+            table_html.append("<tr>")
+            table_html.append("<td>{0}</td>".format(m.name))    
+            table_html.append("<td>{0}</td>".format(m.value))    
+            table_html.append("<td>{0}</td>".format(m.date))    
+            table_html.append("</tr>")
+        table_html.append("</table>")
+        html = "".join(table_html)
+        print html
+        return html #TODO: add github_link, and some styling
+
     def graph(self, size=(7,5), scale=1.0):
         if len(self.measures) < 2:
             return
