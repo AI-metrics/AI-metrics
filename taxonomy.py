@@ -122,7 +122,7 @@ class Metric:
 
     def table(self):
         if len(self.measures) < 2:
-            return ""
+            return u""
 
         # TODO: why won't this align right??
         table_html = ["<table>"]
@@ -169,14 +169,8 @@ class Metric:
                     kwargs["marker"] = "X"
                 kwargs["c"] = "#aaaaaa"
             plt.plot_date([m.date], [m.value], **kwargs)
-            
-            label = m.name
-            if m.withdrawn and not "withdrawn" in label.lower():
-                label = "WITHDRAWN " + label
-            if len(label) >= 28 and not m.long_label:
-                label = label[:25] + "..."
                 
-            plt.annotate('%s' % label, xy=(m.date, m.value), xytext=m.metric.scale.offset, fontsize=scale * 6, textcoords='offset points')
+            plt.annotate('%s' % m.label, xy=(m.date, m.value), xytext=m.metric.scale.offset, fontsize=scale * 6, textcoords='offset points')
             # cases where either results or dates of publication are uncertain
             kwargs = {"c": "#80cf80", "linewidth": scale*1.0, "capsize": scale*1.5, "capthick": scale*0.5, "dash_capstyle": 'projecting'}
                 
@@ -227,14 +221,18 @@ def canonicalise(url):
 conference_dates = {"ICML 2016": date(2016, 6, 19),
                     "NIPS 2015": date(2015, 12, 7),
                     "ICLR 2014": date(2014, 4, 14),
+                    "ICML 2012": date(2012, 6, 26),
                     "ICML 2013": date(2013, 6, 16),
+                    "ICML 2014": date(2014, 6, 21),
+                   "IJCNN 2015": date(2015, 7, 12),
                     "CVPR 2012": date(2012, 6, 16),
                     "NIPS 2012": date(2012, 12, 3),
                     "CVPR 2015": date(2015, 6, 8),
                     "NIPS 2011": date(2011, 12, 17),
                     "NIPS 2014": date(2014, 12, 8),
                "TUM-I1222 2013": date(2013, 10, 29),
-                     "WMT 2014": date(2014, 2, 24)}
+                     "WMT 2014": date(2014, 2, 24),
+                    "ECCV 2012": date(2012, 10, 7)}
 conferences_wanted = defaultdict(lambda: 0)
 
 offline = False
@@ -281,11 +279,18 @@ class Measurement:
             assert arxiv_dates, "Failed to extract arxiv dates for "+ self.url
         self.papername = papername if papername else arxiv_papername
         self.determine_paper_dates(d, arxiv_dates, venue)
+        self.set_label()
             
         global measurements
         measurements.add(self)
 
-    
+    def set_label(self):
+        self.label = self.name
+        if self.withdrawn and not "withdrawn" in self.label.lower():
+            self.label = "WITHDRAWN " + self.label
+        if len(self.label) >= 28 and not self.long_label:
+            self.label = self.label[:25] + "..."
+
     year_re=re.compile(r"([0-9][0-9][0-9][0-9])")
     def determine_paper_dates(self, d, arxiv_dates, venue):
         """

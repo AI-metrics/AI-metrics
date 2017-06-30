@@ -8,6 +8,9 @@
     "http://ai.stanford.edu/~wzou/nips_ZouZhuNgYu12.pdf": {
         "name": null
     }, 
+    "http://ai2-s2-pdfs.s3.amazonaws.com/daba/eb9185990f65f807c95ff4d09057c2bf1cf0.pdf": {
+        "name": null
+    }, 
     "http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=B2AAC2BC3824F19757CAC66986D5F3FF?doi=10.1.1.18.8852&rep=rep1&type=pdf": {
         "name": null
     }, 
@@ -182,6 +185,12 @@
     "http://www.anthology.aclweb.org/W/W14/W14-33.pdf": {
         "name": null
     }, 
+    "http://www.bioinf.jku.at/publications/older/2604.pdf": {
+        "name": null
+    }, 
+    "http://www.cs.rug.nl/~george/articles/PAMI2013.pdf": {
+        "name": null
+    }, 
     "http://www.cs.toronto.edu/~nitish/treebasedpriors.pdf": {
         "name": null
     }, 
@@ -204,6 +213,9 @@
         "name": null
     }, 
     "http://www.eecs.berkeley.edu/~jiayq/assets/pdf/cvpr12_pooling.pdf": {
+        "name": null
+    }, 
+    "http://www.fit.vutbr.cz/~imikolov/rnnlm/google.pdf": {
         "name": null
     }, 
     "http://www.icsi.berkeley.edu/pubs/vision/beyondspatial12.pdf": {
@@ -232,6 +244,9 @@
     }, 
     "http://www.stanford.edu/~acoates/papers/coatesng_nips_2011.pdf": {
         "name": "Object not found! : Stanford University"
+    }, 
+    "http://www.statmt.org/wmt16/pdf/W16-2320.pdf": {
+        "name": null
     }, 
     "http://www.utstat.toronto.edu/~rsalakhu/papers/dbm.pdf": {
         "name": null
@@ -354,6 +369,26 @@
             "5": "2015-02-19"
         }, 
         "name": "Recurrent Neural Network Regularization"
+    }, 
+    "https://arxiv.org/abs/1409.2329v1": {
+        "dates": {
+            "1": "2014-09-08"
+        }, 
+        "name": "Recurrent Neural Network Regularization"
+    }, 
+    "https://arxiv.org/abs/1409.3215": {
+        "dates": {
+            "1": "2014-09-10", 
+            "2": "2014-10-29", 
+            "3": "2014-12-14"
+        }, 
+        "name": "Sequence to Sequence Learning with Neural Networks"
+    }, 
+    "https://arxiv.org/abs/1409.3215v1": {
+        "dates": {
+            "1": "2014-09-10"
+        }, 
+        "name": "Sequence to Sequence Learning with Neural Networks"
     }, 
     "https://arxiv.org/abs/1409.6070": {
         "dates": {
@@ -1001,6 +1036,12 @@
         }, 
         "name": "Linguistic Knowledge as Memory for Recurrent Neural Networks"
     }, 
+    "https://arxiv.org/abs/1703.03864v1": {
+        "dates": {
+            "1": "2017-03-10"
+        }, 
+        "name": "Evolution Strategies as a Scalable Alternative to Reinforcement Learning"
+    }, 
     "https://arxiv.org/abs/1703.04617": {
         "dates": {
             "1": "2017-03-14", 
@@ -1041,8 +1082,26 @@
         }, 
         "name": "Mnemonic Reader for Machine Comprehension"
     }, 
+    "https://arxiv.org/abs/1705.03122v2": {
+        "dates": {
+            "2": "2017-05-12"
+        }, 
+        "name": "Convolutional Sequence to Sequence Learning"
+    }, 
+    "https://arxiv.org/abs/1706.02003": {
+        "dates": {
+            "1": "2017-06-06"
+        }, 
+        "name": "Deep Convolutional Decision Jungle for Image Classification"
+    }, 
+    "https://arxiv.org/pdf/1602.01783.pdf": {
+        "name": null
+    }, 
     "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": {
         "name": "Swedish Chess Computer Association - Wikipedia"
+    }, 
+    "https://infoscience.epfl.ch/record/180188/files/top.pdf": {
+        "name": null
     }, 
     "https://openreview.net/forum?id=BJrFC6ceg": {
         "name": "Forum | OpenReview"
@@ -1096,6 +1155,9 @@
         "name": "CCRL 40/40 - Index"
     }, 
     "https://www.gwern.net/docs/2016-graves.pdf": {
+        "name": null
+    }, 
+    "https://www.microsoft.com/en-us/research/wp-content/uploads/2012/07/rnn_ctxt_TR.sav_.pdf": {
         "name": null
     }, 
     "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/CD-DNN-HMM-SWB-Interspeech2011-Pub.pdf": {
