@@ -125,11 +125,10 @@ class Metric:
             return ""
 
         # TODO: why won't this align right??
-        github_link = ['<p align="right"><a href="{0}">Edit/add data on GitHub</a></p>'.format(self.data_url)]
         table_html = ["<table>"]
         table_html.append("<caption>{0}</caption>".format(self.name))
         
-        table_html.append("<tr><th>Date</th><th>Algorithm</th><th>Result</th><th>Paper</th></tr>".format(self.scale.axis_label))
+        table_html.append("<tr><th>Date</th><th>Algorithm</th><th>Result</th><th>Paper / Source</th></tr>".format(self.scale.axis_label))
         for n, m in enumerate(self.measures):
             table_html.append("<tr>")
             table_html.append('<td align="center">{0}</td>'.format(m.date))
@@ -138,6 +137,7 @@ class Metric:
             table_html.append('<td align="center"><a href=\"{0}\">{1}</a></td>'.format(m.url, m.papername))
             table_html.append("</tr>")
         table_html.append("</table>")
+        github_link = ['<p align="right"><a href="{0}">Edit/add data on GitHub</a></p>'.format(self.data_url)]
         html = "".join(table_html + github_link)
         return html
 
