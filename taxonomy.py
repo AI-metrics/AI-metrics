@@ -124,7 +124,6 @@ class Metric:
         if len(self.measures) < 2:
             return u""
 
-        # TODO: why won't this align right??
         table_html = ["<table>"]
         table_html.append("<caption>{0}</caption>".format(self.name))
         
@@ -137,7 +136,7 @@ class Metric:
             table_html.append('<td align="center"><a href=\"{0}\">{1}</a></td>'.format(m.url, m.papername))
             table_html.append("</tr>")
         table_html.append("</table>")
-        github_link = ['<p align="right"><a href="{0}">Edit/add data on GitHub</a></p>'.format(self.data_url)]
+        github_link = ['<p><a href="{0}">Edit/add data on GitHub</a></p>'.format(self.data_url)]
         html = "".join(table_html + github_link)
         return html
 
