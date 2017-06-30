@@ -145,14 +145,3 @@ if reimport_awty and not offline:
         if not link.scheme and name not in done:
             parse_awty_dataset(name, link, verbose=True)
 
-if reimport_awty and not offline:
-    ingest_awty_dataset('SVHN', svhn, 'svhn')
-    ingest_awty_dataset('CIFAR-100', cifar100, 'cifar100')
-    ingest_awty_dataset('CIFAR-10', cifar10, 'cifar10')
-    ingest_awty_dataset('MNIST', mnist, 'mnist')
-    ingest_awty_dataset('MSRC-21', msrc21_pc, 'msrc21_pc')
-    ingest_awty_dataset('MSRC-21', msrc21_pp, 'msrc21_pp', regex=re.compile("[0-9.]+ *% */ * ([0-9.]+) *%"))
-
-    for name, link in awty_datasets.items():
-        if not link.scheme and name not in done:
-            parse_awty_dataset(name, link, verbose=True)
