@@ -632,6 +632,14 @@
         }, 
         "name": "On the Importance of Normalisation Layers in Deep Learning with"
     }, 
+    "https://arxiv.org/abs/1509.06461": {
+        "dates": {
+            "1": "2015-09-22", 
+            "2": "2015-11-20", 
+            "3": "2015-12-08"
+        }, 
+        "name": "Deep Reinforcement Learning with Double Q-learning"
+    }, 
     "https://arxiv.org/abs/1509.08985": {
         "dates": {
             "1": "2015-09-30", 
@@ -693,6 +701,12 @@
             "7": "2016-02-19"
         }, 
         "name": "All you need is a good init"
+    }, 
+    "https://arxiv.org/abs/1511.06581v1": {
+        "dates": {
+            "1": "2015-11-20"
+        }, 
+        "name": "Dueling Network Architectures for Deep Reinforcement Learning"
     }, 
     "https://arxiv.org/abs/1511.07289": {
         "dates": {
