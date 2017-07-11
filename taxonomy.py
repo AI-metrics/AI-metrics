@@ -126,6 +126,7 @@ class Metric:
 
         table_html = ["<table>"]
         table_html.append("<caption>{0}</caption>".format(self.name))
+        table_html.append('<col width="9%"></col><col width="30%"></col><col></col><col></col>')
         
         table_html.append("<tr><th>Date</th><th>Algorithm</th><th>Result</th><th>Paper / Source</th></tr>".format(self.scale.axis_label))
         for n, m in enumerate(self.measures):
