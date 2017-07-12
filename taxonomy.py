@@ -126,15 +126,16 @@ class Metric:
 
         table_html = ["<table>"]
         table_html.append("<caption>{0}</caption>".format(self.name))
-        table_html.append('<col width="9%"></col><col width="30%"></col><col></col><col></col>')
-        
         table_html.append("<tr><th>Date</th><th>Algorithm</th><th>Result</th><th>Paper / Source</th></tr>".format(self.scale.axis_label))
+        widest_alg = max(len(m.name) for m in self.measures)
+        alg_bound = 'style="width: 25%"' if widest_alg >= 45 else ""
         for n, m in enumerate(self.measures):
             table_html.append("<tr>")
-            table_html.append('<td align="center">{0}</td>'.format(m.date))
-            table_html.append('<td align="center">{0}</td>'.format(m.name))
+            table_html.append('<td align="center" style="width: 10%">{0}</td>'.format(m.date))
+            table_html.append('<td align="center" {1}>{0}</td>'.format(m.name, alg_bound))
             table_html.append('<td align="center">{0}</td>'.format(m.value))
-            table_html.append('<td align="center"><a href=\"{0}\">{1}</a></td>'.format(m.url, m.papername))
+            source = '( <a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
+            table_html.append('<td align="center"><a href=\"{0}\">{1}</a>{2}</td>'.format(m.url, m.papername, source))
             table_html.append("</tr>")
         table_html.append("</table>")
         github_link = ['<p><a href="{0}">Edit/add data on GitHub</a></p>'.format(self.data_url)]
