@@ -137,7 +137,7 @@ class Metric:
             table_html.append('<td align="center" style="width: 10%">{0}</td>'.format(m.date))
             table_html.append('<td align="center" {1}>{0}</td>'.format(m.name, alg_bound))
             table_html.append('<td align="center">{0}</td>'.format(m.value))
-            source = ' (<a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
+            source = '(<a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
             table_html.append('<td align="center"><a href=\"{0}\">{1}</a>{2}</td>'.format(m.url, m.papername, source))
             table_html.append("</tr>")
         table_html.append("</table>")
@@ -403,6 +403,7 @@ class ArxivDataExtractor:
         else:
             return None
         
+    multiwhitespace = re.compile(r"\s+")  # gets rid of newlines
     def get_paper_data(self, url):
         "Ask arxiv for a (papername, {version:date}) if we don't know it"
         if not url:
@@ -422,9 +423,11 @@ class ArxivDataExtractor:
         withdrawn = self.detect_withdrawn(tree, url)
         if withdrawn:
             record["withdrawn"] = True
+        #papername = CSSSelector("title")(tree)[0].text_content()
         papername = tree.findtext('.//title')
         dates = None
         if papername:
+            papername = self.multiwhitespace.sub(" ", papername)
             match = self.arxiv_re.match(papername)
             if match:
                 papername = match.groups(0)[0]

@@ -71,9 +71,6 @@
     "http://infoscience.epfl.ch/record/169178/files/lucchi_ICCV11.pdf": {
         "name": null
     }, 
-    "http://infoscience.epfl.ch/record/180190": {
-        "name": "Record #180190"
-    }, 
     "http://jmlr.org/papers/v14/thom13a.html": {
         "name": null
     }, 
@@ -83,14 +80,11 @@
     "http://jmlr.org/proceedings/papers/v32/line14.pdf": {
         "name": null
     }, 
-    "http://karpathy.github.io/2011/04/27/manually-classifying-cifar10/": {
-        "name": "Lessons learned from manually classifying CIFAR-10"
-    }, 
     "http://link.springer.com/article/10.1007%2Fs11263-011-0449-8": {
         "name": "Harmony Potentials | SpringerLink"
     }, 
     "http://mediatum.ub.tum.de/doc/1175516/1175516.pdf": {
-        "name": "\n            "
+        "name": " "
     }, 
     "http://mi.eng.cam.ac.uk/~cipolla/publications/inproceedings/2008-CVPR-semantic-texton-forests.pdf": {
         "name": null
@@ -158,9 +152,6 @@
     "http://ttic.uchicago.edu/~rurtasun/publications/yao_et_al_cvpr12.pdf": {
         "name": null
     }, 
-    "http://ufldl.stanford.edu/housenumbers/nips2011_housenumbers.pdf": {
-        "name": null
-    }, 
     "http://users.cecs.anu.edu.au/~sgould/papers/eccv12-patchGraph.pdf": {
         "name": null
     }, 
@@ -203,9 +194,6 @@
     "http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Yang_Deep_Fried_Convnets_ICCV_2015_paper.pdf": {
         "name": null
     }, 
-    "http://www.cvc.uab.es/~jalvarez/research_cosegment.php": {
-        "name": "Jose M. Alvarez"
-    }, 
     "http://www.d2.mpi-inf.mpg.de/content/learning-smooth-pooling-regions-visual-recognition": {
         "name": "Learning Smooth Pooling Regions for Visual Recognition | D2"
     }, 
@@ -234,9 +222,6 @@
         "name": null
     }, 
     "http://www.keysers.net/daniel/files/Keysers--Deformation-Models--TPAMI2007.pdf": {
-        "name": null
-    }, 
-    "http://www.rug.nl/research/portal/files/2390194/2013IEEETPAMIAzzopardi.pdf": {
         "name": null
     }, 
     "http://www.stanford.edu/~acoates/papers/coatesleeng_aistats_2011.pdf": {
@@ -270,13 +255,13 @@
         "dates": {
             "1": "2012-07-03"
         }, 
-        "name": "Improving neural networks by preventing co-adaptation of feature"
+        "name": "Improving neural networks by preventing co-adaptation of feature detectors"
     }, 
     "https://arxiv.org/abs/1301.3557": {
         "dates": {
             "1": "2013-01-16"
         }, 
-        "name": "Stochastic Pooling for Regularization of Deep Convolutional Neural"
+        "name": "Stochastic Pooling for Regularization of Deep Convolutional Neural Networks"
     }, 
     "https://arxiv.org/abs/1302.5056v1": {
         "dates": {
@@ -340,7 +325,7 @@
         "dates": {
             "1": "2014-06-30"
         }, 
-        "name": "Increasing Deep Neural Network Acoustic Model Size for Large Vocabulary"
+        "name": "Increasing Deep Neural Network Acoustic Model Size for Large Vocabulary Continuous Speech Recognition"
     }, 
     "https://arxiv.org/abs/1409.0473": {
         "dates": {
@@ -360,29 +345,11 @@
         }, 
         "name": "Neural Machine Translation by Jointly Learning to Align and Translate"
     }, 
-    "https://arxiv.org/abs/1409.2329": {
-        "dates": {
-            "1": "2014-09-08", 
-            "2": "2014-09-11", 
-            "3": "2014-11-03", 
-            "4": "2014-12-21", 
-            "5": "2015-02-19"
-        }, 
-        "name": "Recurrent Neural Network Regularization"
-    }, 
     "https://arxiv.org/abs/1409.2329v1": {
         "dates": {
             "1": "2014-09-08"
         }, 
         "name": "Recurrent Neural Network Regularization"
-    }, 
-    "https://arxiv.org/abs/1409.3215": {
-        "dates": {
-            "1": "2014-09-10", 
-            "2": "2014-10-29", 
-            "3": "2014-12-14"
-        }, 
-        "name": "Sequence to Sequence Learning with Neural Networks"
     }, 
     "https://arxiv.org/abs/1409.3215v1": {
         "dates": {
@@ -489,7 +456,7 @@
             "1": "2015-02-03", 
             "2": "2015-06-06"
         }, 
-        "name": "Hybrid Orthogonal Projection and Estimation (HOPE): A New Framework to"
+        "name": "Hybrid Orthogonal Projection and Estimation (HOPE): A New Framework to Probe and Learn Neural Networks"
     }, 
     "https://arxiv.org/abs/1502.02367": {
         "dates": {
@@ -506,21 +473,6 @@
             "2": "2015-05-20"
         }, 
         "name": "DRAW: A Recurrent Neural Network For Image Generation"
-    }, 
-    "https://arxiv.org/abs/1502.05698": {
-        "dates": {
-            "1": "2015-02-19", 
-            "10": "2015-12-31", 
-            "2": "2015-02-24", 
-            "3": "2015-02-25", 
-            "4": "2015-03-14", 
-            "5": "2015-04-10", 
-            "6": "2015-06-02", 
-            "7": "2015-10-07", 
-            "8": "2015-11-21", 
-            "9": "2015-11-29"
-        }, 
-        "name": "Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks"
     }, 
     "https://arxiv.org/abs/1502.05698v1": {
         "dates": {
@@ -541,7 +493,7 @@
             "2": "2015-06-10", 
             "3": "2015-08-15"
         }, 
-        "name": "Enhanced Image Classification With a Fast-Learning Shallow Convolutional"
+        "name": "Enhanced Image Classification With a Fast-Learning Shallow Convolutional Neural Network"
     }, 
     "https://arxiv.org/abs/1503.08895": {
         "dates": {
@@ -559,7 +511,7 @@
             "2": "2015-07-03", 
             "3": "2015-07-23"
         }, 
-        "name": "ReNet: A Recurrent Neural Network Based Alternative to Convolutional"
+        "name": "ReNet: A Recurrent Neural Network Based Alternative to Convolutional Networks"
     }, 
     "https://arxiv.org/abs/1505.00468v1": {
         "dates": {
@@ -630,7 +582,7 @@
             "1": "2015-08-03", 
             "2": "2015-11-01"
         }, 
-        "name": "On the Importance of Normalisation Layers in Deep Learning with"
+        "name": "On the Importance of Normalisation Layers in Deep Learning with Piecewise Linear Activation Units"
     }, 
     "https://arxiv.org/abs/1509.06461": {
         "dates": {
@@ -645,7 +597,7 @@
             "1": "2015-09-30", 
             "2": "2015-10-10"
         }, 
-        "name": "Generalizing Pooling Functions in Convolutional Neural Networks: Mixed,"
+        "name": "Generalizing Pooling Functions in Convolutional Neural Networks: Mixed, Gated, and Tree"
     }, 
     "https://arxiv.org/abs/1511.02274v2": {
         "dates": {
@@ -675,7 +627,7 @@
         "dates": {
             "2": "2016-03-19"
         }, 
-        "name": "Ask, Attend and Answer: Exploring Question-Guided Spatial Attention for"
+        "name": "Ask, Attend and Answer: Exploring Question-Guided Spatial Attention for Visual Question Answering"
     }, 
     "https://arxiv.org/abs/1511.05635": {
         "dates": {
@@ -716,7 +668,7 @@
             "4": "2016-02-15", 
             "5": "2016-02-22"
         }, 
-        "name": "Fast and Accurate Deep Network Learning by Exponential Linear Units"
+        "name": "Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs)"
     }, 
     "https://arxiv.org/abs/1512.02167": {
         "dates": {
@@ -735,7 +687,7 @@
         "dates": {
             "5": "2016-10-05"
         }, 
-        "name": "A Theoretically Grounded Application of Dropout in Recurrent Neural"
+        "name": "A Theoretically Grounded Application of Dropout in Recurrent Neural Networks"
     }, 
     "https://arxiv.org/abs/1601.01280v1": {
         "dates": {
@@ -767,7 +719,7 @@
         "dates": {
             "1": "2016-03-09"
         }, 
-        "name": "Image Captioning and Visual Question Answering Based on Attributes and"
+        "name": "Image Captioning and Visual Question Answering Based on Attributes and Their Related External Knowledge"
     }, 
     "https://arxiv.org/abs/1603.05027": {
         "dates": {
@@ -831,7 +783,7 @@
         "dates": {
             "1": "2016-06-06"
         }, 
-        "name": "Multimodal Compact Bilinear Pooling for Visual Question Answering and"
+        "name": "Multimodal Compact Bilinear Pooling for Visual Question Answering and Visual Grounding"
     }, 
     "https://arxiv.org/abs/1606.02245v1": {
         "dates": {
@@ -872,7 +824,7 @@
             "2": "2016-06-15", 
             "3": "2016-07-23"
         }, 
-        "name": "Deep Recurrent Models with Fast-Forward Connections for Neural Machine"
+        "name": "Deep Recurrent Models with Fast-Forward Connections for Neural Machine Translation"
     }, 
     "https://arxiv.org/abs/1606.04582v4": {
         "dates": {
@@ -892,7 +844,8 @@
             "1": "2016-07-12", 
             "2": "2016-08-11", 
             "3": "2016-10-27", 
-            "4": "2017-03-03"
+            "4": "2017-03-03", 
+            "5": "2017-07-04"
         }, 
         "name": "Recurrent Highway Networks"
     }, 
@@ -962,7 +915,7 @@
             "1": "2016-09-26", 
             "2": "2016-10-08"
         }, 
-        "name": "Google's Neural Machine Translation System: Bridging the Gap between"
+        "name": "Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation"
     }, 
     "https://arxiv.org/abs/1609.09106": {
         "dates": {
@@ -991,7 +944,7 @@
             "1": "2016-11-04", 
             "2": "2017-03-17"
         }, 
-        "name": "Learning Recurrent Span Representations for Extractive Question"
+        "name": "Learning Recurrent Span Representations for Extractive Question Answering"
     }, 
     "https://arxiv.org/abs/1611.01603": {
         "dates": {
@@ -1015,7 +968,7 @@
         "dates": {
             "1": "2016-11-30"
         }, 
-        "name": "Modeling Relationships in Referential Expressions with Compositional"
+        "name": "Modeling Relationships in Referential Expressions with Compositional Modular Networks"
     }, 
     "https://arxiv.org/abs/1612.03969": {
         "dates": {
@@ -1035,7 +988,7 @@
         "dates": {
             "1": "2017-01-23"
         }, 
-        "name": "Outrageously Large Neural Networks: The Sparsely-Gated"
+        "name": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
     }, 
     "https://arxiv.org/abs/1703.00572": {
         "dates": {
@@ -1061,7 +1014,7 @@
             "1": "2017-03-14", 
             "2": "2017-03-25"
         }, 
-        "name": "Exploring Question Understanding and Adaptation in Neural-Network-Based"
+        "name": "Exploring Question Understanding and Adaptation in Neural-Network-Based Question Answering"
     }, 
     "https://arxiv.org/abs/1703.04816": {
         "dates": {
@@ -1108,9 +1061,6 @@
         }, 
         "name": "Deep Convolutional Decision Jungle for Image Classification"
     }, 
-    "https://arxiv.org/pdf/1602.01783.pdf": {
-        "name": null
-    }, 
     "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": {
         "name": "Swedish Chess Computer Association - Wikipedia"
     }, 
@@ -1123,19 +1073,7 @@
     "https://papers.nips.cc/paper/6581-improved-variational-inference-with-inverse-autoregressive-flow": {
         "name": "Improved Variational Inference with Inverse Autoregressive Flow"
     }, 
-    "https://pdfs.semanticscholar.org/04e0/fefb859f4b02b017818915a2645427bfbdb2.pdf": {
-        "name": null
-    }, 
-    "https://pdfs.semanticscholar.org/13b5/8f3108709dbbed5588759bc0496f82a261c4.pdf": {
-        "name": null
-    }, 
-    "https://pdfs.semanticscholar.org/13b5/8f3108709dbbed5588759bc0496f82a261c4.pdf?_ga=1.123524811.1334652001.1475539859": {
-        "name": null
-    }, 
     "https://pdfs.semanticscholar.org/3b97/32bb07dc99bde5e1f9f75251c6ea5039373e.pdf": {
-        "name": null
-    }, 
-    "https://pdfs.semanticscholar.org/3b97/32bb07dc99bde5e1f9f75251c6ea5039373e.pdf?_ga=1.165640319.1334652001.1475539859": {
         "name": null
     }, 
     "https://pdfs.semanticscholar.org/ce25/00257fda92338ec0a117bea1dbc0381d7c73.pdf?_ga=1.195375081.452266805.1483390947": {
@@ -1157,7 +1095,7 @@
         "name": "CCRL 40/40 - Complete list"
     }, 
     "https://web.archive.org/web/20100923131123/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html": {
-        "name": null
+        "name": "CCRL 40/40 - Complete list"
     }, 
     "https://web.archive.org/web/20130415000000*/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html": {
         "name": "Wayback Machine"
