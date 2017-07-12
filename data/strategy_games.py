@@ -1,3 +1,8 @@
+from taxonomy import Problem
+from scales import *
+import datetime
+date = datetime.date
+
 abstract_strategy_games = Problem("Abstract strategy games", ["agi", "abstract-games"])
 
 playing_with_hints = Problem("Playing abstract games with extensive hints", ["abstract-games"], solved=True)

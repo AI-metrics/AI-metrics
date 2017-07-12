@@ -1,18 +1,18 @@
 #!/usr/bin/env python
 
 from collections import defaultdict
-from lxml.cssselect import CSSSelector
 from math import log
-from matplotlib import pyplot as plt
-from matplotlib import markers
-
 import datetime
 import json
-import matplotlib as mpl
 import re
 import traceback
 
+from lxml.cssselect import CSSSelector
+from matplotlib import pyplot as plt
+from matplotlib import markers
+#from IPython.display import HTML
 import lxml.html
+import matplotlib as mpl
 import numpy
 import requests
 
@@ -70,6 +70,9 @@ class Problem:
             print (indent + 4) * " " + str(m)
         for p in self.subproblems:
             p.print_structure(indent + 4)
+    
+    def tables(self):
+        return render_tables(self.metrics)
 
 mpl.rcParams["legend.fontsize"] = u"x-small"
 mpl.rcParams["xtick.labelsize"] = u"xx-small"
@@ -134,7 +137,7 @@ class Metric:
             table_html.append('<td align="center" style="width: 10%">{0}</td>'.format(m.date))
             table_html.append('<td align="center" {1}>{0}</td>'.format(m.name, alg_bound))
             table_html.append('<td align="center">{0}</td>'.format(m.value))
-            source = '( <a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
+            source = ' (<a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
             table_html.append('<td align="center"><a href=\"{0}\">{1}</a>{2}</td>'.format(m.url, m.papername, source))
             table_html.append("</tr>")
         table_html.append("</table>")
@@ -209,6 +212,17 @@ class Metric:
         plt.legend()
         plt.show()
         self.graphed = True
+
+def render_tables(metrics):
+    "Jupyter Notebook only lets you call HTML() once per cell; this function emulates doing it several times"
+    table_html = u""
+    for m in metrics:
+        html = m.table()
+        if html is not None:
+            table_html += html
+    #HTML(table_html)
+    return table_html
+
 def canonicalise(url):
     if not url:
         return ""

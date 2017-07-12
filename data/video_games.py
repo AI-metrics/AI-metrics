@@ -1,3 +1,8 @@
+from taxonomy import Problem
+from scales import *
+import datetime
+date = datetime.date
+
 computer_games = Problem("Play real-time computer & video games", ["world-modelling", "realtime-games", "agi", "language"])
 
 games_requiring_novel_language = Problem("Games that require inventing novel language, forms of speech, or communication")
