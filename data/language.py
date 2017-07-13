@@ -3,7 +3,46 @@ from scales import *
 import datetime
 date = datetime.date
 
-print "in data/language, name is ", __name__
+modelling_english = Problem("Accurate modelling of human language.", ["language", "agi"])
+ptperplexity = modelling_english.metric(name="Penn Treebank (Perplexity when parsing English sentences)", scale=perplexity)
+ptperplexity.measure(date(2016,9,26), 70.9, "Pointer Sentinel-LSTM", "https://arxiv.org/pdf/1609.07843v1.pdf")
+ptperplexity.measure(date(2016,10,5), 73.4, "Variational LSTM", "https://arxiv.org/pdf/1512.05287v5.pdf")
+ptperplexity.measure(date(2013,12,20), 107.5, "Deep RNN", "https://arxiv.org/abs/1312.6026")
+ptperplexity.measure(date(2012,4,7), 78.8, "KN5+RNNME ensemble", "http://www.fit.vutbr.cz/~imikolov/rnnlm/google.pdf")
+ptperplexity.measure(date(2012,4,7), 125.7, "KN5+cache baseline", "http://www.fit.vutbr.cz/~imikolov/rnnlm/google.pdf")
+
+ptperplexity.measure(date(2012,7,27), 124.7, "RNNLM", "https://www.microsoft.com/en-us/research/wp-content/uploads/2012/07/rnn_ctxt_TR.sav_.pdf")
+ptperplexity.measure(date(2012,7,27), 74.1, "RNN-LDA+all", "https://www.microsoft.com/en-us/research/wp-content/uploads/2012/07/rnn_ctxt_TR.sav_.pdf")
+ptperplexity.measure(date(2012,7,27), 113.7, "RNN-LDA LM", "https://www.microsoft.com/en-us/research/wp-content/uploads/2012/07/rnn_ctxt_TR.sav_.pdf")
+ptperplexity.measure(date(2012,7,27), 92.0, "RNN-LDA LM+KN5+cache", "https://www.microsoft.com/en-us/research/wp-content/uploads/2012/07/rnn_ctxt_TR.sav_.pdf")
+ptperplexity.measure(date(2012,7,27), 80.1, "RNN-LDA ensemble", "https://www.microsoft.com/en-us/research/wp-content/uploads/2012/07/rnn_ctxt_TR.sav_.pdf")
+ptperplexity.measure(None, 68.7, "RNN Dropout Regularization", "https://arxiv.org/abs/1409.2329v1")
+ptperplexity.measure(None, 68.5, "RHN", "https://arxiv.org/pdf/1607.03474v3")
+ptperplexity.measure(None, 66, "RHN+WT", "https://arxiv.org/pdf/1607.03474v3")
+ptperplexity.measure(None, 71.3, "Variational RHN", "https://arxiv.org/abs/1607.03474")
+
+hp_compression = modelling_english.metric(name="Hutter Prize (bits per character to encode English text)", scale=bits_per_x, target=1.3)
+hp_compression.measure(date(2016,10,31), 1.313, "Surprisal-Driven Zoneout",
+                   "https://pdfs.semanticscholar.org/e9bc/83f9ff502bec9cffb750468f76fdfcf5dd05.pdf")
+hp_compression.measure(date(2016,10,19), 1.37, "Surprisal-Driven Feedback RNN",
+                   "https://arxiv.org/pdf/1608.06027.pdf")
+hp_compression.measure(date(2016,9,27), 1.39, "Hypernetworks", "https://arxiv.org/abs/1609.09106")
+hp_compression.measure(date(2016,9,6), 1.32, " Hierarchical Multiscale RNN", "https://arxiv.org/abs/1609.01704")
+hp_compression.measure(date(2016,7,12), 1.32, "Recurrent Highway Networks", "https://arxiv.org/abs/1607.03474")
+hp_compression.measure(date(2015,7,6), 1.47, "Grid LSTM", "https://arxiv.org/abs/1507.01526")
+hp_compression.measure(date(2015,2,15), 1.58, "Gated Feedback RNN", "https://arxiv.org/abs/1502.02367")
+# we need to match/double check the release date of the specific version of cmix that got this performance?
+# hp_compression.measure(date(2014,4,13), 1.245, "cmix", "http://www.byronknoll.com/cmix.html")
+hp_compression.measure(date(2013,8,4), 1.67, "RNN, LSTM", "https://arxiv.org/abs/1308.0850")
+hp_compression.measure(date(2011,6,28), 1.60, "RNN", "http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf")
+
+lambada = modelling_english.metric("LAMBADA prediction of words in discourse", url="https://arxiv.org/abs/1606.06031",
+                                   scale=correct_percent, target=86, target_source="https://arxiv.org/abs/1610.08431v3")
+lambada.measure(None, 21.7, "Stanford Reader", url="https://arxiv.org/abs/1610.08431v3", algorithm_src_url="https://arxiv.org/abs/1606.02858")
+lambada.measure(None, 32.1, "Modified Stanford", url="https://arxiv.org/abs/1610.08431v3", algorithm_src_url="https://arxiv.org/abs/1606.02858")
+lambada.measure(None, 49.0, "GA + feat.", url="https://arxiv.org/abs/1610.08431v3", algorithm_src_url="https://arxiv.org/abs/1606.01549v2")
+lambada.measure(None, 44.5, "AS + feat.", url="https://arxiv.org/abs/1610.08431v3", algorithm_src_url="https://arxiv.org/abs/1603.01547")
+lambada.measure(None, 51.6, "MAGE (48)", url="https://arxiv.org/abs/1703.02620v1")
 
 turing_test = Problem("Conduct arbitrary sustained, probing conversation", ["agi", "language", "world-modelling", "communication"])
 easy_turing_test = Problem("Turing test for casual conversation", ["agi", "language", "world-modelling", "communication"])

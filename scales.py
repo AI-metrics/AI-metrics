@@ -75,9 +75,11 @@ error_rate = ErrorRate()
 # scores above 1 are possible)
 bits_per_x = ErrorRate()
 bits_per_x.axis_label = "Model Entropy"
+bits_per_x.col_label = "Model<br>Entropy"
 # perplexity is 2 to the bits_per_x
 perplexity = ErrorRate()
 perplexity.axis_label = "Perplexity"
+perplexity.col_label = "Perplexity"
 
 class CorrectPercent:
     "100 - error rate"
