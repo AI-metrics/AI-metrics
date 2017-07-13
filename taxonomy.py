@@ -81,7 +81,7 @@ mpl.rcParams["ytick.labelsize"] = u"x-small"
 
 class Metric:
     def __init__(self, name, url=None, solved=False, notes="", scale=linear, target=None, target_source=None,
-                 parent=None, changeable=False, axis_label=None, target_label=None, data_url=None):
+                 parent=None, changeable=False, axis_label=None, target_label=None):
         self.name = name
         self.measures = []
         self.solved = solved
@@ -100,7 +100,7 @@ class Metric:
                            else self.scale.axis_label if hasattr(self.scale, "axis_label") 
                            else self.name)
         # primarily used by the table() method
-        self.data_url = self.find_edit_url() if data_url is None else data_url
+        self.data_url = self.find_edit_url(3) # 3 is stack depth for a problem.metric() call
         
     def __str__(self):
         solved = "SOLVED" if self.solved else "?" if not self.target else "not solved"
@@ -122,20 +122,21 @@ class Metric:
                 self.solved = True
                 self.parent.check_solved()
         self.measures.append(m)
+        self.data_url = self.find_edit_url()
         return m
 
-    def find_edit_url(self):
+    def find_edit_url(self, depth=2):
         "Some magic hackery to find what file and line number a Metric was defined on and produce an edit link"
         try:
             # Deliberately trigger an exception so that we can inspect the stack
             import nosuchthing
         except:
-            # find where this metric was defined. The stack looks like this:
+            # find where the most recent .measure call happened. The stack looks like this:
             #   0. Metric.find_edit_url; 
-            #   1. Metric.__init__; 
-            #   2. Problem.metric; 
-            #   3. someproblem.meric() in a data/*.py file
-            tb_frame = sys._getframe(3) 
+            #   1. Metric.measure; 
+            #   2. somemetric.measure() in a data/*.py file
+            #  (So depth defaults to 2)
+            tb_frame = sys._getframe(depth) 
             line = tb_frame.f_lineno
             filename = tb_frame and tb_frame.f_code and tb_frame.f_code.co_filename
             if filename:

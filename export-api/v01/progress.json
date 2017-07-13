@@ -161,7 +161,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/generative.py#L24", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/generative.py#L31", 
                     "scale": "Model Entropy", 
                     "target_label": null, 
                     "name": "Generative models of CIFAR-10 images", 
@@ -476,7 +476,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L94", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L128", 
                     "scale": "Percentage correct", 
                     "target_label": "Excellent performance", 
                     "name": "bAbi 20 QA (10k training examples)", 
@@ -640,7 +640,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L95", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L127", 
                     "scale": "Percentage correct", 
                     "target_label": "Excellent performance", 
                     "name": "bAbi 20 QA (1k training examples)", 
@@ -762,7 +762,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L134", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L138", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Reading comprehension MCTest-160-all", 
@@ -863,7 +863,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L140", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L145", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Reading comprehension MCTest-500-all", 
@@ -985,7 +985,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L147", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L194", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "bAbi Children's Book comprehension CBtest NE", 
@@ -1191,7 +1191,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L148", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L196", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "bAbi Children's Book comprehension CBtest CN", 
@@ -1355,7 +1355,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L149", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L190", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "CNN Comprehension test", 
@@ -1603,7 +1603,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L150", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L192", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Daily Mail Comprehension test", 
@@ -1767,7 +1767,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L198", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L255", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Stanford Question Answering Dataset EM test", 
@@ -2183,7 +2183,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L199", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L256", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Stanford Question Answering Dataset F1 test", 
@@ -2784,7 +2784,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L259", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L285", 
                     "scale": "BLEU score", 
                     "target_label": "Identical to professional human translations", 
                     "name": "news-test-2014 En-Fr BLEU", 
@@ -2990,7 +2990,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L260", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L289", 
                     "scale": "BLEU score", 
                     "target_label": "Identical to professional human translations", 
                     "name": "news-test-2014 En-De BLEU", 
@@ -3133,7 +3133,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L261", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L292", 
                     "scale": "BLEU score", 
                     "target_label": "Identical to professional human translations", 
                     "name": "news-test-2016 En-Ro BLEU", 
@@ -3231,7 +3231,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/acoustics.py#L20", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/acoustics.py#L41", 
                     "scale": "Percentage error", 
                     "target_label": null, 
                     "name": "Word error rate on Switchboard trained against the Hub5'00 dataset", 
@@ -3578,7 +3578,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L55", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L86", 
                     "scale": "Percentage correct", 
                     "target_label": "Completely plausible answers", 
                     "name": "The Loebner Prize scored selection answers", 
@@ -3929,7 +3929,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/stem.py#L50", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/stem.py#L53", 
                     "scale": "Percentage correct", 
                     "target_label": "Bug-free card implementation", 
                     "name": "Card2Code MTG accuracy", 
@@ -3967,7 +3967,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/stem.py#L51", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/stem.py#L58", 
                     "scale": "Percentage correct", 
                     "target_label": "Bug-free card implementation", 
                     "name": "Card2Code Hearthstone accuracy", 
@@ -4190,7 +4190,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L14", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L32", 
                     "scale": "Error rate", 
                     "target_label": null, 
                     "name": "Imagenet Image Recognition", 
@@ -4377,7 +4377,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L7", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L224", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "MSRC-21 image semantic labelling (per-class)", 
@@ -4646,7 +4646,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L8", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L237", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "MSRC-21 image semantic labelling (per-pixel)", 
@@ -4915,7 +4915,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L11", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L293", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "CIFAR-100 Image Recognition", 
@@ -5625,7 +5625,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L13", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L291", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "CIFAR-10 Image Recognition", 
@@ -6671,7 +6671,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L15", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L73", 
                     "scale": "Percentage error", 
                     "target_label": null, 
                     "name": "Street View House Numbers (SVHN)", 
@@ -7024,7 +7024,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L18", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L208", 
                     "scale": "Percentage error", 
                     "target_label": null, 
                     "name": "MNIST handwritten digit recognition", 
@@ -8091,7 +8091,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L20", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L54", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "STL-10 Image Recognition", 
@@ -8709,7 +8709,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L26", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L353", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Alien", 
@@ -8852,7 +8852,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L33", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L355", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Amidar", 
@@ -8995,7 +8995,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L40", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L357", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Assault", 
@@ -9138,7 +9138,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L47", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L359", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Asterix", 
@@ -9281,7 +9281,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L54", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L361", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Asteroids", 
@@ -9424,7 +9424,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L61", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L363", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Atlantis", 
@@ -9567,7 +9567,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L68", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L365", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Bank Heist", 
@@ -9710,7 +9710,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L75", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L367", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Battle Zone", 
@@ -9853,7 +9853,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L82", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L369", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Beam Rider", 
@@ -9996,7 +9996,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L89", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L371", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Berzerk", 
@@ -10118,7 +10118,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L95", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L373", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Bowling", 
@@ -10261,7 +10261,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L102", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L375", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Boxing", 
@@ -10404,7 +10404,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L109", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L377", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Breakout", 
@@ -10610,7 +10610,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L121", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L379", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Centipede", 
@@ -10753,7 +10753,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L128", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L381", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Chopper Command", 
@@ -10896,7 +10896,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L135", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L383", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Crazy Climber", 
@@ -11039,7 +11039,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L142", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L385", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Demon Attack", 
@@ -11182,7 +11182,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L150", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L387", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Double Dunk", 
@@ -11325,7 +11325,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L157", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L389", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Enduro", 
@@ -11531,7 +11531,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L169", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L391", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Fishing Derby", 
@@ -11674,7 +11674,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L176", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L393", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Freeway", 
@@ -11817,7 +11817,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L183", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L395", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Frostbite", 
@@ -11960,7 +11960,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L190", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L397", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Gopher", 
@@ -12103,7 +12103,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L197", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L399", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Gravitar", 
@@ -12246,7 +12246,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L204", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L208", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 HERO", 
@@ -12347,7 +12347,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L211", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L401", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Ice Hockey", 
@@ -12427,7 +12427,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L215", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L216", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 James Bond", 
@@ -12465,7 +12465,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L219", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L403", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Kangaroo", 
@@ -12545,7 +12545,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L223", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L405", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Krull", 
@@ -12625,7 +12625,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L227", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L228", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Kung-Fu Master", 
@@ -12663,7 +12663,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L231", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L407", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Montezuma's Revenge", 
@@ -12743,7 +12743,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L235", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L236", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Ms. Pacman", 
@@ -12781,7 +12781,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L239", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L409", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Name This Game", 
@@ -12861,7 +12861,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L243", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L415", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Pong", 
@@ -13067,7 +13067,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L255", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L417", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Private Eye", 
@@ -13147,7 +13147,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L259", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L419", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Q*Bert", 
@@ -13353,7 +13353,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L271", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L421", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 River Raid", 
@@ -13433,7 +13433,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L275", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L423", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Road Runner", 
@@ -13513,7 +13513,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L279", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L425", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Robotank", 
@@ -13593,7 +13593,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L283", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L427", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Seaquest", 
@@ -13799,7 +13799,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L295", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L433", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Space Invaders", 
@@ -14005,7 +14005,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L307", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L435", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Star Gunner", 
@@ -14085,7 +14085,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L312", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L437", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Tennis", 
@@ -14165,7 +14165,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L316", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L439", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Time Pilot", 
@@ -14245,7 +14245,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L320", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L441", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Tutankham", 
@@ -14325,7 +14325,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L324", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L443", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Up and Down", 
@@ -14405,7 +14405,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L328", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L445", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Venture", 
@@ -14485,7 +14485,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L332", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L447", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Video Pinball", 
@@ -14565,7 +14565,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L336", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L449", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Wizard of Wor", 
@@ -14645,7 +14645,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L340", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L453", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Zaxxon", 
@@ -14725,7 +14725,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L344", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L411", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Phoenix", 
@@ -14784,7 +14784,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L345", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L413", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Pit Fall", 
@@ -14843,7 +14843,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L346", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L429", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Skiing", 
@@ -14902,7 +14902,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L347", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L431", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Solaris", 
@@ -14961,7 +14961,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L348", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/video_games.py#L451", 
                     "scale": "Score (Rewards Normalized)", 
                     "target_label": null, 
                     "name": "Atari 2600 Yars Revenge", 
@@ -15037,7 +15037,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/strategy_games.py#L15", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/strategy_games.py#L59", 
                     "scale": "ELO rating", 
                     "target_label": "Best human play", 
                     "name": "Computer Chess", 
@@ -15880,7 +15880,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L9", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L24", 
                     "scale": "Perplexity", 
                     "target_label": null, 
                     "name": "Penn Treebank (Perplexity when parsing English sentences)", 
@@ -16191,7 +16191,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L26", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L39", 
                     "scale": "Model Entropy", 
                     "target_label": null, 
                     "name": "Hutter Prize (bits per character to encode English text)", 
@@ -16397,7 +16397,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L42", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L47", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "LAMBADA prediction of words in discourse", 
@@ -16574,7 +16574,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L45", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L81", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "COCO Visual Question Answering (VQA) 1.0 open ended", 
@@ -16780,7 +16780,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L46", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L82", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "COCO Visual Question Answering (VQA) 1.0 multiple choice", 
@@ -16955,7 +16955,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L51", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L86", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Visual Genome (pairs)", 
@@ -16993,7 +16993,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L52", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L87", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Visual Genome (subjects)", 
@@ -17031,7 +17031,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L54", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L85", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Visual7W", 
