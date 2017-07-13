@@ -1,3 +1,4 @@
+"Hand-entered data about performance of generative models"
 from taxonomy import Problem
 from scales import *
 import datetime

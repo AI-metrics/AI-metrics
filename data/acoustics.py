@@ -1,3 +1,4 @@
+"Hand-entered acoustic data"
 from taxonomy import Problem
 from scales import *
 import datetime

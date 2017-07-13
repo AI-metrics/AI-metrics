@@ -1,3 +1,4 @@
+"Hand-entered data about written language problems"
 from taxonomy import Problem
 from scales import *
 import datetime
@@ -253,3 +254,40 @@ squad_f1.measure(date(2016, 12, 29), 77.07, "FastQA", url="https://arxiv.org/abs
 squad_em.measure(date(2016, 11, 7), 67.901, "Match-LSTM+Ans-Ptr", url="https://arxiv.org/pdf/1608.07905v2")
 squad_f1.measure(date(2016, 11, 7), 77.022, "Match-LSTM+Ans-Ptr", url="https://arxiv.org/pdf/1608.07905v2")
 
+translation = Problem("Translation between human langauges", ["agi", "language"])
+en_fr_bleu = translation.metric("news-test-2014 En-Fr BLEU", url="http://aclweb.org/anthology/P/P02/P02-1040.pdf", scale=bleu_score, target_label="Identical to professional human translations", target=50)
+en_de_bleu = translation.metric("news-test-2014 En-De BLEU", url="http://aclweb.org/anthology/P/P02/P02-1040.pdf", scale=bleu_score, target_label="Identical to professional human translations", target=50)
+en_ro_bleu = translation.metric("news-test-2016 En-Ro BLEU", url="http://www.statmt.org/wmt16/book.pdf", scale=bleu_score, target_label="Identical to professional human translations", target=50)
+
+
+en_fr_bleu.measure(None, 37, "PBMT", url="http://www.anthology.aclweb.org/W/W14/W14-33.pdf", papername="Edinburgh’s phrase-based machine translation systems for WMT-14", venue="WMT 2014")
+en_de_bleu.measure(None, 20.7, "PBMT", url="http://www.anthology.aclweb.org/W/W14/W14-33.pdf", papername="Edinburgh’s phrase-based machine translation systems for WMT-14", venue="WMT 2014")
+
+en_fr_bleu.measure(date(2014, 9, 1), 36.15, "RNN-search50*", url="https://arxiv.org/abs/1409.0473")
+en_fr_bleu.measure(date(2014, 10, 30), 37.5, "LSTM6 + PosUnk", url="https://arxiv.org/abs/1410.8206")
+
+# XXX need a better way of indicating that LSTM is old.... we don't want the axes running
+# all the way back to 1997; maybe we can use ellipses?
+en_fr_bleu.measure(None, 34.81, "LSTM", "https://arxiv.org/abs/1409.3215v1", algorithm_src_url="http://www.bioinf.jku.at/publications/older/2604.pdf")#, min_date=date(2010,1,1))
+en_fr_bleu.measure(None, 36.5, "SMT+LSTM5", "https://arxiv.org/abs/1409.3215v1")
+
+en_fr_bleu.measure(date(2016, 9, 26), 39.92, "GNMT+RL", url="https://arxiv.org/abs/1609.08144")
+en_de_bleu.measure(date(2016, 9, 26), 26.30, "GNMT+RL", url="https://arxiv.org/abs/1609.08144")
+
+# Lots of this data is coming via https://arxiv.org/abs/1609.08144
+en_fr_bleu.measure(date(2016, 7, 23), 39.2, "Deep-Att + PosUnk", url="https://arxiv.org/abs/1606.04199")
+en_de_bleu.measure(date(2016, 7, 23), 20.7, "Deep-Att", url="https://arxiv.org/abs/1606.04199")
+
+en_fr_bleu.measure(date(2017, 1, 23), 40.56, "MoE 2048", url="https://arxiv.org/pdf/1701.06538")
+en_de_bleu.measure(date(2017, 1, 23), 26.03, "MoE 2048", url="https://arxiv.org/pdf/1701.06538")
+
+en_fr_bleu.measure(None, 41.29, "ConvS2S ensemble", url="https://arxiv.org/abs/1705.03122v2")
+en_de_bleu.measure(None, 26.36, "ConvS2S ensemble", url="https://arxiv.org/abs/1705.03122v2")
+
+
+en_de_bleu.measure(date(2016, 7, 14), 17.93, "NSE-NSE", url="https://arxiv.org/abs/1607.04315v1")
+
+en_ro_bleu.measure(date(2016, 7, 11), 28.9, "GRU BPE90k", papername="The QT21/HimL Combined Machine Translation System", url="http://www.statmt.org/wmt16/pdf/W16-2320.pdf")
+en_ro_bleu.measure(None, 29.88, "ConvS2S BPE40k", url="https://arxiv.org/abs/1705.03122v2")
+
+# XXX add more languages
