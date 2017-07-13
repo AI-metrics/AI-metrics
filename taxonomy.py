@@ -157,7 +157,7 @@ class Metric:
             table_html.append('<td align="center" {1}>{0}</td>'.format(m.name, alg_bound))
             table_html.append('<td align="center">{0}</td>'.format(m.value))
             source = ' (<a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
-            table_html.append('<td align="center"><a href=\"{0}\">{1}</a>{2}</td>'.format(m.url, m.papername, source))
+            table_html.append('<td align="center"><a href=\"{0}\">{1}</a>{2}</td>'.format(m.url, m.papername if m.papername else m.url, source))
             table_html.append("</tr>")
         table_html.append("</table>")
         github_link = ['<div style="text-align: right; font-style: italic"><a href="{0}">Edit/add data on GitHub</a></div>'.format(self.data_url)]
