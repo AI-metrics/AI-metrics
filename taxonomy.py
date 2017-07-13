@@ -164,7 +164,7 @@ class Metric:
             table_html.append('<td align="center"><a href=\"{0}\">{1}</a>{2}</td>'.format(m.url, m.papername if m.papername else m.url, source))
             table_html.append("</tr>")
         table_html.append("</table>")
-        github_link = ['<div style="text-align: right; font-style: italic"><a href="{0}">Edit/add data on GitHub</a></div>'.format(self.data_url)]
+        github_link = ['<div style="text-align: right; font-style: italic"><a target="_blank" href="{0}">Edit/add data on GitHub</a></div>'.format(self.data_url)]
         html = "".join(table_html + github_link)
         return html
 
