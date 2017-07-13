@@ -127,10 +127,14 @@ class Metric:
     def find_edit_url(self):
         "Some magic hackery to find what file and line number a Metric was defined on and produce an edit link"
         try:
+            # Deliberately trigger an exception so that we can inspect the stack
             import nosuchthing
         except:
-            # find where this metric was defined
-            # 0. Metric.find_edit_url; 1. Metric.__init__; 2. Problem.metric; 3 place where .metric() is called
+            # find where this metric was defined. The stack looks like this:
+            #   0. Metric.find_edit_url; 
+            #   1. Metric.__init__; 
+            #   2. Problem.metric; 
+            #   3. someproblem.meric() in a data/*.py file
             tb_frame = sys._getframe(3) 
             line = tb_frame.f_lineno
             filename = tb_frame and tb_frame.f_code and tb_frame.f_code.co_filename
