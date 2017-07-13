@@ -78,8 +78,8 @@ vqa_mc.measure(None, 63.1, "LSTM Q+I", url="https://arxiv.org/abs/1505.00468v1")
 vqa_oe.measure(None, 63.2, "joint-loss", url="https://arxiv.org/abs/1606.03647")
 vqa_mc.measure(None, 67.3, "joint-loss", url="https://arxiv.org/abs/1606.03647")
 
-vqa_oe.measure(None, 66.5, "MCB 7 att.", url="https://arxiv.org/abs/1606.01847v1", replicated="https://github.com/akirafukui/vqa-mcb.")
-vqa_mc.measure(None, 70.1, "MCB 7 att.", url="https://arxiv.org/abs/1606.01847v1", replicated="https://github.com/akirafukui/vqa-mcb.")
+vqa_oe.measure(None, 66.5, "MCB 7 att.", url="https://arxiv.org/abs/1606.01847v1", replicated="https://github.com/akirafukui/vqa-mcb")
+vqa_mc.measure(None, 70.1, "MCB 7 att.", url="https://arxiv.org/abs/1606.01847v1", replicated="https://github.com/akirafukui/vqa-mcb")
 visual7w.measure(None, 62.2, "MCB+Att.", url="https://arxiv.org/abs/1606.01847v1")
 
 visual7w.measure(None, 72.53, "CMN", url="https://arxiv.org/abs/1611.09978v1")
