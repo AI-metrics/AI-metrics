@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 "Hand-entered data about written language problems"
 from taxonomy import Problem
 from scales import *
@@ -260,8 +261,8 @@ en_de_bleu = translation.metric("news-test-2014 En-De BLEU", url="http://aclweb.
 en_ro_bleu = translation.metric("news-test-2016 En-Ro BLEU", url="http://www.statmt.org/wmt16/book.pdf", scale=bleu_score, target_label="Identical to professional human translations", target=50)
 
 
-en_fr_bleu.measure(None, 37, "PBMT", url="http://www.anthology.aclweb.org/W/W14/W14-33.pdf", papername="Edinburgh’s phrase-based machine translation systems for WMT-14", venue="WMT 2014")
-en_de_bleu.measure(None, 20.7, "PBMT", url="http://www.anthology.aclweb.org/W/W14/W14-33.pdf", papername="Edinburgh’s phrase-based machine translation systems for WMT-14", venue="WMT 2014")
+en_fr_bleu.measure(None, 37, "PBMT", url="http://www.anthology.aclweb.org/W/W14/W14-33.pdf", papername=u"Edinburgh’s phrase-based machine translation systems for WMT-14", venue="WMT 2014")
+en_de_bleu.measure(None, 20.7, "PBMT", url="http://www.anthology.aclweb.org/W/W14/W14-33.pdf", papername=u"Edinburgh’s phrase-based machine translation systems for WMT-14", venue="WMT 2014")
 
 en_fr_bleu.measure(date(2014, 9, 1), 36.15, "RNN-search50*", url="https://arxiv.org/abs/1409.0473")
 en_fr_bleu.measure(date(2014, 10, 30), 37.5, "LSTM6 + PosUnk", url="https://arxiv.org/abs/1410.8206")

@@ -91,7 +91,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-34-7db95217a73d>#L2", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-42-7db95217a73d>#L2", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Federated Learning (distributed training with thresholded updates to models)", 
@@ -161,7 +161,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-13-2bd3aa89d519>#L19", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/generative.py#L24", 
                     "scale": "Model Entropy", 
                     "target_label": null, 
                     "name": "Generative models of CIFAR-10 images", 
@@ -287,7 +287,7 @@
                             "min_date": null, 
                             "algorithms": [], 
                             "notes": "", 
-                            "replicated_url": "", 
+                            "replicated_url": "https://github.com/openai/pixel-cnn", 
                             "date": "2016-11-04", 
                             "aglorithm_src_url": null, 
                             "label": "PixelCNN++", 
@@ -355,7 +355,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-31-13d9cddcfa63>#L9", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-39-13d9cddcfa63>#L9", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Caltech Pedestrians USA", 
@@ -371,7 +371,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-31-13d9cddcfa63>#L11", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-39-13d9cddcfa63>#L11", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "INRIA persons", 
@@ -387,7 +387,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-31-13d9cddcfa63>#L13", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-39-13d9cddcfa63>#L13", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "ETH Pedestrian", 
@@ -403,7 +403,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-31-13d9cddcfa63>#L15", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-39-13d9cddcfa63>#L15", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "TUD-Brussels Pedestrian", 
@@ -419,7 +419,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-31-13d9cddcfa63>#L17", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-39-13d9cddcfa63>#L17", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Damiler Pedestrian", 
@@ -476,7 +476,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L92", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L94", 
                     "scale": "Percentage correct", 
                     "target_label": "Excellent performance", 
                     "name": "bAbi 20 QA (10k training examples)", 
@@ -640,7 +640,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L93", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L95", 
                     "scale": "Percentage correct", 
                     "target_label": "Excellent performance", 
                     "name": "bAbi 20 QA (1k training examples)", 
@@ -762,7 +762,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L132", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L134", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Reading comprehension MCTest-160-all", 
@@ -863,7 +863,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L138", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L140", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Reading comprehension MCTest-500-all", 
@@ -985,7 +985,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L145", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L147", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "bAbi Children's Book comprehension CBtest NE", 
@@ -1191,7 +1191,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L146", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L148", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "bAbi Children's Book comprehension CBtest CN", 
@@ -1355,7 +1355,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L147", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L149", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "CNN Comprehension test", 
@@ -1603,7 +1603,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L148", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L150", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Daily Mail Comprehension test", 
@@ -1767,7 +1767,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L196", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L198", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Stanford Question Answering Dataset EM test", 
@@ -2183,7 +2183,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L197", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L199", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Stanford Question Answering Dataset F1 test", 
@@ -2615,7 +2615,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-25-ca2a07954d2b>#L34", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/stem.py#L39", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "HolStep", 
@@ -2682,6 +2682,15 @@
         }, 
         {
             "superproblems": [], 
+            "name": "Learn a several tasks without undermining performance on a first task, avoiding catastrophic forgetting", 
+            "url": "https://arxiv.org/abs/1612.00796", 
+            "subproblems": [], 
+            "metrics": [], 
+            "solved": false, 
+            "attributes": []
+        }, 
+        {
+            "superproblems": [], 
             "name": "Train ML classifiers in a manner that corrects for the impact of omitted-variable bias on certain groups", 
             "url": null, 
             "subproblems": [], 
@@ -2689,7 +2698,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-33-8599bdd9b61a>#L18", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-41-8599bdd9b61a>#L18", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Adjust prediction models to have constant false-positive rates", 
@@ -2705,7 +2714,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-33-8599bdd9b61a>#L19", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-41-8599bdd9b61a>#L19", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Adjust prediction models tos have constant false-positive and -negative rates", 
@@ -2749,7 +2758,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-25-ca2a07954d2b>#L17", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/stem.py#L22", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Card2Code", 
@@ -2775,7 +2784,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-20-f8f353986ab5>#L2", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L259", 
                     "scale": "BLEU score", 
                     "target_label": "Identical to professional human translations", 
                     "name": "news-test-2014 En-Fr BLEU", 
@@ -2981,7 +2990,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-20-f8f353986ab5>#L3", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L260", 
                     "scale": "BLEU score", 
                     "target_label": "Identical to professional human translations", 
                     "name": "news-test-2014 En-De BLEU", 
@@ -3124,7 +3133,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-20-f8f353986ab5>#L4", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L261", 
                     "scale": "BLEU score", 
                     "target_label": "Identical to professional human translations", 
                     "name": "news-test-2016 En-Ro BLEU", 
@@ -3222,7 +3231,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-12-1da4234af06b>#L14", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/acoustics.py#L20", 
                     "scale": "Percentage error", 
                     "target_label": null, 
                     "name": "Word error rate on Switchboard trained against the Hub5'00 dataset", 
@@ -3569,7 +3578,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L53", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L55", 
                     "scale": "Percentage correct", 
                     "target_label": "Completely plausible answers", 
                     "name": "The Loebner Prize scored selection answers", 
@@ -3920,7 +3929,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-26-f81e2848d31f>#L3", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/stem.py#L50", 
                     "scale": "Percentage correct", 
                     "target_label": "Bug-free card implementation", 
                     "name": "Card2Code MTG accuracy", 
@@ -3958,7 +3967,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-26-f81e2848d31f>#L4", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/stem.py#L51", 
                     "scale": "Percentage correct", 
                     "target_label": "Bug-free card implementation", 
                     "name": "Card2Code Hearthstone accuracy", 
@@ -4102,7 +4111,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-25-ca2a07954d2b>#L7", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/stem.py#L12", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Automatically find new relevant ML results on arXiv", 
@@ -4368,7 +4377,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L6", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L7", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "MSRC-21 image semantic labelling (per-class)", 
@@ -4637,7 +4646,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L7", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L8", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "MSRC-21 image semantic labelling (per-pixel)", 
@@ -4906,7 +4915,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L10", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L11", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "CIFAR-100 Image Recognition", 
@@ -5616,7 +5625,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L12", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L13", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "CIFAR-10 Image Recognition", 
@@ -6662,7 +6671,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L14", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L15", 
                     "scale": "Percentage error", 
                     "target_label": null, 
                     "name": "Street View House Numbers (SVHN)", 
@@ -7015,7 +7024,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L17", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L18", 
                     "scale": "Percentage error", 
                     "target_label": null, 
                     "name": "MNIST handwritten digit recognition", 
@@ -8082,7 +8091,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L19", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L20", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "STL-10 Image Recognition", 
@@ -8477,7 +8486,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L22", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L23", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Leeds Sport Poses", 
@@ -8558,7 +8567,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-27-9b4a2a9784dd>#L2", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-35-847f9831eedb>#L2", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Solve all other solved problems in this document, with a single system", 
@@ -15871,7 +15880,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L7", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L9", 
                     "scale": "Perplexity", 
                     "target_label": null, 
                     "name": "Penn Treebank (Perplexity when parsing English sentences)", 
@@ -15884,17 +15893,13 @@
                             "maxval": 125.7, 
                             "long_label": false, 
                             "name": "KN5+cache baseline", 
-<<<<<<< HEAD
                             "opensource": false, 
-=======
->>>>>>> master
                             "minval": 125.7, 
                             "url": "http://www.fit.vutbr.cz/~imikolov/rnnlm/google.pdf", 
                             "papername": null, 
                             "value": 125.7, 
                             "min_date": null, 
                             "algorithms": [], 
-<<<<<<< HEAD
                             "notes": "", 
                             "replicated_url": "", 
                             "date": "2012-04-07", 
@@ -15903,25 +15908,13 @@
                             "withdrawn": false, 
                             "metric": "Metric(Penn Treebank (Perplexity when parsing English sentences))?", 
                             "max_date": null
-=======
-                            "max_date": null, 
-                            "replicated_url": "", 
-                            "date": "2012-04-07", 
-                            "aglorithm_src_url": null, 
-                            "withdrawn": false, 
-                            "metric": "Metric(Penn Treebank (Perplexity when parsing English sentences))?", 
-                            "opensource": false
->>>>>>> master
                         }, 
                         {
                             "not_directly_comparable": false, 
                             "maxval": 78.8, 
                             "long_label": false, 
                             "name": "KN5+RNNME ensemble", 
-<<<<<<< HEAD
                             "opensource": false, 
-=======
->>>>>>> master
                             "minval": 78.8, 
                             "url": "http://www.fit.vutbr.cz/~imikolov/rnnlm/google.pdf", 
                             "papername": null, 
@@ -16005,10 +15998,7 @@
                             "maxval": 80.1, 
                             "long_label": false, 
                             "name": "RNN-LDA ensemble", 
-<<<<<<< HEAD
                             "opensource": false, 
-=======
->>>>>>> master
                             "minval": 80.1, 
                             "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2012/07/rnn_ctxt_TR.sav_.pdf", 
                             "papername": null, 
@@ -16201,7 +16191,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L24", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L26", 
                     "scale": "Model Entropy", 
                     "target_label": null, 
                     "name": "Hutter Prize (bits per character to encode English text)", 
@@ -16407,7 +16397,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L40", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L42", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "LAMBADA prediction of words in discourse", 
