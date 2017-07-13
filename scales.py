@@ -11,6 +11,7 @@ from math import log
 class Linear():
     offset = (2,-2)
     axis_label = "Score"
+    col_label = "Score"
     def improvement(self, score1, score2):
         return score2 - score1
     def pseudolinear(self, score):
@@ -19,6 +20,7 @@ class Linear():
 class AtariLinear():
     offset = (2,-2)
     axis_label = "Score (Rewards Normalized)"
+    col_label = "Normalized<br>Score"
     def improvement(self, score1, score2):
         return score2 - score1
     def pseudolinear(self, score):
@@ -31,6 +33,7 @@ atari_linear = AtariLinear()
 class ELO:
     offset = (2,-2)
     axis_label = "ELO rating"
+    col_label = "ELO"
     def improvement(self, score1, score2):
         """
         Normalise an ELO score
@@ -56,6 +59,7 @@ class ErrorRate:
     """Many labelling contests use these measures"""
     offset = (2,2)
     axis_label = "Error rate"
+    col_label = "Error"
     def improvement(self, score1, score2):
         # improvement is measured as a negative log of the error rate
         return log(score1) - log(score2)
@@ -79,6 +83,7 @@ class CorrectPercent:
     "100 - error rate"
     offset = (3,-6)
     axis_label = "Percentage correct"
+    col_label = "% correct"
     def erate(self, score):
         return (100. - score)/100.
 
@@ -95,6 +100,7 @@ class BLEUScore:
     "50 is a perfect BLEU score, meaning a system produces exact matches to professional human translations"
     offset = (3,-6)
     axis_label = "BLEU score"
+    col_label = "BLEU"
     def erate(self, score):
         return (50. - score)/50.
 
@@ -111,6 +117,7 @@ class ErrorPercent:
     "100 * error rate"
     offset = (3,-6)
     axis_label = "Percentage error"
+    col_label = "% error"
     def erate(self, score):
         return score/100.
 

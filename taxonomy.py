@@ -143,21 +143,24 @@ class Metric:
         if len(self.measures) < 2:
             return u""
 
-        table_html = ["<table>"]
+        # TODO: split out CSS
+        table_html = ['<table style="width: 100%">']
         table_html.append("<caption>{0}</caption>".format(self.name))
-        table_html.append("<tr><th>Date</th><th>Algorithm</th><th>Result</th><th>Paper / Source</th></tr>".format(self.scale.axis_label))
+        col = 'style="background-color: #f7f7f7"'
+        table_html.append("<tr {1}><th>Date</th><th>Algorithm</th><th>{0}</th><th>Paper / Source</th></tr>".format(self.scale.col_label, col))
         widest_alg = max(len(m.name) for m in self.measures)
         alg_bound = 'style="width: 25%"' if widest_alg >= 45 else ""
         for n, m in enumerate(self.measures):
-            table_html.append("<tr>")
+            bgcol = 'style="background-color: #f7f7f7"' if n % 2 == 1 else ''
+            table_html.append("<tr {0}>".format(bgcol))
             table_html.append('<td align="center" style="width: 10%">{0}</td>'.format(m.date))
             table_html.append('<td align="center" {1}>{0}</td>'.format(m.name, alg_bound))
             table_html.append('<td align="center">{0}</td>'.format(m.value))
-            source = '(<a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
+            source = ' (<a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
             table_html.append('<td align="center"><a href=\"{0}\">{1}</a>{2}</td>'.format(m.url, m.papername, source))
             table_html.append("</tr>")
         table_html.append("</table>")
-        github_link = ['<p><a href="{0}">Edit/add data on GitHub</a></p>'.format(self.data_url)]
+        github_link = ['<div style="text-align: right; font-style: italic"><a href="{0}">Edit/add data on GitHub</a></div>'.format(self.data_url)]
         html = "".join(table_html + github_link)
         return html
 
