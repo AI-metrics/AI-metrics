@@ -5,6 +5,7 @@ from math import log
 import datetime
 import json
 import re
+import sys
 import traceback
 
 from lxml.cssselect import CSSSelector
@@ -99,7 +100,7 @@ class Metric:
                            else self.scale.axis_label if hasattr(self.scale, "axis_label") 
                            else self.name)
         # primarily used by the table() method
-        self.data_url = data_url if data_url is not None else "https://github.com/AI-metrics/AI-metrics"
+        self.data_url = self.find_edit_url() if data_url is None else data_url
         
     def __str__(self):
         solved = "SOLVED" if self.solved else "?" if not self.target else "not solved"
@@ -122,6 +123,21 @@ class Metric:
                 self.parent.check_solved()
         self.measures.append(m)
         return m
+
+    def find_edit_url(self):
+        "Some magic hackery to find what file and line number a Metric was defined on and produce an edit link"
+        try:
+            import nosuchthing
+        except:
+            # find where this metric was defined
+            # 0. Metric.find_edit_url; 1. Metric.__init__; 2. Problem.metric; 3 place where .metric() is called
+            tb_frame = sys._getframe(3) 
+            line = tb_frame.f_lineno
+            filename = tb_frame and tb_frame.f_code and tb_frame.f_code.co_filename
+            if filename:
+                return "https://github.com/AI-metrics/AI-metrics/edit/master/{0}#L{1}".format(filename, line)
+            else:
+                return "https://github.com/AI-metrics/AI-metrics"
 
     def table(self):
         if len(self.measures) < 2:

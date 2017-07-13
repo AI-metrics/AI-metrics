@@ -3,6 +3,8 @@ from scales import *
 import datetime
 date = datetime.date
 
+print "in data/language, name is ", __name__
+
 turing_test = Problem("Conduct arbitrary sustained, probing conversation", ["agi", "language", "world-modelling", "communication"])
 easy_turing_test = Problem("Turing test for casual conversation", ["agi", "language", "world-modelling", "communication"])
 turing_test.add_subproblem(easy_turing_test)
