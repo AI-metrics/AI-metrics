@@ -281,3 +281,13 @@ msrc21_pp.measure(None, 72.0, 'TextonBoost', url='http://research.microsoft.com/
 # Skipping 40.4 mAP Bottom-up Segmentation for Top-down Detection CVPR 2013
 # Skipping 33.1 mAP Multi-Component Models for Object Detection ECCV 2012
 
+# -------------------------------------------------
+# additional, newer data on the AWTY problems
+# -------------------------------------------------
+
+cifar100.measure(None, 100 - 22.71, "ResNet-1001",
+url="https://arxiv.org/pdf/1603.05027", uncertainty=0.22)
+cifar10.measure(None, 100 - 4.62, "ResNet-1001",
+url="https://arxiv.org/pdf/1603.05027", uncertainty=0.20)
+cifar100.measure(None, 69.0, "NiN+Superclass+CDJ",
+url="https://arxiv.org/abs/1706.02003")
