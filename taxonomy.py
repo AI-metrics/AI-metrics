@@ -101,6 +101,7 @@ class Metric:
                            else self.name)
         # primarily used by the table() method
         self.data_url = self.find_edit_url(3) # 3 is stack depth for a problem.metric() call
+        self.data_path = None
         
     def __str__(self):
         solved = "SOLVED" if self.solved else "?" if not self.target else "not solved"
@@ -140,6 +141,7 @@ class Metric:
             line = tb_frame.f_lineno
             filename = tb_frame and tb_frame.f_code and tb_frame.f_code.co_filename
             if filename:
+                self.data_path = filename
                 return "https://github.com/AI-metrics/AI-metrics/edit/master/{0}#L{1}".format(filename, line)
             else:
                 return "https://github.com/AI-metrics/AI-metrics"
@@ -165,7 +167,11 @@ class Metric:
             table_html.append('<td align="center"><a href=\"{0}\">{1}</a>{2}</td>'.format(m.url, m.papername if m.papername else m.url, source))
             table_html.append("</tr>")
         table_html.append("</table>")
-        github_link = ['<div style="text-align: right; font-style: italic"><a target="_blank" href="{0}">Edit/add data on GitHub</a></div>'.format(self.data_url)]
+        github_link = ['''
+        <div style="text-align: right; font-style: italic" class="edit-links">
+            <a target="_blank" href="{0}">Edit/add data on GitHub</a>
+            <a target="_blank" href="/edit/{1}" style="display: none" class="local-edit">Edit locally</a>
+        </div>'''.format(self.data_url, self.data_path)]
         html = "".join(table_html + github_link)
         return html
 

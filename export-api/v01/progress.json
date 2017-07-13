@@ -19,6 +19,7 @@
                     "notes": "\n  Beating all humans at chess, given a corpus of past play amongst masters,\n  but no human-crafted policy constraints and heuristics. This will probably fall out\n  immediately once learning_abstract_game_rules is solved, since playing_with_hints\n  has been solved.\n", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -100,6 +101,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": true, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -128,6 +130,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -297,6 +300,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/generative.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Model entropy (bits per pixel)", 
@@ -364,6 +368,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -380,6 +385,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -396,6 +402,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -412,6 +419,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -428,6 +436,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -633,6 +642,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -755,6 +765,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -856,6 +867,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -978,6 +990,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -1184,6 +1197,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": "https://arxiv.org/abs/1511.02301", 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -1348,6 +1362,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": "https://arxiv.org/abs/1511.02301", 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -1596,6 +1611,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -1760,6 +1776,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -2176,6 +2193,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -2592,6 +2610,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -2624,6 +2643,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -2671,6 +2691,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -2707,6 +2728,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": true, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -2723,6 +2745,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": true, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -2767,6 +2790,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -2983,6 +3007,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "BLEU score", 
@@ -3126,6 +3151,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "BLEU score", 
@@ -3185,6 +3211,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "BLEU score", 
@@ -3556,6 +3583,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/acoustics.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage error", 
@@ -3903,6 +3931,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": true, 
                     "axis_label": "Percentage of answers rated plausible\n(each year is a different test)", 
@@ -3960,6 +3989,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/stem.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -4061,6 +4091,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/stem.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -4120,6 +4151,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -4370,6 +4402,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/vision.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Error rate", 
@@ -4639,6 +4672,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/awty.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -4908,6 +4942,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/awty.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -5618,6 +5653,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/awty.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -6664,6 +6700,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/awty.py", 
                     "target_source": "http://karpathy.github.io/2011/04/27/manually-classifying-cifar10/", 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -7017,6 +7054,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/awty.py", 
                     "target_source": "http://ufldl.stanford.edu/housenumbers/nips2011_housenumbers.pdf", 
                     "changeable": false, 
                     "axis_label": "Percentage error", 
@@ -8084,6 +8122,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/awty.py", 
                     "target_source": "http://people.idsia.ch/~juergen/superhumanpatternrecognition.html", 
                     "changeable": false, 
                     "axis_label": "Percentage error", 
@@ -8479,6 +8518,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/awty.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -8495,6 +8535,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -8576,6 +8617,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -8615,6 +8657,7 @@
                     "notes": "\n  Chess software contains hard-coded policy constraints for valid play; this metric is whether RL\n  or other agents can correctly build those policy constraints from examples or oracles", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -8631,6 +8674,7 @@
                     "notes": "\n  Go software contains policy constraints for valid play and evaluating the number of\n  liberties for groups. This metric is whether RL or other agents can correctly build those \n  policy constraints from examples or oracles", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -8845,6 +8889,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -8988,6 +9033,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -9131,6 +9177,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -9274,6 +9321,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -9417,6 +9465,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -9560,6 +9609,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -9703,6 +9753,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -9846,6 +9897,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -9989,6 +10041,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://arxiv.org/pdf/1312.5602.pdf", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -10111,6 +10164,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://arxiv.org/abs/1511.06581v1", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -10254,6 +10308,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -10397,6 +10452,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -10603,6 +10659,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -10746,6 +10803,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -10889,6 +10947,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -11032,6 +11091,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -11175,6 +11235,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -11318,6 +11379,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -11524,6 +11586,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -11667,6 +11730,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -11810,6 +11874,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -11953,6 +12018,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -12096,6 +12162,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -12239,6 +12306,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -12340,6 +12408,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -12420,6 +12489,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -12458,6 +12528,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -12538,6 +12609,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -12618,6 +12690,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -12656,6 +12729,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -12736,6 +12810,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -12774,6 +12849,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -12854,6 +12930,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -13060,6 +13137,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -13140,6 +13218,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -13346,6 +13425,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -13426,6 +13506,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -13506,6 +13587,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -13586,6 +13668,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -13792,6 +13875,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -13998,6 +14082,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -14078,6 +14163,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -14158,6 +14244,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -14238,6 +14325,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -14318,6 +14406,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -14398,6 +14487,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -14478,6 +14568,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -14558,6 +14649,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -14638,6 +14730,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -14718,6 +14811,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508", 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -14777,6 +14871,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -14836,6 +14931,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -14895,6 +14991,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -14954,6 +15051,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -15013,6 +15111,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/video_games.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score (Rewards Normalized)", 
@@ -15845,6 +15944,7 @@
                         }
                     ], 
                     "solved": true, 
+                    "data_path": "data/strategy_games.py", 
                     "target_source": "https://en.wikipedia.org/w/index.php?title=Comparison_of_top_chess_players_throughout_history&oldid=777500496#Elo_system", 
                     "changeable": false, 
                     "axis_label": "ELO rating", 
@@ -15861,6 +15961,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": true, 
+                    "data_path": null, 
                     "target_source": "https://www.goratings.org/en/history/", 
                     "changeable": false, 
                     "axis_label": "ELO rating", 
@@ -16184,6 +16285,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Perplexity", 
@@ -16390,6 +16492,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Model Entropy", 
@@ -16512,6 +16615,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/language.py", 
                     "target_source": "https://arxiv.org/abs/1610.08431v3", 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -16742,7 +16846,7 @@
                             "min_date": null, 
                             "algorithms": [], 
                             "notes": "", 
-                            "replicated_url": "https://github.com/akirafukui/vqa-mcb.", 
+                            "replicated_url": "https://github.com/akirafukui/vqa-mcb", 
                             "date": "2016-06-06", 
                             "aglorithm_src_url": null, 
                             "label": "MCB 7 att.", 
@@ -16773,6 +16877,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/vision.py", 
                     "target_source": "https://arxiv.org/abs/1505.00468", 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -16885,7 +16990,7 @@
                             "min_date": null, 
                             "algorithms": [], 
                             "notes": "", 
-                            "replicated_url": "https://github.com/akirafukui/vqa-mcb.", 
+                            "replicated_url": "https://github.com/akirafukui/vqa-mcb", 
                             "date": "2016-06-06", 
                             "aglorithm_src_url": null, 
                             "label": "MCB 7 att.", 
@@ -16916,6 +17021,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/vision.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -16932,6 +17038,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -16948,6 +17055,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": "https://arxiv.org/abs/1505.02074", 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -16986,6 +17094,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/vision.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Top-1 precision", 
@@ -17024,6 +17133,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/vision.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Top-1 precision", 
@@ -17083,6 +17193,7 @@
                         }
                     ], 
                     "solved": false, 
+                    "data_path": "data/vision.py", 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Percentage correct", 
@@ -17099,6 +17210,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
@@ -17115,6 +17227,7 @@
                     "notes": "", 
                     "measures": [], 
                     "solved": false, 
+                    "data_path": null, 
                     "target_source": null, 
                     "changeable": false, 
                     "axis_label": "Score", 
