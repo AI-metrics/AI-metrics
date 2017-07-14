@@ -163,8 +163,10 @@ class Metric:
             table_html.append('<td align="center" style="width: 10%">{0}</td>'.format(m.date))
             table_html.append('<td align="center" {1}>{0}</td>'.format(m.name, alg_bound))
             table_html.append('<td align="center">{0}</td>'.format(m.value))
-            source = ' (<a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
-            table_html.append('<td align="center"><a href=\"{0}\">{1}</a>{2}</td>'.format(m.url, m.papername if m.papername else m.url, source))
+            source  = ' (<a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
+            alglink = ' (algorithm from <a href="{0}">{1}</a>)'.format(m.algorithm_src_url, m.src_name) if m.src_name else ''
+            pname = m.papername if m.papername else m.url
+            table_html.append('<td align="center"><a href=\"{0}\">{1}</a>{2}{3}</td>'.format(m.url, pname, source, alglink))
             table_html.append("</tr>")
         table_html.append("</table>")
         github_link = ['''
@@ -304,11 +306,12 @@ class Measurement:
         assert self.url or papername, "Measurements must have a URL or a paper name"
         self.min_date = min_date
         self.max_date = max_date
-        self.aglorithm_src_url = algorithm_src_url
+        self.algorithm_src_url = canonicalise(algorithm_src_url)
         if algorithm_src_url and not min_date:
-            _, prev_dates, _ = ade.get_paper_data(algorithm_src_url)
+            _, prev_dates, _ = ade.get_paper_data(self.algorithm_src_url)
             if prev_dates:
                 self.min_date = min(prev_dates.values())
+        self.determine_src_name()
                     
         self.minval = minval if minval else value - uncertainty
         self.maxval = maxval if maxval else value + uncertainty
@@ -328,6 +331,16 @@ class Measurement:
             
         global measurements
         measurements.add(self)
+    
+    def determine_src_name(self):
+        "Figure out the name of a prior paper this result is based on, if applicable"
+        if self.algorithm_src_url:
+            self.src_name, _, _ = ade.get_paper_data(self.algorithm_src_url)
+            if not self.src_name:
+                self.src_name = self.algorithm_src_url
+        else:
+            self.src_name = None
+
 
     def set_label(self):
         self.label = self.name
