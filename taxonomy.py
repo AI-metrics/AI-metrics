@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+from __future__ import print_function
+
 from collections import defaultdict
 from math import log
 import datetime
@@ -22,7 +24,7 @@ from scales import linear
 try:
     import seaborn as sns
 except ImportError:
-    print "Seaborn style not installed"
+    print("Seaborn style not installed")
 
 date = datetime.date
 problems = {}
@@ -66,9 +68,9 @@ class Problem:
         return "Problem({0})".format(self.name)
     
     def print_structure(self, indent=0):
-        print indent * " " + str(self)
+        print(indent * " " + str(self))
         for m in self.metrics:
-            print (indent + 4) * " " + str(m)
+            print((indent + 4) * " " + str(m))
         for p in self.subproblems:
             p.print_structure(indent + 4)
     
@@ -111,13 +113,13 @@ class Metric:
         try:
             m = Measurement(*args, **kwargs)
         except AssertionError:
-            print "WARNING, failed to create measurement", args, kwargs
+            print("WARNING, failed to create measurement", args, kwargs)
             traceback.print_exc()
             return None
         m.metric = self
         if self.target:
             if self.target_source == m.url and self.target == m.value:
-                print "Skipping apparent human performance (target_source) paper", m.url
+                print("Skipping apparent human performance (target_source) paper", m.url)
                 return None
             if self.scale.improvement(self.target, m.value) >= 0:
                 self.solved = True
@@ -287,9 +289,9 @@ try:
     r = requests.get('http://arxiv.org/abs/1501.02876')
     if str(r.status_code).startswith("4"):
         offline = True
-        print "Arxiv blocked!"
+        print("Arxiv blocked!")
 except requests.ConnectionError:
-    print "In Offline mode!"
+    print("In Offline mode!")
     offline = True
 
 class Measurement:
@@ -367,8 +369,8 @@ class Measurement:
 
         if arxiv_dates and d:
             if d < min(adates) and d > max(adates):
-                print "WARNING, date", self.date, "for", self.url, 
-                print "does not match any of the arXiv versions (%s)" % " ".join(str(s) for s in arxiv_dates.values())
+                print("WARNING, date", self.date, "for", self.url, end="") 
+                print("does not match any of the arXiv versions (%s)" % " ".join(str(s) for s in arxiv_dates.values()))
         if arxiv_dates:
             if len(arxiv_dates) == 1:
                 if not self.date:
@@ -391,7 +393,7 @@ class Measurement:
                 self.min_date = date(year, 1, 1)
                 self.max_date = date(year, 12, 31)
         if not self.date:
-            print d, arxiv_dates, venue
+            print(d, arxiv_dates, venue)
         assert self.date, "Need a date for paper {0} {1}".format(self.url, self.papername)
 
 #print canonicalise('http://arxiv.org/pdf/1412.6806.pdf')
@@ -420,13 +422,13 @@ class ArxivDataExtractor:
             with open(".paper_cache.json") as f:
                 self.cache = json.load(f, object_hook=parse_date)
         except:
-            print "Failed to load local paper cache, trying a network copy..."
+            print("Failed to load local paper cache, trying a network copy...")
             try:
                 req = requests.get('https://raw.githubusercontent.com/AI-metrics/master_text/master/.paper_cache.json')
                 self.cache = json.loads(req.content, object_hook=parse_date)
             except:
                 traceback.print_exc()
-                print "(Continuing with an empty cache)"
+                print("(Continuing with an empty cache)")
                 self.cache = {}
         self.arxiv_re = re.compile(r"\[[0-9v.]+\] (.*)")
         
@@ -436,7 +438,7 @@ class ArxivDataExtractor:
                 json.dump(self.cache, f, indent=4, sort_keys=True, cls=DateEncoder)
         except:
             traceback.print_exc()
-            print "Not able to save cache"
+            print("Not able to save cache")
     
     ends_with_version = re.compile(r".*v([0-9])+$")
     def arxiv_link_version(self, url):
@@ -458,7 +460,7 @@ class ArxivDataExtractor:
         try:
             req = requests.get(url)
         except requests.ConnectionError:
-            print "Failed to fetch", url
+            print("Failed to fetch", url)
             #traceback.print_exc()
             return (None, None, None)
         record = {}
@@ -479,7 +481,7 @@ class ArxivDataExtractor:
                 record["dates"] = dates
         record["name"] = papername
         self.cache[url] = record
-        print "Caching paper name:", papername
+        print("Caching paper name:", papername)
         self.save_cache()
         return papername, dates, withdrawn
     
@@ -488,7 +490,7 @@ class ArxivDataExtractor:
         if comment:
             comment = comment[0].text_content()
             if "withdrawn" in comment.lower():
-                print "Paper", url, "appears to be withdrawn!"
+                print("Paper", url, "appears to be withdrawn!")
                 return True
         return False
 
