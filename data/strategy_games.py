@@ -18,12 +18,12 @@ computer_go.solved = True # until we get proper data
 
 # For some caveats, see https://en.wikipedia.org/w/index.php?title=Chess_engine&oldid=764341963#Ratings
 # We could script ingestion of data from CCRL, or get data from Katja
-computer_chess.measure(date(1997,05,11), 2725, "Deep Blue", uncertainty=25, url="https://www.quora.com/What-was-Deep-Blues-Elo-rating")
-computer_chess.measure(date(2006,05,27), 2995, "Rybka 1.1 64bit", uncertainty=25, url="https://web.archive.org/web/20060531091049/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html")
+computer_chess.measure(date(1997,5,11), 2725, "Deep Blue", uncertainty=25, url="https://www.quora.com/What-was-Deep-Blues-Elo-rating")
+computer_chess.measure(date(2006,5,27), 2995, "Rybka 1.1 64bit", uncertainty=25, url="https://web.archive.org/web/20060531091049/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html")
 computer_chess.measure(date(2010,8,7), 3269, "Rybka 4 64bit", uncertainty=22, url="https://web.archive.org/web/20100923131123/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html")
 computer_chess.measure(date(2013,7,20), 3248, "Houdini 3 64bit", uncertainty=16, url="https://web.archive.org/web/20130415000000*/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html")
 computer_chess.measure(date(2015,7,4), 3332, "Komodo 9", uncertainty=24, url="https://web.archive.org/web/20150708104805/http://www.computerchess.org.uk/ccrl/4040/rating_list_all.html")
-computer_chess.measure(date(2017,02,27), 3393, "Stockfish", uncertainty=50, url="https://web.archive.org/web/20170227044521/http://www.computerchess.org.uk/ccrl/4040/")
+computer_chess.measure(date(2017,2,27), 3393, "Stockfish", uncertainty=50, url="https://web.archive.org/web/20170227044521/http://www.computerchess.org.uk/ccrl/4040/")
 # Wikipedia has some nice data here:
 computer_chess.measure(date(1984,12,31), 1631, "Novag Super Constellation 6502 4 MHz", url="https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders")
 computer_chess.measure(date(1985,12,31), 1827, "Mephisto Amsterdam 68000 12 MHz", url="https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders")
@@ -83,7 +83,7 @@ learning_go.notes = """
 
 learning_arbitrary_abstract_games = Problem("Play an arbitrary abstract game, first learning the rules", ["agi", "abstract-games"])
 abstract_strategy_games.add_subproblem(learning_arbitrary_abstract_games)
-computer_chess.graph()
+#computer_chess.graph()
 
 
 

@@ -855,6 +855,14 @@
         }, 
         "name": "Recurrent Highway Networks"
     }, 
+    "https://arxiv.org/abs/1607.04315": {
+        "dates": {
+            "1": "2016-07-14", 
+            "2": "2016-07-20", 
+            "3": "2017-01-05"
+        }, 
+        "name": "Neural Semantic Encoders"
+    }, 
     "https://arxiv.org/abs/1607.04315v1": {
         "dates": {
             "1": "2016-07-14"
