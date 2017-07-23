@@ -153,30 +153,30 @@ class Metric:
             return u""
 
         # TODO: split out CSS
-        table_html = ['<table style="width: 100%">']
-        table_html.append("<caption>{0}</caption>".format(self.name))
+        table_html = [u'<table style="width: 100%">']
+        table_html.append(u"<caption>{0}</caption>".format(self.name))
         col = 'style="background-color: #f7f7f7"'
-        table_html.append("<tr {1}><th>Date</th><th>Algorithm</th><th>{0}</th><th>Paper / Source</th></tr>".format(self.scale.col_label, col))
+        table_html.append(u"<tr {1}><th>Date</th><th>Algorithm</th><th>{0}</th><th>Paper / Source</th></tr>".format(self.scale.col_label, col))
         widest_alg = max(len(m.name) for m in self.measures)
-        alg_bound = 'style="width: 25%"' if widest_alg >= 45 else ""
+        alg_bound = u'style="width: 25%"' if widest_alg >= 45 else ""
         for n, m in enumerate(self.measures):
-            bgcol = 'style="background-color: #f7f7f7"' if n % 2 == 1 else ''
-            table_html.append("<tr {0}>".format(bgcol))
-            table_html.append('<td align="center" style="width: 10%">{0}</td>'.format(m.date))
-            table_html.append('<td align="center" {1}>{0}</td>'.format(m.name, alg_bound))
-            table_html.append('<td align="center">{0}</td>'.format(m.value))
-            source  = ' (<a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
-            alglink = ' (algorithm from <a href="{0}">{1}</a>)'.format(m.algorithm_src_url, m.src_name) if m.src_name else ''
+            bgcol = u'style="background-color: #f7f7f7"' if n % 2 == 1 else ''
+            table_html.append(u"<tr {0}>".format(bgcol))
+            table_html.append(u'<td align="center" style="width: 10%">{0}</td>'.format(m.date))
+            table_html.append(u'<td align="center" {1}>{0}</td>'.format(m.name, alg_bound))
+            table_html.append(u'<td align="center">{0}</td>'.format(m.value))
+            source  = u' (<a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
+            alglink = u' (algorithm from <a href="{0}">{1}</a>)'.format(m.algorithm_src_url, m.src_name) if m.src_name else ''
             pname = m.papername if m.papername else m.url
-            table_html.append('<td align="center"><a href=\"{0}\">{1}</a>{2}{3}</td>'.format(m.url, pname, source, alglink))
-            table_html.append("</tr>")
-        table_html.append("</table>")
-        github_link = ['''
+            table_html.append(u'<td align="center"><a href=\"{0}\">{1}</a>{2}{3}</td>'.format(m.url, pname, source, alglink))
+            table_html.append(u"</tr>")
+        table_html.append(u"</table>")
+        github_link = [u'''
         <div style="text-align: right; font-style: italic" class="edit-links">
             <a target="_blank" href="{0}">Edit/add data on GitHub</a>
             <a target="_blank" href="/edit/{1}" style="display: none" class="local-edit">Edit locally</a>
         </div>'''.format(self.data_url, self.data_path)]
-        html = "".join(table_html + github_link)
+        html = u"".join(table_html + github_link)
         return html
 
     def graph(self, size=(7,5), scale=1.0):
