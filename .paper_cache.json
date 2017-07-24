@@ -513,6 +513,18 @@
         }, 
         "name": "ReNet: A Recurrent Neural Network Based Alternative to Convolutional Networks"
     }, 
+    "https://arxiv.org/abs/1505.00468": {
+        "dates": {
+            "1": "2015-05-03", 
+            "2": "2015-06-16", 
+            "3": "2015-10-15", 
+            "4": "2015-11-18", 
+            "5": "2016-03-07", 
+            "6": "2016-04-20", 
+            "7": "2016-10-27"
+        }, 
+        "name": "VQA: Visual Question Answering"
+    }, 
     "https://arxiv.org/abs/1505.00468v1": {
         "dates": {
             "1": "2015-05-03"
@@ -767,6 +779,12 @@
         }, 
         "name": "Hierarchical Co-Attention for Visual Question Answering"
     }, 
+    "https://arxiv.org/abs/1606.01455v1": {
+        "dates": {
+            "1": "2016-06-05"
+        }, 
+        "name": "Multimodal Residual Learning for Visual QA"
+    }, 
     "https://arxiv.org/abs/1606.01549v1": {
         "dates": {
             "1": "2016-06-05"
@@ -912,6 +930,13 @@
         }, 
         "name": "The Microsoft 2016 Conversational Speech Recognition System"
     }, 
+    "https://arxiv.org/abs/1609.05600": {
+        "dates": {
+            "1": "2016-09-19", 
+            "2": "2017-03-30"
+        }, 
+        "name": "Graph-Structured Representations for Visual Question Answering"
+    }, 
     "https://arxiv.org/abs/1609.07843v1": {
         "dates": {
             "1": "2016-09-26"
@@ -971,6 +996,12 @@
             "3": "2017-02-13"
         }, 
         "name": "Dynamic Coattention Networks For Question Answering"
+    }, 
+    "https://arxiv.org/abs/1611.06430v1": {
+        "dates": {
+            "1": "2016-11-19"
+        }, 
+        "name": "Semi-Supervised Learning with Context-Conditional Generative Adversarial Networks"
     }, 
     "https://arxiv.org/abs/1611.09978v1": {
         "dates": {

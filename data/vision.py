@@ -42,8 +42,10 @@ vqa_real_human_performance = 83.3
 vqa_imgs = 50000 + 204751.
 vqa_target = (50000/vqa_imgs) * vqa_abstract_human_performance + (204751 / vqa_imgs) * vqa_real_human_performance
 
-vqa_oe = image_comprehension.metric("COCO Visual Question Answering (VQA) 1.0 open ended", url="http://visualqa.org/", target=vqa_target, target_source="https://arxiv.org/abs/1505.00468", scale=correct_percent)
-vqa_mc = image_comprehension.metric("COCO Visual Question Answering (VQA) 1.0 multiple choice", url="http://visualqa.org/", scale=correct_percent, solved=False)
+vqa_real_oe = image_comprehension.metric("COCO Visual Question Answering (VQA) real images 1.0 open ended", url="http://visualqa.org/", target=vqa_target, target_source="https://arxiv.org/abs/1505.00468", scale=correct_percent)
+vqa_real_mc = image_comprehension.metric("COCO Visual Question Answering (VQA) real images 1.0 multiple choice", url="http://visualqa.org/", scale=correct_percent, solved=False)
+vqa_abstract_oe = image_comprehension.metric("COCO Visual Question Answering (VQA) abstract images 1.0 open ended", url="http://visualqa.org/", target=vqa_target, target_source="https://arxiv.org/abs/1505.00468", scale=correct_percent)
+vqa_abstract_mc = image_comprehension.metric("COCO Visual Question Answering (VQA) abstract 1.0 multiple choice", url="http://visualqa.org/", scale=correct_percent, solved=False)
 # other visual question answering metrics (we don't have data for these yet)
 # For a survey: https://arxiv.org/pdf/1607.05910
 image_comprehension.metric("Toronto COCO-QA", url="http://www.cs.toronto.edu/~mren/imageqa/data/cocoqa/" )
@@ -55,32 +57,42 @@ visual7w = image_comprehension.metric("Visual7W", url="https://arxiv.org/abs/151
 image_comprehension.metric("FM-IQA", url="http://idl.baidu.com/FM-IQA.html")
 image_comprehension.metric("Visual Madlibs", url="http://tamaraberg.com/visualmadlibs/")
 
-vqa_oe.measure(date(2015,12,15), 55.89, "iBOWIMG baseline", url="https://arxiv.org/abs/1512.02167")
-vqa_mc.measure(date(2015,12,15), 61.97, "iBOWIMG baseline", url="https://arxiv.org/abs/1512.02167")
+vqa_real_oe.measure(date(2015,12,15), 55.89, "iBOWIMG baseline", url="https://arxiv.org/abs/1512.02167")
+vqa_real_mc.measure(date(2015,12,15), 61.97, "iBOWIMG baseline", url="https://arxiv.org/abs/1512.02167")
 
-vqa_oe.measure(None, 58.24, "SMem-VQA", url="https://arxiv.org/abs/1511.05234v2")
+vqa_real_oe.measure(None, 58.24, "SMem-VQA", url="https://arxiv.org/abs/1511.05234v2")
 
 # not so clear what the number in the SANv1 paper was...
-#vqa_oe.measure(None, 57.6, "SAN(2,CNN)", url="https://arxiv.org/abs/1511.02274v1")
-vqa_oe.measure(None, 58.9, "SAN", url="https://arxiv.org/abs/1511.02274v2")
+#vqa_real_oe.measure(None, 57.6, "SAN(2,CNN)", url="https://arxiv.org/abs/1511.02274v1")
+vqa_real_oe.measure(None, 58.9, "SAN", url="https://arxiv.org/abs/1511.02274v2")
 
-vqa_oe.measure(None, 59.5, "CNN-RNN", url="https://arxiv.org/abs/1603.02814v1")
+vqa_real_oe.measure(None, 59.5, "CNN-RNN", url="https://arxiv.org/abs/1603.02814v1")
 
-vqa_oe.measure(None, 59.5, "FDA", url="https://arxiv.org/abs/1604.01485v1")
-vqa_mc.measure(None, 64.2, "FDA", url="https://arxiv.org/abs/1604.01485v1")
+vqa_real_oe.measure(None, 59.5, "FDA", url="https://arxiv.org/abs/1604.01485v1")
+vqa_real_mc.measure(None, 64.2, "FDA", url="https://arxiv.org/abs/1604.01485v1")
 
-vqa_oe.measure(None, 62.1, "HQI+ResNet", url="https://arxiv.org/abs/1606.00061v1")
-vqa_mc.measure(None, 66.1, "HQI+ResNet", url="https://arxiv.org/abs/1606.00061v1")
+vqa_real_oe.measure(None, 62.1, "HQI+ResNet", url="https://arxiv.org/abs/1606.00061v1")
+vqa_real_mc.measure(None, 66.1, "HQI+ResNet", url="https://arxiv.org/abs/1606.00061v1")
 
-vqa_oe.measure(None, 58.2, "LSTM Q+I", url="https://arxiv.org/abs/1505.00468v1")
-vqa_mc.measure(None, 63.1, "LSTM Q+I", url="https://arxiv.org/abs/1505.00468v1")
+vqa_real_oe.measure(None, 58.2, "LSTM Q+I", url="https://arxiv.org/abs/1505.00468v1")
+vqa_real_mc.measure(None, 63.1, "LSTM Q+I", url="https://arxiv.org/abs/1505.00468v1")
 
-vqa_oe.measure(None, 63.2, "joint-loss", url="https://arxiv.org/abs/1606.03647")
-vqa_mc.measure(None, 67.3, "joint-loss", url="https://arxiv.org/abs/1606.03647")
+vqa_real_oe.measure(None, 63.2, "joint-loss", url="https://arxiv.org/abs/1606.03647")
+vqa_real_mc.measure(None, 67.3, "joint-loss", url="https://arxiv.org/abs/1606.03647")
 
-vqa_oe.measure(None, 66.5, "MCB 7 att.", url="https://arxiv.org/abs/1606.01847v1", replicated="https://github.com/akirafukui/vqa-mcb")
-vqa_mc.measure(None, 70.1, "MCB 7 att.", url="https://arxiv.org/abs/1606.01847v1", replicated="https://github.com/akirafukui/vqa-mcb")
+vqa_real_oe.measure(None, 66.5, "MCB 7 att.", url="https://arxiv.org/abs/1606.01847v1", replicated="https://github.com/akirafukui/vqa-mcb")
+vqa_real_mc.measure(None, 70.1, "MCB 7 att.", url="https://arxiv.org/abs/1606.01847v1", replicated="https://github.com/akirafukui/vqa-mcb")
 visual7w.measure(None, 62.2, "MCB+Att.", url="https://arxiv.org/abs/1606.01847v1")
+
+vqa_abstract_mc.measure(None, 61.41, "LSTM blind", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1505.00468")
+vqa_abstract_oe.measure(None, 57.19, "LSTM blind", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1505.00468")
+vqa_abstract_mc.measure(None, 69.21, "LSTM + global features", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1505.00468")
+vqa_abstract_oe.measure(None, 65.02, "LSTM + global features", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1505.00468")
+
+vqa_real_mc.measure(None, 66.33, "MRN", url="https://arxiv.org/abs/1606.01455v1")
+vqa_real_oe.measure(None, 61.84, "MRN + global features", url="https://arxiv.org/abs/1606.01455v1")
+vqa_abstract_mc.measure(None, 69.21, "MRN", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1606.01455v1")
+vqa_abstract_oe.measure(None, 65.02, "MRN + global features", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1606.01455v1")
 
 visual7w.measure(None, 72.53, "CMN", url="https://arxiv.org/abs/1611.09978v1")
 visual_genome_pairs.measure(None, 28.52, "CMN", url="https://arxiv.org/abs/1611.09978v1")
