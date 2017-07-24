@@ -219,8 +219,11 @@ squad_f1.measure(date(2017, 5,31), 81.517, "jNet (ensemble)", url="https://arxiv
 squad_em.measure(date(2016, 12, 13), 73.765, "MPM (ensemble)", url="https://arxiv.org/abs/1612.04211")
 squad_f1.measure(date(2016, 12, 13), 81.257, "MPM (ensemble)", url="https://arxiv.org/abs/1612.04211")
 
-squad_em.measure(date(2017, 2, 13), 71.2, "Dynamic Coattention Networks (ensemble)", url="https://arxiv.org/pdf/1611.01604.pdf")
-squad_f1.measure(date(2017, 2, 13), 80.4, "Dynamic Coattention Networks (ensemble)", url="https://arxiv.org/pdf/1611.01604.pdf")
+squad_em.measure(date(2016, 11, 4), 66.233, "Dynamic Coattention Networks (single model)", url="https://arxiv.org/pdf/1611.01604v1")
+squad_f1.measure(date(2016, 11, 4), 75.896, "Dynamic Coattention Networks (single model)", url="https://arxiv.org/pdf/1611.01604v1")
+
+squad_em.measure(date(2016, 11, 4), 71.625, "Dynamic Coattention Networks (ensemble)", url="https://arxiv.org/pdf/1611.01604v1")
+squad_f1.measure(date(2016, 11, 4), 80.383, "Dynamic Coattention Networks (ensemble)", url="https://arxiv.org/pdf/1611.01604v1")
 
 squad_em.measure(date(2017, 5,31), 70.607, "jNet (single model)", url="https://arxiv.org/abs/1703.04617", min_date=date(2017,5,1))
 squad_f1.measure(date(2017, 5,31), 79.456, "jNet (single model)", url="https://arxiv.org/abs/1703.04617", min_date=date(2017,5,1))
