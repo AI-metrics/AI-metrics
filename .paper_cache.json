@@ -257,6 +257,12 @@
         }, 
         "name": "Improving neural networks by preventing co-adaptation of feature detectors"
     }, 
+    "https://arxiv.org/abs/1207.4708v1": {
+        "dates": {
+            "1": "2012-07-19"
+        }, 
+        "name": "The Arcade Learning Environment: An Evaluation Platform for General Agents"
+    }, 
     "https://arxiv.org/abs/1301.3557": {
         "dates": {
             "1": "2013-01-16"
@@ -577,6 +583,13 @@
         }, 
         "name": "Grid Long Short-Term Memory"
     }, 
+    "https://arxiv.org/abs/1507.04296": {
+        "dates": {
+            "1": "2015-07-15", 
+            "2": "2015-07-16"
+        }, 
+        "name": "Massively Parallel Methods for Deep Reinforcement Learning"
+    }, 
     "https://arxiv.org/abs/1508.00330": {
         "dates": {
             "1": "2015-08-03", 
@@ -588,6 +601,18 @@
         "dates": {
             "1": "2015-09-22", 
             "2": "2015-11-20", 
+            "3": "2015-12-08"
+        }, 
+        "name": "Deep Reinforcement Learning with Double Q-learning"
+    }, 
+    "https://arxiv.org/abs/1509.06461v1": {
+        "dates": {
+            "1": "2015-09-22"
+        }, 
+        "name": "Deep Reinforcement Learning with Double Q-learning"
+    }, 
+    "https://arxiv.org/abs/1509.06461v3": {
+        "dates": {
             "3": "2015-12-08"
         }, 
         "name": "Deep Reinforcement Learning with Double Q-learning"
@@ -635,6 +660,15 @@
         }, 
         "name": "Competitive Multi-scale Convolution"
     }, 
+    "https://arxiv.org/abs/1511.05952": {
+        "dates": {
+            "1": "2015-11-18", 
+            "2": "2015-11-19", 
+            "3": "2016-01-07", 
+            "4": "2016-02-25"
+        }, 
+        "name": "Prioritized Experience Replay"
+    }, 
     "https://arxiv.org/abs/1511.06241": {
         "dates": {
             "1": "2015-11-19", 
@@ -657,6 +691,12 @@
     "https://arxiv.org/abs/1511.06581v1": {
         "dates": {
             "1": "2015-11-20"
+        }, 
+        "name": "Dueling Network Architectures for Deep Reinforcement Learning"
+    }, 
+    "https://arxiv.org/abs/1511.06581v3": {
+        "dates": {
+            "3": "2016-04-05"
         }, 
         "name": "Dueling Network Architectures for Deep Reinforcement Learning"
     }, 
@@ -972,6 +1012,12 @@
         }, 
         "name": "Dynamic Coattention Networks For Question Answering"
     }, 
+    "https://arxiv.org/abs/1611.06430v1": {
+        "dates": {
+            "1": "2016-11-19"
+        }, 
+        "name": "Semi-Supervised Learning with Context-Conditional Generative Adversarial Networks"
+    }, 
     "https://arxiv.org/abs/1611.09978v1": {
         "dates": {
             "1": "2016-11-30"
@@ -1069,6 +1115,12 @@
         }, 
         "name": "Deep Convolutional Decision Jungle for Image Classification"
     }, 
+    "https://arxiv.org/abs/1707.06887v1": {
+        "dates": {
+            "1": "2017-07-21"
+        }, 
+        "name": "A Distributional Perspective on Reinforcement Learning"
+    }, 
     "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": {
         "name": "Swedish Chess Computer Association - Wikipedia"
     }, 
@@ -1113,6 +1165,9 @@
     }, 
     "https://web.archive.org/web/20170227044521/http://www.computerchess.org.uk/ccrl/4040/": {
         "name": "CCRL 40/40 - Index"
+    }, 
+    "https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf": {
+        "name": "Human-level control through deep reinforcement learning"
     }, 
     "https://www.gwern.net/docs/2016-graves.pdf": {
         "name": null

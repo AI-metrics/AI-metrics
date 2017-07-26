@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 from __future__ import print_function
 
@@ -164,7 +165,7 @@ class Metric:
             table_html.append(u"<tr {0}>".format(bgcol))
             table_html.append(u'<td align="center" style="width: 10%">{0}</td>'.format(m.date))
             table_html.append(u'<td align="center" {1}>{0}</td>'.format(m.name, alg_bound))
-            table_html.append(u'<td align="center">{0}</td>'.format(m.value))
+            table_html.append(u'<td align="center">{0} {1}</td>'.format(m.value, m.represent_uncertainty()))
             source  = u' (<a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
             alglink = u' (algorithm from <a href="{0}">{1}</a>)'.format(m.algorithm_src_url, m.src_name) if m.src_name else ''
             pname = m.papername if m.papername else m.url
@@ -315,6 +316,7 @@ class Measurement:
                 self.min_date = min(prev_dates.values())
         self.determine_src_name()
                     
+        self.uncertainty = uncertainty
         self.minval = minval if minval else value - uncertainty
         self.maxval = maxval if maxval else value + uncertainty
         self.opensource = opensource
@@ -395,6 +397,18 @@ class Measurement:
         if not self.date:
             print(d, arxiv_dates, venue)
         assert self.date, "Need a date for paper {0} {1}".format(self.url, self.papername)
+
+    def represent_uncertainty(self):
+        "Printable error bars for this value"
+        err = u""
+        if self.uncertainty:
+            err = u"± {0}".format(self.uncertainty)
+        elif not self.value == self.minval == self.maxval:
+            err = super_digits(u"+" + str(self.maxval)) + u" " + sub_digits(u"-" + str(self.minval))
+        return err
+
+super_digits = lambda s: u''.join(dict(zip(u".-+0123456789", u"⋅⁻⁺⁰¹²³⁴⁵⁶⁷⁸⁹")).get(c, c) for c in s)
+sub_digits = lambda s: u''.join(dict(zip(u".-+0123456789", u".₋₊₀₁₂₃₄₅₆₇₈₉")).get(c, c) for c in s)
 
 #print canonicalise('http://arxiv.org/pdf/1412.6806.pdf')
 #cifar10.measure(None, 96.53, 'Fractional Max-Pooling', 'http://arxiv.org/abs/1412.6071', 
