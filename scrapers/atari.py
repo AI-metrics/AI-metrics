@@ -1871,10 +1871,9 @@ ingest_column(human_start_data, 4, "https://arxiv.org/abs/1509.06461v1", "DQN hs
 
 # v3 of that paper added "tuned" results for the hs condition
 
-# However this (presumably tuned) DDQN data is included by Wang et al but seems NOT to be in the DDQN paper. Conjecture,
-# did Wang et al first report it?
-
-ingest_column(noop_data, 5, "https://arxiv.org/abs/1509.06461v1", "DDQN (tuned) noop",
+# However this (presumably tuned) DDQN noop data is included by Wang et al but seems NOT to be in the DDQN paper.
+# Conjecture, did Wang et al first report it?
+ingest_column(noop_data, 5, "https://arxiv.org/abs/1511.06581v1", "DDQN (tuned) noop",
               {"algorithm_src_url": "https://arxiv.org/abs/1509.06461v3"}) 
 
 ingest_column(human_start_data, 5, "https://arxiv.org/abs/1509.06461v3", alg="DDQN (tuned) hs")
