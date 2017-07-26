@@ -577,6 +577,13 @@
         }, 
         "name": "Grid Long Short-Term Memory"
     }, 
+    "https://arxiv.org/abs/1507.04296": {
+        "dates": {
+            "1": "2015-07-15", 
+            "2": "2015-07-16"
+        }, 
+        "name": "Massively Parallel Methods for Deep Reinforcement Learning"
+    }, 
     "https://arxiv.org/abs/1508.00330": {
         "dates": {
             "1": "2015-08-03", 
