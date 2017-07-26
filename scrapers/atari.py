@@ -1808,12 +1808,13 @@ def game_metric_name(s):
     name = underscore_re.sub("_", name)
     return name + "_metric"
 
+verb = False
 TSIZE = 57
 def get_game_metric(metric_name, human_name, target, target_source):
     """Get a reference to the metric object for a game, creating it if necessary."""
     metric = globals().get(metric_name, None)
     if not metric:
-        print("Creating metric for", human_name, "target: " + `target` if target else "")
+        if verb: print("Creating metric for", human_name, "target: " + `target` if target else "")
         metric = simple_games.metric("Atari 2600 " + human_name, target=target, 
                                      scale=atari_linear, target_source=target_source)
         globals()[metric_name] = metric
@@ -1828,13 +1829,13 @@ def get_column(raw, n, size=TSIZE):
 
 def ingest_column(src, n, paper_url, alg=None, extras={}, size=TSIZE):
     algorithm, data = get_column(src, n, size=size)
-    if algorithm.lower() not in alg.lower():
+    if verb and algorithm.lower() not in alg.lower():
         print(u"# {0} not in {1}".format(algorithm, alg))
     for i, score in enumerate(data):
         score = float(score.replace(",", ""))
         game = game_metric_name(games[i])
         metric = get_game_metric(game, games[i], targets[i], "https://arxiv.org/abs/1509.06461")
-        print(u'{0}.measure(None, {1}, "{2}", url="{3}"{4})'.format(game, score, alg, paper_url, extras if extras else ""))
+        if verb: print(u'{0}.measure(None, {1}, "{2}", url="{3}"{4})'.format(game, score, alg, paper_url, extras if extras else ""))
         metric.measure(None, score, alg, url=paper_url, **extras)
 
 
@@ -1949,8 +1950,6 @@ for row in nature_rows:
     game = game_metric_name(match.group(0))
     rest = name_re.sub("", row, 1)
     cols = rest.split()
-    #print(rest)
-    #print(cols)
     random, bll, sarsa, human, dqn, dqn_err, norm = cols
     dqn = float(dqn)
     dqn_err = float(re.search("[0-9]+", dqn_err).group(0))
@@ -1958,9 +1957,10 @@ for row in nature_rows:
         url='https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf', 
         papername="Human-level control through deep reinforcement learning", 
         uncertainty=dqn_err)
-    print("{0}.measure(None, {1}, 'Nature DQN', papername='Human-level control through deep reinforcement learning' "
-          "url='https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf'"
-          ", uncertainty={2})".format(game, dqn, dqn_err))
+    if verb:
+        print("{0}.measure(None, {1}, 'Nature DQN', papername='Human-level control through deep reinforcement learning' "
+              "url='https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf'"
+              ", uncertainty={2})".format(game, dqn, dqn_err))
 
 
 a3c_table_s3 = """Game	DQN	Gorila	Double	Dueling	Prioritized	A3C FF, 1 day	A3C FF	A3C LSTM
@@ -2027,7 +2027,6 @@ Zaxxon	831.0	6159.4	8593.0	10164.0	9501.0	2659.0	24622.0	23519.0"""
 # 2015). Double DQN scores taken from (Van Hasselt et al., 2015), Dueling scores from (Wang et al., 2015) and
 # Prioritized scores taken from (Schaul et al., 2015)
 
-print("A3C:")
 a3c_rows = a3c_table_s3.split("\n")[1:]
 for row in a3c_rows:
     cols = row.split("\t")
@@ -2037,13 +2036,13 @@ for row in a3c_rows:
     for alg, score in [("A3C FF (1 day) hs", a3c_ff_1), ("A3C FF hs", a3c_ff), ("A3C LSTM hs", a3c_lstm)]:
         score = float(score)
         metric.measure(None, score, alg, url="https://arxiv.org/abs/1602.01783")
-        print('{0}.measure(None, {1}, "{2}", url="{3}")'.format(game1, score, alg, "https://arxiv.org/abs/1602.01783"))
+        if verb: print('{0}.measure(None, {1}, "{2}", url="{3}")'.format(game1, score, alg, "https://arxiv.org/abs/1602.01783"))
 
     try:
         score = float(gorila)
         metric.measure(None, score, "Gorila", url="https://arxiv.org/abs/1507.04296")
-        print('{0}.measure(None, {1}, "Gorila", url="{2}")'.format(game1, score, "https://arxiv.org/abs/1507.04296"))
+        if verb: print('{0}.measure(None, {1}, "Gorila", url="{2}")'.format(game1, score, "https://arxiv.org/abs/1507.04296"))
     except ValueError:
-        print("No Gorila score for", game)
+        if verb: print("No Gorila score for", game)
 
 # vim: set list:listchars=tab:!·,trail:·
