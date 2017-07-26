@@ -1806,6 +1806,7 @@ def game_metric_name(s):
     name = s.strip().lower()
     name = remove_re.sub("", name)
     name = underscore_re.sub("_", name)
+    name.replace("pac_man", "pacman")  # sources are inconsistent; "Pac-Man" is most correct but pacman most pythonic
     return name + "_metric"
 
 verb = False
