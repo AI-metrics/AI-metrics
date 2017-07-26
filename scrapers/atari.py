@@ -1814,7 +1814,7 @@ def get_game_metric(metric_name, human_name, target, target_source):
     """Get a reference to the metric object for a game, creating it if necessary."""
     metric = globals().get(metric_name, None)
     if not metric:
-        if verb: print("Creating metric for", human_name, "target: " + `target` if target else "")
+        if verb: print("Creating metric for", human_name, "target: " + str(target) if target else "")
         metric = simple_games.metric("Atari 2600 " + human_name, target=target, 
                                      scale=atari_linear, target_source=target_source)
         globals()[metric_name] = metric

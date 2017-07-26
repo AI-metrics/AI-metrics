@@ -17,7 +17,8 @@ games_requiring_speech.add_subproblem(games_requiring_language_comprehension)
 
 
 # Atari 2600 Games: Breakout, Enduro, Pong, Q*Bert, Seaquest, S. Invaders. Each game has its own metric.
-# Compiled by Yomna Nasser and Miles Brundage
+# We previously used hand-compiled by Yomna Nasser and Miles Brundage; this is
+# now mostly obsolete, and the data is scraped in scrapers/atari.py
 
 simple_games = Problem("Simple video games", ["world-modelling", "realtime-games", "agi"]) 
 computer_games.add_subproblem(simple_games)
