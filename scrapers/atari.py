@@ -1728,17 +1728,76 @@ C51
 35,050
 10,513"""
 
+mnih_2013_table_1 = """Random
+Sarsa [3]
+Contingency [4]
+DQN
+Human
+HNeat Best [8]
+HNeat Pixel [8]
+DQN Best
+B. Rider Breakout Enduro Pong Q*bert Seaquest S. Invaders
+354
+996
+1743
+4092
+7456
+3616
+1332
+5184
+1.2
+5.2
+6
+168
+31
+52
+4
+225
+0
+129
+159
+470
+368
+106
+91
+661
+−20.4
+−19
+−17
+20
+−3
+19
+−16
+21
+157
+614
+960
+1952
+18900
+1800
+1325
+4500
+110
+665
+723
+1705
+28010
+920
+800
+1740
+179
+271
+268
+581
+3690
+1720
+1145
+1075"""
 
 # When we paste tables full of Atari results from a PDF, some of them turn into reasonable column-oriented data we can
 # handle with Python. In other cases the tables paste as row-oriented, or need to be OCRed into row-oriented forms
 
 # COLUMN-ORIENTED data
-
-data = es_table3.split("\n")
-names = data[1:52]
-dqn = data[53:104]
-a3cs = data[105:156]
-ess = data[157:]
 
 remove_re = re.compile(r"['’!\.]")
 underscore_re = re.compile(r"[ \-\*]")
@@ -1748,13 +1807,6 @@ def game_metric_name(s):
     name = remove_re.sub("", name)
     name = underscore_re.sub("_", name)
     return name + "_metric"
-
-for name, a3c, es in zip(names, a3cs, ess):
-    metric_name = game_metric_name(name)
-    a3c_score = float(a3c)
-    es_score = float(es)
-    #print metric_name + ".measure(None, "+ `es_score` + ', "ES (1 hour)", url="https://arxiv.org/abs/1703.03864v1")'
-    #print metric_name + ".measure(None, "+ `a3c_score` + ', "A3C FF (1 day)", url="https://arxiv.org/abs/1703.03864v1", algorithm_src_url="https://arxiv.org/pdf/1602.01783.pdf", min_date=date(2016,2,4))'
 
 TSIZE = 57
 def get_game_metric(metric_name, human_name, target, target_source):
@@ -1777,12 +1829,12 @@ def get_column(raw, n, size=TSIZE):
 def ingest_column(src, n, paper_url, alg=None, extras={}, size=TSIZE):
     algorithm, data = get_column(src, n, size=size)
     if algorithm.lower() not in alg.lower():
-        print("# {0} not in {1}".format(algorithm, alg))
+        print(u"# {0} not in {1}".format(algorithm, alg))
     for i, score in enumerate(data):
         score = float(score.replace(",", ""))
         game = game_metric_name(games[i])
         metric = get_game_metric(game, games[i], targets[i], "https://arxiv.org/abs/1509.06461")
-        print('{0}.measure(None, {1}, "{2}", url="{3}"{4})'.format(game, score, alg, paper_url, extras if extras else ""))
+        print(u'{0}.measure(None, {1}, "{2}", url="{3}"{4})'.format(game, score, alg, paper_url, extras if extras else ""))
         metric.measure(None, score, alg, url=paper_url, **extras)
 
 
@@ -1790,6 +1842,7 @@ noop_data = wang_table_2.split("\n")
 human_start_data = wang_table_3.split("\n")
 es_data = es_table3.split("\n")
 distributional_data = bellemare_figure_14.split("\n")
+early_data = mnih_2013_table_1.split("\n")
 _, games = get_column(noop_data, 0)
 
 # Weirdly, the noop start human performance is consistently better than the human start human performance data
@@ -1801,6 +1854,8 @@ _, human_human = get_column(human_start_data, 3)
 human_human = [float(score.replace(",", "")) for score in human_human]
 targets = [max(scores) for scores in zip(human_noop, human_human)]
 
+ingest_column(early_data, 2, "https://arxiv.org/abs/1312.5602", u"SARSA(λ)", 
+              {"algorithm_src_url": "https://arxiv.org/abs/1207.4708v1"}, size=7)
 ingest_column(es_data, 3, "https://arxiv.org/abs/1703.03864v1", "ES FF (1 hour) noop", size=51)
 ingest_column(distributional_data, 7, "https://arxiv.org/abs/1707.06887v1", "C51 noop")
 

@@ -9124,7 +9124,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Alien", 
@@ -9132,6 +9132,28 @@
                     "url": null, 
                     "notes": "", 
                     "measures": [
+                        {
+                            "not_directly_comparable": false, 
+                            "maxval": 1.2, 
+                            "long_label": false, 
+                            "withdrawn": false, 
+                            "name": "SARSA(\u03bb)", 
+                            "minval": 1.2, 
+                            "url": "https://arxiv.org/abs/1312.5602", 
+                            "papername": "Playing Atari with Deep Reinforcement Learning", 
+                            "value": 1.2, 
+                            "label": "SARSA(\u03bb)", 
+                            "algorithm_src_url": "https://arxiv.org/abs/1207.4708v1", 
+                            "date": "2013-12-19", 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "replicated_url": "", 
+                            "src_name": "The Arcade Learning Environment: An Evaluation Platform for General Agents", 
+                            "min_date": "2012-07-19", 
+                            "notes": "", 
+                            "metric": "Metric(Atari 2600 Alien)                                    not solved", 
+                            "opensource": false
+                        }, 
                         {
                             "not_directly_comparable": false, 
                             "maxval": 4162.0, 
@@ -9516,7 +9538,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Amidar", 
@@ -9524,6 +9546,28 @@
                     "url": null, 
                     "notes": "", 
                     "measures": [
+                        {
+                            "not_directly_comparable": false, 
+                            "maxval": 5.2, 
+                            "long_label": false, 
+                            "withdrawn": false, 
+                            "name": "SARSA(\u03bb)", 
+                            "minval": 5.2, 
+                            "url": "https://arxiv.org/abs/1312.5602", 
+                            "papername": "Playing Atari with Deep Reinforcement Learning", 
+                            "value": 5.2, 
+                            "label": "SARSA(\u03bb)", 
+                            "algorithm_src_url": "https://arxiv.org/abs/1207.4708v1", 
+                            "date": "2013-12-19", 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "replicated_url": "", 
+                            "src_name": "The Arcade Learning Environment: An Evaluation Platform for General Agents", 
+                            "min_date": "2012-07-19", 
+                            "notes": "", 
+                            "metric": "Metric(Atari 2600 Amidar)                                   SOLVED", 
+                            "opensource": false
+                        }, 
                         {
                             "not_directly_comparable": false, 
                             "maxval": 3763.5, 
@@ -9908,7 +9952,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Assault", 
@@ -9916,6 +9960,28 @@
                     "url": null, 
                     "notes": "", 
                     "measures": [
+                        {
+                            "not_directly_comparable": false, 
+                            "maxval": 6.0, 
+                            "long_label": false, 
+                            "withdrawn": false, 
+                            "name": "SARSA(\u03bb)", 
+                            "minval": 6.0, 
+                            "url": "https://arxiv.org/abs/1312.5602", 
+                            "papername": "Playing Atari with Deep Reinforcement Learning", 
+                            "value": 6.0, 
+                            "label": "SARSA(\u03bb)", 
+                            "algorithm_src_url": "https://arxiv.org/abs/1207.4708v1", 
+                            "date": "2013-12-19", 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "replicated_url": "", 
+                            "src_name": "The Arcade Learning Environment: An Evaluation Platform for General Agents", 
+                            "min_date": "2012-07-19", 
+                            "notes": "", 
+                            "metric": "Metric(Atari 2600 Assault)                                  SOLVED", 
+                            "opensource": false
+                        }, 
                         {
                             "not_directly_comparable": false, 
                             "maxval": 4134.0, 
@@ -10300,7 +10366,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Asterix", 
@@ -10308,6 +10374,28 @@
                     "url": null, 
                     "notes": "", 
                     "measures": [
+                        {
+                            "not_directly_comparable": false, 
+                            "maxval": 168.0, 
+                            "long_label": false, 
+                            "withdrawn": false, 
+                            "name": "SARSA(\u03bb)", 
+                            "minval": 168.0, 
+                            "url": "https://arxiv.org/abs/1312.5602", 
+                            "papername": "Playing Atari with Deep Reinforcement Learning", 
+                            "value": 168.0, 
+                            "label": "SARSA(\u03bb)", 
+                            "algorithm_src_url": "https://arxiv.org/abs/1207.4708v1", 
+                            "date": "2013-12-19", 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "replicated_url": "", 
+                            "src_name": "The Arcade Learning Environment: An Evaluation Platform for General Agents", 
+                            "min_date": "2012-07-19", 
+                            "notes": "", 
+                            "metric": "Metric(Atari 2600 Asterix)                                  SOLVED", 
+                            "opensource": false
+                        }, 
                         {
                             "not_directly_comparable": false, 
                             "maxval": 7756.0, 
@@ -10692,7 +10780,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Asteroids", 
@@ -10700,6 +10788,28 @@
                     "url": null, 
                     "notes": "", 
                     "measures": [
+                        {
+                            "not_directly_comparable": false, 
+                            "maxval": 31.0, 
+                            "long_label": false, 
+                            "withdrawn": false, 
+                            "name": "SARSA(\u03bb)", 
+                            "minval": 31.0, 
+                            "url": "https://arxiv.org/abs/1312.5602", 
+                            "papername": "Playing Atari with Deep Reinforcement Learning", 
+                            "value": 31.0, 
+                            "label": "SARSA(\u03bb)", 
+                            "algorithm_src_url": "https://arxiv.org/abs/1207.4708v1", 
+                            "date": "2013-12-19", 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "replicated_url": "", 
+                            "src_name": "The Arcade Learning Environment: An Evaluation Platform for General Agents", 
+                            "min_date": "2012-07-19", 
+                            "notes": "", 
+                            "metric": "Metric(Atari 2600 Asteroids)                                not solved", 
+                            "opensource": false
+                        }, 
                         {
                             "not_directly_comparable": false, 
                             "maxval": 2171.0, 
@@ -11084,7 +11194,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Atlantis", 
@@ -11092,6 +11202,28 @@
                     "url": null, 
                     "notes": "", 
                     "measures": [
+                        {
+                            "not_directly_comparable": false, 
+                            "maxval": 52.0, 
+                            "long_label": false, 
+                            "withdrawn": false, 
+                            "name": "SARSA(\u03bb)", 
+                            "minval": 52.0, 
+                            "url": "https://arxiv.org/abs/1312.5602", 
+                            "papername": "Playing Atari with Deep Reinforcement Learning", 
+                            "value": 52.0, 
+                            "label": "SARSA(\u03bb)", 
+                            "algorithm_src_url": "https://arxiv.org/abs/1207.4708v1", 
+                            "date": "2013-12-19", 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "replicated_url": "", 
+                            "src_name": "The Arcade Learning Environment: An Evaluation Platform for General Agents", 
+                            "min_date": "2012-07-19", 
+                            "notes": "", 
+                            "metric": "Metric(Atari 2600 Atlantis)                                 SOLVED", 
+                            "opensource": false
+                        }, 
                         {
                             "not_directly_comparable": false, 
                             "maxval": 103241.0, 
@@ -11476,7 +11608,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Bank Heist", 
@@ -11484,6 +11616,28 @@
                     "url": null, 
                     "notes": "", 
                     "measures": [
+                        {
+                            "not_directly_comparable": false, 
+                            "maxval": 4.0, 
+                            "long_label": false, 
+                            "withdrawn": false, 
+                            "name": "SARSA(\u03bb)", 
+                            "minval": 4.0, 
+                            "url": "https://arxiv.org/abs/1312.5602", 
+                            "papername": "Playing Atari with Deep Reinforcement Learning", 
+                            "value": 4.0, 
+                            "label": "SARSA(\u03bb)", 
+                            "algorithm_src_url": "https://arxiv.org/abs/1207.4708v1", 
+                            "date": "2013-12-19", 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "replicated_url": "", 
+                            "src_name": "The Arcade Learning Environment: An Evaluation Platform for General Agents", 
+                            "min_date": "2012-07-19", 
+                            "notes": "", 
+                            "metric": "Metric(Atari 2600 Bank Heist)                               SOLVED", 
+                            "opensource": false
+                        }, 
                         {
                             "not_directly_comparable": false, 
                             "maxval": 1079.7, 
@@ -11868,7 +12022,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Battle Zone", 
@@ -12260,7 +12414,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Beam Rider", 
@@ -12674,7 +12828,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1984", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2039", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Berzerk", 
@@ -13022,7 +13176,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Bowling", 
@@ -13414,7 +13568,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Boxing", 
@@ -13806,7 +13960,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Breakout", 
@@ -14220,7 +14374,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Centipede", 
@@ -14612,7 +14766,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Chopper Command", 
@@ -15004,7 +15158,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Crazy Climber", 
@@ -15396,7 +15550,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Demon Attack", 
@@ -15788,7 +15942,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Double Dunk", 
@@ -16180,7 +16334,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Enduro", 
@@ -16594,7 +16748,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Fishing Derby", 
@@ -16986,7 +17140,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Freeway", 
@@ -17378,7 +17532,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Frostbite", 
@@ -17770,7 +17924,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Gopher", 
@@ -18162,7 +18316,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Gravitar", 
@@ -18554,7 +18708,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 HERO", 
@@ -18946,7 +19100,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Ice Hockey", 
@@ -19338,7 +19492,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 James Bond", 
@@ -19730,7 +19884,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Kangaroo", 
@@ -20122,7 +20276,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Krull", 
@@ -20514,7 +20668,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Kung-Fu Master", 
@@ -20906,7 +21060,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Montezuma's Revenge", 
@@ -21298,7 +21452,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Ms. Pacman", 
@@ -21426,7 +21580,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Name This Game", 
@@ -21818,7 +21972,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Pong", 
@@ -22232,7 +22386,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Private Eye", 
@@ -22624,7 +22778,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Q*Bert", 
@@ -23038,7 +23192,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 River Raid", 
@@ -23430,7 +23584,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Road Runner", 
@@ -23822,7 +23976,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Robotank", 
@@ -24214,7 +24368,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Seaquest", 
@@ -24628,7 +24782,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Space Invaders", 
@@ -25042,7 +25196,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Star Gunner", 
@@ -25434,7 +25588,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Tennis", 
@@ -25826,7 +25980,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Time Pilot", 
@@ -26218,7 +26372,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Tutankham", 
@@ -26610,7 +26764,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Up and Down", 
@@ -26980,7 +27134,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Venture", 
@@ -27350,7 +27504,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Video Pinball", 
@@ -27720,7 +27874,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Wizard of Wor", 
@@ -28090,7 +28244,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1989", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2044", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Zaxxon", 
@@ -28460,7 +28614,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1984", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2039", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Defender", 
@@ -28808,7 +28962,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1786", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1838", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Ms. Pac-Man", 
@@ -29090,7 +29244,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1984", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2039", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Phoenix", 
@@ -29438,7 +29592,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1786", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1838", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Pitfall!", 
@@ -29720,7 +29874,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1984", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2039", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Skiing", 
@@ -30068,7 +30222,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1984", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2039", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Solaris", 
@@ -30416,7 +30570,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1984", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2039", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Surround", 
@@ -30764,7 +30918,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1984", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2039", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Yars Revenge", 
@@ -31090,7 +31244,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L1984", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2039", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Atari 2600 Pit Fall", 

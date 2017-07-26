@@ -257,6 +257,12 @@
         }, 
         "name": "Improving neural networks by preventing co-adaptation of feature detectors"
     }, 
+    "https://arxiv.org/abs/1207.4708v1": {
+        "dates": {
+            "1": "2012-07-19"
+        }, 
+        "name": "The Arcade Learning Environment: An Evaluation Platform for General Agents"
+    }, 
     "https://arxiv.org/abs/1301.3557": {
         "dates": {
             "1": "2013-01-16"
