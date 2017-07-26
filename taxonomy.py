@@ -76,7 +76,8 @@ class Problem:
             p.print_structure(indent + 4)
     
     def tables(self):
-        return render_tables(self.metrics)
+        return render_tables(sorted(self.metrics))
+
 
 mpl.rcParams["legend.fontsize"] = u"x-small"
 mpl.rcParams["xtick.labelsize"] = u"xx-small"
@@ -109,6 +110,9 @@ class Metric:
     def __str__(self):
         solved = "SOLVED" if self.solved else "?" if not self.target else "not solved"
         return "{0:<60}{1}".format("Metric(%s)" % self.name, solved)
+    
+    def __repr__(self):
+        return 'Metric("{0}")'.format(self.name)
         
     def measure(self, *args, **kwargs):
         try:

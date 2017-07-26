@@ -1012,6 +1012,12 @@
         }, 
         "name": "Dynamic Coattention Networks For Question Answering"
     }, 
+    "https://arxiv.org/abs/1611.01604v1": {
+        "dates": {
+            "1": "2016-11-05"
+        }, 
+        "name": "Dynamic Coattention Networks For Question Answering"
+    }, 
     "https://arxiv.org/abs/1611.06430v1": {
         "dates": {
             "1": "2016-11-19"
