@@ -1109,6 +1109,12 @@
         }, 
         "name": "Deep Convolutional Decision Jungle for Image Classification"
     }, 
+    "https://arxiv.org/abs/1707.06887v1": {
+        "dates": {
+            "1": "2017-07-21"
+        }, 
+        "name": "A Distributional Perspective on Reinforcement Learning"
+    }, 
     "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": {
         "name": "Swedish Chess Computer Association - Wikipedia"
     }, 
