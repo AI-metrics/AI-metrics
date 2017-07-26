@@ -19,8 +19,8 @@ class Linear():
 
 class AtariLinear():
     offset = (2,-2)
-    axis_label = "Score (Rewards Normalized)"
-    col_label = "Normalized<br>Score"
+    axis_label = "Score"
+    col_label = "Raw Score"
     def improvement(self, score1, score2):
         return score2 - score1
     def pseudolinear(self, score):

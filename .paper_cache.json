@@ -592,6 +592,18 @@
         }, 
         "name": "Deep Reinforcement Learning with Double Q-learning"
     }, 
+    "https://arxiv.org/abs/1509.06461v1": {
+        "dates": {
+            "1": "2015-09-22"
+        }, 
+        "name": "Deep Reinforcement Learning with Double Q-learning"
+    }, 
+    "https://arxiv.org/abs/1509.06461v3": {
+        "dates": {
+            "3": "2015-12-08"
+        }, 
+        "name": "Deep Reinforcement Learning with Double Q-learning"
+    }, 
     "https://arxiv.org/abs/1509.08985": {
         "dates": {
             "1": "2015-09-30", 
@@ -635,6 +647,15 @@
         }, 
         "name": "Competitive Multi-scale Convolution"
     }, 
+    "https://arxiv.org/abs/1511.05952": {
+        "dates": {
+            "1": "2015-11-18", 
+            "2": "2015-11-19", 
+            "3": "2016-01-07", 
+            "4": "2016-02-25"
+        }, 
+        "name": "Prioritized Experience Replay"
+    }, 
     "https://arxiv.org/abs/1511.06241": {
         "dates": {
             "1": "2015-11-19", 
@@ -657,6 +678,12 @@
     "https://arxiv.org/abs/1511.06581v1": {
         "dates": {
             "1": "2015-11-20"
+        }, 
+        "name": "Dueling Network Architectures for Deep Reinforcement Learning"
+    }, 
+    "https://arxiv.org/abs/1511.06581v3": {
+        "dates": {
+            "3": "2016-04-05"
         }, 
         "name": "Dueling Network Architectures for Deep Reinforcement Learning"
     }, 
@@ -972,6 +999,12 @@
         }, 
         "name": "Dynamic Coattention Networks For Question Answering"
     }, 
+    "https://arxiv.org/abs/1611.06430v1": {
+        "dates": {
+            "1": "2016-11-19"
+        }, 
+        "name": "Semi-Supervised Learning with Context-Conditional Generative Adversarial Networks"
+    }, 
     "https://arxiv.org/abs/1611.09978v1": {
         "dates": {
             "1": "2016-11-30"
@@ -1113,6 +1146,9 @@
     }, 
     "https://web.archive.org/web/20170227044521/http://www.computerchess.org.uk/ccrl/4040/": {
         "name": "CCRL 40/40 - Index"
+    }, 
+    "https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf": {
+        "name": null
     }, 
     "https://www.gwern.net/docs/2016-graves.pdf": {
         "name": null

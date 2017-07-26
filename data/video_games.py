@@ -340,6 +340,18 @@ wizard_of_wor_metric.measure(date(2015, 2, 26), 3393, "DQN", "https://www.semant
 zaxxon_metric = simple_games.metric("Atari 2600 Zaxxon", scale=atari_linear, target=9173, target_source="https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508")
 zaxxon_metric.measure(date(2015, 2, 26), 4977, "DQN", "https://www.semanticscholar.org/paper/Human-level-control-through-deep-reinforcement-Mnih-Kavukcuoglu/340f48901f72278f6bf78a04ee5b01df208cc508")
 
+# Results from the original DQN paper
+
+beam_rider_metric.measure(None, 5184, "DQN best", "https://arxiv.org/abs/1312.5602")
+breakout_metric.measure(None, 225, "DQN best", "https://arxiv.org/abs/1312.5602")
+enduro_metric.measure(None, 661, "DQN best", "https://arxiv.org/abs/1312.5602")
+pong_metric.measure(None, 21, "DQN best", "https://arxiv.org/abs/1312.5602")
+q_bert_metric.measure(None, 4500, "DQN best", "https://arxiv.org/abs/1312.5602")
+seaquest_metric.measure(None, 1740, "DQN best", "https://arxiv.org/abs/1312.5602")
+space_invaders_metric.measure(None, 1075, "DQN best", "https://arxiv.org/abs/1312.5602")
+
+
+
 # games first encountered in the ES paper?
 phoenix_metric = simple_games.metric("Atari 2600 Phoenix", scale=atari_linear)
 pit_fall_metric = simple_games.metric("Atari 2600 Pit Fall", scale=atari_linear)
