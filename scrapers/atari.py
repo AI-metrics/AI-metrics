@@ -4,6 +4,15 @@ from __future__ import print_function
 
 from data.video_games import *
 import re
+
+# Machinery for importing both copy-and-pasted and (where necessary) OCR'd tables from various Atari research papers
+# Copying and pasting tables from PDFs produces very weird results sometimes, so we make no promises that there aren't
+# anyforms of weirdness here.
+
+# The common case is that PDF tables paste column-wise; but some are row-wise so we have machinery for both.
+
+# COLUMN-WISE RESULT TABLES:
+
 wang_table_2 = """GAMES
 Alien
 Amidar
@@ -1794,23 +1803,21 @@ B. Rider Breakout Enduro Pong Q*bert Seaquest S. Invaders
 1145
 1075"""
 
-# When we paste tables full of Atari results from a PDF, some of them turn into reasonable column-oriented data we can
-# handle with Python. In other cases the tables paste as row-oriented, or need to be OCRed into row-oriented forms
-
-# COLUMN-ORIENTED data
+# COLUMN-ORIENTED processing
 
 remove_re = re.compile(r"['’!\.]")
 underscore_re = re.compile(r"[ \-\*]")
 def game_metric_name(s):
-    "Return the metric for a game's name"
+    "Calculate the name of the Metric() object from a game's name"
     name = s.strip().lower()
     name = remove_re.sub("", name)
     name = underscore_re.sub("_", name)
-    name.replace("pac_man", "pacman")  # sources are inconsistent; "Pac-Man" is most correct but pacman most pythonic
+    name.replace("pac_man", "pacman")  # the papers are inconsistent; "Pac-Man" is most correct but pacman most pythonic
     return name + "_metric"
 
-verb = False
-TSIZE = 57
+verb = False # Set to True for debugging
+TSIZE = 57   # Number of games reported in the more recent papers
+
 def get_game_metric(metric_name, human_name, target, target_source):
     """Get a reference to the metric object for a game, creating it if necessary."""
     metric = globals().get(metric_name, None)
