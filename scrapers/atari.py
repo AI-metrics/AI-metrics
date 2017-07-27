@@ -2252,12 +2252,20 @@ for row in nature_rows:
     rest = name_re.sub("", row, 1)
     cols = rest.split()
     random, bll, sarsa, human, dqn, dqn_err, norm = cols
-    dqn = float(dqn)
+    dqn, sarsa, bll = float(dqn), float(sarsa), float(bll)
     dqn_err = float(re.search("[0-9]+", dqn_err).group(0))
     globals()[game].measure(date(2015, 2, 26), dqn, 'Nature DQN', 
         url='https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf', 
         papername="Human-level control through deep reinforcement learning", 
         uncertainty=dqn_err)
+    # The Mnih et al. Nature paper attributes these SARSA results to this paper,
+    # but the paper doesn't actually seem to include them?
+    globals()[game].measure(date(2012, 7, 14), sarsa, 'SARSA', 
+        url='https://www.aaai.org/ocs/index.php/AAAI/AAAI12/paper/view/5162',
+        papername="Investigating Contingency Awareness Using Atari 2600 Games")
+
+    globals()[game].measure(None, bll, 'Best linear', 
+        url='https://arxiv.org/abs/1207.4708v1')
     if verb:
         print("{0}.measure(None, {1}, 'Nature DQN', papername='Human-level control through deep reinforcement learning' "
               "url='https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf'"
