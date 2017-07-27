@@ -1181,6 +1181,9 @@
     "https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf": {
         "name": "Human-level control through deep reinforcement learning"
     }, 
+    "https://www.aaai.org/ocs/index.php/AAAI/AAAI12/paper/view/5162": {
+        "name": "Bellemare"
+    }, 
     "https://www.gwern.net/docs/2016-graves.pdf": {
         "name": null
     }, 

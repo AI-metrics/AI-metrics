@@ -2128,6 +2128,7 @@ def get_column(raw, n, size=TSIZE):
 
 def ingest_column(src, n, paper_url, alg=None, extras={}, size=TSIZE):
     algorithm, data = get_column(src, n, size=size)
+    _, games = get_column(src, 0, size=size)
     if verb and algorithm.lower() not in alg.lower():
         print(u"# {0} not in {1}".format(algorithm, alg))
     for i, score in enumerate(data):
@@ -2145,7 +2146,6 @@ es_data = es_table3.split("\n")
 distributional_data = bellemare_figure_14.split("\n")
 early_data = mnih_2013_table_1.split("\n")
 pop_art_data = van_hasselt_2016_table1.split("\n")
-_, games = get_column(noop_data, 0)
 
 # Weirdly, the noop start human performance is consistently better than the human start human performance data
 # Is this because it's newer and at a higher standard? Or because the recorded human starts consistently hamper strong
@@ -2156,8 +2156,8 @@ _, human_human = get_column(human_start_data, 3)
 human_human = [float(score.replace(",", "")) for score in human_human]
 targets = [max(scores) for scores in zip(human_noop, human_human)]
 
-ingest_column(early_data, 2, "https://arxiv.org/abs/1312.5602", u"SARSA(λ)", 
-              {"algorithm_src_url": "https://arxiv.org/abs/1207.4708v1"}, size=7)
+#ingest_column(early_data, 2, "https://arxiv.org/abs/1312.5602", u"SARSA(λ)", 
+#              {"algorithm_src_url": "https://arxiv.org/abs/1207.4708v1"}, size=7)
 ingest_column(es_data, 3, "https://arxiv.org/abs/1703.03864v1", "ES FF (1 hour) noop", size=51)
 ingest_column(distributional_data, 7, "https://arxiv.org/abs/1707.06887v1", "C51 noop")
 ingest_column(pop_art_data, 4, "https://arxiv.org/abs/1602.07714v1", "DDQN+Pop-Art noop")
