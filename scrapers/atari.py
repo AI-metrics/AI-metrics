@@ -2101,9 +2101,9 @@ underscore_re = re.compile(r"[ \-\*]")
 def game_metric_name(s):
     "Calculate the name of the Metric() object from a game's name"
     name = s.strip().lower()
-    name.replace("pac_man", "pacman")  # the papers are inconsistent; "Pac-Man" is most correct but pacman most pythonic
     name = remove_re.sub("", name)
     name = underscore_re.sub("_", name)
+    name = name.replace("pac_man", "pacman")  # the papers are inconsistent; "Pac-Man" is most correct but pacman most pythonic
     return name + "_metric"
 
 verb = False # Set to True for debugging
