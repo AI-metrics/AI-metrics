@@ -1803,6 +1803,297 @@ B. Rider Breakout Enduro Pong Q*bert Seaquest S. Invaders
 1145
 1075"""
 
+van_hasselt_2016_table1 = """Game
+Alien
+Amidar
+Assault
+Asterix
+Asteroids
+Atlantis
+Bank Heist
+Battle Zone
+Beam Rider
+Berzerk
+Bowling
+Boxing
+Breakout
+Centipede
+Chopper Command
+Crazy Climber
+Defender
+Demon Attack
+Double Dunk
+Enduro
+Fishing Derby
+Freeway
+Frostbite
+Gopher
+Gravitar
+H.E.R.O.
+Ice Hockey
+James Bond
+Kangaroo
+Krull
+Kung-Fu Master
+Montezuma’s Revenge
+Ms. Pacman
+Name This Game
+Phoenix
+Pitfall
+Pong
+Private Eye
+Q*Bert
+River Raid
+Road Runner
+Robotank
+Seaquest
+Skiing
+Solaris
+Space Invaders
+Star Gunner
+Surround
+Tennis
+Time Pilot
+Tutankham
+Up and Down
+Venture
+Video Pinball
+Wizard of Wor
+Yars Revenge
+Zaxxon
+Random
+227.80
+5.80
+222.40
+210.00
+719.10
+12850.00
+14.20
+2360.00
+363.90
+123.70
+23.10
+0.10
+1.70
+2090.90
+811.00
+10780.50
+2874.50
+152.10
+−18.60
+0.00
+−91.70
+0.00
+65.20
+257.60
+173.00
+1027.00
+−11.20
+29.00
+52.00
+1598.00
+258.50
+0.00
+307.30
+2292.30
+761.40
+−229.40
+−20.70
+24.90
+163.90
+1338.50
+11.50
+2.20
+68.40
+−17098.10
+1236.30
+148.00
+664.00
+−10.00
+−23.80
+3568.00
+11.40
+533.40
+0.00
+16256.90
+563.50
+3092.90
+32.50
+Human
+7127.70
+1719.50
+742.00
+8503.30
+47388.70
+29028.10
+753.10
+37187.50
+16926.50
+2630.40
+160.70
+12.10
+30.50
+12017.00
+7387.80
+35829.40
+18688.90
+1971.00
+−16.40
+860.50
+−38.70
+29.60
+4334.70
+2412.50
+3351.40
+30826.40
+0.90
+302.80
+3035.00
+2665.50
+22736.30
+4753.30
+6951.60
+8049.00
+7242.60
+6463.70
+14.60
+69571.30
+13455.00
+17118.00
+7845.00
+11.90
+42054.70
+−4336.90
+12326.70
+1668.70
+10250.00
+6.50
+−8.30
+5229.20
+167.60
+11693.20
+1187.50
+17667.90
+4756.50
+54576.90
+9173.30
+Double DQN
+3747.70
+1793.30
+5393.20
+17356.50
+734.70
+106056.00
+1030.60
+31700.00
+13772.80
+1225.40
+68.10
+91.60
+418.50
+5409.40
+5809.00
+117282.00
+35338.50
+58044.20
+−5.50
+1211.80
+15.50
+33.30
+1683.30
+14840.80
+412.00
+20130.20
+−2.70
+1358.00
+12992.00
+7920.50
+29710.00
+0.00
+2711.40
+10616.00
+12252.50
+−29.90
+20.90
+129.70
+15088.50
+14884.50
+44127.00
+65.10
+16452.70
+−9021.80
+3067.80
+2525.50
+60142.00
+−2.90
+−22.80
+8339.00
+218.40
+22972.20
+98.00
+309941.90
+7492.00
+11712.60
+10163.00
+Double DQN with Pop-Art
+3213.50
+782.50
+9011.60
+18919.50
+2869.30
+340076.00
+1103.30
+8220.00
+8299.40
+1199.60
+102.10
+99.30
+344.10
+49065.80
+775.00
+119679.00
+11099.00
+63644.90
+−11.50
+2002.10
+45.10
+33.40
+3469.60
+56218.20
+483.50
+14225.20
+−4.10
+507.50
+13150.00
+9745.10
+34393.00
+0.00
+4963.80
+15851.20
+6202.50
+−2.60
+20.60
+286.70
+5236.80
+12530.80
+47770.00
+64.30
+10932.30
+−13585.10
+4544.80
+2589.70
+589.00
+−2.50
+12.10
+4870.00
+183.90
+22474.40
+1172.00
+56287.00
+483.00
+21409.50
+14402.00"""
+
 # COLUMN-ORIENTED processing
 
 remove_re = re.compile(r"['’!\.]")
@@ -1810,9 +2101,9 @@ underscore_re = re.compile(r"[ \-\*]")
 def game_metric_name(s):
     "Calculate the name of the Metric() object from a game's name"
     name = s.strip().lower()
+    name.replace("pac_man", "pacman")  # the papers are inconsistent; "Pac-Man" is most correct but pacman most pythonic
     name = remove_re.sub("", name)
     name = underscore_re.sub("_", name)
-    name.replace("pac_man", "pacman")  # the papers are inconsistent; "Pac-Man" is most correct but pacman most pythonic
     return name + "_metric"
 
 verb = False # Set to True for debugging
@@ -1840,7 +2131,8 @@ def ingest_column(src, n, paper_url, alg=None, extras={}, size=TSIZE):
     if verb and algorithm.lower() not in alg.lower():
         print(u"# {0} not in {1}".format(algorithm, alg))
     for i, score in enumerate(data):
-        score = float(score.replace(",", ""))
+        # Maybe someone should fix Python's float() function...
+        score = float(score.replace(",", "").replace('\xe2\x88\x92', "-").replace("−", "-"))
         game = game_metric_name(games[i])
         metric = get_game_metric(game, games[i], targets[i], "https://arxiv.org/abs/1509.06461")
         if verb: print(u'{0}.measure(None, {1}, "{2}", url="{3}"{4})'.format(game, score, alg, paper_url, extras if extras else ""))
@@ -1852,6 +2144,7 @@ human_start_data = wang_table_3.split("\n")
 es_data = es_table3.split("\n")
 distributional_data = bellemare_figure_14.split("\n")
 early_data = mnih_2013_table_1.split("\n")
+pop_art_data = van_hasselt_2016_table1.split("\n")
 _, games = get_column(noop_data, 0)
 
 # Weirdly, the noop start human performance is consistently better than the human start human performance data
@@ -1867,6 +2160,7 @@ ingest_column(early_data, 2, "https://arxiv.org/abs/1312.5602", u"SARSA(λ)",
               {"algorithm_src_url": "https://arxiv.org/abs/1207.4708v1"}, size=7)
 ingest_column(es_data, 3, "https://arxiv.org/abs/1703.03864v1", "ES FF (1 hour) noop", size=51)
 ingest_column(distributional_data, 7, "https://arxiv.org/abs/1707.06887v1", "C51 noop")
+ingest_column(pop_art_data, 4, "https://arxiv.org/abs/1602.07714v1", "DDQN+Pop-Art noop")
 
 ingest_column(noop_data, 4, "https://arxiv.org/abs/1509.06461v1", "DQN noop", 
               {"algorithm_src_url": "https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf",

@@ -742,6 +742,12 @@
         }, 
         "name": "Asynchronous Methods for Deep Reinforcement Learning"
     }, 
+    "https://arxiv.org/abs/1602.07714v1": {
+        "dates": {
+            "1": "2016-02-24"
+        }, 
+        "name": "Learning functions across many orders of magnitudes"
+    }, 
     "https://arxiv.org/abs/1603.01547": {
         "dates": {
             "1": "2016-03-04", 
