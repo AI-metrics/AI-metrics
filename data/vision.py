@@ -39,12 +39,12 @@ video_classification.metric("YouTube-8M video labelling", url="https://research.
 # Also they don't seem to have human performance numbers for VQA multiple choice?
 vqa_abstract_human_performance = 87.49
 vqa_real_human_performance = 83.3
-vqa_imgs = 50000 + 204751.
-vqa_target = (50000/vqa_imgs) * vqa_abstract_human_performance + (204751 / vqa_imgs) * vqa_real_human_performance
 
-vqa_real_oe = image_comprehension.metric("COCO Visual Question Answering (VQA) real images 1.0 open ended", url="http://visualqa.org/", target=vqa_target, target_source="https://arxiv.org/abs/1505.00468", scale=correct_percent)
+vqa_real_oe = image_comprehension.metric("COCO Visual Question Answering (VQA) real images 1.0 open ended", url="http://visualqa.org/", 
+                                         target=vqa_real_human_performance, target_source="https://arxiv.org/abs/1505.00468", scale=correct_percent)
 vqa_real_mc = image_comprehension.metric("COCO Visual Question Answering (VQA) real images 1.0 multiple choice", url="http://visualqa.org/", scale=correct_percent, solved=False)
-vqa_abstract_oe = image_comprehension.metric("COCO Visual Question Answering (VQA) abstract images 1.0 open ended", url="http://visualqa.org/", target=vqa_target, target_source="https://arxiv.org/abs/1505.00468", scale=correct_percent)
+vqa_abstract_oe = image_comprehension.metric("COCO Visual Question Answering (VQA) abstract images 1.0 open ended", url="http://visualqa.org/", 
+                                             target=vqa_abstract_human_performance, target_source="https://arxiv.org/abs/1505.00468", scale=correct_percent)
 vqa_abstract_mc = image_comprehension.metric("COCO Visual Question Answering (VQA) abstract 1.0 multiple choice", url="http://visualqa.org/", scale=correct_percent, solved=False)
 # other visual question answering metrics (we don't have data for these yet)
 # For a survey: https://arxiv.org/pdf/1607.05910
@@ -84,15 +84,24 @@ vqa_real_oe.measure(None, 66.5, "MCB 7 att.", url="https://arxiv.org/abs/1606.01
 vqa_real_mc.measure(None, 70.1, "MCB 7 att.", url="https://arxiv.org/abs/1606.01847v1", replicated="https://github.com/akirafukui/vqa-mcb")
 visual7w.measure(None, 62.2, "MCB+Att.", url="https://arxiv.org/abs/1606.01847v1")
 
-vqa_abstract_mc.measure(None, 61.41, "LSTM blind", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1505.00468")
-vqa_abstract_oe.measure(None, 57.19, "LSTM blind", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1505.00468")
-vqa_abstract_mc.measure(None, 69.21, "LSTM + global features", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1505.00468")
-vqa_abstract_oe.measure(None, 65.02, "LSTM + global features", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1505.00468")
+vqa_abstract_mc.measure(None, 61.41, "LSTM blind", url="http://visualqa.org/amc.html",
+                        algorithm_src_url="https://arxiv.org/abs/1511.05099", venue="vqa competition 2016")
+vqa_abstract_oe.measure(None, 57.19, "LSTM blind", url="http://visualqa.org/aoe.html",
+                        algorithm_src_url="https://arxiv.org/abs/1511.05099", venue="vqa competition 2016")
+vqa_abstract_mc.measure(None, 69.21, "LSTM + global features", url="http://visualqa.org/amc.html",
+                        algorithm_src_url="https://arxiv.org/abs/1511.05099", venue="vqa competition 2016")
+vqa_abstract_oe.measure(None, 65.02, "LSTM + global features", url="http://visualqa.org/aoe.html", 
+                        algorithm_src_url="https://arxiv.org/abs/1511.05099", venue="vqa competition 2016")
+
+vqa_abstract_mc.measure(None, 71.18, "Dualnet ensemble", url="http://visualqa.org/amc.html",
+                        algorithm_src_url="https://arxiv.org/abs/1606.06108", venue="vqa competition 2016")
+vqa_abstract_oe.measure(None, 69.73, "Dualnet ensemble", url="http://visualqa.org/aoe.html",
+                        algorithm_src_url="https://arxiv.org/abs/1606.06108", venue="vqa competition 2016")
 
 vqa_real_mc.measure(None, 66.33, "MRN", url="https://arxiv.org/abs/1606.01455v1")
 vqa_real_oe.measure(None, 61.84, "MRN + global features", url="https://arxiv.org/abs/1606.01455v1")
-vqa_abstract_mc.measure(None, 69.21, "MRN", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1606.01455v1")
-vqa_abstract_oe.measure(None, 65.02, "MRN + global features", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1606.01455v1")
+#vqa_abstract_mc.measure(None, 69.21, "MRN", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1606.01455v1")
+#vqa_abstract_oe.measure(None, 65.02, "MRN + global features", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1606.01455v1")
 
 visual7w.measure(None, 72.53, "CMN", url="https://arxiv.org/abs/1611.09978v1")
 visual_genome_pairs.measure(None, 28.52, "CMN", url="https://arxiv.org/abs/1611.09978v1")
