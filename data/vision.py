@@ -100,8 +100,8 @@ vqa_abstract_oe.measure(None, 69.73, "Dualnet ensemble", url="http://visualqa.or
 
 vqa_real_mc.measure(None, 66.33, "MRN", url="https://arxiv.org/abs/1606.01455v1")
 vqa_real_oe.measure(None, 61.84, "MRN + global features", url="https://arxiv.org/abs/1606.01455v1")
-#vqa_abstract_mc.measure(None, 69.21, "MRN", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1606.01455v1")
-#vqa_abstract_oe.measure(None, 65.02, "MRN + global features", url="https://arxiv.org/abs/1609.05600", algorithm_src_url="https://arxiv.org/abs/1606.01455v1")
+vqa_abstract_mc.measure(None, 74.37, "Graph VQA", url="https://arxiv.org/abs/1609.05600v1")
+vqa_abstract_oe.measure(None, 70.42, "Graph VQA", url="https://arxiv.org/abs/1609.05600v1")
 
 visual7w.measure(None, 72.53, "CMN", url="https://arxiv.org/abs/1611.09978v1")
 visual_genome_pairs.measure(None, 28.52, "CMN", url="https://arxiv.org/abs/1611.09978v1")
