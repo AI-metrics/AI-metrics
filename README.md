@@ -50,7 +50,7 @@ If you've already worked a lot with `git` and IPython/Jupyter Notebooks, here's 
 4. Configure your copy of git to use [IPython Notebook merge filters](http://pascalbugnion.net/blog/ipython-notebooks-and-git.html) to prevent conflicts when multiple people edit the Notebook simultaneously. You can do that with these two commands in the cloned repo:
     <pre>git config --file .gitconfig filter.clean_ipynb.clean $PWD/ipynb_drop_output</pre>
     <pre>git config --file .gitconfig filter.clean_ipynb.smudge cat</pre>
-5. Run Jupyter Notebok in the project directory (the command may be `ipython notebook`, `jupyter notebook`, `jupyter-notebook`, or `python notebook` depending on your system), then go to [localhost:8888](http://localhost:8888) and edit the Notebook to your heart's content
+5. Run Jupyter Notebok in the project directory (the command may be `ipython notebook`, `jupyter notebook`, `jupyter-notebook`, or `python notebook` depending on your system), then go to [localhost:8888](http://localhost:8888) and edit the Notebook `AI-progress-metrics.ipynb` to your heart's content
 
 6. Save and commit your work (`git commit -a -m "DESCRIPTION OF WHAT YOU CHANGED"`)
 7. Push it to your remote repo
@@ -67,7 +67,7 @@ Microsoft Azure has an IPython / Jupyter service that will let you run and modif
 
 ## Notes on importing data
 
-* Each `.measure()` call is a data point of a specific algorithm on a specific metric/dataset. Thus one paper will often produce multiple measurements on multiple metrics. It's most important to enter results that were at or near the frontier of best performance on the date they were published, though this isn't a strict requirement and it's nice to have a sense of the performance of the field, or of algorithms that are otherwise notable even if they aren't the frontier for a sepcific problem.
+* Each `.measure()` call is a data point of a specific algorithm on a specific metric/dataset. Thus one paper will often produce multiple measurements on multiple metrics. It's most important to enter results that were at or near the frontier of best performance on the date they were published, though this isn't a strict requirement and it's nice to have a sense of the performance of the field, or of algorithms that are otherwise notable even if they aren't the frontier for a specific problem.
 * When multiple revisions of a paper (typically on arXiv) have the same results on some metric, use the date of the first version (the CBTest results in [this paper](https://arxiv.org/abs/1606.02245v4) are an example)
 * When subsequent revisions of a paper improve on the original results ([example](https://arxiv.org/abs/1606.01549v3)), use the date and scores of the first results, or if each revision is interesting / on the frontier of best performance, include each paper
   * We didn't check this carefully for our first ~100 measurement data points :(. In order to denote when we've checked which revision of an arXiv preprint first published a result, cite the specific version (https://arxiv.org/abs/1606.01549v3 rather than https://arxiv.org/abs/1606.01549); that way we can see which previous entries should be double-checked for this form of inaccuracy.
@@ -81,7 +81,7 @@ Microsoft Azure has an IPython / Jupyter service that will let you run and modif
 * If there are papers with interesting results for metrics that aren't included, add them
 * If you know of important problems that humans can solve, and machine learning systems may or may not yet be able to, and they're missing from our taxonomy, you can propose them
 * Look at our [Github issue list](https://github.com/AI-metrics/master_text) perhaps starting with those tagged as [good volunteer tasks](https://github.com/AI-metrics/master_text/issues?q=is%3Aissue+is%3Aopen+label%3A%22Good+volunteer+task%22).
-* You can also add missing conferences / journals to to the venue-to-date mapping table (unhide the source code and search for `conference_dates`):
+* You can also add missing conferences / journals to the venue-to-date mapping table (unhide the source code and search for `conference_dates`):
 
 
  

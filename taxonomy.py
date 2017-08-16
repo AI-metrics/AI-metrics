@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 from __future__ import print_function
 
@@ -46,36 +47,41 @@ class Problem:
         self.url = url
         global problems, metrics
         problems[name] = self
-        
+
     def add_subproblem(self, other_problem):
         # add this other problem as a subproblem of us
         other_problem.superproblems.append(self)
         self.subproblems.append(other_problem)
-        
+
     def metric(self, *args, **kwargs):
         m = Metric(*args, **kwargs)
         m.parent = self
         self.metrics.append(m)
         return m
-    
+
     def check_solved(self):
         if all(m.solved for m in self.metrics + self.subproblems):
             self.solved = True
             for p in self.superproblems:
                 p.check_solved()
-    
+
     def __str__(self):
         return "Problem({0})".format(self.name)
-    
+
     def print_structure(self, indent=0):
         print(indent * " " + str(self))
         for m in self.metrics:
             print((indent + 4) * " " + str(m))
         for p in self.subproblems:
             p.print_structure(indent + 4)
-    
+
     def tables(self):
-        return render_tables(self.metrics)
+        return render_tables(sorted(self.metrics, key=lambda m:m.name))
+
+    def graphs(self):
+        for m in sorted(self.metrics, key=lambda m:m.name):
+            m.graph()
+
 
 mpl.rcParams["legend.fontsize"] = u"x-small"
 mpl.rcParams["xtick.labelsize"] = u"xx-small"
@@ -104,11 +110,14 @@ class Metric:
         # primarily used by the table() method
         self.data_url = self.find_edit_url(3) # 3 is stack depth for a problem.metric() call
         self.data_path = None
-        
+
     def __str__(self):
         solved = "SOLVED" if self.solved else "?" if not self.target else "not solved"
         return "{0:<60}{1}".format("Metric(%s)" % self.name, solved)
-        
+
+    def __repr__(self):
+        return 'Metric("{0}")'.format(self.name)
+
     def measure(self, *args, **kwargs):
         try:
             m = Measurement(*args, **kwargs)
@@ -162,9 +171,9 @@ class Metric:
         for n, m in enumerate(self.measures):
             bgcol = u'style="background-color: #f7f7f7"' if n % 2 == 1 else ''
             table_html.append(u"<tr {0}>".format(bgcol))
-            table_html.append(u'<td align="center" style="width: 10%">{0}</td>'.format(m.date))
+            table_html.append(u'<td align="center" style="width: 11%">{0}</td>'.format(m.date))
             table_html.append(u'<td align="center" {1}>{0}</td>'.format(m.name, alg_bound))
-            table_html.append(u'<td align="center">{0}</td>'.format(m.value))
+            table_html.append(u'<td align="center">{0} {1}</td>'.format(m.value, m.represent_uncertainty()))
             source  = u' (<a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
             alglink = u' (algorithm from <a href="{0}">{1}</a>)'.format(m.algorithm_src_url, m.src_name) if m.src_name else ''
             pname = m.papername if m.papername else m.url
@@ -315,6 +324,7 @@ class Measurement:
                 self.min_date = min(prev_dates.values())
         self.determine_src_name()
                     
+        self.uncertainty = uncertainty
         self.minval = minval if minval else value - uncertainty
         self.maxval = maxval if maxval else value + uncertainty
         self.opensource = opensource
@@ -395,6 +405,18 @@ class Measurement:
         if not self.date:
             print(d, arxiv_dates, venue)
         assert self.date, "Need a date for paper {0} {1}".format(self.url, self.papername)
+
+    def represent_uncertainty(self):
+        "Printable error bars for this value"
+        err = u""
+        if self.uncertainty:
+            err = u"± {0}".format(self.uncertainty)
+        elif not self.value == self.minval == self.maxval:
+            err = super_digits(u"+" + str(self.maxval)) + u" " + sub_digits(u"-" + str(self.minval))
+        return err
+
+super_digits = lambda s: u''.join(dict(zip(u".-+0123456789", u"⋅⁻⁺⁰¹²³⁴⁵⁶⁷⁸⁹")).get(c, c) for c in s)
+sub_digits = lambda s: u''.join(dict(zip(u".-+0123456789", u".₋₊₀₁₂₃₄₅₆₇₈₉")).get(c, c) for c in s)
 
 #print canonicalise('http://arxiv.org/pdf/1412.6806.pdf')
 #cifar10.measure(None, 96.53, 'Fractional Max-Pooling', 'http://arxiv.org/abs/1412.6071', 

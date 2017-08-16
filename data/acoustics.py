@@ -38,5 +38,26 @@ swb_hub_500.measure(date(2017,2,17), 6.9, "RNNLM", "https://arxiv.org/abs/1609.0
 swb_hub_500.measure(date(2017,2,17), 6.2, "Microsoft 2016", "https://arxiv.org/abs/1609.03528") # TODO: (name check)
 
 swb_hub_500.measure(date(2016,10,17), 6.6, "CNN-LSTM", "https://arxiv.org/abs/1610.05256") # TODO: (name check)
-swb_hub_500.measure(date(2016,10,17), 5.9, "CNN-LSTM","https://arxiv.org/abs/1610.05256") # TODO: (name check)
+swb_hub_500.measure(date(2016,10,17), 5.9, "CNN-LSTM", "https://arxiv.org/abs/1610.05256") # TODO: (name check)
 
+"""
+Author    Yann Bayle
+E-mail    bayle.yann@live.fr
+Created   03/08/2017
+Updated   04/08/2017
+Object    Music Information Retrieval tasks
+
+Why do we care: Reflects the improvement of music auto-tagging over time.
+"""
+
+# Precision for the Instrumentals detection in a musical database in order to create an Instrumental playlist
+instrumentals_recognition = Problem(name="Detection of Instrumentals musical tracks", attributes=["language", "agi"])
+satin = instrumentals_recognition.metric(name="Precision of Instrumentals detection reached when tested on SATIN (Bayle et al. 2017)", scale=correct_percent, target=99)
+satin.measure(date(2013, 10, 17), 17.3, "Ghosal et al.", "https://link.springer.com/article/10.1186/2193-1801-2-526")
+satin.measure(date(2014, 9, 30), 12.5, "SVMBFF", "https://arxiv.org/pdf/1410.0001.pdf")
+satin.measure(date(2014, 9, 30), 29.8, "VQMM", "https://arxiv.org/pdf/1410.0001.pdf")
+satin.measure(date(2017, 6, 23), 82.5, "Bayle et al.", "https://arxiv.org/abs/1706.07613")
+
+# MAP and MAR for Cover Song Identification currently being written
+
+# Need for people to work on genres recognition
