@@ -103,6 +103,16 @@ vqa_real_oe.measure(None, 61.84, "MRN + global features", url="https://arxiv.org
 vqa_abstract_mc.measure(None, 74.37, "Graph VQA", url="https://arxiv.org/abs/1609.05600v1")
 vqa_abstract_oe.measure(None, 70.42, "Graph VQA", url="https://arxiv.org/abs/1609.05600v1")
 
+vqa_real_oe.measure(None, 64.2, "N2NMN", "https://arxiv.org/abs/1704.05526v2", replicated="http://ronghanghu.com/n2nmn/")
+
+
+vqa2_real_oe = image_comprehension.metric("COCO Visual Question Answering (VQA) real images 2.0 open ended", url="http://visualqa.org/", scale=correct_percent)
+vqa2_real_oe.measure(None, 54.22, "d-LSTM+nI", url="https://arxiv.org/abs/1612.00837v1", algorithm_src_url="https://github.com/VT-vision-lab/VQA_LSTM_CNN", min_date=date(2015,12,14))
+vqa2_real_oe.measure(None, 62.27, "MCB", url="https://arxiv.org/abs/1612.00837v1", algorithm_src_url="https://arxiv.org/abs/1606.01847v1")
+vqa2_real_oe.measure(None, 70.34, "Up-Down", url="https://arxiv.org/abs/1707.07998v1")
+vqa2_real_oe.measure(date(2017,7,26), 68.16, "HDU-USYD-UNCC", url="http://www.visualqa.org/roe_2017.html")
+vqa2_real_oe.measure(date(2017,7,26), 68.07, "DLAIT", url="http://www.visualqa.org/roe_2017.html")
+
 visual7w.measure(None, 72.53, "CMN", url="https://arxiv.org/abs/1611.09978v1")
 visual_genome_pairs.measure(None, 28.52, "CMN", url="https://arxiv.org/abs/1611.09978v1")
 visual_genome_subjects.measure(None, 44.24, "CMN", url="https://arxiv.org/abs/1611.09978v1")

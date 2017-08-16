@@ -158,6 +158,12 @@
     "http://vcl.ucsd.edu/~sxie/2014/09/12/dsn-project/": {
         "name": "Deeply Supervised Nets - "
     }, 
+    "http://visualqa.org/amc.html": {
+        "name": "VQA: Visual Question Answering"
+    }, 
+    "http://visualqa.org/aoe.html": {
+        "name": "VQA: Visual Question Answering"
+    }, 
     "http://web.eecs.umich.edu/~honglak/icml12-invariantFeatureLearning.pdf": {
         "name": null
     }, 
@@ -235,6 +241,9 @@
     }, 
     "http://www.utstat.toronto.edu/~rsalakhu/papers/dbm.pdf": {
         "name": null
+    }, 
+    "http://www.visualqa.org/roe_2017.html": {
+        "name": "VQA: Visual Question Answering"
     }, 
     "http://yann.lecun.com/exdb/publis/pdf/jarrett-iccv-09.pdf": {
         "name": null
@@ -635,6 +644,16 @@
         }, 
         "name": "Universum Prescription: Regularization using Unlabeled Data"
     }, 
+    "https://arxiv.org/abs/1511.05099": {
+        "dates": {
+            "1": "2015-11-16", 
+            "2": "2015-11-17", 
+            "3": "2015-11-22", 
+            "4": "2016-01-31", 
+            "5": "2016-04-19"
+        }, 
+        "name": "Yin and Yang: Balancing and Answering Binary Visual Questions"
+    }, 
     "https://arxiv.org/abs/1511.05234v2": {
         "dates": {
             "2": "2016-03-19"
@@ -850,6 +869,13 @@
         }, 
         "name": "Query-Reduction Networks for Question Answering"
     }, 
+    "https://arxiv.org/abs/1606.06108": {
+        "dates": {
+            "1": "2016-06-20", 
+            "2": "2017-05-04"
+        }, 
+        "name": "DualNet: Domain-Invariant Network for Visual Question Answering"
+    }, 
     "https://arxiv.org/abs/1607.00036": {
         "dates": {
             "1": "2016-06-30", 
@@ -937,6 +963,12 @@
         }, 
         "name": "Graph-Structured Representations for Visual Question Answering"
     }, 
+    "https://arxiv.org/abs/1609.05600v1": {
+        "dates": {
+            "1": "2016-09-19"
+        }, 
+        "name": "Graph-Structured Representations for Visual Question Answering"
+    }, 
     "https://arxiv.org/abs/1609.07843v1": {
         "dates": {
             "1": "2016-09-26"
@@ -1009,6 +1041,20 @@
         }, 
         "name": "Modeling Relationships in Referential Expressions with Compositional Modular Networks"
     }, 
+    "https://arxiv.org/abs/1612.00837": {
+        "dates": {
+            "1": "2016-12-02", 
+            "2": "2017-04-14", 
+            "3": "2017-05-15"
+        }, 
+        "name": "Making the V in VQA Matter: Elevating the Role of Image Understanding in Visual Question Answering"
+    }, 
+    "https://arxiv.org/abs/1612.00837v1": {
+        "dates": {
+            "1": "2016-12-02"
+        }, 
+        "name": "Making the V in VQA Matter: Elevating the Role of Image Understanding in Visual Question Answering"
+    }, 
     "https://arxiv.org/abs/1612.03969": {
         "dates": {
             "1": "2016-12-12", 
@@ -1076,6 +1122,12 @@
         }, 
         "name": "A Syntactic Neural Model for General-Purpose Code Generation"
     }, 
+    "https://arxiv.org/abs/1704.05526v2": {
+        "dates": {
+            "2": "2017-08-06"
+        }, 
+        "name": "Learning to Reason: End-to-End Module Networks for Visual Question Answering"
+    }, 
     "https://arxiv.org/abs/1704.07415": {
         "dates": {
             "1": "2017-04-24"
@@ -1100,8 +1152,17 @@
         }, 
         "name": "Deep Convolutional Decision Jungle for Image Classification"
     }, 
+    "https://arxiv.org/abs/1707.07998v1": {
+        "dates": {
+            "1": "2017-07-25"
+        }, 
+        "name": "Bottom-Up and Top-Down Attention for Image Captioning and VQA"
+    }, 
     "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": {
         "name": "Swedish Chess Computer Association - Wikipedia"
+    }, 
+    "https://github.com/VT-vision-lab/VQA_LSTM_CNN": {
+        "name": "GitHub - VT-vision-lab/VQA_LSTM_CNN: Train a deeper LSTM and normalized CNN Visual Question Answering model. This current code can get 58.16 on OpenEnded and 63.09 on Multiple-Choice on test-standard."
     }, 
     "https://infoscience.epfl.ch/record/180188/files/top.pdf": {
         "name": null
