@@ -22,21 +22,19 @@ h2_name_map = {
         }
 
 def get_metrics(h2_name, first_row, file_output, scale = "error_percent"):
-    # we care about everything except the last three columns
     metric_names = []
     name = h2_name_map[h2_name]
     if name == "":
-        print "Error! Need to add h2_name to h2_name_map to be able to parse!"
-        return file_output
+        raise SystemExit("Error! Need to add h2_name to h2_name_map to be able to parse!")
     for column in first_row:
         column = str(column.getText()).translate(None, string.punctuation)
         metric_name = name + "_" + "_".join(re.findall(r"[\w']+", column))
         metric_names.append(metric_name)
-        s = "\n{0} = speech_recognition.metric(name=\"{1} {2}\", scale={3}, attributes=['language'])\n".format(metric_name, name, column, scale)
+        s = "{0} = speech_recognition.metric(name=\"{1} {2}\", scale={3}, attributes=['language'])\n".format(metric_name, name, column, scale)
         file_output += s
     return (metric_names, file_output)
 
-def add_measures(metric_names, row, file_output):
+def add_measures(metric_names, row):
     def row_data(row):
         columns = row.findAll('td')
         l = len(columns)
@@ -47,21 +45,22 @@ def add_measures(metric_names, row, file_output):
         r = {
                 'name': columns[l-1].encode('ascii', 'ignore'),
                 'date': date,
-                'url': url, 
-                'values': map(lambda x: x.strip('%'), columns[:-3]) # for now, always just take the first column
+                'url': url,
+                'values': map(lambda x: x.strip('%'), columns[:-3])
             }
         return r
     data = row_data(row)
     notes = data['name']
     if notes == "Humans":
         # TODO: eventually use the human measurements as benchmarks. That's kind of hard right now.
-        return file_output
+        return []
+    table = []
     for metric_name, value in zip(metric_names, data['values']):
         if not value:
             continue
         s = "{0}.measure({1}, {2}, '{3}', '{4}')\n".format(metric_name, data['date'], value, notes, data['url'])
-        file_output += s
-    return file_output
+        table.append(s)
+    return table
 
 
 def main():
@@ -75,10 +74,12 @@ def main():
         metric_data = get_metrics(header, rows[0].findAll('th')[:-3], file_output)
         metric_names = metric_data[0]
         file_output = metric_data[1]
+        table_data = []
         for row in rows:
             if row.findAll('td') == []:
                 continue
-            file_output = add_measures(metric_names, row, file_output)
+            table_data += add_measures(metric_names, row)
+        file_output += "".join(sorted(table_data))
         
     with open(wer_data_file, 'wb') as f:
         f.write(file_output)
