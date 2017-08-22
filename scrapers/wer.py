@@ -21,7 +21,7 @@ h2_name_map = {
         "TIMIT" : "timit"
         }
 
-def get_metrics(h2_name, first_row, file_output, scale = "error_percent", targets = (None, None)):
+def get_metrics(h2_name, first_row, file_output, scale = "error_percent", targets = (None, None), target_source = None):
     metric_names = []
     name = h2_name_map[h2_name]
     if name == "":
@@ -30,7 +30,10 @@ def get_metrics(h2_name, first_row, file_output, scale = "error_percent", target
         column = str(column.getText()).translate(None, string.punctuation)
         metric_name = str(name + "_" + "_".join(re.findall(r"[\w']+", column))).replace("test", "")
         metric_names.append(metric_name)
-        s = "{0} = speech_recognition.metric(name=\"{1} {2}\", scale={3}, target={4})\n".format(metric_name, name, column, scale, target)
+        if targets != (None, None):
+            s = "{0} = speech_recognition.metric(name=\"{1} {2}\", scale={3}, target={4}, target_source=\"{5}\")\n".format(metric_name, name, column, scale, target, target_source)
+        else:
+            s = "{0} = speech_recognition.metric(name=\"{1} {2}\", scale={3})\n".format(metric_name, name, column, scale)
         file_output += s
     return (metric_names, file_output)
 
@@ -54,14 +57,14 @@ def add_measures(metric_names, row):
     targets = []
     if notes == "Humans":
         targets = data['values']
-        return ([], targets)
+        return ([], targets, data['url'])
     table = []
     for metric_name, value in zip(metric_names, data['values']):
         if not value:
             continue
         s = "{0}.measure({1}, {2}, '{3}', '{4}')\n".format(metric_name, data['date'], value, notes, data['url'])
         table.append(s)
-    return (table, targets)
+    return (table, targets, '')
 
 
 def main():
@@ -78,11 +81,11 @@ def main():
         for row in rows:
             if row.findAll('td') == []:
                 continue
-            measure_data, targets = add_measures(metric_names, row)
+            measure_data, targets, target_source = add_measures(metric_names, row)
             if not targets:
                 table_data += measure_data
             elif not measure_data:
-                metric_data = get_metrics(header, rows[0].findAll('th')[:-3], file_output, targets = targets)
+                metric_data = get_metrics(header, rows[0].findAll('th')[:-3], file_output, targets = targets, target_source = target_source)
         file_output = metric_data[1]
         file_output += "".join(sorted(table_data))
         
