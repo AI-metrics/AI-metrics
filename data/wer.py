@@ -65,3 +65,6 @@ timit_PER.measure(date(2014, 8, 22), 16.7, 'CNN in time and frequency + dropout,
 timit_PER.measure(date(2015, 6, 22), 17.6, 'Bi-RNN + Attention', 'http://arxiv.org/abs/1506.07503')
 timit_PER.measure(date(2015, 9, 22), 16.5, 'Hierarchical maxout CNN + Dropout', 'https://link.springer.com/content/pdf/10.1186%2Fs13636-015-0068-3.pdf')
 timit_PER.measure(date(2016, 3, 22), 17.3, 'RNN-CRF on 24(x3) MFSC', 'https://arxiv.org/abs/1603.00223')
+
+
+wer_metrics=[librispeech_WER_clean, librispeech_WER_other, wsj_WER_eval92, wsj_WER_eval93, swb_hub_500_WER_SWB, swb_hub_500_WER_fullSWBCH, fisher_WER, chime_clean, chime_real, timit_PER]
