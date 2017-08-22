@@ -30,7 +30,7 @@ def get_metrics(h2_name, first_row, file_output, scale = "error_percent"):
         column = str(column.getText()).translate(None, string.punctuation)
         metric_name = str(name + "_" + "_".join(re.findall(r"[\w']+", column))).replace("test", "")
         metric_names.append(metric_name)
-        s = "{0} = speech_recognition.metric(name=\"{1} {2}\", scale={3}, attributes=['language'])\n".format(metric_name, name, column, scale)
+        s = "{0} = speech_recognition.metric(name=\"{1} {2}\", scale={3})\n".format(metric_name, name, column, scale)
         file_output += s
     return (metric_names, file_output)
 
