@@ -24,7 +24,8 @@ wsj_WER_eval92.measure(date(2015, 4, 23), 3.47, 'TC-DNN-BLSTM-DNN', 'http://arxi
 wsj_WER_eval92.measure(date(2015, 8, 23), 3.63, 'test-set on open vocabulary (i.e. harder), model = HMM-DNN + pNorm*', 'http://www.danielpovey.com/files/2015_icassp_librispeech.pdf')
 wsj_WER_eval93.measure(date(2015, 12, 23), 4.98, '9-layer model w/ 2 layers of 2D-invariant convolution &amp; 7 recurrent layers, w/ 68M parameters', 'http://arxiv.org/abs/1512.02595v1')
 wsj_WER_eval93.measure(date(2015, 8, 23), 5.66, 'test-set on open vocabulary (i.e. harder), model = HMM-DNN + pNorm*', 'http://www.danielpovey.com/files/2015_icassp_librispeech.pdf')
-swb_hub_500_WER_SWB = speech_recognition.metric(name="swb_hub_500 WER SWB", scale=error_percent)
+#swb_hub_500_WER_SWB = speech_recognition.metric(name="swb_hub_500 WER SWB", scale=error_percent)
+swb_hub_500_WER_SWB = swb_hub_500
 swb_hub_500_WER_fullSWBCH = speech_recognition.metric(name="swb_hub_500 WER fullSWBCH", scale=error_percent)
 swb_hub_500_WER_SWB.measure(date(2013, 8, 23), 11.5, 'CNN', 'http://www.cs.toronto.edu/~asamir/papers/icassp13_cnn.pdf')
 swb_hub_500_WER_SWB.measure(date(2013, 8, 23), 12.6, 'HMM-DNN +sMBR', 'http://www.danielpovey.com/files/2013_interspeech_dnn.pdf')

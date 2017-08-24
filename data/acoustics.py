@@ -38,7 +38,7 @@ swb_hub_500.measure(date(2017,2,17), 6.9, "RNNLM", "https://arxiv.org/abs/1609.0
 swb_hub_500.measure(date(2017,2,17), 6.2, "Microsoft 2016", "https://arxiv.org/abs/1609.03528") # TODO: (name check)
 
 swb_hub_500.measure(date(2016,10,17), 6.6, "CNN-LSTM", "https://arxiv.org/abs/1610.05256") # TODO: (name check)
-swb_hub_500.measure(date(2016,10,17), 5.9, "CNN-LSTM", "https://arxiv.org/abs/1610.05256") # TODO: (name check)
+swb_hub_500.measure(None, 5.8, "Microsoft 2016b", "https://arxiv.org/abs/1610.05256") # TODO: (name check)
 
 """
 Author    Yann Bayle
