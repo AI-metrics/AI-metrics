@@ -71,6 +71,9 @@
     "http://infoscience.epfl.ch/record/169178/files/lucchi_ICCV11.pdf": {
         "name": null
     }, 
+    "http://infoscience.epfl.ch/record/203464/files/Palaz_Idiap-RR-18-2014.pdf": {
+        "name": null
+    }, 
     "http://jmlr.org/papers/v14/thom13a.html": {
         "name": null
     }, 
@@ -79,6 +82,9 @@
     }, 
     "http://jmlr.org/proceedings/papers/v32/line14.pdf": {
         "name": null
+    }, 
+    "http://kaldi-asr.org/": {
+        "name": "Kaldi ASR"
     }, 
     "http://link.springer.com/article/10.1007%2Fs11263-011-0449-8": {
         "name": "Harmony Potentials | SpringerLink"
@@ -146,6 +152,9 @@
     "http://research.microsoft.com/pubs/117885/ijcv07a.pdf": {
         "name": "TextonBoost for Image Understanding: Multi-Class Object Recognition and Segmentation by Jointly Modeling Texture, Layout, and Context - Microsoft Research"
     }, 
+    "http://speak.clsp.jhu.edu/uploads/publications/papers/1048_pdf.pdf": {
+        "name": null
+    }, 
     "http://torch.ch/blog/2015/07/30/cifar.html": {
         "name": "Torch | 92.45% on CIFAR-10 in Torch"
     }, 
@@ -182,6 +191,12 @@
     "http://www.cs.rug.nl/~george/articles/PAMI2013.pdf": {
         "name": null
     }, 
+    "http://www.cs.toronto.edu/~asamir/papers/NIPS09.pdf": {
+        "name": null
+    }, 
+    "http://www.cs.toronto.edu/~asamir/papers/icassp13_cnn.pdf": {
+        "name": null
+    }, 
     "http://www.cs.toronto.edu/~nitish/treebasedpriors.pdf": {
         "name": null
     }, 
@@ -198,6 +213,15 @@
         "name": "Learning Smooth Pooling Regions for Visual Recognition | D2"
     }, 
     "http://www.danielpovey.com/files/2013_interspeech_dnn.pdf": {
+        "name": null
+    }, 
+    "http://www.danielpovey.com/files/2015_icassp_librispeech.pdf": {
+        "name": null
+    }, 
+    "http://www.danielpovey.com/files/2015_interspeech_augmentation.pdf": {
+        "name": null
+    }, 
+    "http://www.danielpovey.com/files/2016_interspeech_mmi.pdf": {
         "name": null
     }, 
     "http://www.eecs.berkeley.edu/~jiayq/assets/pdf/cvpr12_pooling.pdf": {
@@ -218,10 +242,16 @@
     "http://www.inb.uni-luebeck.de/publikationen/pdfs/LaBaMa08c.pdf": {
         "name": null
     }, 
+    "http://www.inf.u-szeged.hu/~tothl/pubs/ICASSP2014.pdf": {
+        "name": null
+    }, 
     "http://www.isip.uni-luebeck.de/fileadmin/uploads/tx_wapublications/hertel_ijcnn_2015.pdf": {
         "name": null
     }, 
     "http://www.keysers.net/daniel/files/Keysers--Deformation-Models--TPAMI2007.pdf": {
+        "name": null
+    }, 
+    "http://www.mirlab.org/conference_papers/International_Conference/ICASSP%202014/papers/p5609-soltau.pdf": {
         "name": null
     }, 
     "http://www.stanford.edu/~acoates/papers/coatesleeng_aistats_2011.pdf": {
@@ -274,6 +304,12 @@
             "1": "2013-01-15"
         }, 
         "name": "Pooling-Invariant Image Feature Learning"
+    }, 
+    "https://arxiv.org/abs/1303.5778v1": {
+        "dates": {
+            "1": "2013-03-22"
+        }, 
+        "name": "Speech Recognition with Deep Recurrent Neural Networks"
     }, 
     "https://arxiv.org/abs/1308.0850": {
         "dates": {
@@ -332,6 +368,12 @@
             "1": "2014-06-30"
         }, 
         "name": "Increasing Deep Neural Network Acoustic Model Size for Large Vocabulary Continuous Speech Recognition"
+    }, 
+    "https://arxiv.org/abs/1406.7806v2": {
+        "dates": {
+            "2": "2015-01-20"
+        }, 
+        "name": "Building DNN Acoustic Models for Large Vocabulary Speech Recognition"
     }, 
     "https://arxiv.org/abs/1409.0473": {
         "dates": {
@@ -511,6 +553,12 @@
         }, 
         "name": "End-To-End Memory Networks"
     }, 
+    "https://arxiv.org/abs/1504.01482v1": {
+        "dates": {
+            "1": "2015-04-07"
+        }, 
+        "name": "Deep Recurrent Neural Networks for Acoustic Modelling"
+    }, 
     "https://arxiv.org/abs/1505.00393": {
         "dates": {
             "1": "2015-05-03", 
@@ -575,6 +623,12 @@
         }, 
         "name": "Ask Me Anything: Dynamic Memory Networks for Natural Language Processing"
     }, 
+    "https://arxiv.org/abs/1506.07503": {
+        "dates": {
+            "1": "2015-06-24"
+        }, 
+        "name": "Attention-Based Models for Speech Recognition"
+    }, 
     "https://arxiv.org/abs/1507.01526": {
         "dates": {
             "1": "2015-07-06", 
@@ -616,6 +670,12 @@
             "3": "2015-12-08"
         }, 
         "name": "Deep Reinforcement Learning with Double Q-learning"
+    }, 
+    "https://arxiv.org/abs/1509.08967v1": {
+        "dates": {
+            "1": "2015-09-29"
+        }, 
+        "name": "Very Deep Multilingual Convolutional Neural Networks for LVCSR"
     }, 
     "https://arxiv.org/abs/1509.08985": {
         "dates": {
@@ -717,6 +777,12 @@
         }, 
         "name": "Simple Baseline for Visual Question Answering"
     }, 
+    "https://arxiv.org/abs/1512.02595v1": {
+        "dates": {
+            "1": "2015-12-08"
+        }, 
+        "name": "Deep Speech 2: End-to-End Speech Recognition in English and Mandarin"
+    }, 
     "https://arxiv.org/abs/1512.03385": {
         "dates": {
             "1": "2015-12-10"
@@ -747,6 +813,13 @@
             "1": "2016-02-24"
         }, 
         "name": "Learning functions across many orders of magnitudes"
+    }, 
+    "https://arxiv.org/abs/1603.00223": {
+        "dates": {
+            "1": "2016-03-01", 
+            "2": "2016-06-20"
+        }, 
+        "name": "Segmental Recurrent Neural Networks for End-to-end Speech Recognition"
     }, 
     "https://arxiv.org/abs/1603.01547": {
         "dates": {
@@ -796,6 +869,12 @@
     "https://arxiv.org/abs/1604.08242v1": {
         "dates": {
             "1": "2016-04-27"
+        }, 
+        "name": "The IBM 2016 English Conversational Telephone Speech Recognition System"
+    }, 
+    "https://arxiv.org/abs/1604.08242v2": {
+        "dates": {
+            "2": "2016-06-22"
         }, 
         "name": "The IBM 2016 English Conversational Telephone Speech Recognition System"
     }, 
@@ -958,6 +1037,12 @@
         }, 
         "name": "The Microsoft 2016 Conversational Speech Recognition System"
     }, 
+    "https://arxiv.org/abs/1609.03528v1": {
+        "dates": {
+            "1": "2016-09-12"
+        }, 
+        "name": "The Microsoft 2016 Conversational Speech Recognition System"
+    }, 
     "https://arxiv.org/abs/1609.07843v1": {
         "dates": {
             "1": "2016-09-26"
@@ -1063,6 +1148,12 @@
         }, 
         "name": "Structural Embedding of Syntactic Trees for Machine Comprehension"
     }, 
+    "https://arxiv.org/abs/1703.02136": {
+        "dates": {
+            "1": "2017-03-06"
+        }, 
+        "name": "English Conversational Telephone Speech Recognition by Humans and Machines"
+    }, 
     "https://arxiv.org/abs/1703.02620v1": {
         "dates": {
             "1": "2017-03-07"
@@ -1138,6 +1229,9 @@
     }, 
     "https://infoscience.epfl.ch/record/180188/files/top.pdf": {
         "name": null
+    }, 
+    "https://link.springer.com/content/pdf/10.1186%2Fs13636-015-0068-3.pdf": {
+        "name": " "
     }, 
     "https://openreview.net/forum?id=BJrFC6ceg": {
         "name": "Forum | OpenReview"
