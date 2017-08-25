@@ -244,7 +244,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L36", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L37", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "YouTube-8M video labelling", 
@@ -6005,7 +6005,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L32", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L33", 
                     "scale": "Error rate", 
                     "target_label": null, 
                     "name": "Imagenet Image Recognition", 
@@ -6190,6 +6190,29 @@
                             "label": "Trimps-Soushen", 
                             "algorithm_src_url": "", 
                             "date": "2016-09-26", 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "replicated_url": "", 
+                            "src_name": null, 
+                            "min_date": null, 
+                            "notes": "", 
+                            "metric": "Metric(Imagenet Image Recognition)                          SOLVED", 
+                            "opensource": false
+                        }, 
+                        {
+                            "not_directly_comparable": false, 
+                            "maxval": 0.02251, 
+                            "long_label": false, 
+                            "withdrawn": false, 
+                            "name": "SE-ResNet152", 
+                            "minval": 0.02251, 
+                            "url": "http://image-net.org/challenges/LSVRC/2017/results", 
+                            "papername": "ILSVRC2017", 
+                            "uncertainty": 0, 
+                            "value": 0.02251, 
+                            "label": "SE-ResNet152", 
+                            "algorithm_src_url": "", 
+                            "date": "2017-07-21", 
                             "algorithms": [], 
                             "max_date": null, 
                             "replicated_url": "", 
@@ -39197,7 +39220,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L106", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L107", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "COCO Visual Question Answering (VQA) real images 1.0 open ended", 
@@ -39468,7 +39491,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L101", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L102", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "COCO Visual Question Answering (VQA) real images 1.0 multiple choice", 
@@ -39647,7 +39670,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L104", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L105", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "COCO Visual Question Answering (VQA) abstract images 1.0 open ended", 
@@ -39757,7 +39780,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L103", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L104", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "COCO Visual Question Answering (VQA) abstract 1.0 multiple choice", 
@@ -39867,7 +39890,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L51", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L52", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Toronto COCO-QA", 
@@ -39884,7 +39907,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L52", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L53", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "DAQUAR", 
@@ -39901,7 +39924,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L117", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L118", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Visual Genome (pairs)", 
@@ -39942,7 +39965,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L118", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L119", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Visual Genome (subjects)", 
@@ -39983,7 +40006,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L116", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L117", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Visual7W", 
@@ -40047,7 +40070,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L57", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L58", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "FM-IQA", 
@@ -40064,7 +40087,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L58", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L59", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Visual Madlibs", 
@@ -40081,7 +40104,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L114", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L115", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "COCO Visual Question Answering (VQA) real images 2.0 open ended", 
