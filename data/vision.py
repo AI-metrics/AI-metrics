@@ -22,7 +22,8 @@ Correctly label images from the Imagenet dataset. As of 2016, this includes:
 """
 imagenet.measure(date(2010,8,31), 0.28191, "NEC UIUC", "http://image-net.org/challenges/LSVRC/2010/results")
 imagenet.measure(date(2011,10,26), 0.2577, "XRCE","http://image-net.org/challenges/LSVRC/2011/results")
-imagenet.measure(date(2012,10,13), 0.16422, "SuperVision", "http://image-net.org/challenges/LSVRC/2012/results.html")
+imagenet.measure(date(2012,10,13), 0.16422, "AlexNet / SuperVision",
+"http://image-net.org/challenges/LSVRC/2012/results.html", algorithm_src_url="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks")
 imagenet.measure(date(2013,11,14), 0.11743, "Clarifai","http://www.image-net.org/challenges/LSVRC/2013/results.php")
 imagenet.measure(date(2014,8,18), 0.07405, "VGG", "http://image-net.org/challenges/LSVRC/2014/index")
 imagenet.measure(date(2015,12,10), 0.03567, "MSRA", "http://image-net.org/challenges/LSVRC/2015/results", algorithms=["residual-networks"])
