@@ -1313,6 +1313,9 @@
     "https://openreview.net/forum?id=BJrFC6ceg": {
         "name": "Forum | OpenReview"
     }, 
+    "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks": {
+        "name": "ImageNet Classification with Deep Convolutional Neural Networks"
+    }, 
     "https://papers.nips.cc/paper/6581-improved-variational-inference-with-inverse-autoregressive-flow": {
         "name": "Improved Variational Inference with Inverse Autoregressive Flow"
     }, 

@@ -110,19 +110,20 @@ but clearly humans and now algorithms are better than that.
 TODO: bAbi really needs to be decomposed into semi-supervised and unsupervised variants, and 
 by amount of training data provided
 """
-bAbi10k.measure(date(2015,2,19), 93.3, "MemNN-AM+NG+NL (1k + strong supervision)", "https://arxiv.org/abs/1502.05698v1", not_directly_comparable=True, long_label=True) # not literally a 10K example, but more comparable to it
+bAbi10k.measure(date(2015,2,19), 93.3, "MemNN-AM+NG+NL (1k + strong supervision)", "https://arxiv.org/abs/1502.05698v1", 
+                not_directly_comparable=True, long_label=True, offset=(2,5)) # not literally a 10K example, but more comparable to it
 
 #bAbi1k.measure(None, 48.7, "LSTM", "https://arxiv.org/abs/1502.05698v1", algorithm_src_url="http://isle.illinois.edu/sst/meetings/2015/hochreiter-lstm.pdf", min_date=date(1997,11,15))
 bAbi1k.measure(date(2015,3,31), 86.1, "MemN2N-PE+LS+RN", "https://arxiv.org/abs/1503.08895")
 bAbi10k.measure(date(2015,3,31), 93.4, "MemN2N-PE+LS+RN", "https://arxiv.org/abs/1503.08895")
-bAbi1k.measure(date(2015,6,24), 93.6, "DMN", "https://arxiv.org/abs/1506.07285") # The paper doesn't say if this is 1k or 10k, but seems like 1k
+bAbi1k.measure(date(2015,6,24), 93.6, "DMN", "https://arxiv.org/abs/1506.07285", offset=(3,-2), not_directly_comparable=True) # The paper doesn't say if this is 1k or 10k
 bAbi10k.measure(date(2016,1,5), 96.2, "DNC", "https://www.gwern.net/docs/2016-graves.pdf")
 
 bAbi10k.measure(date(2016,9,27), 97.1, "SDNC", "https://arxiv.org/abs/1606.04582v4")
 bAbi10k.measure(date(2016,12,12), 99.5, "EntNet", "https://arxiv.org/abs/1612.03969")
 bAbi1k.measure(date(2016,12,12), 89.1, "EntNet", "https://arxiv.org/abs/1612.03969")
 
-bAbi10k.measure(date(2016,12,9),  99.7, "QRN", "https://arxiv.org/abs/1606.04582v4")
+bAbi10k.measure(date(2016,12,9),  99.7, "QRN", "https://arxiv.org/abs/1606.04582v4", offset=(2,3))
 bAbi1k.measure(date(2016,12,9),  90.1, "QRN", "https://arxiv.org/abs/1606.04582v4")
 bAbi1k.measure(None, 66.8, "DMN+", "https://arxiv.org/abs/1606.04582v4", algorithm_src_url="https://arxiv.org/abs/1607.00036", replicated="https://github.com/therne/dmn-tensorflow")
 bAbi10k.measure(date(2016,6,30),  97.2, "DMN+", "https://arxiv.org/abs/1607.00036")

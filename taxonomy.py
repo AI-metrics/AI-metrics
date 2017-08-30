@@ -188,23 +188,38 @@ class Metric:
         html = u"".join(table_html + github_link)
         return html
 
-    def graph(self, size=(7,5), scale=1.0):
+    def graph(self, size=(7,5), scale=1.0, keep=False, reuse=None, title=None, llabel=None, fcol=None, pcol=None):
+        "Spaghetti code graphing function."
         if len(self.measures) < 2:
             return
-        fig = plt.figure(dpi=300)
-        fig.set_size_inches((7*scale, 5*scale))
-        #fig.add_subplot(111).set_ylabel(self.name)
-        subplot = fig.add_subplot(111)
-        subplot.set_ylabel(self.axis_label)
-        subplot.set_title(self.name)
-        #fig.add_subplot(111).set_ylabel(self.name)
+        if reuse:
+            subplot = reuse
+        else:
+            fig = plt.figure(dpi=300)
+            fig.set_size_inches((7*scale, 5*scale))
+            #fig.add_subplot(111).set_ylabel(self.name)
+            subplot = fig.add_subplot(111)
+            subplot.set_ylabel(self.axis_label)
+            subplot.set_title(title if title else self.name)
+            #fig.add_subplot(111).set_ylabel(self.name)
+
+        # dashed line for "solved" / strong human performance
+        if self.target:
+            target_label = (       self.target_label  if self.target_label
+                             else "Human performance" if self.parent and "agi" in self.parent.attributes
+                             else "Target")
+            start = min([self.measures[0].date]  + [m.min_date for m in self.measures if m.min_date])
+            end =   max([self.measures[-1].date] + [m.max_date for m in self.measures if m.max_date])
+
+            plt.plot_date([start, end], 2 * [self.target], "r--", label=target_label)
+
         
         self.measures.sort(key=lambda m: (m.date, m.metric.scale.pseudolinear(m.value)))
         
         # scatter plot of results in the literature
         available_markers = markers.MarkerStyle().markers
         for n, m in enumerate(self.measures):
-            kwargs = {"c": "r"}
+            kwargs = {"c": pcol if pcol else "r"}
             if self.target and self.scale.improvement(self.target, m.value) >= 0:
                 kwargs["c"] = "b"
             if m.not_directly_comparable or self.changeable:
@@ -215,9 +230,10 @@ class Metric:
                 if "X" in available_markers:
                     kwargs["marker"] = "X"
                 kwargs["c"] = "#aaaaaa"
+
             plt.plot_date([m.date], [m.value], **kwargs)
                 
-            plt.annotate('%s' % m.label, xy=(m.date, m.value), xytext=m.metric.scale.offset, fontsize=scale * 6, textcoords='offset points')
+            plt.annotate('%s' % m.label, xy=(m.date, m.value), xytext=m.offset or m.metric.scale.offset, fontsize=scale * 6, textcoords='offset points')
             # cases where either results or dates of publication are uncertain
             kwargs = {"c": "#80cf80", "linewidth": scale*1.0, "capsize": scale*1.5, "capthick": scale*0.5, "dash_capstyle": 'projecting'}
                 
@@ -240,21 +256,18 @@ class Metric:
                     frontier_y.append(m.value)
                     xy = (m.date, m.value)       
                     best = m.value
-            plt.plot_date(frontier_x, frontier_y, "g-")
+            kwargs = {"label": llabel} if llabel else {}
+            if fcol:
+                kwargs["c"] = fcol
+            plt.plot_date(frontier_x, frontier_y, "g-", **kwargs)
         
-        # dashed line for "solved" / strong human performance
-        if self.target:
-            target_label = (       self.target_label  if self.target_label
-                             else "Human performance" if self.parent and "agi" in self.parent.attributes
-                             else "Target")
-            start = min([self.measures[0].date]  + [m.min_date for m in self.measures if m.min_date])
-            end =   max([self.measures[-1].date] + [m.max_date for m in self.measures if m.max_date])
-
-            plt.plot_date([start, end], 2 * [self.target], "r--", label=target_label)
             
         plt.legend()
-        plt.show()
         self.graphed = True
+        if keep:
+            return subplot
+        else:
+            plt.show()
 
 def render_tables(metrics):
     "Jupyter Notebook only lets you call HTML() once per cell; this function emulates doing it several times"
@@ -306,7 +319,7 @@ except requests.ConnectionError:
 class Measurement:
     def __init__(self, d, value, name, url, algorithms=[], uncertainty=0, minval=None, maxval=None, opensource=False, replicated="",
                  papername=None, venue=None, min_date=None, max_date=None, algorithm_src_url=None, withdrawn=False, 
-                 not_directly_comparable=False, long_label=False, notes=""):
+                 not_directly_comparable=False, long_label=False, notes="", offset=None):
         self.date = d
         self.value = value
         assert isinstance(value, float) or isinstance(value, int), "Measurements on metrics need to be numbers"
@@ -332,6 +345,7 @@ class Measurement:
         self.replicated_url = replicated
         self.long_label = long_label
         self.algorithms = algorithms
+        self.offset = offset
         self.notes = notes
         arxiv_papername, arxiv_dates, arxiv_withdrawn = ade.get_paper_data(self.url)
         self.withdrawn = withdrawn or arxiv_withdrawn 
