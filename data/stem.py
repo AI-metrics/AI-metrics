@@ -59,3 +59,10 @@ card2code_hs_acc.measure(None, 16.7, "SNM -frontier embed", url="https://arxiv.o
 
 understand_conditional_expressions = Problem("Parse and implement complex conditional expressions")
 program_induction.add_subproblem(understand_conditional_expressions)
+
+science_question_answering = Problem("Answering Science Exam Questions", ["science", "qa"])
+vaguely_constrained_technical_problems.add_subproblem(science_question_answering)
+elementery_ndmc_acc = science_question_answering.metric("Elementery NDMC accuracy", url="", scale=correct_percent,
+                                                        target=100, target_label="Perfect Score")
+
+
