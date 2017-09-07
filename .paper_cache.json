@@ -894,6 +894,15 @@
         }, 
         "name": "A Focused Dynamic Attention Model for Visual Question Answering"
     }, 
+    "https://arxiv.org/abs/1604.04112": {
+        "dates": {
+            "1": "2016-04-14", 
+            "2": "2016-06-07", 
+            "3": "2016-08-20", 
+            "4": "2016-10-05"
+        }, 
+        "name": "Deep Residual Networks with Exponential Linear Unit"
+    }, 
     "https://arxiv.org/abs/1604.08242v1": {
         "dates": {
             "1": "2016-04-27"
@@ -1084,6 +1093,18 @@
         }, 
         "name": "The Microsoft 2016 Conversational Speech Recognition System"
     }, 
+    "https://arxiv.org/abs/1609.05284v1": {
+        "dates": {
+            "1": "2016-09-17"
+        }, 
+        "name": "ReasoNet: Learning to Stop Reading in Machine Comprehension"
+    }, 
+    "https://arxiv.org/abs/1609.05284v3": {
+        "dates": {
+            "3": "2017-06-20"
+        }, 
+        "name": "ReasoNet: Learning to Stop Reading in Machine Comprehension"
+    }, 
     "https://arxiv.org/abs/1609.05600v1": {
         "dates": {
             "1": "2016-09-19"
@@ -1200,6 +1221,13 @@
             "2": "2017-04-20"
         }, 
         "name": "Structural Embedding of Syntactic Trees for Machine Comprehension"
+    }, 
+    "https://arxiv.org/abs/1703.01041": {
+        "dates": {
+            "1": "2017-03-03", 
+            "2": "2017-06-11"
+        }, 
+        "name": "Large-Scale Evolution of Image Classifiers"
     }, 
     "https://arxiv.org/abs/1703.02136": {
         "dates": {
@@ -1333,6 +1361,9 @@
     }, 
     "https://people.csail.mit.edu/regina/my_papers/MCDR15.pdf": {
         "name": null
+    }, 
+    "https://rajpurkar.github.io/SQuAD-explorer/": {
+        "name": "The Stanford Question Answering Dataset"
     }, 
     "https://sites.google.com/site/homepagezhichengyan/home/hdcnn": {
         "name": "HD-CNN - Homepage of Zhicheng Yan"

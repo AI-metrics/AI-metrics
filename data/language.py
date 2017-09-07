@@ -149,6 +149,8 @@ cbtest_ne = reading_comprehension.metric("bAbi Children's Book comprehension CBt
 cbtest_cn = reading_comprehension.metric("bAbi Children's Book comprehension CBtest CN", url="http://fb.ai/babi", scale=correct_percent, target=81.6, target_source="https://arxiv.org/abs/1511.02301")
 cnn = reading_comprehension.metric("CNN Comprehension test", url="https://github.com/deepmind/rc-data/", scale=correct_percent)
 daily_mail = reading_comprehension.metric("Daily Mail Comprehension test", url="https://github.com/deepmind/rc-data/", scale=correct_percent)
+squad_em = reading_comprehension.metric("Stanford Question Answering Dataset EM test", url="https://stanford-qa.com/")
+squad_f1 = reading_comprehension.metric("Stanford Question Answering Dataset F1 test", url="https://stanford-qa.com/")
 
 cnn.measure(date(2015, 6, 10), 63.0, "Attentive reader", url="https://arxiv.org/abs/1506.03340")
 cnn.measure(date(2015, 6, 10), 63.8, "Impatient reader", url="https://arxiv.org/abs/1506.03340")
@@ -175,6 +177,11 @@ daily_mail.measure(None, 80.9, "GA update L(w)", url="https://arxiv.org/abs/1606
 cbtest_ne.measure(None, 74.9, "GA +feature, fix L(w)", url="https://arxiv.org/abs/1606.01549v2")
 cbtest_cn.measure(None, 70.7, "GA +feature, fix L(w)", url="https://arxiv.org/abs/1606.01549v2")
 
+cnn.measure(None, 74.7, "ReasoNet", url="https://arxiv.org/abs/1609.05284v1")
+daily_mail.measure(None, 76.6, "ReasoNet", url="https://arxiv.org/abs/1609.05284v1")
+squad_em.measure(None, 73.4, "ReasoNet ensemble", url="https://arxiv.org/abs/1609.05284v3")
+squad_f1.measure(None, 82.9, "ReasoNet ensemble", url="https://arxiv.org/abs/1609.05284v3")
+
 # Neural semantic encoders invented in https://arxiv.org/abs/1607.04315v1 and retrospectively applied to CBTest by other authors
 cbtest_ne.measure(date(2016, 12, 1), 73.2, "NSE", url="https://arxiv.org/abs/1606.01549v2", algorithm_src_url="https://arxiv.org/abs/1607.04315", min_date=date(2016,7,4))
 cbtest_cn.measure(date(2016, 12, 1), 71.9, "NSE", url="https://arxiv.org/abs/1606.01549v2", algorithm_src_url="https://arxiv.org/abs/1607.04315", min_date=date(2016,7,4))
@@ -196,8 +203,6 @@ cbtest_ne.measure(None, 71.0, "AS reader (greedy)", url="https://arxiv.org/abs/1
 cbtest_cn.measure(None, 68.9, "AS reader (avg)", url="https://arxiv.org/abs/1603.01547v1")
 cbtest_cn.measure(None, 67.5, "AS reader (greedy)", url="https://arxiv.org/abs/1603.01547v1")
 
-squad_em = reading_comprehension.metric("Stanford Question Answering Dataset EM test", url="https://stanford-qa.com/")
-squad_f1 = reading_comprehension.metric("Stanford Question Answering Dataset F1 test", url="https://stanford-qa.com/")
 
 squad_em.measure(date(2017, 3, 8), 76.922, "r-net (ensemble)", url="https://www.microsoft.com/en-us/research/wp-content/uploads/2017/05/r-net.pdf")
 squad_f1.measure(date(2017, 3, 8), 84.006, "r-net (ensemble)", url="https://www.microsoft.com/en-us/research/wp-content/uploads/2017/05/r-net.pdf")
@@ -258,6 +263,12 @@ squad_f1.measure(date(2016, 12, 29), 77.07, "FastQA", url="https://arxiv.org/abs
 
 squad_em.measure(date(2016, 11, 7), 67.901, "Match-LSTM+Ans-Ptr", url="https://arxiv.org/pdf/1608.07905v2")
 squad_f1.measure(date(2016, 11, 7), 77.022, "Match-LSTM+Ans-Ptr", url="https://arxiv.org/pdf/1608.07905v2")
+
+squad_em.measure(date(2017, 8, 21), 77.678, "RMR (ensemble)", url="https://arxiv.org/abs/1705.02798")
+squad_f1.measure(date(2017, 8, 21), 84.888, "RMR (ensemble)", url="https://arxiv.org/abs/1705.02798")
+
+squad_em.measure(date(2017, 8, 16), 77.678, "DCN+ (ensemble)", url="https://rajpurkar.github.io/SQuAD-explorer/")
+squad_f1.measure(date(2017, 8, 16), 84.888, "DCN+ (ensemble)", url="https://rajpurkar.github.io/SQuAD-explorer/")
 
 translation = Problem("Translation between human langauges", ["agi", "language"])
 en_fr_bleu = translation.metric("news-test-2014 En-Fr BLEU", url="http://aclweb.org/anthology/P/P02/P02-1040.pdf", scale=bleu_score, target_label="Identical to professional human translations", target=50)
