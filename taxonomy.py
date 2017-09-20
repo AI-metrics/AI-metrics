@@ -208,9 +208,8 @@ class Metric:
             target_label = (       self.target_label  if self.target_label
                              else "Human performance" if self.parent and "agi" in self.parent.attributes
                              else "Target")
-            start = min([self.measures[0].date]  + [m.min_date for m in self.measures if m.min_date])
-            end =   max([self.measures[-1].date] + [m.max_date for m in self.measures if m.max_date])
-
+            start = min([m.date for m in self.measures] + [m.min_date for m in self.measures if m.min_date])
+            end = max([m.date for m in self.measures] + [m.max_date for m in self.measures if m.max_date])
             plt.plot_date([start, end], 2 * [self.target], "r--", label=target_label)
 
         
