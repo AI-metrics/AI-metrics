@@ -188,7 +188,7 @@ class Metric:
         html = u"".join(table_html + github_link)
         return html
 
-    def graph(self, size=(7,5), scale=1.0, keep=False, reuse=None, title=None, llabel=None, fcol=None, pcol=None):
+    def graph(self, size=(7,5), scale=1.0, keep=False, reuse=None, title=None, llabel=None, fcol=None, pcol=None, tcol=None):
         "Spaghetti code graphing function."
         if len(self.measures) < 2:
             return
@@ -210,7 +210,7 @@ class Metric:
                              else "Target")
             start = min([m.date for m in self.measures] + [m.min_date for m in self.measures if m.min_date])
             end = max([m.date for m in self.measures] + [m.max_date for m in self.measures if m.max_date])
-            plt.plot_date([start, end], 2 * [self.target], "r--", label=target_label)
+            plt.plot_date([start, end], 2 * [self.target], tcol if tcol else "r", linestyle="dashed", label=target_label)
 
         
         self.measures.sort(key=lambda m: (m.date, m.metric.scale.pseudolinear(m.value)))

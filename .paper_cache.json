@@ -1317,6 +1317,12 @@
         }, 
         "name": "Convolutional Sequence to Sequence Learning"
     }, 
+    "https://arxiv.org/abs/1705.09792v2": {
+        "dates": {
+            "2": "2017-05-30"
+        }, 
+        "name": "Deep Complex Networks"
+    }, 
     "https://arxiv.org/abs/1706.02003": {
         "dates": {
             "1": "2017-06-06"

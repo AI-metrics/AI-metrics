@@ -158,8 +158,8 @@ cbtest_ne = reading_comprehension.metric("bAbi Children's Book comprehension CBt
 cbtest_cn = reading_comprehension.metric("bAbi Children's Book comprehension CBtest CN", url="http://fb.ai/babi", scale=correct_percent, target=81.6, target_source="https://arxiv.org/abs/1511.02301")
 cnn = reading_comprehension.metric("CNN Comprehension test", url="https://github.com/deepmind/rc-data/", scale=correct_percent)
 daily_mail = reading_comprehension.metric("Daily Mail Comprehension test", url="https://github.com/deepmind/rc-data/", scale=correct_percent)
-squad_em = reading_comprehension.metric("Stanford Question Answering Dataset EM test", url="https://stanford-qa.com/")
-squad_f1 = reading_comprehension.metric("Stanford Question Answering Dataset F1 test", url="https://stanford-qa.com/")
+squad_em = reading_comprehension.metric("Stanford Question Answering Dataset EM test", url="https://stanford-qa.com/", target=82.304, target_source="http://arxiv.org/abs/1606.05250")
+squad_f1 = reading_comprehension.metric("Stanford Question Answering Dataset F1 test", url="https://stanford-qa.com/", target=91.221, target_source="http://arxiv.org/abs/1606.05250")
 
 cnn.measure(date(2015, 6, 10), 63.0, "Attentive reader", url="https://arxiv.org/abs/1506.03340")
 cnn.measure(date(2015, 6, 10), 63.8, "Impatient reader", url="https://arxiv.org/abs/1506.03340")
