@@ -6,6 +6,10 @@ date = datetime.date
 
 vision = Problem("Vision", ["agi", "vision", "world-modelling"])
 
+# note that there is also a lot of vision data in awty.py, which was
+# originally created by the Are We There Yet? scraper. Probably it should just
+# be merged into this file...
+
 image_comprehension = Problem("Image comprehension", ["agi", "vision", "language", "world-modelling"])
 image_classification = Problem("Image classification", ["vision", "agi"])
 image_classification.add_subproblem(image_comprehension)

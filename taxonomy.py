@@ -291,6 +291,7 @@ def canonicalise(url):
 conference_dates = {"ICML 2016": date(2016, 6, 19),
                     "NIPS 2015": date(2015, 12, 7),
                     "ICLR 2014": date(2014, 4, 14),
+                    "ICLR 2017": date(2017, 4, 27),
                     "ICML 2012": date(2012, 6, 26),
                     "ICML 2013": date(2013, 6, 16),
                     "ICML 2014": date(2014, 6, 21),

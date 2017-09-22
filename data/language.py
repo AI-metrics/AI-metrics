@@ -21,9 +21,14 @@ ptperplexity.measure(date(2012,7,27), 80.1, "RNN-LDA ensemble", "https://www.mic
 ptperplexity.measure(None, 68.7, "RNN Dropout Regularization", "https://arxiv.org/abs/1409.2329v1")
 ptperplexity.measure(None, 68.5, "RHN", "https://arxiv.org/pdf/1607.03474v3")
 ptperplexity.measure(None, 66, "RHN+WT", "https://arxiv.org/pdf/1607.03474v3")
-ptperplexity.measure(None, 71.3, "Variational RHN", "https://arxiv.org/abs/1607.03474")
+ptperplexity.measure(None, 71.3, "RHN", "https://arxiv.org/abs/1607.03474v2")
+ptperplexity.measure(None, 65.4, "RHN+WT", "https://arxiv.org/abs/1607.03474v4")
+ptperplexity.measure(None, 62.4, "Neural Architecture Search", url="https://arxiv.org/abs/1611.01578v2", venue="ICLR 2017")
 
-hp_compression = modelling_english.metric(name="Hutter Prize (bits per character to encode English text)", scale=bits_per_x, target=1.3)
+
+hp_compression = modelling_english.metric(name="Hutter Prize (bits per character to encode English text)", scale=bits_per_x, 
+                                          target=1.3, target_label="Region of human performance",
+                                          target_source="http://languagelog.ldc.upenn.edu/myl/Shannon1950.pdf")
 hp_compression.measure(date(2016,10,31), 1.313, "Surprisal-Driven Zoneout",
                    "https://pdfs.semanticscholar.org/e9bc/83f9ff502bec9cffb750468f76fdfcf5dd05.pdf")
 hp_compression.measure(date(2016,10,19), 1.37, "Surprisal-Driven Feedback RNN",
@@ -37,6 +42,9 @@ hp_compression.measure(date(2015,2,15), 1.58, "Gated Feedback RNN", "https://arx
 # hp_compression.measure(date(2014,4,13), 1.245, "cmix", "http://www.byronknoll.com/cmix.html")
 hp_compression.measure(date(2013,8,4), 1.67, "RNN, LSTM", "https://arxiv.org/abs/1308.0850")
 hp_compression.measure(date(2011,6,28), 1.60, "RNN", "http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf")
+
+hp_compression.measure(None, 1.42, "RHN", "https://arxiv.org/abs/1607.03474v2")
+hp_compression.measure(None, 1.27, "Large RHN depth 10", "https://arxiv.org/abs/1607.03474v4")
 
 lambada = modelling_english.metric("LAMBADA prediction of words in discourse", url="https://arxiv.org/abs/1606.06031",
                                    scale=correct_percent, target=86, target_source="https://arxiv.org/abs/1610.08431v3")
