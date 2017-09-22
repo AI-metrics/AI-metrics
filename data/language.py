@@ -52,7 +52,7 @@ lambada.measure(None, 21.7, "Stanford Reader", url="https://arxiv.org/abs/1610.0
 lambada.measure(None, 32.1, "Modified Stanford", url="https://arxiv.org/abs/1610.08431v3", algorithm_src_url="https://arxiv.org/abs/1606.02858")
 lambada.measure(None, 49.0, "GA + feat.", url="https://arxiv.org/abs/1610.08431v3", algorithm_src_url="https://arxiv.org/abs/1606.01549v2")
 lambada.measure(None, 44.5, "AS + feat.", url="https://arxiv.org/abs/1610.08431v3", algorithm_src_url="https://arxiv.org/abs/1603.01547")
-lambada.measure(None, 51.6, "MAGE (48)", url="https://arxiv.org/abs/1703.02620v1")
+lambada.measure(None, 51.6, "GA+MAGE (48)", url="https://arxiv.org/abs/1703.02620v1")
 
 turing_test = Problem("Conduct arbitrary sustained, probing conversation", ["agi", "language", "world-modelling", "communication"])
 easy_turing_test = Problem("Turing test for casual conversation", ["agi", "language", "world-modelling", "communication"])
@@ -136,6 +136,7 @@ bAbi1k.measure(date(2016,12,9),  90.1, "QRN", "https://arxiv.org/abs/1606.04582v
 bAbi1k.measure(None, 66.8, "DMN+", "https://arxiv.org/abs/1606.04582v4", algorithm_src_url="https://arxiv.org/abs/1607.00036", replicated="https://github.com/therne/dmn-tensorflow")
 bAbi10k.measure(date(2016,6,30),  97.2, "DMN+", "https://arxiv.org/abs/1607.00036")
 
+bAbi1k.measure(None, 91.3, "GA+MAGE (16)", url="https://arxiv.org/abs/1703.02620v1")
 # More papers:
 # https://www.aclweb.org/anthology/D/D13/D13-1020.pdf
 
@@ -190,6 +191,7 @@ daily_mail.measure(None, 76.6, "ReasoNet", url="https://arxiv.org/abs/1609.05284
 squad_em.measure(None, 73.4, "ReasoNet ensemble", url="https://arxiv.org/abs/1609.05284v3")
 squad_f1.measure(None, 82.9, "ReasoNet ensemble", url="https://arxiv.org/abs/1609.05284v3")
 
+cnn.measure(None, 78.6, "GA+MAGE (32)", url="https://arxiv.org/abs/1703.02620v1")
 # Neural semantic encoders invented in https://arxiv.org/abs/1607.04315v1 and retrospectively applied to CBTest by other authors
 cbtest_ne.measure(date(2016, 12, 1), 73.2, "NSE", url="https://arxiv.org/abs/1606.01549v2", algorithm_src_url="https://arxiv.org/abs/1607.04315", min_date=date(2016,7,4))
 cbtest_cn.measure(date(2016, 12, 1), 71.9, "NSE", url="https://arxiv.org/abs/1606.01549v2", algorithm_src_url="https://arxiv.org/abs/1607.04315", min_date=date(2016,7,4))
@@ -211,6 +213,8 @@ cbtest_ne.measure(None, 71.0, "AS reader (greedy)", url="https://arxiv.org/abs/1
 cbtest_cn.measure(None, 68.9, "AS reader (avg)", url="https://arxiv.org/abs/1603.01547v1")
 cbtest_cn.measure(None, 67.5, "AS reader (greedy)", url="https://arxiv.org/abs/1603.01547v1")
 
+squad_em.measure(None, 75.37, "MEMEN", url="https://arxiv.org/abs/1707.09098v1")
+squad_f1.measure(None, 82.66, "MEMEN", url="https://arxiv.org/abs/1707.09098v1")
 
 squad_em.measure(date(2017, 3, 8), 76.922, "r-net (ensemble)", url="https://www.microsoft.com/en-us/research/wp-content/uploads/2017/05/r-net.pdf")
 squad_f1.measure(date(2017, 3, 8), 84.006, "r-net (ensemble)", url="https://www.microsoft.com/en-us/research/wp-content/uploads/2017/05/r-net.pdf")

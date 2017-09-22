@@ -1329,6 +1329,12 @@
         }, 
         "name": "Revisiting Autotagging Toward Faultless Instrumental Playlists Generation"
     }, 
+    "https://arxiv.org/abs/1707.04873": {
+        "dates": {
+            "1": "2017-07-16"
+        }, 
+        "name": "Reinforcement Learning for Architecture Search by Network Transformation"
+    }, 
     "https://arxiv.org/abs/1707.06887v1": {
         "dates": {
             "1": "2017-07-21"
