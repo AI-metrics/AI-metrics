@@ -1347,6 +1347,12 @@
         }, 
         "name": "Bottom-Up and Top-Down Attention for Image Captioning and VQA"
     }, 
+    "https://arxiv.org/abs/1707.09098v1": {
+        "dates": {
+            "1": "2017-07-28"
+        }, 
+        "name": "MEMEN: Multi-layer Embedding with Memory Networks for Machine Comprehension"
+    }, 
     "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": {
         "name": "Swedish Chess Computer Association - Wikipedia"
     }, 
