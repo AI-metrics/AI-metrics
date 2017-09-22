@@ -219,7 +219,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-43-7db95217a73d>#L2", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-42-7db95217a73d>#L2", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Federated Learning (distributed training with thresholded updates to models)", 
@@ -248,7 +248,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L38", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L42", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "YouTube-8M video labelling", 
@@ -504,7 +504,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-40-13d9cddcfa63>#L9", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-39-13d9cddcfa63>#L9", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Caltech Pedestrians USA", 
@@ -521,7 +521,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-40-13d9cddcfa63>#L11", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-39-13d9cddcfa63>#L11", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "INRIA persons", 
@@ -538,7 +538,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-40-13d9cddcfa63>#L13", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-39-13d9cddcfa63>#L13", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "ETH Pedestrian", 
@@ -555,7 +555,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-40-13d9cddcfa63>#L15", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-39-13d9cddcfa63>#L15", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "TUD-Brussels Pedestrian", 
@@ -572,7 +572,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-40-13d9cddcfa63>#L17", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-39-13d9cddcfa63>#L17", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Damiler Pedestrian", 
@@ -630,7 +630,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L129", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L135", 
                     "scale": "Percentage correct", 
                     "target_label": "Excellent performance", 
                     "name": "bAbi 20 QA (10k training examples)", 
@@ -822,7 +822,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L128", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L134", 
                     "scale": "Percentage correct", 
                     "target_label": "Excellent performance", 
                     "name": "bAbi 20 QA (1k training examples)", 
@@ -963,7 +963,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L139", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L145", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Reading comprehension MCTest-160-all", 
@@ -1077,7 +1077,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L146", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L152", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Reading comprehension MCTest-500-all", 
@@ -1215,7 +1215,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L202", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L208", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "bAbi Children's Book comprehension CBtest NE", 
@@ -1449,7 +1449,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L204", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L210", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "bAbi Children's Book comprehension CBtest CN", 
@@ -1635,7 +1635,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L198", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L204", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "CNN Comprehension test", 
@@ -1941,7 +1941,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L200", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L206", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Daily Mail Comprehension test", 
@@ -2151,7 +2151,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L270", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L276", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Stanford Question Answering Dataset EM test", 
@@ -2721,7 +2721,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L271", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L277", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Stanford Question Answering Dataset F1 test", 
@@ -3392,7 +3392,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-42-8599bdd9b61a>#L18", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-41-8599bdd9b61a>#L18", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Adjust prediction models to have constant false-positive rates", 
@@ -3409,7 +3409,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-42-8599bdd9b61a>#L19", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-41-8599bdd9b61a>#L19", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Adjust prediction models tos have constant false-positive and -negative rates", 
@@ -3481,7 +3481,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L300", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L306", 
                     "scale": "BLEU score", 
                     "target_label": "Identical to professional human translations", 
                     "name": "news-test-2014 En-Fr BLEU", 
@@ -3715,7 +3715,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L304", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L310", 
                     "scale": "BLEU score", 
                     "target_label": "Identical to professional human translations", 
                     "name": "news-test-2014 En-De BLEU", 
@@ -3877,7 +3877,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L307", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L313", 
                     "scale": "BLEU score", 
                     "target_label": "Identical to professional human translations", 
                     "name": "news-test-2016 En-Ro BLEU", 
@@ -5737,7 +5737,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L86", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L92", 
                     "scale": "Percentage correct", 
                     "target_label": "Completely plausible answers", 
                     "name": "The Loebner Prize scored selection answers", 
@@ -6413,7 +6413,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L34", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L38", 
                     "scale": "Error rate", 
                     "target_label": null, 
                     "name": "Imagenet Image Recognition", 
@@ -6649,7 +6649,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L238", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L241", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "MSRC-21 image semantic labelling (per-class)", 
@@ -6955,7 +6955,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L251", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L254", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "MSRC-21 image semantic labelling (per-pixel)", 
@@ -7261,7 +7261,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L119", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L122", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "CIFAR-100 Image Recognition", 
@@ -8119,7 +8119,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L170", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L173", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "CIFAR-10 Image Recognition", 
@@ -9350,6 +9350,30 @@
                             "algorithms": [], 
                             "max_date": "2017-06-11", 
                             "notes": ""
+                        }, 
+                        {
+                            "not_directly_comparable": false, 
+                            "metric": "Metric(CIFAR-10 Image Recognition)                          SOLVED", 
+                            "replicated_url": "", 
+                            "algorithm_src_url": "", 
+                            "date": "2017-04-27", 
+                            "withdrawn": false, 
+                            "minval": 96.35, 
+                            "label": "Neural Architecture Search", 
+                            "opensource": false, 
+                            "long_label": false, 
+                            "min_date": null, 
+                            "offset": null, 
+                            "src_name": null, 
+                            "maxval": 96.35, 
+                            "name": "Neural Architecture Search", 
+                            "url": "https://openreview.net/pdf?id=r1Ue8Hcxg", 
+                            "papername": null, 
+                            "uncertainty": 0, 
+                            "value": 96.35, 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "notes": ""
                         }
                     ], 
                     "solved": true, 
@@ -9361,7 +9385,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L87", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L90", 
                     "scale": "Percentage error", 
                     "target_label": null, 
                     "name": "Street View House Numbers (SVHN)", 
@@ -9763,7 +9787,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L222", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L225", 
                     "scale": "Percentage error", 
                     "target_label": null, 
                     "name": "MNIST handwritten digit recognition", 
@@ -10981,7 +11005,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L68", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/awty.py#L71", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "STL-10 Image Recognition", 
@@ -11537,7 +11561,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-36-847f9831eedb>#L2", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-35-847f9831eedb>#L2", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Solve all other solved problems in this document, with a single system", 
@@ -40318,7 +40342,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L24", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L26", 
                     "scale": "Perplexity", 
                     "target_label": null, 
                     "name": "Penn Treebank (Perplexity when parsing English sentences)", 
@@ -40547,6 +40571,30 @@
                             "metric": "Metric(Penn Treebank (Perplexity when parsing English sentences))?", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
+                            "date": "2016-08-11", 
+                            "withdrawn": false, 
+                            "minval": 71.3, 
+                            "label": "Variational RHN", 
+                            "opensource": false, 
+                            "long_label": false, 
+                            "min_date": null, 
+                            "offset": null, 
+                            "src_name": null, 
+                            "maxval": 71.3, 
+                            "name": "Variational RHN", 
+                            "url": "https://arxiv.org/abs/1607.03474v2", 
+                            "papername": "Recurrent Highway Networks", 
+                            "uncertainty": 0, 
+                            "value": 71.3, 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "notes": ""
+                        }, 
+                        {
+                            "not_directly_comparable": false, 
+                            "metric": "Metric(Penn Treebank (Perplexity when parsing English sentences))?", 
+                            "replicated_url": "", 
+                            "algorithm_src_url": "", 
                             "date": "2016-09-26", 
                             "withdrawn": false, 
                             "minval": 70.9, 
@@ -40643,23 +40691,47 @@
                             "metric": "Metric(Penn Treebank (Perplexity when parsing English sentences))?", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
-                            "date": "2017-01-06", 
+                            "date": "2017-02-15", 
                             "withdrawn": false, 
-                            "minval": 71.3, 
-                            "label": "Variational RHN", 
+                            "minval": 62.4, 
+                            "label": "Neural Architecture Search", 
                             "opensource": false, 
                             "long_label": false, 
-                            "min_date": "2016-07-12", 
+                            "min_date": null, 
                             "offset": null, 
                             "src_name": null, 
-                            "maxval": 71.3, 
-                            "name": "Variational RHN", 
-                            "url": "https://arxiv.org/abs/1607.03474", 
+                            "maxval": 62.4, 
+                            "name": "Neural Architecture Search", 
+                            "url": "https://arxiv.org/abs/1611.01578v2", 
+                            "papername": "Neural Architecture Search with Reinforcement Learning", 
+                            "uncertainty": 0, 
+                            "value": 62.4, 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "notes": ""
+                        }, 
+                        {
+                            "not_directly_comparable": false, 
+                            "metric": "Metric(Penn Treebank (Perplexity when parsing English sentences))?", 
+                            "replicated_url": "", 
+                            "algorithm_src_url": "", 
+                            "date": "2017-03-03", 
+                            "withdrawn": false, 
+                            "minval": 65.4, 
+                            "label": "Variational RHN + WT", 
+                            "opensource": false, 
+                            "long_label": false, 
+                            "min_date": null, 
+                            "offset": null, 
+                            "src_name": null, 
+                            "maxval": 65.4, 
+                            "name": "Variational RHN + WT", 
+                            "url": "https://arxiv.org/abs/1607.03474v4", 
                             "papername": "Recurrent Highway Networks", 
                             "uncertainty": 0, 
-                            "value": 71.3, 
+                            "value": 65.4, 
                             "algorithms": [], 
-                            "max_date": "2017-07-04", 
+                            "max_date": null, 
                             "notes": ""
                         }
                     ], 
@@ -40672,7 +40744,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L39", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L45", 
                     "scale": "Model Entropy", 
                     "target_label": null, 
                     "name": "Hutter Prize (bits per character to encode English text)", 
@@ -40682,7 +40754,7 @@
                     "measures": [
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Hutter Prize (bits per character to encode English text))not solved", 
+                            "metric": "Metric(Hutter Prize (bits per character to encode English text))SOLVED", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2011-06-28", 
@@ -40706,7 +40778,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Hutter Prize (bits per character to encode English text))not solved", 
+                            "metric": "Metric(Hutter Prize (bits per character to encode English text))SOLVED", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2013-08-04", 
@@ -40730,7 +40802,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Hutter Prize (bits per character to encode English text))not solved", 
+                            "metric": "Metric(Hutter Prize (bits per character to encode English text))SOLVED", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2015-02-15", 
@@ -40754,7 +40826,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Hutter Prize (bits per character to encode English text))not solved", 
+                            "metric": "Metric(Hutter Prize (bits per character to encode English text))SOLVED", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2015-07-06", 
@@ -40778,7 +40850,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Hutter Prize (bits per character to encode English text))not solved", 
+                            "metric": "Metric(Hutter Prize (bits per character to encode English text))SOLVED", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2016-07-12", 
@@ -40802,7 +40874,31 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Hutter Prize (bits per character to encode English text))not solved", 
+                            "metric": "Metric(Hutter Prize (bits per character to encode English text))SOLVED", 
+                            "replicated_url": "", 
+                            "algorithm_src_url": "", 
+                            "date": "2016-08-11", 
+                            "withdrawn": false, 
+                            "minval": 1.42, 
+                            "label": "RHN", 
+                            "opensource": false, 
+                            "long_label": false, 
+                            "min_date": null, 
+                            "offset": null, 
+                            "src_name": null, 
+                            "maxval": 1.42, 
+                            "name": "RHN", 
+                            "url": "https://arxiv.org/abs/1607.03474v2", 
+                            "papername": "Recurrent Highway Networks", 
+                            "uncertainty": 0, 
+                            "value": 1.42, 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "notes": ""
+                        }, 
+                        {
+                            "not_directly_comparable": false, 
+                            "metric": "Metric(Hutter Prize (bits per character to encode English text))SOLVED", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2016-09-06", 
@@ -40826,7 +40922,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Hutter Prize (bits per character to encode English text))not solved", 
+                            "metric": "Metric(Hutter Prize (bits per character to encode English text))SOLVED", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2016-09-27", 
@@ -40850,7 +40946,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Hutter Prize (bits per character to encode English text))not solved", 
+                            "metric": "Metric(Hutter Prize (bits per character to encode English text))SOLVED", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2016-10-19", 
@@ -40874,7 +40970,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Hutter Prize (bits per character to encode English text))not solved", 
+                            "metric": "Metric(Hutter Prize (bits per character to encode English text))SOLVED", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2016-10-31", 
@@ -40895,9 +40991,33 @@
                             "algorithms": [], 
                             "max_date": null, 
                             "notes": ""
+                        }, 
+                        {
+                            "not_directly_comparable": false, 
+                            "metric": "Metric(Hutter Prize (bits per character to encode English text))SOLVED", 
+                            "replicated_url": "", 
+                            "algorithm_src_url": "", 
+                            "date": "2017-03-03", 
+                            "withdrawn": false, 
+                            "minval": 1.27, 
+                            "label": "Large RHN depth 10", 
+                            "opensource": false, 
+                            "long_label": false, 
+                            "min_date": null, 
+                            "offset": null, 
+                            "src_name": null, 
+                            "maxval": 1.27, 
+                            "name": "Large RHN depth 10", 
+                            "url": "https://arxiv.org/abs/1607.03474v4", 
+                            "papername": "Recurrent Highway Networks", 
+                            "uncertainty": 0, 
+                            "value": 1.27, 
+                            "algorithms": [], 
+                            "max_date": null, 
+                            "notes": ""
                         }
                     ], 
-                    "solved": false, 
+                    "solved": true, 
                     "data_path": "data/language.py", 
                     "target_source": null, 
                     "changeable": false, 
@@ -40906,7 +41026,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L47", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/language.py#L53", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "LAMBADA prediction of words in discourse", 
@@ -41099,7 +41219,7 @@
             "metrics": [
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L108", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L112", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "COCO Visual Question Answering (VQA) real images 1.0 open ended", 
@@ -41381,7 +41501,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L103", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L107", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "COCO Visual Question Answering (VQA) real images 1.0 multiple choice", 
@@ -41567,7 +41687,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L106", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L110", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "COCO Visual Question Answering (VQA) abstract images 1.0 open ended", 
@@ -41681,7 +41801,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L105", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L109", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "COCO Visual Question Answering (VQA) abstract 1.0 multiple choice", 
@@ -41795,7 +41915,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L53", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L57", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Toronto COCO-QA", 
@@ -41812,7 +41932,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L54", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L58", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "DAQUAR", 
@@ -41829,7 +41949,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L119", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L123", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Visual Genome (pairs)", 
@@ -41871,7 +41991,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L120", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L124", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Visual Genome (subjects)", 
@@ -41913,7 +42033,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L118", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L122", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "Visual7W", 
@@ -41979,7 +42099,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L59", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L63", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "FM-IQA", 
@@ -41996,7 +42116,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L60", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L64", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Visual Madlibs", 
@@ -42013,7 +42133,7 @@
                 }, 
                 {
                     "graphed": true, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L116", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/data/vision.py#L120", 
                     "scale": "Percentage correct", 
                     "target_label": null, 
                     "name": "COCO Visual Question Answering (VQA) real images 2.0 open ended", 
