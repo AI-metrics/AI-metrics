@@ -647,6 +647,14 @@
         }, 
         "name": "Attention-Based Models for Speech Recognition"
     }, 
+    "https://arxiv.org/abs/1507.00814": {
+        "dates": {
+            "1": "2015-07-03", 
+            "2": "2015-07-09", 
+            "3": "2015-11-19"
+        }, 
+        "name": "Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models"
+    }, 
     "https://arxiv.org/abs/1507.01526": {
         "dates": {
             "1": "2015-07-06", 
@@ -953,6 +961,13 @@
         }, 
         "name": "Multimodal Compact Bilinear Pooling for Visual Question Answering and Visual Grounding"
     }, 
+    "https://arxiv.org/abs/1606.01868": {
+        "dates": {
+            "1": "2016-06-06", 
+            "2": "2016-11-07"
+        }, 
+        "name": "Unifying Count-Based Exploration and Intrinsic Motivation"
+    }, 
     "https://arxiv.org/abs/1606.02245v1": {
         "dates": {
             "1": "2016-06-07"
@@ -1195,6 +1210,13 @@
         }, 
         "name": "Dynamic Coattention Networks For Question Answering"
     }, 
+    "https://arxiv.org/abs/1611.04717": {
+        "dates": {
+            "1": "2016-11-15", 
+            "2": "2017-01-11"
+        }, 
+        "name": "Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"
+    }, 
     "https://arxiv.org/abs/1611.06430v1": {
         "dates": {
             "1": "2016-11-19"
@@ -1246,6 +1268,12 @@
             "2": "2017-06-11"
         }, 
         "name": "Large-Scale Evolution of Image Classifiers"
+    }, 
+    "https://arxiv.org/abs/1703.01310v1": {
+        "dates": {
+            "1": "2017-03-03"
+        }, 
+        "name": "Count-Based Exploration with Neural Density Models"
     }, 
     "https://arxiv.org/abs/1703.02136": {
         "dates": {
@@ -1334,6 +1362,12 @@
             "1": "2017-06-23"
         }, 
         "name": "Revisiting Autotagging Toward Faultless Instrumental Playlists Generation"
+    }, 
+    "https://arxiv.org/abs/1706.08090": {
+        "dates": {
+            "1": "2017-06-25"
+        }, 
+        "name": "Count-Based Exploration in Feature Space for Reinforcement Learning"
     }, 
     "https://arxiv.org/abs/1707.04873": {
         "dates": {

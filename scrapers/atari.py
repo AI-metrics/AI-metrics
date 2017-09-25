@@ -7,7 +7,7 @@ import re
 
 # Machinery for importing both copy-and-pasted and (where necessary) OCR'd tables from various Atari research papers
 # Copying and pasting tables from PDFs produces very weird results sometimes, so we make no promises that there aren't
-# anyforms of weirdness here.
+# any forms of weirdness here.
 
 # The common case is that PDF tables paste column-wise; but some are row-wise so we have machinery for both.
 
@@ -2094,6 +2094,80 @@ Double DQN with Pop-Art
 21409.50
 14402.00"""
 
+martin_table_1 = """Game
+Venture
+Montezuma's Revenge
+Freeway
+Frostbite
+Q-bert
+Sarsa-φ-EB
+1169.2
+2745.4
+0.0
+2770.1
+4111.8
+Sarsa-ε
+0.0
+399.5
+29.9
+1394.3
+3895.3
+DDQN-PC
+N/A
+3459
+N/A
+N/A
+N/A
+A3C+
+0
+142
+27
+507
+15805
+TRPO-Hash
+445
+75
+34
+5214
+N/A
+MP-EB
+N/A
+0
+12
+380
+N/A
+DDQN
+98
+0
+33
+1683
+15088
+DQN-PA
+1172
+0
+33
+3469
+5237
+Gorila
+1245
+4
+12
+605
+10816
+TRPO
+121
+0
+16
+2869
+7733
+Dueling
+497
+0
+0
+4672
+19220"""
+
+
 # COLUMN-ORIENTED processing
 
 remove_re = re.compile(r"['’!\.]")
@@ -2133,6 +2207,7 @@ def ingest_column(src, n, paper_url, alg=None, extras={}, size=TSIZE):
         print(u"# {0} not in {1}".format(algorithm, alg))
     for i, score in enumerate(data):
         # Maybe someone should fix Python's float() function...
+        if score.lower() == "n/a": continue
         score = float(score.replace(",", "").replace('\xe2\x88\x92', "-").replace("−", "-"))
         game = game_metric_name(games[i])
         metric = get_game_metric(game, games[i], targets[i], "https://arxiv.org/abs/1509.06461")
@@ -2146,6 +2221,7 @@ es_data = es_table3.split("\n")
 distributional_data = bellemare_figure_14.split("\n")
 early_data = mnih_2013_table_1.split("\n")
 pop_art_data = van_hasselt_2016_table1.split("\n")
+sarsa_epsilon_data = martin_table_1.split("\n")
 
 # Weirdly, the noop start human performance is consistently better than the human start human performance data
 # Is this because it's newer and at a higher standard? Or because the recorded human starts consistently hamper strong
@@ -2168,6 +2244,13 @@ ingest_column(noop_data, 4, "https://arxiv.org/abs/1509.06461v1", "DQN noop",
 ingest_column(human_start_data, 4, "https://arxiv.org/abs/1509.06461v1", "DQN hs", 
               {"algorithm_src_url": "https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf",
                "min_date": date(2015, 2, 26)})
+
+ingest_column(sarsa_epsilon_data, 1, "https://arxiv.org/abs/1706.08090", u"Sarsa-φ-EB",size=5)
+ingest_column(sarsa_epsilon_data, 2, "https://arxiv.org/abs/1706.08090", u"Sarsa-ε", size=5)
+ingest_column(sarsa_epsilon_data, 3, "https://arxiv.org/abs/1606.01868", "DDQN-PC", size=5)
+ingest_column(sarsa_epsilon_data, 4, "https://arxiv.org/abs/1507.00814", "MP-EB", size=5)
+ingest_column(sarsa_epsilon_data, 5, "https://arxiv.org/abs/1611.04717", "TRPO-hash", size=5)
+
 # v1 of the DDQN paper reported only "untuned" results
 # TODO import those "untuned" results. May require OCR due to missing table columns...
 
@@ -2353,5 +2436,37 @@ for row in a3c_rows:
         if verb: print('{0}.measure(None, {1}, "Gorila", url="{2}")'.format(game1, score, "https://arxiv.org/abs/1507.04296"))
     except ValueError:
         if verb: print("No Gorila score for", game)
+
+
+def snarf_row_oriented_table(raw_table, algorithm_pairs, paper_url):
+    """Ingest a table of row oriented results
+
+    algorithm_pairs -- [(alg_name, col_index)]
+    """
+    rows = raw_table.split("\n")[1:]
+    for row in rows:
+        cols = row.split("\t")
+        game = cols[0]
+        game1 = game_metric_name(game)
+        metric = get_game_metric(game1, game, None, None)
+        for alg, idx in algorithm_pairs:
+            score = float(cols[idx])
+            metric.measure(None, score, alg, url=paper_url)
+            if verb:
+                print('{0}.measure(None, {1}, "{2}", url="{3}")'.format(game1, score, alg, paper_url))
+
+
+cts_tabe_2 = """DQN	A3C-CTS	Prior Duel	DQN-CTS	DQN-PixelCNN
+FREEWAY	30.8	30.48	33.0	31.7	31.7
+GRAVITAR	473.0	238.68	238.0	498.3	859.1
+MONTEZUMA’S REVENGE	0.0	273.70	0.0	3705.5	2514.3
+PITFALL!	-286.1	-259.09	0.0	0.0	0.0
+PRIVATE EYE	146.7	99.32	206.0	8358.7	15806.5
+SOLARIS	3,482.8	2270.15	133.4	2863.6	5501.5
+VENTURE	163.0	0.00	48.0	82.2	1356.25"""
+
+snarf_row_oriented_table(cts_tabe_2, [("DQN-CTS", 3), ("DQN-PixelCNN", 4)], "https://arxiv.org/abs/1703.01310v1")
+snarf_row_oriented_table(cts_tabe_2, [("A3C-CTS", 2)], "https://arxiv.org/abs/1606.01868")
+
 
 # vim: set list:listchars=tab:!·,trail:·
