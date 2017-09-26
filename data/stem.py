@@ -62,7 +62,27 @@ program_induction.add_subproblem(understand_conditional_expressions)
 
 science_question_answering = Problem("Answering Science Exam Questions", ["science", "qa"])
 vaguely_constrained_technical_problems.add_subproblem(science_question_answering)
-elementery_ndmc_acc = science_question_answering.metric("Elementery NDMC accuracy", url="", scale=correct_percent,
-                                                        target=100, target_label="Perfect Score")
 
+ny_4_science = science_question_answering.metric("NY Regents 4th Grade Science Exams", url="http://www.nysedregents.org/Grade4/Science/home.html", scale=correct_percent, target=100,
+target_label="Perfect score")
+ny_4_science.measure(None, 47.5, "Praline", url="https://pdfs.semanticscholar.org/478b/4a5123bd5fda98bb35e6317d7f3555fec97d.pdf", papername="Combining Retrieval, Statistics, and Inference to Answer Elementary Science Questions", venue="AAAI 2016", algorithm_src_url="http://aclweb.org/anthology/D15-1080", min_date=date(2015, 11, 17))
+ny_4_science.measure(None, 60.7, "PMI", "https://pdfs.semanticscholar.org/478b/4a5123bd5fda98bb35e6317d7f3555fec97d.pdf", papername="Combining Retrieval, Statistics, and Inference to Answer Elementary Science Questions", venue="AAAI 2016")
+ny_4_science.measure(None, 60.6, "IR", "https://pdfs.semanticscholar.org/478b/4a5123bd5fda98bb35e6317d7f3555fec97d.pdf", papername="Combining Retrieval, Statistics, and Inference to Answer Elementary Science Questions", venue="AAAI 2016")
+ny_4_science.measure(None, 55.4, "SVM", "https://pdfs.semanticscholar.org/478b/4a5123bd5fda98bb35e6317d7f3555fec97d.pdf", papername="Combining Retrieval, Statistics, and Inference to Answer Elementary Science Questions", venue="AAAI 2016")
+ny_4_science.measure(None, 54.3, "RULE", "https://pdfs.semanticscholar.org/478b/4a5123bd5fda98bb35e6317d7f3555fec97d.pdf", papername="Combining Retrieval, Statistics, and Inference to Answer Elementary Science Questions", venue="AAAI 2016")
+ny_4_science.measure(None, 43.8, "ILP", "https://pdfs.semanticscholar.org/478b/4a5123bd5fda98bb35e6317d7f3555fec97d.pdf", papername="Combining Retrieval, Statistics, and Inference to Answer Elementary Science Questions", venue="AAAI 2016")
+ny_4_science.measure(None, 71.3, "Aristo (ALL)", "https://pdfs.semanticscholar.org/478b/4a5123bd5fda98bb35e6317d7f3555fec97d.pdf", papername="Combining Retrieval, Statistics, and Inference to Answer Elementary Science Questions", venue="AAAI 2016")
+ny_4_science.measure(None, 61.5, "TableILP", "https://arxiv.org/pdf/1604.06076.pdf")
+ny_4_science.measure(None, 69.0, "TableILP+IR+PMI", "https://arxiv.org/pdf/1604.06076.pdf")
 
+elementery_ndmc_acc = science_question_answering.metric("Elementery Non-Diagram Multiple Choice (NDMC) Science Exam accuracy", 
+    url="http://data.allenai.org/ai2-science-questions/", scale=correct_percent, target=100, target_label="Perfect Score")
+
+elementery_dmc_acc = science_question_answering.metric("Elementery Diagram Multiple Choice (DMC) Science Exam accuracy", 
+    url="http://data.allenai.org/ai2-science-questions/", scale=correct_percent, target=100, target_label="Perfect Score")
+
+ms_ndmc_acc = science_question_answering.metric("Middle School Non-Diagram Multiple Choice (NDMC) Science Exam accuracy", 
+    url="http://data.allenai.org/ai2-science-questions/", scale=correct_percent, target=100, target_label="Perfect Score")
+
+ms_dmc_acc = science_question_answering.metric("Middle School Diagram Multiple Choice (DMC) Science Exam accuracy", 
+    url="http://data.allenai.org/ai2-science-questions/", scale=correct_percent, target=100, target_label="Perfect Score")

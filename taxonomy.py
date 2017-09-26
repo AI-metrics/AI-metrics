@@ -289,21 +289,22 @@ def canonicalise(url):
         url = url.replace(".pdf", "", 1)
     return url
 # dates of conferences help us date papers from the "Are We There Yet" dataset
-conference_dates = {"ICML 2016": date(2016, 6, 19),
-                    "NIPS 2015": date(2015, 12, 7),
+conference_dates = {"AAAI 2016": date(2016, 2, 12),
+                    "CVPR 2012": date(2012, 6, 16),
+                    "CVPR 2015": date(2015, 6, 8),
+                    "ECCV 2012": date(2012, 10, 7),
                     "ICLR 2014": date(2014, 4, 14),
+                    "ICML 2016": date(2016, 6, 19),
                     "ICML 2012": date(2012, 6, 26),
                     "ICML 2013": date(2013, 6, 16),
                     "ICML 2014": date(2014, 6, 21),
                    "IJCNN 2015": date(2015, 7, 12),
-                    "CVPR 2012": date(2012, 6, 16),
                     "NIPS 2012": date(2012, 12, 3),
-                    "CVPR 2015": date(2015, 6, 8),
                     "NIPS 2011": date(2011, 12, 17),
                     "NIPS 2014": date(2014, 12, 8),
+                    "NIPS 2015": date(2015, 12, 7),
                "TUM-I1222 2013": date(2013, 10, 29),
-                     "WMT 2014": date(2014, 2, 24),
-                    "ECCV 2012": date(2012, 10, 7)}
+                     "WMT 2014": date(2014, 2, 24)}
 conferences_wanted = defaultdict(lambda: 0)
 
 offline = False

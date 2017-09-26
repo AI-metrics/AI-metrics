@@ -2,6 +2,9 @@
     "http://aad.informatik.uni-freiburg.de/papers/15-IJCAI-Extrapolation_of_Learning_Curves.pdf": {
         "name": null
     }, 
+    "http://aclweb.org/anthology/D15-1080": {
+        "name": null
+    }, 
     "http://ai.stanford.edu/~quocle/LeNgiCoaLahProNg11.pdf": {
         "name": null
     }, 
@@ -894,6 +897,12 @@
         }, 
         "name": "A Focused Dynamic Attention Model for Visual Question Answering"
     }, 
+    "https://arxiv.org/abs/1604.06076": {
+        "dates": {
+            "1": "2016-04-20"
+        }, 
+        "name": "Question Answering via Integer Programming over Semi-Structured Knowledge"
+    }, 
     "https://arxiv.org/abs/1604.08242v1": {
         "dates": {
             "1": "2016-04-27"
@@ -1320,6 +1329,9 @@
         "name": "Improved Variational Inference with Inverse Autoregressive Flow"
     }, 
     "https://pdfs.semanticscholar.org/3b97/32bb07dc99bde5e1f9f75251c6ea5039373e.pdf": {
+        "name": null
+    }, 
+    "https://pdfs.semanticscholar.org/478b/4a5123bd5fda98bb35e6317d7f3555fec97d.pdf": {
         "name": null
     }, 
     "https://pdfs.semanticscholar.org/ce25/00257fda92338ec0a117bea1dbc0381d7c73.pdf?_ga=1.195375081.452266805.1483390947": {
