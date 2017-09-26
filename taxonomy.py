@@ -188,7 +188,7 @@ class Metric:
         html = u"".join(table_html + github_link)
         return html
 
-    def graph(self, size=(7,5), scale=1.0, keep=False, reuse=None, title=None, llabel=None, fcol=None, pcol=None):
+    def graph(self, size=(7,5), scale=1.0, keep=False, reuse=None, title=None, llabel=None, fcol=None, pcol=None, tcol=None):
         "Spaghetti code graphing function."
         if len(self.measures) < 2:
             return
@@ -208,10 +208,9 @@ class Metric:
             target_label = (       self.target_label  if self.target_label
                              else "Human performance" if self.parent and "agi" in self.parent.attributes
                              else "Target")
-            start = min([self.measures[0].date]  + [m.min_date for m in self.measures if m.min_date])
-            end =   max([self.measures[-1].date] + [m.max_date for m in self.measures if m.max_date])
-
-            plt.plot_date([start, end], 2 * [self.target], "r--", label=target_label)
+            start = min([m.date for m in self.measures] + [m.min_date for m in self.measures if m.min_date])
+            end = max([m.date for m in self.measures] + [m.max_date for m in self.measures if m.max_date])
+            plt.plot_date([start, end], 2 * [self.target], tcol if tcol else "r", linestyle="dashed", label=target_label)
 
         
         self.measures.sort(key=lambda m: (m.date, m.metric.scale.pseudolinear(m.value)))
@@ -294,6 +293,7 @@ conference_dates = {"AAAI 2016": date(2016, 2, 12),
                     "CVPR 2015": date(2015, 6, 8),
                     "ECCV 2012": date(2012, 10, 7),
                     "ICLR 2014": date(2014, 4, 14),
+                    "ICLR 2017": date(2017, 4, 27),
                     "ICML 2016": date(2016, 6, 19),
                     "ICML 2012": date(2012, 6, 26),
                     "ICML 2013": date(2013, 6, 16),

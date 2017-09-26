@@ -650,6 +650,14 @@
         }, 
         "name": "Attention-Based Models for Speech Recognition"
     }, 
+    "https://arxiv.org/abs/1507.00814": {
+        "dates": {
+            "1": "2015-07-03", 
+            "2": "2015-07-09", 
+            "3": "2015-11-19"
+        }, 
+        "name": "Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models"
+    }, 
     "https://arxiv.org/abs/1507.01526": {
         "dates": {
             "1": "2015-07-06", 
@@ -902,6 +910,15 @@
             "1": "2016-04-20"
         }, 
         "name": "Question Answering via Integer Programming over Semi-Structured Knowledge"
+    },
+    "https://arxiv.org/abs/1604.04112": {
+        "dates": {
+            "1": "2016-04-14", 
+            "2": "2016-06-07", 
+            "3": "2016-08-20", 
+            "4": "2016-10-05"
+        }, 
+        "name": "Deep Residual Networks with Exponential Linear Unit"
     }, 
     "https://arxiv.org/abs/1604.08242v1": {
         "dates": {
@@ -952,6 +969,13 @@
             "1": "2016-06-06"
         }, 
         "name": "Multimodal Compact Bilinear Pooling for Visual Question Answering and Visual Grounding"
+    }, 
+    "https://arxiv.org/abs/1606.01868": {
+        "dates": {
+            "1": "2016-06-06", 
+            "2": "2016-11-07"
+        }, 
+        "name": "Unifying Count-Based Exploration and Intrinsic Motivation"
     }, 
     "https://arxiv.org/abs/1606.02245v1": {
         "dates": {
@@ -1024,9 +1048,21 @@
         }, 
         "name": "Recurrent Highway Networks"
     }, 
+    "https://arxiv.org/abs/1607.03474v2": {
+        "dates": {
+            "2": "2016-08-11"
+        }, 
+        "name": "Recurrent Highway Networks"
+    }, 
     "https://arxiv.org/abs/1607.03474v3": {
         "dates": {
             "3": "2016-10-27"
+        }, 
+        "name": "Recurrent Highway Networks"
+    }, 
+    "https://arxiv.org/abs/1607.03474v4": {
+        "dates": {
+            "4": "2017-03-03"
         }, 
         "name": "Recurrent Highway Networks"
     }, 
@@ -1093,6 +1129,18 @@
         }, 
         "name": "The Microsoft 2016 Conversational Speech Recognition System"
     }, 
+    "https://arxiv.org/abs/1609.05284v1": {
+        "dates": {
+            "1": "2016-09-17"
+        }, 
+        "name": "ReasoNet: Learning to Stop Reading in Machine Comprehension"
+    }, 
+    "https://arxiv.org/abs/1609.05284v3": {
+        "dates": {
+            "3": "2017-06-20"
+        }, 
+        "name": "ReasoNet: Learning to Stop Reading in Machine Comprehension"
+    }, 
     "https://arxiv.org/abs/1609.05600v1": {
         "dates": {
             "1": "2016-09-19"
@@ -1141,6 +1189,12 @@
         }, 
         "name": "Learning Recurrent Span Representations for Extractive Question Answering"
     }, 
+    "https://arxiv.org/abs/1611.01578v2": {
+        "dates": {
+            "2": "2017-02-15"
+        }, 
+        "name": "Neural Architecture Search with Reinforcement Learning"
+    }, 
     "https://arxiv.org/abs/1611.01603": {
         "dates": {
             "1": "2016-11-05", 
@@ -1164,6 +1218,13 @@
             "1": "2016-11-05"
         }, 
         "name": "Dynamic Coattention Networks For Question Answering"
+    }, 
+    "https://arxiv.org/abs/1611.04717": {
+        "dates": {
+            "1": "2016-11-15", 
+            "2": "2017-01-11"
+        }, 
+        "name": "Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"
     }, 
     "https://arxiv.org/abs/1611.06430v1": {
         "dates": {
@@ -1209,6 +1270,19 @@
             "2": "2017-04-20"
         }, 
         "name": "Structural Embedding of Syntactic Trees for Machine Comprehension"
+    }, 
+    "https://arxiv.org/abs/1703.01041": {
+        "dates": {
+            "1": "2017-03-03", 
+            "2": "2017-06-11"
+        }, 
+        "name": "Large-Scale Evolution of Image Classifiers"
+    }, 
+    "https://arxiv.org/abs/1703.01310v1": {
+        "dates": {
+            "1": "2017-03-03"
+        }, 
+        "name": "Count-Based Exploration with Neural Density Models"
     }, 
     "https://arxiv.org/abs/1703.02136": {
         "dates": {
@@ -1280,6 +1354,12 @@
         }, 
         "name": "Convolutional Sequence to Sequence Learning"
     }, 
+    "https://arxiv.org/abs/1705.09792v2": {
+        "dates": {
+            "2": "2017-05-30"
+        }, 
+        "name": "Deep Complex Networks"
+    }, 
     "https://arxiv.org/abs/1706.02003": {
         "dates": {
             "1": "2017-06-06"
@@ -1292,6 +1372,18 @@
         }, 
         "name": "Revisiting Autotagging Toward Faultless Instrumental Playlists Generation"
     }, 
+    "https://arxiv.org/abs/1706.08090": {
+        "dates": {
+            "1": "2017-06-25"
+        }, 
+        "name": "Count-Based Exploration in Feature Space for Reinforcement Learning"
+    }, 
+    "https://arxiv.org/abs/1707.04873": {
+        "dates": {
+            "1": "2017-07-16"
+        }, 
+        "name": "Reinforcement Learning for Architecture Search by Network Transformation"
+    }, 
     "https://arxiv.org/abs/1707.06887v1": {
         "dates": {
             "1": "2017-07-21"
@@ -1303,6 +1395,12 @@
             "1": "2017-07-25"
         }, 
         "name": "Bottom-Up and Top-Down Attention for Image Captioning and VQA"
+    }, 
+    "https://arxiv.org/abs/1707.09098v1": {
+        "dates": {
+            "1": "2017-07-28"
+        }, 
+        "name": "MEMEN: Multi-layer Embedding with Memory Networks for Machine Comprehension"
     }, 
     "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": {
         "name": "Swedish Chess Computer Association - Wikipedia"
@@ -1321,6 +1419,9 @@
     }, 
     "https://openreview.net/forum?id=BJrFC6ceg": {
         "name": "Forum | OpenReview"
+    }, 
+    "https://openreview.net/pdf?id=r1Ue8Hcxg": {
+        "name": null
     }, 
     "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks": {
         "name": "ImageNet Classification with Deep Convolutional Neural Networks"
@@ -1345,6 +1446,9 @@
     }, 
     "https://people.csail.mit.edu/regina/my_papers/MCDR15.pdf": {
         "name": null
+    }, 
+    "https://rajpurkar.github.io/SQuAD-explorer/": {
+        "name": "The Stanford Question Answering Dataset"
     }, 
     "https://sites.google.com/site/homepagezhichengyan/home/hdcnn": {
         "name": "HD-CNN - Homepage of Zhicheng Yan"

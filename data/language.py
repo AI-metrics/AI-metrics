@@ -21,9 +21,14 @@ ptperplexity.measure(date(2012,7,27), 80.1, "RNN-LDA ensemble", "https://www.mic
 ptperplexity.measure(None, 68.7, "RNN Dropout Regularization", "https://arxiv.org/abs/1409.2329v1")
 ptperplexity.measure(None, 68.5, "RHN", "https://arxiv.org/pdf/1607.03474v3")
 ptperplexity.measure(None, 66, "RHN+WT", "https://arxiv.org/pdf/1607.03474v3")
-ptperplexity.measure(None, 71.3, "Variational RHN", "https://arxiv.org/abs/1607.03474")
+ptperplexity.measure(None, 71.3, "RHN", "https://arxiv.org/abs/1607.03474v2")
+ptperplexity.measure(None, 65.4, "RHN+WT", "https://arxiv.org/abs/1607.03474v4")
+ptperplexity.measure(None, 62.4, "Neural Architecture Search", url="https://arxiv.org/abs/1611.01578v2", venue="ICLR 2017")
 
-hp_compression = modelling_english.metric(name="Hutter Prize (bits per character to encode English text)", scale=bits_per_x, target=1.3)
+
+hp_compression = modelling_english.metric(name="Hutter Prize (bits per character to encode English text)", scale=bits_per_x, 
+                                          target=1.3, target_label="Region of human performance",
+                                          target_source="http://languagelog.ldc.upenn.edu/myl/Shannon1950.pdf")
 hp_compression.measure(date(2016,10,31), 1.313, "Surprisal-Driven Zoneout",
                    "https://pdfs.semanticscholar.org/e9bc/83f9ff502bec9cffb750468f76fdfcf5dd05.pdf")
 hp_compression.measure(date(2016,10,19), 1.37, "Surprisal-Driven Feedback RNN",
@@ -38,13 +43,16 @@ hp_compression.measure(date(2015,2,15), 1.58, "Gated Feedback RNN", "https://arx
 hp_compression.measure(date(2013,8,4), 1.67, "RNN, LSTM", "https://arxiv.org/abs/1308.0850")
 hp_compression.measure(date(2011,6,28), 1.60, "RNN", "http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf")
 
+hp_compression.measure(None, 1.42, "RHN", "https://arxiv.org/abs/1607.03474v2")
+hp_compression.measure(None, 1.27, "Large RHN depth 10", "https://arxiv.org/abs/1607.03474v4")
+
 lambada = modelling_english.metric("LAMBADA prediction of words in discourse", url="https://arxiv.org/abs/1606.06031",
                                    scale=correct_percent, target=86, target_source="https://arxiv.org/abs/1610.08431v3")
 lambada.measure(None, 21.7, "Stanford Reader", url="https://arxiv.org/abs/1610.08431v3", algorithm_src_url="https://arxiv.org/abs/1606.02858")
 lambada.measure(None, 32.1, "Modified Stanford", url="https://arxiv.org/abs/1610.08431v3", algorithm_src_url="https://arxiv.org/abs/1606.02858")
 lambada.measure(None, 49.0, "GA + feat.", url="https://arxiv.org/abs/1610.08431v3", algorithm_src_url="https://arxiv.org/abs/1606.01549v2")
 lambada.measure(None, 44.5, "AS + feat.", url="https://arxiv.org/abs/1610.08431v3", algorithm_src_url="https://arxiv.org/abs/1603.01547")
-lambada.measure(None, 51.6, "MAGE (48)", url="https://arxiv.org/abs/1703.02620v1")
+lambada.measure(None, 51.6, "GA+MAGE (48)", url="https://arxiv.org/abs/1703.02620v1")
 
 turing_test = Problem("Conduct arbitrary sustained, probing conversation", ["agi", "language", "world-modelling", "communication"])
 easy_turing_test = Problem("Turing test for casual conversation", ["agi", "language", "world-modelling", "communication"])
@@ -128,6 +136,7 @@ bAbi1k.measure(date(2016,12,9),  90.1, "QRN", "https://arxiv.org/abs/1606.04582v
 bAbi1k.measure(None, 66.8, "DMN+", "https://arxiv.org/abs/1606.04582v4", algorithm_src_url="https://arxiv.org/abs/1607.00036", replicated="https://github.com/therne/dmn-tensorflow")
 bAbi10k.measure(date(2016,6,30),  97.2, "DMN+", "https://arxiv.org/abs/1607.00036")
 
+bAbi1k.measure(None, 91.3, "GA+MAGE (16)", url="https://arxiv.org/abs/1703.02620v1")
 # More papers:
 # https://www.aclweb.org/anthology/D/D13/D13-1020.pdf
 
@@ -149,6 +158,8 @@ cbtest_ne = reading_comprehension.metric("bAbi Children's Book comprehension CBt
 cbtest_cn = reading_comprehension.metric("bAbi Children's Book comprehension CBtest CN", url="http://fb.ai/babi", scale=correct_percent, target=81.6, target_source="https://arxiv.org/abs/1511.02301")
 cnn = reading_comprehension.metric("CNN Comprehension test", url="https://github.com/deepmind/rc-data/", scale=correct_percent)
 daily_mail = reading_comprehension.metric("Daily Mail Comprehension test", url="https://github.com/deepmind/rc-data/", scale=correct_percent)
+squad_em = reading_comprehension.metric("Stanford Question Answering Dataset EM test", url="https://stanford-qa.com/", target=82.304, target_source="http://arxiv.org/abs/1606.05250")
+squad_f1 = reading_comprehension.metric("Stanford Question Answering Dataset F1 test", url="https://stanford-qa.com/", target=91.221, target_source="http://arxiv.org/abs/1606.05250")
 
 cnn.measure(date(2015, 6, 10), 63.0, "Attentive reader", url="https://arxiv.org/abs/1506.03340")
 cnn.measure(date(2015, 6, 10), 63.8, "Impatient reader", url="https://arxiv.org/abs/1506.03340")
@@ -175,6 +186,12 @@ daily_mail.measure(None, 80.9, "GA update L(w)", url="https://arxiv.org/abs/1606
 cbtest_ne.measure(None, 74.9, "GA +feature, fix L(w)", url="https://arxiv.org/abs/1606.01549v2")
 cbtest_cn.measure(None, 70.7, "GA +feature, fix L(w)", url="https://arxiv.org/abs/1606.01549v2")
 
+cnn.measure(None, 74.7, "ReasoNet", url="https://arxiv.org/abs/1609.05284v1")
+daily_mail.measure(None, 76.6, "ReasoNet", url="https://arxiv.org/abs/1609.05284v1")
+squad_em.measure(None, 73.4, "ReasoNet ensemble", url="https://arxiv.org/abs/1609.05284v3")
+squad_f1.measure(None, 82.9, "ReasoNet ensemble", url="https://arxiv.org/abs/1609.05284v3")
+
+cnn.measure(None, 78.6, "GA+MAGE (32)", url="https://arxiv.org/abs/1703.02620v1")
 # Neural semantic encoders invented in https://arxiv.org/abs/1607.04315v1 and retrospectively applied to CBTest by other authors
 cbtest_ne.measure(date(2016, 12, 1), 73.2, "NSE", url="https://arxiv.org/abs/1606.01549v2", algorithm_src_url="https://arxiv.org/abs/1607.04315", min_date=date(2016,7,4))
 cbtest_cn.measure(date(2016, 12, 1), 71.9, "NSE", url="https://arxiv.org/abs/1606.01549v2", algorithm_src_url="https://arxiv.org/abs/1607.04315", min_date=date(2016,7,4))
@@ -196,8 +213,8 @@ cbtest_ne.measure(None, 71.0, "AS reader (greedy)", url="https://arxiv.org/abs/1
 cbtest_cn.measure(None, 68.9, "AS reader (avg)", url="https://arxiv.org/abs/1603.01547v1")
 cbtest_cn.measure(None, 67.5, "AS reader (greedy)", url="https://arxiv.org/abs/1603.01547v1")
 
-squad_em = reading_comprehension.metric("Stanford Question Answering Dataset EM test", url="https://stanford-qa.com/")
-squad_f1 = reading_comprehension.metric("Stanford Question Answering Dataset F1 test", url="https://stanford-qa.com/")
+squad_em.measure(None, 75.37, "MEMEN", url="https://arxiv.org/abs/1707.09098v1")
+squad_f1.measure(None, 82.66, "MEMEN", url="https://arxiv.org/abs/1707.09098v1")
 
 squad_em.measure(date(2017, 3, 8), 76.922, "r-net (ensemble)", url="https://www.microsoft.com/en-us/research/wp-content/uploads/2017/05/r-net.pdf")
 squad_f1.measure(date(2017, 3, 8), 84.006, "r-net (ensemble)", url="https://www.microsoft.com/en-us/research/wp-content/uploads/2017/05/r-net.pdf")
@@ -258,6 +275,15 @@ squad_f1.measure(date(2016, 12, 29), 77.07, "FastQA", url="https://arxiv.org/abs
 
 squad_em.measure(date(2016, 11, 7), 67.901, "Match-LSTM+Ans-Ptr", url="https://arxiv.org/pdf/1608.07905v2")
 squad_f1.measure(date(2016, 11, 7), 77.022, "Match-LSTM+Ans-Ptr", url="https://arxiv.org/pdf/1608.07905v2")
+
+squad_em.measure(date(2017, 8, 21), 77.678, "RMR (ensemble)", url="https://arxiv.org/abs/1705.02798")
+squad_f1.measure(date(2017, 8, 21), 84.888, "RMR (ensemble)", url="https://arxiv.org/abs/1705.02798")
+
+squad_em.measure(date(2017, 8, 16), 78.706, "DCN+ (ensemble)", url="https://rajpurkar.github.io/SQuAD-explorer/")
+squad_f1.measure(date(2017, 8, 16), 85.619, "DCN+ (ensemble)", url="https://rajpurkar.github.io/SQuAD-explorer/")
+
+squad_em.measure(date(2017, 9, 20), 78.842, "AIR-FusionNet (ensemble)", url="https://rajpurkar.github.io/SQuAD-explorer/")
+squad_f1.measure(date(2017, 9, 20), 85.936, "AIR-FusionNet (ensemble)", url="https://rajpurkar.github.io/SQuAD-explorer/")
 
 translation = Problem("Translation between human langauges", ["agi", "language"])
 en_fr_bleu = translation.metric("news-test-2014 En-Fr BLEU", url="http://aclweb.org/anthology/P/P02/P02-1040.pdf", scale=bleu_score, target_label="Identical to professional human translations", target=50)
