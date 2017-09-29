@@ -266,7 +266,7 @@ class Metric:
             plt.plot_date(frontier_x, frontier_y, "g-", **kwargs)
         
             
-        plt.legend()
+        plt.legend(labels=[''])
         self.graphed = True
         if keep:
             return subplot
