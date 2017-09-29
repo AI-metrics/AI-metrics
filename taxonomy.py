@@ -5,6 +5,7 @@ from __future__ import print_function
 
 from collections import defaultdict
 from math import log
+import cgi
 import datetime
 import json
 import re
