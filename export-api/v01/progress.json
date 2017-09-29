@@ -219,7 +219,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-116-7db95217a73d>#L2", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-48-7db95217a73d>#L2", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Federated Learning (distributed training with thresholded updates to models)", 
@@ -504,7 +504,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-113-13d9cddcfa63>#L9", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-45-13d9cddcfa63>#L9", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Caltech Pedestrians USA", 
@@ -521,7 +521,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-113-13d9cddcfa63>#L11", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-45-13d9cddcfa63>#L11", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "INRIA persons", 
@@ -538,7 +538,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-113-13d9cddcfa63>#L13", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-45-13d9cddcfa63>#L13", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "ETH Pedestrian", 
@@ -555,7 +555,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-113-13d9cddcfa63>#L15", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-45-13d9cddcfa63>#L15", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "TUD-Brussels Pedestrian", 
@@ -572,7 +572,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-113-13d9cddcfa63>#L17", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-45-13d9cddcfa63>#L17", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Damiler Pedestrian", 
@@ -3536,7 +3536,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-115-8599bdd9b61a>#L18", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-47-8599bdd9b61a>#L18", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Adjust prediction models to have constant false-positive rates", 
@@ -3553,7 +3553,7 @@
                 }, 
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-115-8599bdd9b61a>#L19", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-47-8599bdd9b61a>#L19", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Adjust prediction models tos have constant false-positive and -negative rates", 
@@ -6552,7 +6552,6 @@
             "url": null, 
             "subproblems": [
                 "Image comprehension", 
-                "Pedestrian, bicycle & obstacle detection", 
                 "Pedestrian, bicycle & obstacle detection"
             ], 
             "metrics": [
@@ -12143,7 +12142,7 @@
             "metrics": [
                 {
                     "graphed": false, 
-                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-106-847f9831eedb>#L2", 
+                    "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/<ipython-input-38-847f9831eedb>#L2", 
                     "scale": "Score", 
                     "target_label": null, 
                     "name": "Solve all other solved problems in this document, with a single system", 
