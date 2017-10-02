@@ -1094,7 +1094,7 @@ Krull
 Montezumas Revenge
 Name This Game
 Phoenix
-Pit Fall
+Pitfall!
 Pong
 Private Eye
 Q Bert
@@ -2178,6 +2178,7 @@ def game_metric_name(s):
     name = remove_re.sub("", name)
     name = underscore_re.sub("_", name)
     name = name.replace("pac_man", "pacman")  # the papers are inconsistent; "Pac-Man" is most correct but pacman most pythonic
+    name = name.replace("pit_fall", "pitfall")  # "Pitfall!" not "Pit Fall"
     return name + "_metric"
 
 verb = False # Set to True for debugging
