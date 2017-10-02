@@ -210,11 +210,12 @@ class Metric:
 
         # dashed line for "solved" / strong human performance
         if self.target:
-            target_label = (       self.target_label  if self.target_label
-                             else "Human performance" if self.parent and "agi" in self.parent.attributes
-                             else "Target")
-            start = min([m.date for m in self.measures] + [m.min_date for m in self.measures if m.min_date])
-            end = max([m.date for m in self.measures] + [m.max_date for m in self.measures if m.max_date])
+            target_label = (self.target_label if self.target_label
+                            else "Human performance" if self.parent and "agi" in self.parent.attributes
+                            else "Target")
+            dates = [m.date for m in self.measures]
+            start = min(dates + [m.min_date for m in self.measures if m.min_date])
+            end   = max(dates + [m.max_date for m in self.measures if m.max_date])
             plt.plot_date([start, end], 2 * [self.target], tcol if tcol else "r", linestyle="dashed", label=target_label)
 
         
@@ -265,8 +266,8 @@ class Metric:
                 kwargs["c"] = fcol
             plt.plot_date(frontier_x, frontier_y, "g-", **kwargs)
         
-            
-        plt.legend(labels=[''])
+        if self.target or llabel:
+            plt.legend()
         self.graphed = True
         if keep:
             return subplot
