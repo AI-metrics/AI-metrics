@@ -90,7 +90,7 @@ mpl.rcParams["ytick.labelsize"] = u"x-small"
 
 def esc(s):
     "Escape things for HTML output."
-    return cgi.escape(s).encode('ascii', 'xmlcharrefreplace')
+    return cgi.escape(s)
 
 class Metric:
     def __init__(self, name, url=None, solved=False, notes="", scale=linear, target=None, target_source=None,
