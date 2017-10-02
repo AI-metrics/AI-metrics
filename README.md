@@ -111,7 +111,7 @@ Also, if you'd like to build visualizations on top of this project, all the data
  
 **Q: Is this an EFF project?**
  
-Yes, but we'd like it to grow to be a self-sustaining community effort supported by a coalition of organizations. EFF did the initial work of making the Notebook, but we built on several [excellent datasets collected by many other people](https://www.eff.org/files/AI-progress-metrics.html#Measuring-the-Progress-of-AI-Research), and had a number of productive collabrative discussions most especially with people at OpenAI and the Future of Humanity Institute in preparing the document. We will strive to keep the [authorship section](https://www.eff.org/files/AI-progress-metrics.html#Measuring-the-Progress-of-AI-Research) of the Notebook accurate as others continue to contribue.
+Yes, but we'd like it to grow to be a self-sustaining community effort supported by a coalition of organizations. EFF did the initial work of making the Notebook, but we built on several [excellent datasets collected by many other people](https://www.eff.org/files/ai-progress/AI-progress-metrics.html#Measuring-the-Progress-of-AI-Research), and had a number of productive collabrative discussions most especially with people at OpenAI and the Future of Humanity Institute in preparing the document. We will strive to keep the [authorship section](https://www.eff.org/files/ai-progress/AI-progress-metrics.html#Measuring-the-Progress-of-AI-Research) of the Notebook accurate as others continue to contribue.
  
  
 **Q: When will artificial general intelligence happen?**
