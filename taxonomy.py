@@ -5,6 +5,7 @@ from __future__ import print_function
 
 from collections import defaultdict
 from math import log
+import cgi
 import datetime
 import json
 import re
@@ -86,6 +87,10 @@ class Problem:
 mpl.rcParams["legend.fontsize"] = u"x-small"
 mpl.rcParams["xtick.labelsize"] = u"xx-small"
 mpl.rcParams["ytick.labelsize"] = u"x-small"
+
+def esc(s):
+    "Escape things for HTML output."
+    return cgi.escape(s)
 
 class Metric:
     def __init__(self, name, url=None, solved=False, notes="", scale=linear, target=None, target_source=None,
@@ -174,17 +179,17 @@ class Metric:
             table_html.append(u'<td align="center" style="width: 11%">{0}</td>'.format(m.date))
             table_html.append(u'<td align="center" {1}>{0}</td>'.format(m.name, alg_bound))
             table_html.append(u'<td align="center">{0} {1}</td>'.format(m.value, m.represent_uncertainty()))
-            source  = u' (<a href="{0}">source code</a>)'.format(m.replicated_url) if m.replicated_url else ""
-            alglink = u' (algorithm from <a href="{0}">{1}</a>)'.format(m.algorithm_src_url, m.src_name) if m.src_name else ''
-            pname = m.papername if m.papername else m.url
-            table_html.append(u'<td align="center"><a href=\"{0}\">{1}</a>{2}{3}</td>'.format(m.url, pname, source, alglink))
+            source  = u' (<a href="{0}">source code</a>)'.format(esc(m.replicated_url)) if m.replicated_url else ""
+            alglink = u' (algorithm from <a href="{0}">{1}</a>)'.format(esc(m.algorithm_src_url), m.src_name) if m.src_name else ''
+            pname = m.papername if m.papername else esc(m.url)
+            table_html.append(u'<td align="center"><a href=\"{0}\">{1}</a>{2}{3}</td>'.format(esc(m.url), pname, source, alglink))
             table_html.append(u"</tr>")
         table_html.append(u"</table>")
         github_link = [u'''
         <div style="text-align: right; font-style: italic" class="edit-links">
             <a target="_blank" href="{0}">Edit/add data on GitHub</a>
             <a target="_blank" href="/edit/{1}" style="display: none" class="local-edit">Edit locally</a>
-        </div>'''.format(self.data_url, self.data_path)]
+        </div>'''.format(esc(self.data_url), self.data_path)]
         html = u"".join(table_html + github_link)
         return html
 
