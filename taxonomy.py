@@ -219,7 +219,7 @@ class Metric:
             plt.plot_date([start, end], 2 * [self.target], tcol if tcol else "r", linestyle="dashed", label=target_label)
 
         
-        self.measures.sort(key=lambda m: (m.date, m.metric.scale.pseudolinear(m.value)))
+        self.measures.sort(key=lambda m: (m.date, -m.metric.scale.pseudolinear(m.value)))
         
         # scatter plot of results in the literature
         available_markers = markers.MarkerStyle().markers
