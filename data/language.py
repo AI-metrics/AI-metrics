@@ -288,6 +288,7 @@ squad_f1.measure(date(2017, 9, 20), 85.936, "AIR-FusionNet (ensemble)", url="htt
 translation = Problem("Translation between human langauges", ["agi", "language"])
 en_fr_bleu = translation.metric("news-test-2014 En-Fr BLEU", url="http://aclweb.org/anthology/P/P02/P02-1040.pdf", scale=bleu_score, target_label="Identical to professional human translations", target=50)
 en_de_bleu = translation.metric("news-test-2014 En-De BLEU", url="http://aclweb.org/anthology/P/P02/P02-1040.pdf", scale=bleu_score, target_label="Identical to professional human translations", target=50)
+en_de_bleu15 = translation.metric("news-test-2015 En-De BLEU", scale=bleu_score, target_label="Identical to professional human translations", target=50)
 en_ro_bleu = translation.metric("news-test-2016 En-Ro BLEU", url="http://www.statmt.org/wmt16/book.pdf", scale=bleu_score, target_label="Identical to professional human translations", target=50)
 
 
@@ -312,9 +313,25 @@ en_de_bleu.measure(date(2016, 7, 23), 20.7, "Deep-Att", url="https://arxiv.org/a
 en_fr_bleu.measure(date(2017, 1, 23), 40.56, "MoE 2048", url="https://arxiv.org/pdf/1701.06538")
 en_de_bleu.measure(date(2017, 1, 23), 26.03, "MoE 2048", url="https://arxiv.org/pdf/1701.06538")
 
-en_fr_bleu.measure(None, 41.29, "ConvS2S ensemble", url="https://arxiv.org/abs/1705.03122v2")
-en_de_bleu.measure(None, 26.36, "ConvS2S ensemble", url="https://arxiv.org/abs/1705.03122v2")
+en_de_bleu15.measure(date(2015,9,17), 24.1, "S2Tree+5gram NPLM", url="http://aclweb.org/anthology/W15-3024.pdf", papername="Edinburgh's Syntax-Based Systems at WMT 2015")
+en_de_bleu15.measure(None, 21.72, "Enc-Dec Att (BPE)", url="https://arxiv.org/abs/1603.06147v1")
+en_de_bleu15.measure(None, 23.45, "Enc-Dec Att (char)", url="https://arxiv.org/abs/1603.06147v1")
 
+en_de_bleu15.measure(None, 26.26, "ByteNet", url="https://arxiv.org/abs/1610.10099")
+en_de_bleu.measure(None, 23.75, "ByteNet", url="https://arxiv.org/abs/1610.10099")
+hp_compression.measure(None, 1.31, "ByteNet", url="https://arxiv.org/abs/1610.10099")
+
+en_fr_bleu.measure(None, 41.29, "ConvS2S (ensemble)", url="https://arxiv.org/abs/1705.03122v2")
+en_de_bleu.measure(None, 26.36, "ConvS2S (ensemble)", url="https://arxiv.org/abs/1705.03122v2")
+en_fr_bleu.measure(None, 40.46, "ConvS2S", url="https://arxiv.org/abs/1705.03122v2")
+en_de_bleu.measure(None, 25.16, "ConvS2S", url="https://arxiv.org/abs/1705.03122v2")
+
+en_de_bleu.measure(None, 26.1, "SliceNet", url="https://arxiv.org/abs/1706.03059")
+
+en_fr_bleu.measure(None, 38.1, "Transformer", url="https://arxiv.org/pdf/1706.03762.pdf")
+en_de_bleu.measure(None, 27.3, "Transformer", url="https://arxiv.org/pdf/1706.03762.pdf")
+en_fr_bleu.measure(None, 41, "Transformer (big)", url="https://arxiv.org/pdf/1706.03762.pdf")
+en_de_bleu.measure(None, 28.4, "Transformer (big)", url="https://arxiv.org/pdf/1706.03762.pdf")
 
 en_de_bleu.measure(date(2016, 7, 14), 17.93, "NSE-NSE", url="https://arxiv.org/abs/1607.04315v1")
 

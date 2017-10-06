@@ -5,6 +5,9 @@
     "http://aclweb.org/anthology/D15-1080": {
         "name": null
     }, 
+    "http://aclweb.org/anthology/W15-3024.pdf": {
+        "name": null
+    }, 
     "http://ai.stanford.edu/~quocle/LeNgiCoaLahProNg11.pdf": {
         "name": null
     }, 
@@ -887,6 +890,12 @@
         }, 
         "name": "Identity Mappings in Deep Residual Networks"
     }, 
+    "https://arxiv.org/abs/1603.06147v1": {
+        "dates": {
+            "1": "2016-03-19"
+        }, 
+        "name": "A Character-level Decoder without Explicit Segmentation for Neural Machine Translation"
+    }, 
     "https://arxiv.org/abs/1603.06744v1": {
         "dates": {
             "1": "2016-03-22"
@@ -905,12 +914,6 @@
         }, 
         "name": "A Focused Dynamic Attention Model for Visual Question Answering"
     }, 
-    "https://arxiv.org/abs/1604.06076": {
-        "dates": {
-            "1": "2016-04-20"
-        }, 
-        "name": "Question Answering via Integer Programming over Semi-Structured Knowledge"
-    },
     "https://arxiv.org/abs/1604.04112": {
         "dates": {
             "1": "2016-04-14", 
@@ -919,6 +922,12 @@
             "4": "2016-10-05"
         }, 
         "name": "Deep Residual Networks with Exponential Linear Unit"
+    }, 
+    "https://arxiv.org/abs/1604.06076": {
+        "dates": {
+            "1": "2016-04-20"
+        }, 
+        "name": "Question Answering via Integer Programming over Semi-Structured Knowledge"
     }, 
     "https://arxiv.org/abs/1604.08242v1": {
         "dates": {
@@ -1182,6 +1191,13 @@
         }, 
         "name": "Broad Context Language Modeling as Reading Comprehension"
     }, 
+    "https://arxiv.org/abs/1610.10099": {
+        "dates": {
+            "1": "2016-10-31", 
+            "2": "2017-03-15"
+        }, 
+        "name": "Neural Machine Translation in Linear Time"
+    }, 
     "https://arxiv.org/abs/1611.01436": {
         "dates": {
             "1": "2016-11-04", 
@@ -1365,6 +1381,22 @@
             "1": "2017-06-06"
         }, 
         "name": "Deep Convolutional Decision Jungle for Image Classification"
+    }, 
+    "https://arxiv.org/abs/1706.03059": {
+        "dates": {
+            "1": "2017-06-09", 
+            "2": "2017-06-16"
+        }, 
+        "name": "Depthwise Separable Convolutions for Neural Machine Translation"
+    }, 
+    "https://arxiv.org/abs/1706.03762": {
+        "dates": {
+            "1": "2017-06-12", 
+            "2": "2017-06-19", 
+            "3": "2017-06-20", 
+            "4": "2017-06-30"
+        }, 
+        "name": "Attention Is All You Need"
     }, 
     "https://arxiv.org/abs/1706.07613": {
         "dates": {

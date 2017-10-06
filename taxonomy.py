@@ -193,7 +193,7 @@ class Metric:
         html = u"".join(table_html + github_link)
         return html
 
-    def graph(self, size=(7,5), scale=1.0, keep=False, reuse=None, title=None, llabel=None, fcol=None, pcol=None, tcol=None):
+    def graph(self, size=(7,5), scale=1.0, suppress_target=False, keep=False, reuse=None, title=None, llabel=None, fcol=None, pcol=None, tcol=None):
         "Spaghetti code graphing function."
         if len(self.measures) < 2:
             return
@@ -209,7 +209,7 @@ class Metric:
             #fig.add_subplot(111).set_ylabel(self.name)
 
         # dashed line for "solved" / strong human performance
-        if self.target:
+        if self.target and not suppress_target:
             target_label = (self.target_label if self.target_label
                             else "Human performance" if self.parent and "agi" in self.parent.attributes
                             else "Target")

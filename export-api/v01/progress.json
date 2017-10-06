@@ -38408,14 +38408,14 @@
                     "data_url": "https://github.com/AI-metrics/AI-metrics/edit/master/scrapers/atari.py#L2455", 
                     "scale": "Score", 
                     "target_label": null, 
-                    "name": "Atari 2600 Pit Fall", 
+                    "name": "Atari 2600 Pitfall!", 
                     "parent": "Problem(Simple video games)", 
                     "url": null, 
                     "notes": "", 
                     "measures": [
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf", 
                             "date": "2015-09-22", 
@@ -38439,7 +38439,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf", 
                             "date": "2015-09-22", 
@@ -38463,7 +38463,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2015-11-20", 
@@ -38487,7 +38487,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "https://arxiv.org/abs/1509.06461v3", 
                             "date": "2015-11-20", 
@@ -38511,7 +38511,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2015-11-20", 
@@ -38535,7 +38535,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "https://arxiv.org/abs/1511.05952", 
                             "date": "2015-12-08", 
@@ -38559,7 +38559,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2015-12-08", 
@@ -38583,7 +38583,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2016-01-06", 
@@ -38607,7 +38607,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2016-01-06", 
@@ -38631,7 +38631,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2016-02-24", 
@@ -38655,7 +38655,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "https://arxiv.org/abs/1511.05952", 
                             "date": "2016-04-05", 
@@ -38679,7 +38679,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2016-04-10", 
@@ -38703,7 +38703,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2016-04-10", 
@@ -38727,7 +38727,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2016-04-10", 
@@ -38751,7 +38751,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2016-08-22", 
@@ -38775,7 +38775,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2017-03-03", 
@@ -38799,7 +38799,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2017-03-03", 
@@ -38823,7 +38823,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2017-03-10", 
@@ -38847,7 +38847,7 @@
                         }, 
                         {
                             "not_directly_comparable": false, 
-                            "metric": "Metric(Atari 2600 Pit Fall)                                 not solved", 
+                            "metric": "Metric(Atari 2600 Pitfall!)                                 not solved", 
                             "replicated_url": "", 
                             "algorithm_src_url": "", 
                             "date": "2017-07-21", 
