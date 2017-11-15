@@ -201,6 +201,10 @@ cnn.measure(date(2016, 8, 4), 74.4, "AoA reader", url="https://arxiv.org/pdf/160
 cbtest_ne.measure(date(2016, 8, 4), 72.0, "AoA reader", url="https://arxiv.org/pdf/1607.04423")
 cbtest_cn.measure(date(2016, 8, 4), 69.4, "AoA reader", url="https://arxiv.org/pdf/1607.04423")
 
+cnn.measure(None, 70.0, "CAS reader", url="https://arxiv.org/abs/1607.02250v2")
+cbtest_ne.measure(None, 69.2, "CAS reader", url="https://arxiv.org/abs/1607.02250v2")
+cbtest_cn.measure(None, 65.7, "CAS reader", url="https://arxiv.org/abs/1607.02250v2")
+
 cnn.measure(date(2016, 8, 8), 77.6, "Attentive+relabling+ensemble", url="https://arxiv.org/abs/1606.02858")
 daily_mail.measure(date(2016, 8, 8), 79.2, "Attentive+relabling+ensemble", url="https://arxiv.org/abs/1606.02858")
 
@@ -212,6 +216,11 @@ cbtest_ne.measure(None, 70.6, "AS reader (avg)", url="https://arxiv.org/abs/1603
 cbtest_ne.measure(None, 71.0, "AS reader (greedy)", url="https://arxiv.org/abs/1603.01547v1")
 cbtest_cn.measure(None, 68.9, "AS reader (avg)", url="https://arxiv.org/abs/1603.01547v1")
 cbtest_cn.measure(None, 67.5, "AS reader (greedy)", url="https://arxiv.org/abs/1603.01547v1")
+
+
+cnn.measure(date(2017,10,7), 74.4, "DIM Reader", papername="DIM Reader: Dual Interaction Mode for Machine Comprehension", url="http://www.cips-cl.org/static/anthology/CCL-2017/CCL-17-075.pdf")
+cbtest_ne.measure(date(2017,10,7), 72.2, "DIM Reader", papername="DIM Reader: Dual Interaction Mode for Machine Comprehension", url="http://www.cips-cl.org/static/anthology/CCL-2017/CCL-17-075.pdf")
+cbtest_cn.measure(date(2017,10,7), 70.0, "DIM Reader", papername="DIM Reader: Dual Interaction Mode for Machine Comprehension", url="http://www.cips-cl.org/static/anthology/CCL-2017/CCL-17-075.pdf")
 
 squad_em.measure(None, 75.37, "MEMEN", url="https://arxiv.org/abs/1707.09098v1")
 squad_f1.measure(None, 82.66, "MEMEN", url="https://arxiv.org/abs/1707.09098v1")
