@@ -13,7 +13,7 @@ playing_with_hints.notes = """
   in some cases combined with machine learning techniques.
 """
 computer_chess = playing_with_hints.metric("Computer Chess", scale=elo, target=2882, target_label="Best human play", target_source="https://en.wikipedia.org/w/index.php?title=Comparison_of_top_chess_players_throughout_history&oldid=777500496#Elo_system")
-computer_go = playing_with_hints.metric("Computer Go", scale=elo, target=3632, target_label="Best human play", target_source="https://www.goratings.org/en/history/")
+computer_go = playing_with_hints.metric("Computer Go", scale=elo, target=3650, target_label="Best human play", target_source="https://www.goratings.org/en/history/")
 computer_go.solved = True # until we get proper data
 
 # For some caveats, see https://en.wikipedia.org/w/index.php?title=Chess_engine&oldid=764341963#Ratings
@@ -57,6 +57,17 @@ computer_chess.measure(date(2013,12,31), 3241, "Komodo 5.1 MP x64 2GB Q6600 2.4 
 computer_chess.measure(date(2014,12,31), 3295, "Komodo 7.0 MP x64 2GB Q6600 2.4 GHz", url="https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders")
 computer_chess.measure(date(2015,12,31), 3334, "Stockfish 6 MP x64 2GB Q6600 2.4 GHz", url="https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders")
 computer_chess.measure(date(2016,12,31), 3366, "Komodo 9.1 MP x64 2GB Q6600 2.4 GHz", url="https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders")
+
+computer_go.measure(date(2009,2,19), 431, "GnuGo", url="https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf", papername="Mastering the game of Go with deep neural networks and tree search")
+computer_go.measure(date(2011,1,1), 1298, "Pachi", url="https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf", papername="Mastering the game of Go with deep neural networks and tree search")
+computer_go.measure(date(2015,1,1), 1929, "Crazy Stone", url="https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf", papername="Mastering the game of Go with deep neural networks and tree search")
+# Note the author_access_token parameter for the URL below, provided by Deepmind on their website.
+computer_go.measure(date(2015,10,1), 3144, "AlphaGo Fan", url="https://www.nature.com/articles/nature24270.epdf?author_access_token=VJXbVjaSHxFoctQQ4p2k4tRgN0jAjWel9jnR3ZoTv0PVW4gB86EEpGqTRDtpIz-2rmo8-KG06gqVobU5NSCFeHILHcVFUeMsbvwS-lxjqQGg98faovwjxeTUgZAUMnRQ", papername="Mastering the game of Go without human knowledge")
+computer_go.measure(date(2016,3,9), 3739, "AlphaGo Lee", url="https://www.nature.com/articles/nature24270.epdf?author_access_token=VJXbVjaSHxFoctQQ4p2k4tRgN0jAjWel9jnR3ZoTv0PVW4gB86EEpGqTRDtpIz-2rmo8-KG06gqVobU5NSCFeHILHcVFUeMsbvwS-lxjqQGg98faovwjxeTUgZAUMnRQ", papername="Mastering the game of Go without human knowledge")
+computer_go.measure(date(2016,12,29), 4858, "AlphaGo Master", url="https://www.nature.com/articles/nature24270.epdf?author_access_token=VJXbVjaSHxFoctQQ4p2k4tRgN0jAjWel9jnR3ZoTv0PVW4gB86EEpGqTRDtpIz-2rmo8-KG06gqVobU5NSCFeHILHcVFUeMsbvwS-lxjqQGg98faovwjxeTUgZAUMnRQ", papername="Mastering the game of Go without human knowledge")
+computer_go.measure(date(2017,4,7), 5185, "AlphaGo Zero", url="https://www.nature.com/articles/nature24270.epdf?author_access_token=VJXbVjaSHxFoctQQ4p2k4tRgN0jAjWel9jnR3ZoTv0PVW4gB86EEpGqTRDtpIz-2rmo8-KG06gqVobU5NSCFeHILHcVFUeMsbvwS-lxjqQGg98faovwjxeTUgZAUMnRQ", papername="Mastering the game of Go without human knowledge")
+# Alpha Zero did beat AlphaGo Zero in 2017, but no ELO rating was specified in the paper.
+# computer_go.measure(date(2017,12,5), None, "Alpha Zero", url="https://arxiv.org/pdf/1712.01815.pdf", papername="Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm")
 
 mastering_historical_games = Problem("Superhuman mastery of arbitrary abstract strategy games", ["super", "abstract-games"])
 abstract_strategy_games.add_subproblem(mastering_historical_games)
