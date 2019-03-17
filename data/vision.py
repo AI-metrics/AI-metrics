@@ -15,7 +15,7 @@ image_classification = Problem("Image classification", ["vision", "agi"])
 image_classification.add_subproblem(image_comprehension)
 vision.add_subproblem(image_classification)
 
-imagenet = image_classification.metric("Imagenet Image Recognition", "http://image-net.org", scale=error_rate, target=0.051)
+imagenet = image_classification.metric("Imagenet Image Recognition", "http://image-net.org", scale=error_rate, target=0.051, axis_label="Top-5 error rate")
 imagenet.notes = """
 Correctly label images from the Imagenet dataset. As of 2016, this includes:
  - Object localization for 1000 categories.

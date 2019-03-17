@@ -203,6 +203,9 @@
     "http://www.bioinf.jku.at/publications/older/2604.pdf": {
         "name": null
     }, 
+    "http://www.cips-cl.org/static/anthology/CCL-2017/CCL-17-075.pdf": {
+        "name": null
+    }, 
     "http://www.cs.rug.nl/~george/articles/PAMI2013.pdf": {
         "name": null
     }, 
@@ -1047,6 +1050,12 @@
         }, 
         "name": "Dynamic Neural Turing Machine with Soft and Hard Addressing Schemes"
     }, 
+    "https://arxiv.org/abs/1607.02250v2": {
+        "dates": {
+            "2": "2016-07-17"
+        }, 
+        "name": "Consensus Attention-based Neural Networks for Chinese Reading Comprehension"
+    }, 
     "https://arxiv.org/abs/1607.03474": {
         "dates": {
             "1": "2016-07-12", 
@@ -1333,6 +1342,15 @@
         }, 
         "name": "Making Neural QA as Simple as Possible but not Simpler"
     }, 
+    "https://arxiv.org/abs/1703.04887": {
+        "dates": {
+            "1": "2017-03-15", 
+            "2": "2017-04-17", 
+            "3": "2017-11-08", 
+            "4": "2018-04-08"
+        }, 
+        "name": "Improving Neural Machine Translation with Conditional Sequence Generative Adversarial Nets"
+    }, 
     "https://arxiv.org/abs/1704.00051": {
         "dates": {
             "1": "2017-03-31", 
@@ -1433,6 +1451,21 @@
             "1": "2017-07-28"
         }, 
         "name": "MEMEN: Multi-layer Embedding with Memory Networks for Machine Comprehension"
+    }, 
+    "https://arxiv.org/abs/1809.06858": {
+        "dates": {
+            "1": "2018-09-18"
+        }, 
+        "name": "FRAGE: Frequency-Agnostic Word Representation"
+    }, 
+    "https://arxiv.org/abs/1810.02891": {
+        "dates": {
+            "1": "2018-10-05"
+        }, 
+        "name": "Entity Tracking Improves Cloze-style Reading Comprehension"
+    }, 
+    "https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf": {
+        "name": null
     }, 
     "https://en.wikipedia.org/wiki/Swedish_Chess_Computer_Association#Rating_list_year-end_leaders": {
         "name": "Swedish Chess Computer Association - Wikipedia"

@@ -25,6 +25,8 @@ ptperplexity.measure(None, 71.3, "RHN", "https://arxiv.org/abs/1607.03474v2")
 ptperplexity.measure(None, 65.4, "RHN+WT", "https://arxiv.org/abs/1607.03474v4")
 ptperplexity.measure(None, 62.4, "Neural Architecture Search", url="https://arxiv.org/abs/1611.01578v2", venue="ICLR 2017")
 
+ptperplexity.measure(None, 46.54, "FRAGE", url="https://arxiv.org/pdf/1809.06858.pdf")
+
 ptperplexity.measure(date(2019,2,14), 35.76, "GPT2 (zero shot)", not_directly_comparable=True, url="https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf", papername="Language Models are Unsupervised Multitask Learners") 
 
 
@@ -351,6 +353,8 @@ en_zh_bleu.measure(None, 22.89, "Transformer+BR-CSGAN", url="https://arxiv.org/p
 
 en_fr_bleu.measure(None, 28.45, "RNNsearch-50", url="https://arxiv.org/pdf/1409.0473")
 en_de_bleu.measure(date(2016, 7, 14), 17.93, "NSE-NSE", url="https://arxiv.org/abs/1607.04315v1")
+
+en_de_bleu.measure(None, 28.36, "FRAGE", url="https://arxiv.org/pdf/1809.06858.pdf")
 
 en_ro_bleu.measure(date(2016, 7, 11), 28.9, "GRU BPE90k", papername="The QT21/HimL Combined Machine Translation System", url="http://www.statmt.org/wmt16/pdf/W16-2320.pdf")
 en_ro_bleu.measure(None, 29.88, "ConvS2S BPE40k", url="https://arxiv.org/abs/1705.03122v2")
