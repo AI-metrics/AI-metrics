@@ -537,13 +537,28 @@ class ArxivDataExtractor:
                 return True
         return False
 
-    version_re = re.compile(r"\[v([0-9]+)\] (.*[0-9][0-9][0-9][0-9]) ")
+    version_re = re.compile(r"\s*\[v([0-9]+)\] (.*[0-9][0-9][0-9][0-9]) ")
+
+    def clean_gunky_arxiv_data(self, submission_string):
+        "ArXiv has started emitting weird randomly spaced strings here :("
+        blob = re.sub(r"([0-9]\])\n *", r"\1 ", submission_string, flags=re.MULTILINE)
+        while True:
+            try:
+                x = blob.index("B)[")
+                blob = blob[:x+2]+"\n" +blob[x+2:]
+            except ValueError:
+                break
+        return blob
+
 
     def get_submission_dates(self, arxiv_tree, queried_version):
         links = CSSSelector("div.submission-history")(arxiv_tree)[0]
+        #print("links are", links)
         versions = {}
-        #print "Parsing", links.text_content()
-        for line in links.text_content().split("\n"):
+        blob = self.clean_gunky_arxiv_data(links.text_content())
+
+        #print( "Parsing", blob)
+        for line in blob.split("\n"):
             match = self.version_re.match(line)
             if match:
                 version, d = match.group(1), match.group(2)
@@ -551,7 +566,7 @@ class ArxivDataExtractor:
                 versions[version] = d
                 if queried_version == version:
                     return {version: d}
-                #print version, date
+                #print(version, date)
 
         return versions
 
