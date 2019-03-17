@@ -25,6 +25,8 @@ ptperplexity.measure(None, 71.3, "RHN", "https://arxiv.org/abs/1607.03474v2")
 ptperplexity.measure(None, 65.4, "RHN+WT", "https://arxiv.org/abs/1607.03474v4")
 ptperplexity.measure(None, 62.4, "Neural Architecture Search", url="https://arxiv.org/abs/1611.01578v2", venue="ICLR 2017")
 
+ptperplexity.measure(date(2019,2,14), 35.76, "GPT2 (zero shot)", not_directly_comparable=True, url="https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf", papername="Language Models are Unsupervised Multitask Learners") 
+
 
 hp_compression = modelling_english.metric(name="Hutter Prize (bits per character to encode English text)", scale=bits_per_x, 
                                           target=1.3, target_label="Region of human performance",
@@ -53,6 +55,11 @@ lambada.measure(None, 32.1, "Modified Stanford", url="https://arxiv.org/abs/1610
 lambada.measure(None, 49.0, "GA + feat.", url="https://arxiv.org/abs/1610.08431v3", algorithm_src_url="https://arxiv.org/abs/1606.01549v2")
 lambada.measure(None, 44.5, "AS + feat.", url="https://arxiv.org/abs/1610.08431v3", algorithm_src_url="https://arxiv.org/abs/1603.01547")
 lambada.measure(None, 51.6, "GA+MAGE (48)", url="https://arxiv.org/abs/1703.02620v1")
+lambada.measure(None, 51.6, "GA+MAGE (48)", url="https://arxiv.org/abs/1703.02620v1")
+lambada.measure(None, 60.22, "AttSum-Feat+L1", url="https://arxiv.org/abs/1810.02891")
+
+lambada.measure(date(2019,2,14), 63.4, "GPT2 (zero shot)", not_directly_comparable=True, url="https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf", papername="Language Models are Unsupervised Multitask Learners") 
+
 
 turing_test = Problem("Conduct arbitrary sustained, probing conversation", ["agi", "language", "world-modelling", "communication"])
 easy_turing_test = Problem("Turing test for casual conversation", ["agi", "language", "world-modelling", "communication"])
@@ -154,7 +161,6 @@ mctest500.measure(date(2015, 7, 26), 63.75, "Narasimhan-model3", url="https://pe
 mctest500.measure(date(2015, 7, 26), 67.83, "LSSVM", url="https://pdfs.semanticscholar.org/f26e/088bc4659a9b7fce28b6604d26de779bcf93.pdf", papername="Learning Answer-Entailing Structures for Machine Comprehension")
 mctest500.measure(date(2016, 3, 29), 71.00, "Parallel-Hierarchical", url="http://arxiv.org/abs/1603.08884")
 
-cbtest_ne = reading_comprehension.metric("bAbi Children's Book comprehension CBtest NE", url="http://fb.ai/babi", scale=correct_percent, target=81.6, target_source="https://arxiv.org/abs/1511.02301")
 cbtest_cn = reading_comprehension.metric("bAbi Children's Book comprehension CBtest CN", url="http://fb.ai/babi", scale=correct_percent, target=81.6, target_source="https://arxiv.org/abs/1511.02301")
 cnn = reading_comprehension.metric("CNN Comprehension test", url="https://github.com/deepmind/rc-data/", scale=correct_percent)
 daily_mail = reading_comprehension.metric("Daily Mail Comprehension test", url="https://github.com/deepmind/rc-data/", scale=correct_percent)
@@ -167,8 +173,14 @@ daily_mail.measure(date(2015, 6, 10), 69.0, "Attentive reader", url="https://arx
 daily_mail.measure(date(2015, 6, 10), 68.0, "Impatient reader", url="https://arxiv.org/abs/1506.03340")
 
 cnn.measure(date(2016, 6, 7), 75.7, "AIA", url="https://arxiv.org/abs/1606.02245v1")
+
+cbtest_ne = reading_comprehension.metric("bAbi Children's Book comprehension CBtest NE", url="http://fb.ai/babi", scale=correct_percent, target=81.6, target_source="https://arxiv.org/abs/1511.02301")
 cbtest_ne.measure(date(2016, 6, 7), 72.0, "AIA", url="https://arxiv.org/abs/1606.02245v1")
 cbtest_ne.measure(date(2016, 6, 7), 71.0, "AIA", url="https://arxiv.org/abs/1606.02245v1")
+cbtest_ne.measure(date(2019,2,14), 89.05, "GPT2 (zero shot)", not_directly_comparable=True, url="https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf", papername="Language Models are Unsupervised Multitask Learners") 
+cbtest_ne.measure(None, 79.4, "AttSum-Feat+L2", url="https://arxiv.org/abs/1810.02891")
+
+cbtest_cn.measure(date(2019,2,14), 93.3, "GPT2 (zero shot)", not_directly_comparable=True, url="https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf", papername="Language Models are Unsupervised Multitask Learners") 
 
 cnn.measure(date(2016, 11, 9), 76.1, "AIA", url="https://arxiv.org/abs/1606.02245v4")
 
@@ -291,6 +303,7 @@ en_de_bleu = translation.metric("news-test-2014 En-De BLEU", url="http://aclweb.
 en_de_bleu15 = translation.metric("news-test-2015 En-De BLEU", scale=bleu_score, target_label="Identical to professional human translations", target=50)
 en_ro_bleu = translation.metric("news-test-2016 En-Ro BLEU", url="http://www.statmt.org/wmt16/book.pdf", scale=bleu_score, target_label="Identical to professional human translations", target=50)
 
+en_zh_bleu = translation.metric("LDC En-De BLEU", url="https://arxiv.org/pdf/1703.04887.pdf", scale=bleu_score, target_label="Identical to professional human translations", target=50)
 
 en_fr_bleu.measure(None, 37, "PBMT", url="http://www.anthology.aclweb.org/W/W14/W14-33.pdf", papername=u"Edinburgh’s phrase-based machine translation systems for WMT-14", venue="WMT 2014")
 en_de_bleu.measure(None, 20.7, "PBMT", url="http://www.anthology.aclweb.org/W/W14/W14-33.pdf", papername=u"Edinburgh’s phrase-based machine translation systems for WMT-14", venue="WMT 2014")
@@ -333,6 +346,10 @@ en_de_bleu.measure(None, 27.3, "Transformer", url="https://arxiv.org/pdf/1706.03
 en_fr_bleu.measure(None, 41, "Transformer (big)", url="https://arxiv.org/pdf/1706.03762.pdf")
 en_de_bleu.measure(None, 28.4, "Transformer (big)", url="https://arxiv.org/pdf/1706.03762.pdf")
 
+en_de_bleu.measure(None, 27.9, "Transformer+BR-CSGAN", url="https://arxiv.org/pdf/1703.04887.pdf")
+en_zh_bleu.measure(None, 22.89, "Transformer+BR-CSGAN", url="https://arxiv.org/pdf/1703.04887.pdf")
+
+en_fr_bleu.measure(None, 28.45, "RNNsearch-50", url="https://arxiv.org/pdf/1409.0473")
 en_de_bleu.measure(date(2016, 7, 14), 17.93, "NSE-NSE", url="https://arxiv.org/abs/1607.04315v1")
 
 en_ro_bleu.measure(date(2016, 7, 11), 28.9, "GRU BPE90k", papername="The QT21/HimL Combined Machine Translation System", url="http://www.statmt.org/wmt16/pdf/W16-2320.pdf")
