@@ -16,6 +16,7 @@ html = html.replace("https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.
 #                    "js/MathJax.js")
 
 html = html.replace('<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>', '')
+html = html.replace('<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>', '')
 
 assert 'script src="http' not in html, "HTMLified Notebook appears to contain unhandled 3rd party JS, please fix sanitise.py"
 assert 'src="http' not in html, "HTMLified Notebook appears to contain unhandled 3rd party embed, please fix sanitise.py"
