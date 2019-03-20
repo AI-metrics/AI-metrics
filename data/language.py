@@ -309,6 +309,8 @@ squad_f1.measure(date(2017, 8, 16), 85.619, "DCN+ (ensemble)", url="https://rajp
 
 squad_em.measure(date(2017, 9, 20), 78.842, "AIR-FusionNet (ensemble)", url="https://rajpurkar.github.io/SQuAD-explorer/")
 squad_f1.measure(date(2017, 9, 20), 85.936, "AIR-FusionNet (ensemble)", url="https://rajpurkar.github.io/SQuAD-explorer/")
+squad_f1.measure(None, 93.2, "BERT+TriviaQA", url="https://arxiv.org/pdf/1810.04805.pdf")
+squad_em.measure(None, 87.4, "BERT+TriviaQA", url="https://arxiv.org/pdf/1810.04805.pdf")
 
 translation = Problem("Translation between human langauges", ["agi", "language"])
 en_fr_bleu = translation.metric("news-test-2014 En-Fr BLEU", url="http://aclweb.org/anthology/P/P02/P02-1040.pdf", scale=bleu_score, target_label="Identical to professional human translations", target=50)
