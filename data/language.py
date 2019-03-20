@@ -25,6 +25,8 @@ ptperplexity.measure(None, 71.3, "RHN", "https://arxiv.org/abs/1607.03474v2")
 ptperplexity.measure(None, 65.4, "RHN+WT", "https://arxiv.org/abs/1607.03474v4")
 ptperplexity.measure(None, 62.4, "Neural Architecture Search", url="https://arxiv.org/abs/1611.01578v2", venue="ICLR 2017")
 
+ptperplexity.measure(None, 55.8, "ENAS", url="https://arxiv.org/pdf/1802.03268.pdf")
+ptperplexity.measure(None, 47.67, "AWD-LSTM-MOS+de", url="https://arxiv.org/pdf/1711.03953v4.pdf")
 ptperplexity.measure(None, 46.54, "FRAGE", url="https://arxiv.org/pdf/1809.06858.pdf")
 
 ptperplexity.measure(date(2019,2,14), 35.76, "GPT2 (zero shot)", not_directly_comparable=True, url="https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf", papername="Language Models are Unsupervised Multitask Learners") 
