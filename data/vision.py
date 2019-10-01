@@ -33,6 +33,7 @@ imagenet.measure(date(2014,8,18), 0.07405, "VGG", "http://image-net.org/challeng
 imagenet.measure(date(2015,12,10), 0.03567, "MSRA", "http://image-net.org/challenges/LSVRC/2015/results", algorithms=["residual-networks"])
 imagenet.measure(date(2016,9,26), 0.02991, "Trimps-Soushen", "http://image-net.org/challenges/LSVRC/2016/results")
 imagenet.measure(date(2017,7,21), 0.02251, "SE-ResNet152 / WMW", "http://image-net.org/challenges/LSVRC/2017/results")
+imagenet.measure(None, 0.03, "AmoebaNet-B", "https://arxiv.org/pdf/1811.06965.pdf")
 
 # Test automatic detection of withdrawn papers
 imagenet.measure(None, 0.0458, "withdrawn", "https://arxiv.org/abs/1501.02876")

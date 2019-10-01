@@ -64,6 +64,7 @@ lambada.measure(None, 60.22, "AttSum-Feat+L1", url="https://arxiv.org/abs/1810.0
 
 lambada.measure(date(2019,2,14), 63.4, "GPT2 (zero shot)", not_directly_comparable=True, url="https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf", papername="Language Models are Unsupervised Multitask Learners") 
 
+lambada.measure(None, 66.5, "Megatron-LM (zero shot)", not_directly_comparable=True, url="https://arxiv.org/abs/1909.08053v2")
 
 turing_test = Problem("Conduct arbitrary sustained, probing conversation", ["agi", "language", "world-modelling", "communication"])
 easy_turing_test = Problem("Turing test for casual conversation", ["agi", "language", "world-modelling", "communication"])
@@ -309,8 +310,15 @@ squad_f1.measure(date(2017, 8, 16), 85.619, "DCN+ (ensemble)", url="https://rajp
 
 squad_em.measure(date(2017, 9, 20), 78.842, "AIR-FusionNet (ensemble)", url="https://rajpurkar.github.io/SQuAD-explorer/")
 squad_f1.measure(date(2017, 9, 20), 85.936, "AIR-FusionNet (ensemble)", url="https://rajpurkar.github.io/SQuAD-explorer/")
-squad_f1.measure(None, 93.2, "BERT+TriviaQA", url="https://arxiv.org/pdf/1810.04805.pdf")
-squad_em.measure(None, 87.4, "BERT+TriviaQA", url="https://arxiv.org/pdf/1810.04805.pdf")
+
+squad_f1.measure(None, 93.2, "BERT+TriviaQA", url="https://arxiv.org/pdf/1810.04805.pdf", not_directly_comparable=True)
+squad_em.measure(None, 87.4, "BERT+TriviaQA", url="https://arxiv.org/pdf/1810.04805.pdf", not_directly_comparable=True)
+
+squad_f1.measure(date(2019,3,5), 89.147, "BERT+ngram+sst", url="https://rajpurkar.github.io/SQuAD-explorer/")
+squad_em.measure(date(2019,3,5), 86.673, "BERT+ngram+sst", url="https://rajpurkar.github.io/SQuAD-explorer/")
+
+squad_em.measure(date(2018,9,26), 85.954, "nlnet ensemble", url="https://rajpurkar.github.io/SQuAD-explorer/")
+squad_f1.measure(date(2018,9,26), 91.677, "nlnet ensemble", url="https://rajpurkar.github.io/SQuAD-explorer/")
 
 translation = Problem("Translation between human langauges", ["agi", "language"])
 en_fr_bleu = translation.metric("news-test-2014 En-Fr BLEU", url="http://aclweb.org/anthology/P/P02/P02-1040.pdf", scale=bleu_score, target_label="Identical to professional human translations", target=50)

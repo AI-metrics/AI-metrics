@@ -32,6 +32,10 @@ mnist.measure(None, 0.38, 'Fitnet-LSUV-SVM', url='http://arxiv.org/abs/1511.0642
 # additional, newer data on the AWTY problems
 # -------------------------------------------------
 
+mnist.measure(None, 100 - 99.31, "HyperGAN 100", url="https://arxiv.org/pdf/1901.11058.pdf")
+cifar10.measure(None, 77.71, "HyperGAN 100", url="https://arxiv.org/pdf/1901.11058.pdf")
+
+
 cifar100.measure(None, 100 - 22.71, "ResNet-1001", url="https://arxiv.org/pdf/1603.05027", uncertainty=0.22)
 cifar10.measure(None, 100 - 4.62, "ResNet-1001", url="https://arxiv.org/pdf/1603.05027", uncertainty=0.20)
 cifar100.measure(None, 69.0, "NiN+Superclass+CDJ", url="https://arxiv.org/abs/1706.02003")
