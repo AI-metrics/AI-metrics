@@ -56,6 +56,7 @@ card2code_hs_acc.measure(None, 13.6, "Seq2Tree-Unk", url="https://arxiv.org/abs/
 card2code_hs_acc.measure(None, 1.5, "NMT", url="https://arxiv.org/abs/1704.01696v1", algorithm_src_url="https://arxiv.org/abs/1409.0473v1")
 #card2code_hs_acc.measure(None, 16.2, "SNM", url="https://arxiv.org/abs/1704.01696v1")
 card2code_hs_acc.measure(None, 16.7, "SNM -frontier embed", url="https://arxiv.org/abs/1704.01696v1")
+card2code_hs_acc.measure(None, 19.7, "CDS-CNN", papername="Improving Code Generation From Descriptive Text By Combining Deep Learning and Syntax Rules", url="http://ksiresearch.org/seke/seke19paper/seke19paper_170.pdf")
 
 understand_conditional_expressions = Problem("Parse and implement complex conditional expressions")
 program_induction.add_subproblem(understand_conditional_expressions)
