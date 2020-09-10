@@ -5,7 +5,7 @@ from __future__ import print_function
 
 from collections import defaultdict
 from math import log
-import cgi
+import html
 import datetime
 import json
 import re
@@ -90,7 +90,7 @@ mpl.rcParams["ytick.labelsize"] = u"x-small"
 
 def esc(s):
     "Escape things for HTML output."
-    return cgi.escape(s)
+    return html.escape(s)
 
 class Metric:
     def __init__(self, name, url=None, solved=False, notes="", scale=linear, target=None, target_source=None,
