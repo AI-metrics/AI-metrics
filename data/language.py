@@ -29,7 +29,9 @@ ptperplexity.measure(None, 55.8, "ENAS", url="https://arxiv.org/pdf/1802.03268.p
 ptperplexity.measure(None, 47.67, "AWD-LSTM-MOS+de", url="https://arxiv.org/pdf/1711.03953v4.pdf")
 ptperplexity.measure(None, 46.54, "FRAGE", url="https://arxiv.org/pdf/1809.06858.pdf")
 
-ptperplexity.measure(date(2019,2,14), 35.76, "GPT2 (zero shot)", not_directly_comparable=True, url="https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf", papername="Language Models are Unsupervised Multitask Learners") 
+ptperplexity.measure(date(2019,2,14), 35.76, "GPT2 (zero shot)", not_directly_comparable=True, url="https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf", papername="Language Models are Unsupervised Multitask Learners")
+
+ptperplexity.measure(date(2020,7,22), 20.5, "GPT3 (zero shot)", not_directly_comparable=True, url="https://arxiv.org/pdf/2005.14165.pdf", papername="Language Models are Few-Shot Learners")
 
 
 hp_compression = modelling_english.metric(name="Hutter Prize (bits per character to encode English text)", scale=bits_per_x, 
@@ -61,6 +63,12 @@ lambada.measure(None, 44.5, "AS + feat.", url="https://arxiv.org/abs/1610.08431v
 lambada.measure(None, 51.6, "GA+MAGE (48)", url="https://arxiv.org/abs/1703.02620v1")
 lambada.measure(None, 51.6, "GA+MAGE (48)", url="https://arxiv.org/abs/1703.02620v1")
 lambada.measure(None, 60.22, "AttSum-Feat+L1", url="https://arxiv.org/abs/1810.02891")
+
+lambada.measure(date(2020,2,13), 68, "T-NLG", papername="Turing-NLG: A 17-billion-parameter language model by Microsoft", url="https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/")
+
+lambada.measure(date(2020,7,22), 76.2, "GPT3 zero shot", not_directly_comparable=True, url="https://arxiv.org/pdf/2005.14165.pdf", papername="Language Models are Few-Shot Learners")
+lambada.measure(date(2020,7,22), 72.5, "GPT3 one shot", not_directly_comparable=True, url="https://arxiv.org/pdf/2005.14165.pdf", papername="Language Models are Few-Shot Learners")
+lambada.measure(date(2020,7,22), 86.4, 'GPT3 few shot', not_directly_comparable=True, url="https://arxiv.org/pdf/2005.14165.pdf", papername="Language Models are Few-Shot Learners")
 
 lambada.measure(date(2019,2,14), 63.4, "GPT2 (zero shot)", not_directly_comparable=True, url="https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf", papername="Language Models are Unsupervised Multitask Learners") 
 
@@ -186,6 +194,7 @@ cbtest_ne.measure(date(2019,2,14), 89.05, "GPT2 (zero shot)", not_directly_compa
 cbtest_ne.measure(None, 79.4, "AttSum-Feat+L2", url="https://arxiv.org/abs/1810.02891")
 
 cbtest_cn.measure(date(2019,2,14), 93.3, "GPT2 (zero shot)", not_directly_comparable=True, url="https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf", papername="Language Models are Unsupervised Multitask Learners") 
+
 
 cnn.measure(date(2016, 11, 9), 76.1, "AIA", url="https://arxiv.org/abs/1606.02245v4")
 
@@ -319,6 +328,9 @@ squad_em.measure(date(2019,3,5), 86.673, "BERT+ngram+sst", url="https://rajpurka
 
 squad_em.measure(date(2018,9,26), 85.954, "nlnet ensemble", url="https://rajpurkar.github.io/SQuAD-explorer/")
 squad_f1.measure(date(2018,9,26), 91.677, "nlnet ensemble", url="https://rajpurkar.github.io/SQuAD-explorer/")
+
+squad_f1.measure(None, 95.1, "XLNet", url="https://arxiv.org/pdf/1906.08237.pdf")
+squad_em.measure(None, 89.7, "XLNet", url="https://arxiv.org/pdf/1906.08237.pdf")
 
 translation = Problem("Translation between human langauges", ["agi", "language"])
 en_fr_bleu = translation.metric("news-test-2014 En-Fr BLEU", url="http://aclweb.org/anthology/P/P02/P02-1040.pdf", scale=bleu_score, target_label="Identical to professional human translations", target=50)
